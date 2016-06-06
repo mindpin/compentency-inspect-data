@@ -21,7 +21,7 @@
   answer:
     choices:
       - id: aaa
-        text: package, import, class 
+        text: package, import, class
       - id: bbb
         text: class, import, package
       - id: ccc
@@ -34,13 +34,13 @@
   content: |
     编译，运行下列代码后的结果是：
     ```java
-    public class Test { 
-      public static void main (String args []) { 
-        int age; 
-        age = age + 1; 
-        System.out.println("The age is " + age); 
-      } 
-    } 
+    public class Test {
+      public static void main (String args []) {
+        int age;
+        age = age + 1;
+        System.out.println("The age is " + age);
+      }
+    }
     ```
   content_format: md
   answer:
@@ -63,11 +63,11 @@
       - id: aaa
         text: 0 - 65, 535
       - id: bbb
-        text: (–128) – 127 
+        text: (–128) – 127
       - id: ccc
-        text: (–32,768) – 32,767 
+        text: (–32,768) – 32,767
       - id: ddd
-        text: (–256) – 255 
+        text: (–256) – 255
     correct: bbb
 
 - kind: single_choice
@@ -89,17 +89,17 @@
   content: |
     下面的代码能打印出的结果为：
     ```java
-      int i=1; 
-      switch (i) { 
-        case 0: 
-          System.out.println("zero"); 
-          break; 
-        case 1: 
-          System.out.println("one"); 
-        case 2: 
-          System.out.println("two"); 
-        default: 
-          System.out.println("default"); 
+      int i=1;
+      switch (i) {
+        case 0:
+          System.out.println("zero");
+          break;
+        case 1:
+          System.out.println("one");
+        case 2:
+          System.out.println("two");
+        default:
+          System.out.println("default");
       }
     ```
   content_format: md
@@ -119,17 +119,17 @@
   content: |
     下面的代码能打印出的结果为：
     ```java
-      int i=9; 
-      switch (i) { 
-        default: 
-          System.out.println("default"); 
-        case 0: 
-          System.out.println("zero"); 
-          break; 
-        case 1: 
-          System.out.println("one"); 
-        case 2: 
-          System.out.println("two"); 
+      int i=9;
+      switch (i) {
+        default:
+          System.out.println("default");
+        case 0:
+          System.out.println("zero");
+          break;
+        case 1:
+          System.out.println("one");
+        case 2:
+          System.out.println("two");
       }
     ```
   content_format: md
@@ -140,7 +140,7 @@
       - id: bbb
         text: default, zero
       - id: ccc
-        text: error default clause not defined 
+        text: error default clause not defined
       - id: ddd
         text: no output displayed
     correct: bbb
@@ -149,15 +149,15 @@
   content: |
     当你试图准备编译，运行下面代码时会发生：
     ```java
-      class Base {} 
-      class Sub extends Base {} 
-      class Sub2 extends Base {} 
-      public class CEx{ 
-        public static void main(String argv[]){ 
-          Base b=new Base(); 
-          Sub s=(Sub) b; 
-        } 
-      } 
+      class Base {}
+      class Sub extends Base {}
+      class Sub2 extends Base {}
+      public class CEx{
+        public static void main(String argv[]){
+          Base b=new Base();
+          Sub s=(Sub) b;
+        }
+      }
     ```
   content_format: md
   answer:
@@ -174,22 +174,22 @@
   content: |
     当你试图准备编译，运行下面代码时会发生：
     ```java
-    public class Tux extends Thread{ 
-      static String sName = "vandeleur"; 
-      public static void main(String argv[]){ 
-        Tux t = new Tux(); 
-        t.piggy(sName); 
-        System.out.println(sName); 
-      } 
-      public void piggy(String sName){ 
-        sName = sName + " wiggy"; 
-        start(); 
-      } 
-      public void run(){ 
-          for(int i=0;i < 4; i++){ 
-          sName = sName + " " + i; 
-        } 
-      } 
+    public class Tux extends Thread{
+      static String sName = "vandeleur";
+      public static void main(String argv[]){
+        Tux t = new Tux();
+        t.piggy(sName);
+        System.out.println(sName);
+      }
+      public void piggy(String sName){
+        sName = sName + " wiggy";
+        start();
+      }
+      public void run(){
+          for(int i=0;i < 4; i++){
+          sName = sName + " " + i;
+        }
+      }
     }
     ```
   content_format: md
@@ -271,24 +271,24 @@
   content: |
     传递4，0来运行下列代码中的方法divide(int a, int b)，结果是：
     ```java
-      public void divide(int a, int b) { 
-        try { 
-          int c = a / b; 
-         } catch (Exception e) { 
-          System.out.print("Exception "); 
-        } finally { 
-          System.out.println("Finally"); 
-      } 
+      public void divide(int a, int b) {
+        try {
+          int c = a / b;
+         } catch (Exception e) {
+          System.out.print("Exception ");
+        } finally {
+          System.out.println("Finally");
+      }
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 打印输出: Exception Finally
+        text: '打印输出: Exception Finally'
       - id: bbb
-        text: 打印输出: Finally
+        text: '打印输出: Finally'
       - id: ccc
-        text: 打印输出: Exception
+        text: '打印输出: Exception'
       - id: ddd
         text: 没有任何输出
     correct: aaa
@@ -323,28 +323,28 @@
   content: |
     下列类分别在不同的文件中定义：
     ```java
-    class Vehicle { 
-      public void drive() { 
-        System.out.println("Vehicle: drive"); 
-      } 
-    } 
-    class Car extends Vehicle { 
-      public void drive() { 
-        System.out.println("Car: drive"); 
-      } 
-    } 
+    class Vehicle {
+      public void drive() {
+        System.out.println("Vehicle: drive");
+      }
+    }
+    class Car extends Vehicle {
+      public void drive() {
+        System.out.println("Car: drive");
+      }
+    }
 
-    public class Test { 
-      public static void main (String args []) { 
-        Vehicle v; 
-        Car c; 
-        v = new Vehicle(); 
-        c = new Car(); 
-        v.drive(); 
-        c.drive(); 
-        v = c; 
-        v.drive(); 
-      } 
+    public class Test {
+      public static void main (String args []) {
+        Vehicle v;
+        Car c;
+        v = new Vehicle();
+        c = new Car();
+        v.drive();
+        c.drive();
+        v = c;
+        v.drive();
+      }
     }
     ```
     编译和执行类Test后，结果是：
@@ -356,9 +356,9 @@
       - id: bbb
         text: 在语句v= c;处产生运行时错误
       - id: ccc
-        text: 输出 Vehicle: drive Car: drive Car: drive
+        text: '输出 Vehicle: drive Car: drive Car: drive'
       - id: ddd
-        text: 输出Vehicle: drive Car: drive Vehicle: drive
+        text: '输出Vehicle: drive Car: drive Vehicle: drive'
     correct: ccc
 
 - kind: single_choice
@@ -380,17 +380,17 @@
   content: |
     下列代码中有明显的语法错误的语句是：
     ```java
-    1. public class Test {  
-    2.     public static void main (String args []) {  
-    3.         Employee e = new Employee("Bob", 48);  
-    4.         e.calculatePay();  
-    5.         System.out.println(e.printDetails());  
-    6.         e = Null;  
-    7.         e = new Employee("Denise", 36);  
-    8.         e.calculatePay();  
-    9.         System.out.println(e.printDetails());  
-    10.     }  
-    } 
+    1. public class Test {
+    2.     public static void main (String args []) {
+    3.         Employee e = new Employee("Bob", 48);
+    4.         e.calculatePay();
+    5.         System.out.println(e.printDetails());
+    6.         e = Null;
+    7.         e = new Employee("Denise", 36);
+    8.         e.calculatePay();
+    9.         System.out.println(e.printDetails());
+    10.     }
+    }
     ```
   content_format: md
   answer:
@@ -439,7 +439,7 @@
     correct: bbb
 
 - kind: single_choice
-  content: 选择可以替换一个Container对象布局的方法:
+  content: '选择可以替换一个Container对象布局的方法:'
   content_format: text
   answer:
     choices:
@@ -457,18 +457,18 @@
   content: |
     下面的代码编译，运行后得出的结果：
     ```java
-    ublic class Conv{ 
-      public static void main(String argv[]){ 
-        Conv c=new Conv(); 
-        String s=new String("ello"); 
-        c.amethod(s); 
-      } 
-      public void amethod(String s){ 
-        char c='H'; 
-        c+=s; 
-         System.out.println(c); 
-      } 
-    } 
+    ublic class Conv{
+      public static void main(String argv[]){
+        Conv c=new Conv();
+        String s=new String("ello");
+        c.amethod(s);
+      }
+      public void amethod(String s){
+        char c='H';
+        c+=s;
+         System.out.println(c);
+      }
+    }
     ```
   content_format: md
   answer:
@@ -478,7 +478,7 @@
       - id: bbb
         text: 编译成功，打印出"ello"
       - id: ccc
-        text: 编译成功，打印出elloH 
+        text: 编译成功，打印出elloH
       - id: ddd
         text: 编译错误
     correct: ddd
@@ -487,16 +487,16 @@
   content: |
     执行后打印的结果为：
     ```java
-    public class Oct{ 
-      public static void main(String argv[]){ 
-        Oct o = new Oct(); 
-        o.amethod(); 
-      } 
-      public void amethod(){ 
-        int oi= 012; 
-        System.out.println(oi); 
-      } 
-    } 
+    public class Oct{
+      public static void main(String argv[]){
+        Oct o = new Oct();
+        o.amethod();
+      }
+      public void amethod(){
+        int oi= 012;
+        System.out.println(oi);
+      }
+    }
     ```
   content_format: md
   answer:
@@ -515,20 +515,20 @@
   content: |
     编译，执行下面的代码会出现的结果：
     ```java
-    public class Ref{ 
-      public static void main(String argv[]){ 
-        Ref r = new Ref(); 
-        r.amethod(r); 
-      } 
-      public void amethod(Ref r){ 
-        int i=99; 
-        multi(r); 
-        System.out.println(i); 
-      } 
-      public void multi(Ref r){ 
-        r.i = r.i*2; 
-      } 
-    } 
+    public class Ref{
+      public static void main(String argv[]){
+        Ref r = new Ref();
+        r.amethod(r);
+      }
+      public void amethod(Ref r){
+        int i=99;
+        multi(r);
+        System.out.println(i);
+      }
+      public void multi(Ref r){
+        r.i = r.i*2;
+      }
+    }
     ```
   content_format: md
   answer:
@@ -611,10 +611,10 @@
   content: |
     执行如下程序代码后，C的值是。（ ）
     ```java
-    a=0;c=0; 
-    do{ 
-      --c; 
-      a=a-1; 
+    a=0;c=0;
+    do{
+      --c;
+      a=a-1;
     }while(a>0);
     ```
   content_format: md
@@ -664,11 +664,11 @@
   content: |
     以下程序代码的输出是。（ ）
     ```java
-    public class test (  
-      public static void main (String args[]) (  
-        System.out.printIn (6 ^ 3);  
-      )  
-    ) 
+    public class test (
+      public static void main (String args[]) (
+        System.out.printIn (6 ^ 3);
+      )
+    )
     ```
   content_format: md
   answer:
@@ -687,21 +687,21 @@
   content: |
     以下程序代码的输出是。（ ）
     ```java
-    public class test (  
-    private static int j = 0;   
-      private static boolean methodB(int k) (  
-    j += k;  
-    return true;  
-    )  
-    public static void methodA(int i) {  
-    boolean b:  
-      b = i < 10 | methodB (4);  
-      b = i < 10 || methodB (8);  
-    )  
-    public static void main (String args[] } (  
-    methodA (0);  
-    system.out.printIn(j);  
-    )  
+    public class test (
+    private static int j = 0;
+      private static boolean methodB(int k) (
+    j += k;
+    return true;
+    )
+    public static void methodA(int i) {
+    boolean b:
+      b = i < 10 | methodB (4);
+      b = i < 10 || methodB (8);
+    )
+    public static void main (String args[] } (
+    methodA (0);
+    system.out.printIn(j);
+    )
     )
     ```
   content_format: md
@@ -723,18 +723,18 @@
   content: |
     以下程序代码的输出是。（ ）
     ```java
-    public class test {  
-    public static void add3 (Integer i) }  
-    int val = i.intValue ( );  
-    val += 3;  
-    i = new Integer (val);  
-    }  
+    public class test {
+    public static void add3 (Integer i) }
+    int val = i.intValue ( );
+    val += 3;
+    i = new Integer (val);
+    }
 
-    public static void main (String args [ ] ) {  
-    Integer i = new Integer (0);  
-     add3 (i);  
-     system.out.printIn (i.intValue ( ) );  
-     }  
+    public static void main (String args [ ] ) {
+    Integer i = new Integer (0);
+     add3 (i);
+     system.out.printIn (i.intValue ( ) );
+     }
      )
     ```
   content_format: md
@@ -755,8 +755,8 @@
     以下程序代码执行后，哪个说法正确？（ ）
     ```java
     int index = 1;  md
-    boolean[] test = new Boolean[3];  
-    boolean foo= test [index]; 
+    boolean[] test = new Boolean[3];
+    boolean foo= test [index];
     ```
   content_format: md
   answer:
@@ -815,9 +815,9 @@
       - id: bbb
         text: Java程序经编译后会产生byte code
       - id: ccc
-        text: Java程序经编译后会产生DLL 
+        text: Java程序经编译后会产生DLL
       - id: ddd
-        text: 以上都不正确 
+        text: 以上都不正确
     correct: bbb
 
 - kind: single_choice
@@ -847,47 +847,8 @@
       - id: ccc
         text: java.lang
       - id: ddd
-        text: java.swing 
+        text: java.swing
     correct: aaa
-
-- kind: single_choice
-  content: 下列运算符合法的是（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: &&
-      - id: bbb
-        text: <>
-      - id: ccc
-        text: if
-      - id: ddd
-        text: :=
-    correct: aaa
-
-- kind: single_choice
-  content: |
-    执行如下程序代码 
-    ```java
-    a=0;c=0; 
-    do{ 
-      --c; 
-      a=a-1; 
-    }while(a>0);
-    ```
-    后，C的值是（）
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 0
-      - id: bbb
-        text: 1
-      - id: ccc
-        text: -1
-      - id: ddd
-        text: 死循环
-    correct: ccc
 
 - kind: single_choice
   content: 下列哪一种叙述是正确的（）
@@ -910,13 +871,13 @@
   answer:
     choices:
       - id: aaa
-        text: 形式参数可被视为local variable 
+        text: 形式参数可被视为local variable
       - id: bbb
         text: 形式参数可被字段修饰符修饰
       - id: ccc
-        text: 形式参数为方法被调用时，真正被传递的参数 
+        text: 形式参数为方法被调用时，真正被传递的参数
       - id: ddd
-        text: 形式参数不可以是对象 
+        text: 形式参数不可以是对象
     correct: aaa
 
 - kind: single_choice
@@ -925,18 +886,18 @@
   answer:
     choices:
       - id: aaa
-        text: 实例方法可直接调用超类的实例方法 
+        text: 实例方法可直接调用超类的实例方法
       - id: bbb
-        text: 实例方法可直接调用超类的类方法 
+        text: 实例方法可直接调用超类的类方法
       - id: ccc
         text: 实例方法可直接调用其他类的实例方法
       - id: ddd
-        text: 实例方法可直接调用本类的类方法 
+        text: 实例方法可直接调用本类的类方法
     correct: ddd
 
 
 
-# 多选题 
+# 多选题
 - kind: multi_choice
   content: 下列说法正确的有（）
   content_format: text
@@ -945,15 +906,15 @@
       - id: aaa
         text: 环境变量可在编译source code时指定
       - id: bbb
-        text: 在编译程序时，所能指定的环境变量不包括class path 
+        text: 在编译程序时，所能指定的环境变量不包括class path
       - id: ccc
         text: javac一次可同时编译数个Java源文件
       - id: ddd
         text: javac.exe能指定编译结果要置于哪个目录（directory）
-    correct: 
-      -bbb
-      -ccc
-      -ddd
+    corrects:
+      - bbb
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列标识符不合法的有（）
@@ -963,15 +924,15 @@
       - id: aaa
         text: new
       - id: bbb
-        text: 
+        text:
       - id: ccc
         text: 1234
       - id: ddd
         text: car.taxi
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+    corrects:
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -979,17 +940,17 @@
   answer:
     choices:
       - id: aaa
-        text: 数组是一种对象 
+        text: 数组是一种对象
       - id: bbb
         text: 数组属于一种原生类
       - id: ccc
-        text: int number=[]={31,23,33,43,35,63} 
+        text: int number=[]={31,23,33,43,35,63}
       - id: ddd
         text: 数组的大小可以任意改变
-    correct: 
-      -bbb
-      -ccc
-      -ddd
+    corrects:
+      - bbb
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 不能用来修饰interface的有（）
@@ -1004,10 +965,10 @@
         text: protected
       - id: ddd
         text: static
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+    corrects:
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列正确的有（）
@@ -1021,11 +982,11 @@
       - id: ccc
         text: call by reference不能改变实际参数的参考地址
       - id: ddd
-        text: call by reference能改变实际参数的内容 
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+        text: call by reference能改变实际参数的内容
+    corrects:
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -1033,17 +994,17 @@
   answer:
     choices:
       - id: aaa
-        text: 在类方法中可用this来调用本类的类方法 
+        text: 在类方法中可用this来调用本类的类方法
       - id: bbb
         text: 在类方法中调用本类的类方法时可直接调用
       - id: ccc
-        text: 在类方法中只能调用本类中的类方法 
+        text: 在类方法中只能调用本类中的类方法
       - id: ddd
-        text: 在类方法中绝对不能调用实例方法 
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+        text: 在类方法中绝对不能调用实例方法
+    corrects:
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -1053,15 +1014,15 @@
       - id: aaa
         text: Java面向对象语言容许单独的过程与函数存在
       - id: bbb
-        text: Java面向对象语言容许单独的方法存在 
+        text: Java面向对象语言容许单独的方法存在
       - id: ccc
-        text: Java语言中的方法属于类中的成员（member） 
+        text: Java语言中的方法属于类中的成员（member）
       - id: ddd
         text: Java语言中的方法必定隶属于某一类（对象），调用方法与过程或函数相同
-    correct: 
-      -aaa
-      -bbb
-      -ccc
+    corrects:
+      - aaa
+      - bbb
+      - ccc
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -1071,15 +1032,15 @@
       - id: aaa
         text: 能被java.exe成功运行的java class文件必须有main()方法
       - id: bbb
-        text: J2SDK就是Java API 
+        text: J2SDK就是Java API
       - id: ccc
-        text: Appletviewer.exe可利用jar选项运行.jar文件 
+        text: Appletviewer.exe可利用jar选项运行.jar文件
       - id: ddd
         text: 能被Appletviewer成功运行的java class文件必须有main()方法
-    correct: 
-      -bbb
-      -ccc
-      -ddd
+    corrects:
+      - bbb
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 在下面的选项中合法的标识符有。（）
@@ -1089,7 +1050,7 @@
       - id: aaa
         text: _ok
       - id: bbb
-        text: *point
+        text: "*point"
       - id: ccc
         text: this
       - id: ddd
@@ -1098,11 +1059,11 @@
         text: const
       - id: fff
         text: ILikeJLCSS
-    correct: 
-      -aaa
-      -ddd
-      -eee
-      -fff
+    corrects:
+      - aaa
+      - ddd
+      - eee
+      - fff
 
 - kind: multi_choice
   content: 下面的选项中哪些不是java的关键字。（）
@@ -1121,10 +1082,10 @@
         text: super
       - id: fff
         text: void
-    correct: 
-      -aaa
-      -bbb
-      -ddd
+    corrects:
+      - aaa
+      - bbb
+      - ddd
 
 - kind: multi_choice
   content: 下面的叙述中正确的有。（）
@@ -1139,9 +1100,9 @@
         text: javac一次可同时编译数个Java源文件。
       - id: ddd
         text: javac.exe能指定编译结果要置于哪个目录（directory）。
-    correct: 
-      -aaa
-      -ccc
+    corrects:
+      - aaa
+      - ccc
 
 - kind: multi_choice
   content: 下面的叙述中正确的有。（）
@@ -1151,13 +1112,13 @@
       - id: aaa
         text: equals()方法判定引用值是否指向同一对象。
       - id: bbb
-        text: = = 操作符判定两个分立的对象的内容和类型是否一致。 
+        text: = = 操作符判定两个分立的对象的内容和类型是否一致。
       - id: ccc
-        text: equals()方法只有在两个对象的内容一致时返回true。 
+        text: equals()方法只有在两个对象的内容一致时返回true。
       - id: ddd
         text: 类File重写方法equals()在两个分立的对象的内容和类型一致时返回true。
-    correct:
-      -ccc
+    corrects:
+      - ccc
 
 - kind: multi_choice
   content: 下面有关变量及其作用域的陈述哪些是对的。（）
@@ -1165,21 +1126,21 @@
   answer:
     choices:
       - id: aaa
-        text: 在方法里面定义的局部变量在方法退出的时候被撤销。 
+        text: 在方法里面定义的局部变量在方法退出的时候被撤销。
       - id: bbb
-        text: 局部变量也叫自动变量。 
+        text: 局部变量也叫自动变量。
       - id: ccc
         text: 在方法外面定义的变量（译注：即实例变量）在对象被构造时创建。
       - id: ddd
         text: 在方法中定义的方法的参变量只要该对象被需要就一直存在。
-    correct:
-      -aaa
-      -ccc
+    corrects:
+      - aaa
+      - ccc
 
 - kind: multi_choice
   content: |
-    一个类Example的main()方法的参数是args,类被如下调用执行： 
-    java Example cat 
+    一个类Example的main()方法的参数是args,类被如下调用执行：
+    java Example cat
     main方法中访问args[0]的输出是什么？
   content_format: text
   answer:
@@ -1194,25 +1155,25 @@
         text: 抛出一个NullPointerException异常
       - id: eee
         text: 抛出一个ArrayIndexOutOfBoundsException异常
-    correct: 
-      -aaa
+    corrects:
+      - aaa
 
 - kind: multi_choice
   content: |
     给出下列代码，请选择2个正确输出？
     ```java
-    public class Example{ 
-      public static void main(String args[]){ 
-        int i=0; 
-        do{ 
-          System.out.println(“Doing it for i is”+i); 
-        } 
-        while (--i>0); 
-          System.out.println(“Finished”); 
-      } 
-    } 
+    public class Example{
+      public static void main(String args[]){
+        int i=0;
+        do{
+          System.out.println(“Doing it for i is”+i);
+        }
+        while (--i>0);
+          System.out.println(“Finished”);
+      }
+    }
     ```
-  content_format: text
+  content_format: md
   answer:
     choices:
       - id: aaa
@@ -1225,9 +1186,9 @@
         text: Doing it for i is 0
       - id: eee
         text: Finished
-    correct: 
-      -ddd
-      -eee
+    corrects:
+      - ddd
+      - eee
 
 - kind: multi_choice
   content: 选择定义在Graphics类中的方法：
@@ -1246,9 +1207,9 @@
         text: setVisible(boolean);
       - id: fff
         text: setLayout(Object);
-    correct: 
-      -aaa
-      -ccc
+    corrects:
+      - aaa
+      - ccc
 
 - kind: multi_choice
   content: 选择可以建立线程的接口：
@@ -1265,18 +1226,18 @@
         text: Thread
       - id: eee
         text: Executable
-    correct: 
-      -aaa
+    corrects:
+      - aaa
 
 - kind: multi_choice
   content: |
     下面定义的变量能执行那些操作？
     ```java
-    String s1=new String("Hello") 
-    String s2=new String("there"); 
+    String s1=new String("Hello")
+    String s2=new String("there");
     String s3=new String();
     ```
-  content_format: text
+  content_format: md
   answer:
     choices:
       - id: aaa
@@ -1294,20 +1255,20 @@
   content: |
     下面的代码能打印出的结果是：
     ```java
-      public class MyFor{ 
-    public static void main(String argv[]){ 
-    int i; 
-    int j; 
-    outer: 
-    for (i=1;i <3;i++) 
-    inner: 
-    for(j=1; j<3; j++) { 
-    if (j==2) 
-    continue outer; 
-    System.out.println("Value for i=" + i + " Value for j=" +j); 
-    } 
-    } 
-    } 
+      public class MyFor{
+    public static void main(String argv[]){
+    int i;
+    int j;
+    outer:
+    for (i=1;i <3;i++)
+    inner:
+    for(j=1; j<3; j++) {
+    if (j==2)
+    continue outer;
+    System.out.println("Value for i=" + i + " Value for j=" +j);
+    }
+    }
+    }
     ```
   content_format: md
   answer:
@@ -1328,14 +1289,14 @@
   content: |
     那个代码能够添加在//mothod here地方，并能正确执行？
     ```java
-      class Base{ 
-        public void amethod(int i) { } 
-      } 
-      public class Scope extends Base{ 
-        public static void main(String argv[]){ 
-        } 
-        //Method Here 
-      } 
+      class Base{
+        public void amethod(int i) { }
+      }
+      public class Scope extends Base{
+        public static void main(String argv[]){
+        }
+        //Method Here
+      }
     ```
   content_format: md
   answer:
@@ -1351,23 +1312,6 @@
     corrects:
       - bbb
       - ccc
-
-- kind: multi_choice
-  content: 下列哪些表达式返回true
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: "john" == "john"
-      - id: bbb
-        text: "john".equals("john")
-      - id: ccc
-        text: "john" = "john"
-      - id: ddd
-        text: "john".equals(new Button("john"))
-    corrects:
-      - aaa
-      - bbb
 
 - kind: multi_choice
   content: listener(监听器)方法的正确的访问修饰符是什么？
@@ -1393,7 +1337,7 @@
   answer:
     choices:
       - id: aaa
-        text: String args[] 
+        text: String args[]
       - id: bbb
         text: Strings args[]
       - id: ccc
@@ -1440,7 +1384,8 @@
         text: while
       - id: eee
         text: case
-    correct: bbb
+    corrects:
+      - bbb
 
 - kind: multi_choice
   content: 下面那些不是合法的变量定义：
@@ -1456,20 +1401,20 @@
       - id: ddd
         text: _3_
       - id: eee
-        text: 
+        text:
       - id: fff
         text: "#myvar"
-    correct: 
+    corrects:
       - aaa
       - fff
 
 # 简答题
 - kind: essay
-  content: 请写出一个输出“Hello World！” 的程序。（3分） 
+  content: 请写出一个输出“Hello World！” 的程序。（3分）
   content_format: text
 
 - kind: essay
-  content: char型变量中能不能存贮一个中文汉字? 为什么? （3分） 
+  content: char型变量中能不能存贮一个中文汉字? 为什么? （3分）
   content_format: text
 
 - kind: essay
@@ -1481,7 +1426,7 @@
   content_format: text
 
 - kind: essay
-  content: J2EE是什么？（6分） 
+  content: J2EE是什么？（6分）
   content_format: text
 
 - kind: essay
@@ -1494,7 +1439,7 @@
 
 - kind: essay
   content: |
-    什么是Singleton，它的作用是什么，它有几种形式？请用代码写出一个Singleton类。 
+    什么是Singleton，它的作用是什么，它有几种形式？请用代码写出一个Singleton类。
   content_format: text
 
 - kind: essay
@@ -1528,17 +1473,9 @@
   content_format: text
 
 - kind: essay
-  content: main 主函数执行完毕后，是否可能会再执行一段代码，给出说明？  
+  content: main 主函数执行完毕后，是否可能会再执行一段代码，给出说明？
   content_format: text
 
 - kind: essay
-  content: 如何判断一段程序是由C 编译程序还是由C++编译程序编译的？  
+  content: 如何判断一段程序是由C 编译程序还是由C++编译程序编译的？
   content_format: text
-
-- kind: essay
-  content: 文件中有一组整数，要求排序后输出到另一个文件中 
-  content_format: text
-
-  - kind: essay
-    content: 链表题：一个链表的结点结构
-    content_format: text
