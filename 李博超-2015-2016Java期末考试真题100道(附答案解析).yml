@@ -1,6 +1,6 @@
 # 2015-2016Java期末考试真题100道(附答案解析)
 - kind: single_choice
-  content:访问权限修饰符有public、private、protected和默认修饰符,他们既可以用来修饰类,也可以用来修饰类中的成员,使用private修饰符的成员可见情况有
+  content: 访问权限修饰符有public、private、protected和默认修饰符,他们既可以用来修饰类,也可以用来修饰类中的成员,使用private修饰符的成员可见情况有
   content_format: text
   answer:
     choices:
@@ -33,36 +33,36 @@
   content: |
     关于以下程序段正确的说法是
     ```java
-    1. String  s1=”abc”+”def”; 
+    1. String  s1=”abc”+”def”;
     2. String  s2=new  Strings1;
     3.  ifs1= =s2
     4.   System.out.println(“= = succeeded”);
     5.    if (s1.equals(s2))
-    6.      System.out.println(“.equals()  succeeded”); 
+    6.      System.out.println(“.equals()  succeeded”);
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 行6执行行4不执行; 
+        text: 行6执行行4不执行;
       - id: bbb
         text: 行4与行6都将执行 ;
       - id: ccc
-        text: 行4执行行6不执行 ; 
+        text: 行4执行行6不执行 ;
       - id: ddd
-        text: 行4、行6都不执行 ; 
+        text: 行4、行6都不执行 ;
     correct: aaa
 - kind: single_choice
   content: |
-    下列程序代码段运行后,变量x的结果是(             ) 
+    下列程序代码段运行后,变量x的结果是(             )
     ```java
     int x=0;
-    int y=3; 
+    int y=3;
     switch(y){
-    case 1:x++; 
-    case 2:x++;x++; 
-    case 3:x++;x++;x++; 
-    case 4:x+=4; 
+    case 1:x++;
+    case 2:x++;x++;
+    case 3:x++;x++;x++;
+    case 4:x+=4;
     }
     ```
   content_format: md
@@ -83,11 +83,11 @@
   answer:
     choices:
       - id: aaa
-        text: A类的实例不能访问到B类的实例  
+        text: A类的实例不能访问到B类的实例
       - id: bbb
-        text: A类的实例能够访问到B类一个实例的x成员  
+        text: A类的实例能够访问到B类一个实例的x成员
       - id: ccc
-        text: C类的实例不能访问到B类的实例  
+        text: C类的实例不能访问到B类的实例
       - id: ddd
         text: C类的实例可以访问到B类一个实例的x成员
     correct: ddd
@@ -97,31 +97,31 @@
   answer:
     choices:
       - id: aaa
-        text: WindowEvent 
+        text: WindowEvent
       - id: bbb
-        text: KeyEvent 
+        text: KeyEvent
       - id: ccc
-        text: InputEvent 
+        text: InputEvent
       - id: ddd
-        text: MouseEvent 
+        text: MouseEvent
     correct: ddd
 - kind: single_choice
   content: |
     关于以下程序代码的说明正确的是
     ```java
-    1class  HasStatic{ 
+    1class  HasStatic{
     2    private  static  int  x=100
-    3    public  static  void  main(String  args[  ]){ 
+    3    public  static  void  main(String  args[  ]){
     4        HasStatic  hs1=new  HasStatic(  );
     5        hs1.x++;
-    6        HasStatic  hs2=new  HasStatic(  ); 
-    7        hs2.x++; 
-    8        hs1=new  HasStatic( ); 
-    9        hs1.x++; 
-    10              HasStatic.x- -; 
-    11                 System.out.println(“x=”+x); 
-    12              } 
-    13                  } 
+    6        HasStatic  hs2=new  HasStatic(  );
+    7        hs2.x++;
+    8        hs1=new  HasStatic( );
+    9        hs1.x++;
+    10              HasStatic.x- -;
+    11                 System.out.println(“x=”+x);
+    12              }
+    13                  }
     ```
   content_format: md
   answer:
@@ -140,10 +140,10 @@
     编译运行以下程序后关于输出结果的说明正确的是
     ```java
     public  class   Conditional{
-          public  static  void  main(String  args[  ]){ 
+          public  static  void  main(String  args[  ]){
                  int  x=4;
-                 System.out.println(“value  is  “ + ((x>4) ? 99.9 :9)); 3 
-           } 
+                 System.out.println(“value  is  “ + ((x>4) ? 99.9 :9)); 3
+           }
     }
     ```
   content_format: md
@@ -160,44 +160,44 @@
     correct: bbb
 - kind: single_choice
   content: |
-    编译运行下面的代码会发生什么(         ) 
+    编译运行下面的代码会发生什么(         )
     ```java
-    public class Test extends Thread { 
-        private String sThreadName;  
-        public static void main(String argv[]) { 
-            Test h = new Test(); 
-            h.go(); 
-        } 
+    public class Test extends Thread {
+        private String sThreadName;
+        public static void main(String argv[]) {
+            Test h = new Test();
+            h.go();
+        }
 
-        Test() { 
-        } 
+        Test() {
+        }
 
-        Test(String s) { 
-            sThreadName = s; 
-        } 
+        Test(String s) {
+            sThreadName = s;
+        }
 
-        public String getThreadName() { 
-            return sThreadName; 
-        } 
+        public String getThreadName() {
+            return sThreadName;
+        }
 
-        public void go() { 
-            Test first = new Test("first"); 
-            first.start(); 
-            Test second = new Test("second"); 
-            second.start(); 
-        } 
+        public void go() {
+            Test first = new Test("first");
+            first.start();
+            Test second = new Test("second");
+            second.start();
+        }
 
-        public void start() { 
-            for (int i = 0; i < 2; i++) { 
-                System.out.println(getThreadName() + i); 
-                try { 
-                    Thread.sleep(100); 
-                } catch (InterruptedException e) { 
-                    System.out.println(e.getMessage()); 
-                } 
-            } 
-        } 
-    } 
+        public void start() {
+            for (int i = 0; i < 2; i++) {
+                System.out.println(getThreadName() + i);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
     ```
   content_format: md
   answer:
@@ -218,7 +218,7 @@
   answer:
     choices:
       - id: aaa
-        text: == 
+        text: ==
       - id: bbb
         text: instanceof
       - id: ccc
@@ -232,13 +232,13 @@
   answer:
     choices:
       - id: aaa
-        text: abstract 
+        text: abstract
       - id: bbb
-        text: sizeof 
+        text: sizeof
       - id: ccc
-        text: super 
+        text: super
       - id: ddd
-        text: break 
+        text: break
     correct: bbb
 - kind: single_choice
   content: 当处理的数据量很多或向文件输出很多次小数据一般使用的流是
@@ -246,13 +246,13 @@
   answer:
     choices:
       - id: aaa
-        text: DataOutputStream 
+        text: DataOutputStream
       - id: bbb
-        text: PipedOutputStream 
+        text: PipedOutputStream
       - id: ccc
-        text: BufferedOutputStream 
+        text: BufferedOutputStream
       - id: ddd
-        text: FileOutputStream 
+        text: FileOutputStream
     correct: ccc
 - kind: single_choice
   content: 获取一个不包含路径的文件名的方式为
@@ -276,9 +276,9 @@
       - id: aaa
         text: main
       - id: bbb
-        text: init 
+        text: init
       - id: ccc
-        text: paint 
+        text: paint
       - id: ddd
         text: start
     correct: aaa
@@ -290,7 +290,7 @@
       - id: aaa
         text: int read(int line)
       - id: bbb
-        text: int read() 
+        text: int read()
       - id: ccc
         text: int read(byte b[])
       - id: ddd
@@ -328,10 +328,10 @@
   content: |
     类Test1定义如下
     ```java
-    1public  class  Test1{ 
-    2  public  float  aMethodfloat  afloat  b{   } 
-    3   
-    4}  
+    1public  class  Test1{
+    2  public  float  aMethodfloat  afloat  b{   }
+    3
+    4}
     ```
     将以下哪种方法插入行3是不合法的
   content_format: md
@@ -347,32 +347,32 @@
         text: public int aMethodint a int b{ }
     correct: aaa
 - kind: single_choice
-  content: 当要将一文本文件当作一个数据库访问,读完一个纪录后,跳到另一个纪录,它们在文件的不同地方时,一般使用    类访问。  
+  content: 当要将一文本文件当作一个数据库访问,读完一个纪录后,跳到另一个纪录,它们在文件的不同地方时,一般使用    类访问。
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: BufferedOutputStream 
+        text: BufferedOutputStream
       - id: bbb
-        text: FileOutputStream 
+        text: FileOutputStream
       - id: ccc
-        text: PipedOutputStream 
+        text: PipedOutputStream
       - id: ddd
-        text: RandomAccessFile 
+        text: RandomAccessFile
     correct: ddd
 - kind: single_choice
-  content: java中用来抛出异常的关键字是  (         ) 
+  content: java中用来抛出异常的关键字是  (         )
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: throw 
+        text: throw
       - id: bbb
-        text: finally 
+        text: finally
       - id: ccc
-        text: catch 
+        text: catch
       - id: ddd
-        text: try 
+        text: try
     correct: aaa
 - kind: single_choice
   content: 下列数组初始化形式正确的是(           )
@@ -409,13 +409,13 @@
   answer:
     choices:
       - id: aaa
-        text: public 
+        text: public
       - id: bbb
-        text: private 
+        text: private
       - id: ccc
-        text: default  
+        text: default
       - id: ddd
-        text: protected 
+        text: protected
     correct: ccc
 - kind: single_choice
   content: 下列整型数据类型中需要内存空间最少的是
@@ -423,13 +423,13 @@
   answer:
     choices:
       - id: aaa
-        text: byte 
+        text: byte
       - id: bbb
-        text: long 
+        text: long
       - id: ccc
-        text: short 
+        text: short
       - id: ddd
-        text: int 
+        text: int
     correct: aaa
 - kind: single_choice
   content: Character流与Byte流的区别是
@@ -451,16 +451,16 @@
   answer:
     choices:
       - id: aaa
-        text: BufferedOutputStream 
+        text: BufferedOutputStream
       - id: bbb
-        text: PipedOutputStream 
+        text: PipedOutputStream
       - id: ccc
-        text: FileOutputStream 
+        text: FileOutputStream
       - id: ddd
-        text: DataOutputStream 
+        text: DataOutputStream
     correct: bbb
 - kind: single_choice
-  content: 下列有关子类继承父类构造函数的描述正确的是(          ) 
+  content: 下列有关子类继承父类构造函数的描述正确的是(          )
   content_format: text
   answer:
     choices:
@@ -509,9 +509,9 @@
       - id: aaa
         text: static final
       - id: bbb
-        text: static 
+        text: static
       - id: ccc
-        text: final 
+        text: final
       - id: ddd
         text: public static final
     correct: ddd
@@ -535,13 +535,13 @@
   answer:
     choices:
       - id: aaa
-        text: throws 
+        text: throws
       - id: bbb
-        text: finally 
+        text: finally
       - id: ccc
         text: throw
       - id: ddd
-        text: try 
+        text: try
     correct: ccc
 - kind: single_choice
   content: Java的JVM是指
@@ -577,29 +577,29 @@
   answer:
     choices:
       - id: aaa
-        text: Exception 
+        text: Exception
       - id: bbb
-        text: Throwable 
+        text: Throwable
       - id: ccc
-        text: AWTError 
+        text: AWTError
       - id: ddd
-        text: Error 
+        text: Error
     correct: bbb
 
 - kind: single_choice
   content: |
     关于以下application的说明正确的是
     ```java
-    1 class   StaticStuff 
-    2 {  
-    3                  static  int  x=10 
-    4                  static  { x+=5} 
-    5                  public  static  void  mainString  args[ ] 
-    6                  { 
-    7                       System.out.println(“x=” + x); 
-    8                  } 
-    9                  static  { x/=3;} 
-    10.   } 
+    1 class   StaticStuff
+    2 {
+    3                  static  int  x=10
+    4                  static  { x+=5}
+    5                  public  static  void  mainString  args[ ]
+    6                  {
+    7                       System.out.println(“x=” + x);
+    8                  }
+    9                  static  { x/=3;}
+    10.   }
     ```
   content_format: md
   answer:
@@ -617,10 +617,10 @@
   content: |
     下述4行代码组成的小程序总共创建String对象的个数为
     ```java
-    String s1 = "abc"; 
-    String s2 = new String("abc"); 
-    String s3 = "abc"; 
-    String s4 = new String("abc"); 
+    String s1 = "abc";
+    String s2 = new String("abc");
+    String s3 = "abc";
+    String s4 = new String("abc");
     ```
   content_format: md
   answer:
@@ -670,19 +670,19 @@
       - id: aaa
         text: Integer.getInt(str)
       - id: bbb
-        text: (new Integer(str)).intValue() 
+        text: (new Integer(str)).intValue()
       - id: ccc
         text: ((int) str)
       - id: ddd
-        text: Integer.intValue(str) 
+        text: Integer.intValue(str)
     correct: bbb
 - kind: single_choice
-  content: 运行jar文件中class文件需要在java命令后面加的参数为(  ) 
+  content: 运行jar文件中class文件需要在java命令后面加的参数为(  )
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: cp 
+        text: cp
       - id: bbb
         text: -verbose
       - id: ccc
@@ -694,9 +694,9 @@
   content: |
     下列程序段运行后变量x,y,z的值描述正确的是
     ```java
-    int x=1; 
-    int y=(x++)*2; 
-    int z=(--y)*3;   
+    int x=1;
+    int y=(x++)*2;
+    int z=(--y)*3;
     ```
   content_format: md
   answer:
@@ -716,13 +716,13 @@
   answer:
     choices:
       - id: aaa
-        text: IOException 
+        text: IOException
       - id: bbb
-        text: FileNotFoundException 
+        text: FileNotFoundException
       - id: ccc
-        text: ClassNotFoundException 
+        text: ClassNotFoundException
       - id: ddd
-        text: UnknownHostException 
+        text: UnknownHostException
     correct: aaa
 - kind: single_choice
   content: 下面关于事件监听的说明哪一个语句是正确的
@@ -732,7 +732,7 @@
       - id: aaa
         text: 组件不允许附加多个监听器
       - id: bbb
-        text: 如果多个监听器加在一个组件上那么事件只会触发一个监听器 
+        text: 如果多个监听器加在一个组件上那么事件只会触发一个监听器
       - id: ccc
         text: 监听器机制允许按照我们的需要任意调用addXxxxListener 方法多次而且没有次序区别
       - id: ddd
@@ -754,7 +754,7 @@
         text: protected
     correct: aaa
 - kind: single_choice
-  content: 对于catch子句的排列下列哪种是正确的(      ) 
+  content: 对于catch子句的排列下列哪种是正确的(      )
   content_format: text
   answer:
     choices:
@@ -800,16 +800,16 @@
   content: |
     运行如下代码的结果是
     ```java
-    public class MyObj{ 
-       int x=3; 
-       public MyObj(int x){ 
-          this.x=x; 
-        } 
-        public static void main(String[] args){ 
-           MyObj obj=new MyObj(50); 
-           System.out.println(obj.x); 
-        } 
-     } 
+    public class MyObj{
+       int x=3;
+       public MyObj(int x){
+          this.x=x;
+        }
+        public static void main(String[] args){
+           MyObj obj=new MyObj(50);
+           System.out.println(obj.x);
+        }
+     }
     ```
   content_format: md
   answer:
@@ -928,20 +928,20 @@
   content: |
     下面是Example.java文件的完整代码请找出会产生编译错误的行
     ```java
-    1.     class BaseClass {  
-    2.          public String str;  
-    3.          public BaseClass {  
-    4.          System.out.println(“ok”);}  
-    5.          public BaseClass(String s){  
-    6.           str=s;}}  
-    7.         class SubClass extends BaseClass{  
-    8.         } 
-    9.       public class Example{  
-    10.         public void method {  
-    11.           SubClass s=new SubClass(“hello”);  
-    12.         BaseClass b=new BaseClass(“world”);  
-    13.      }  
-    14.  } 
+    1.     class BaseClass {
+    2.          public String str;
+    3.          public BaseClass {
+    4.          System.out.println(“ok”);}
+    5.          public BaseClass(String s){
+    6.           str=s;}}
+    7.         class SubClass extends BaseClass{
+    8.         }
+    9.       public class Example{
+    10.         public void method {
+    11.           SubClass s=new SubClass(“hello”);
+    12.         BaseClass b=new BaseClass(“world”);
+    13.      }
+    14.  }
     ```
   content_format: md
   answer:
@@ -960,41 +960,41 @@
   content: |
     关于下面一段代码描述正确的是
     ```java
-    public class Agg { 
-      public static void main(String argv[]) { 
-          Agg a = new Agg(); 
-          a.go(); 
-      } 
+    public class Agg {
+      public static void main(String argv[]) {
+          Agg a = new Agg();
+          a.go();
+      }
 
-      public void go() { 
-          DSRoss ds1 = new DSRoss("one"); 
-          ds1.start(); 
-      } 
-    } 
+      public void go() {
+          DSRoss ds1 = new DSRoss("one");
+          ds1.start();
+      }
+    }
 
-    class DSRoss extends Thread { 
-        private String sTname = ""; 
-        DSRoss(String s) { 
-            sTname = s; 
-        } 
+    class DSRoss extends Thread {
+        private String sTname = "";
+        DSRoss(String s) {
+            sTname = s;
+        }
 
-        public void run() { 
-            notwait(); 12 
-             System.out.println("finished"); 
-        } 
+        public void run() {
+            notwait(); 12
+             System.out.println("finished");
+        }
 
-        public void notwait() { 
-            while (true) { 
-                try { 
-                    System.out.println("waiting"); 
-                    wait(); 
-                } catch (InterruptedException ie) { 
-                } 
-                System.out.println(sTname); 
-                notifyAll(); 
-            } 
-        } 
-    } 
+        public void notwait() {
+            while (true) {
+                try {
+                    System.out.println("waiting");
+                    wait();
+                } catch (InterruptedException ie) {
+                }
+                System.out.println(sTname);
+                notifyAll();
+            }
+        }
+    }
     ```
   content_format: md
   answer:
@@ -1006,7 +1006,7 @@
       - id: ccc
         text: 能够编译输出“waiting"
       - id: ddd
-        text: 能够编译, 输出“waiting"紧接着输出"finish" 
+        text: 能够编译, 输出“waiting"紧接着输出"finish"
     correct: aaa
 
 - kind: single_choice
@@ -1030,7 +1030,7 @@
   answer:
     choices:
       - id: aaa
-        text: List组件可实现的接口除了ItemListener还可以是ActionListener 
+        text: List组件可实现的接口除了ItemListener还可以是ActionListener
       - id: bbb
         text: 以上都不对
       - id: ccc
@@ -1040,7 +1040,7 @@
     correct: aaa
 
 - kind: single_choice
-  content: java语言中异常处理的出口是下列哪一子句 (     )  
+  content: java语言中异常处理的出口是下列哪一子句 (     )
   content_format: text
   answer:
     choices:
@@ -1055,7 +1055,7 @@
     correct: ddd
 
 - kind: single_choice
-  content: 一个可以独立运行的Java应用程序(           ) 
+  content: 一个可以独立运行的Java应用程序(           )
   content_format: text
   answer:
     choices:
@@ -1103,16 +1103,16 @@
   content: |
     运行如下代码的结果是
     ```java
-    public class MyObj{ 
-       int x=3; 
-       public MyObj(int x){ 
-         x=x; 
-        } 
-        public static void main(String[] args){ 
-           MyObj obj=new MyObj(50); 
-           System.out.println(obj.x); 
-        } 
-     } 
+    public class MyObj{
+       int x=3;
+       public MyObj(int x){
+         x=x;
+        }
+        public static void main(String[] args){
+           MyObj obj=new MyObj(50);
+           System.out.println(obj.x);
+        }
+     }
     ```
   content_format: md
   answer:
@@ -1143,7 +1143,7 @@
     correct: aaa
 
 - kind: single_choice
-  content: 下列说法正确的是(        ) 
+  content: 下列说法正确的是(        )
   content_format: text
   answer:
     choices:
@@ -1158,12 +1158,12 @@
     correct: bbb
 
 - kind: single_choice
-  content: 在switchexpression语句中expression的数据类型不能是(        ) 
+  content: 在switchexpression语句中expression的数据类型不能是(        )
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: byte 
+        text: byte
       - id: bbb
         text: double
       - id: ccc
@@ -1205,9 +1205,9 @@
   content: |
     下面的程序段执行后输出的结果是
     ```java
-    StringBuffer buf=new StringBuffer("China2008");  
-    buf.insert(5,"@");  
-    System.out.println(buf.toString ); 
+    StringBuffer buf=new StringBuffer("China2008");
+    buf.insert(5,"@");
+    System.out.println(buf.toString );
     ```
   content_format: md
   answer:
@@ -1215,7 +1215,7 @@
       - id: aaa
         text: China@2008
       - id: bbb
-        text: @China2008
+        text: "@China2008"
       - id: ccc
         text: China2008@
       - id: ddd
@@ -1226,14 +1226,14 @@
   content: |
     阅读以下代码
     ```java
-    import java.io.*; 
-    import java.util.*; 
-    public class foo{ 
-    public static void main (String[] args){ 
-    String s; 
-    System.out.println("s=" + s); 
-    } 
-    } 
+    import java.io.*;
+    import java.util.*;
+    public class foo{
+    public static void main (String[] args){
+    String s;
+    System.out.println("s=" + s);
+    }
+    }
     ```
     输出结果是什么?
   content_format: md
@@ -1259,7 +1259,7 @@
       - id: bbb
         text: BorderLayout
       - id: ccc
-        text: GridLayout 
+        text: GridLayout
       - id: ddd
         text: FlowLayout
     correct: ddd
@@ -1268,33 +1268,33 @@
   content: |
     阅读下列程序
     ```java
-    import java.awt.Button; 
-    import java.awt.GridLayout; 
-    import java.awt.Panel; 
-    import javax.swing.*; 
-      public class X extends JFrame{ 
-       public X(){ 
-        setLayout(new GridLayout(2,2)); 
-        JPanel p1=new JPanel(); 
-        add(p1); 
-        JButton b1=new JButton("One"); 
-        p1.add(b1); 
-        JPanel p2=new JPanel(); 
-        add(p2); 
-        JButton b2=new JButton("Two"); 
-        p2.add(b2);  
-        JButton b3=new JButton("Three"); 
-        p2.add(b3);  
-        JButton b4=new JButton("Four"); 
-        add(b4); 
-       } 
+    import java.awt.Button;
+    import java.awt.GridLayout;
+    import java.awt.Panel;
+    import javax.swing.*;
+      public class X extends JFrame{
+       public X(){
+        setLayout(new GridLayout(2,2));
+        JPanel p1=new JPanel();
+        add(p1);
+        JButton b1=new JButton("One");
+        p1.add(b1);
+        JPanel p2=new JPanel();
+        add(p2);
+        JButton b2=new JButton("Two");
+        p2.add(b2);
+        JButton b3=new JButton("Three");
+        p2.add(b3);
+        JButton b4=new JButton("Four");
+        add(b4);
+       }
 
-      public static void main(String[] args){ 
-      X x=new X(); 
-       x.pack(); 
-      x.setVisible(true); 
-    } 
-    } 
+      public static void main(String[] args){
+      X x=new X();
+       x.pack();
+      x.setVisible(true);
+    }
+    }
     ```
     当frame改变大小时,下面正确的描述为
   content_format: md
@@ -1343,14 +1343,14 @@
   content: |
     关于以下程序段的说法类包含不考虑情况下正确的是
     ```java
-    1class   MyListener  implements 
-    2                  ActionListenerItemListener{ 
-    3                  public  void  actionPerformedActionEvent  ae{ 
-    4                       System.out.println("Action");} 
-    5                   public  void  itemStateChanged(ItemEvent  ie){ 
-    6                  System.out.println("Item"); 
-    7                  } 
-    8} 
+    1class   MyListener  implements
+    2                  ActionListenerItemListener{
+    3                  public  void  actionPerformedActionEvent  ae{
+    4                       System.out.println("Action");}
+    5                   public  void  itemStateChanged(ItemEvent  ie){
+    6                  System.out.println("Item");
+    7                  }
+    8}
     ```
   content_format: md
   answer:
@@ -1399,14 +1399,14 @@
   content: |
     编译下列源程序会得到哪些文件?
     ```java
-    class A1{ 
-    } 
-    class A2{ 
-    } 
-    public class B{ 
-    public static void main(String args[]){ 
-    } 
-    } 
+    class A1{
+    }
+    class A2{
+    }
+    public class B{
+    public static void main(String args[]){
+    }
+    }
     ```
   content_format: md
   answer:
@@ -1425,15 +1425,15 @@
   content: |
     以下程序的运行结果是
     ```java
-    public class Increment{ 
-    public static void main(String args[]){ 
-            int c; 
-            c = 2; 
-            System.out.print(c); 
-            System.out.print(c++); 
-            System.out.println(c); 
-    } 
-    } 
+    public class Increment{
+    public static void main(String args[]){
+            int c;
+            c = 2;
+            System.out.print(c);
+            System.out.print(c++);
+            System.out.println(c);
+    }
+    }
     ```
   content_format: md
   answer:
@@ -1443,7 +1443,7 @@
       - id: bbb
         text: 2 2 3
       - id: ccc
-        text: 3 4 4 
+        text: 3 4 4
       - id: ddd
         text: 2 3 3
     correct: bbb
@@ -1469,7 +1469,7 @@
   answer:
     choices:
       - id: aaa
-        text: 覆盖方法中的参数清单必须是被覆盖方法参数清单的子集 
+        text: 覆盖方法中的参数清单必须是被覆盖方法参数清单的子集
       - id: bbb
         text: 子类可以覆盖超类中的任何方法
       - id: ccc
@@ -1502,21 +1502,21 @@
       - id: bbb
         text: private
       - id: ccc
-        text: new 
+        text: new
       - id: ddd
-        text: sealed 
+        text: sealed
     correct: ddd
 
 - kind: single_choice
   content: |
     当在命令行输入java myprog good morning 运行以下代码输出结果是
     ```java
-    public class myprog{ 
-           public static void main(String argv[]) 
-          { 
-               System.out.println(argv[2]); 
-          } 
-      } 
+    public class myprog{
+           public static void main(String argv[])
+          {
+               System.out.println(argv[2]);
+          }
+      }
     ```
   content_format: md
   answer:
@@ -1524,11 +1524,11 @@
       - id: aaa
         text: myprog
       - id: bbb
-        text: Exception raised: "java.lang.ArrayIndexOutOfBoundsException: 2"
+        text: 'Exception raised: "java.lang.ArrayIndexOutOfBoundsException: 2"'
       - id: ccc
-        text: good 
+        text: good
       - id: ddd
-        text: morning 
+        text: morning
     correct: bbb
 
 - kind: single_choice
@@ -1549,17 +1549,17 @@
   content: |
     以下说法哪项是正确的
     ```java
-    1class  MyListener 
-    2extends  MouseAdapter  implements  MouseListener{ 
-    3    public void mouseEnteredMouseEvent  mev 
-    4      { System.out.println("Mouse  entered.");  } 
-    5     } 
+    1class  MyListener
+    2extends  MouseAdapter  implements  MouseListener{
+    3    public void mouseEnteredMouseEvent  mev
+    4      { System.out.println("Mouse  entered.");  }
+    5     }
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 不能通过编译因为类头定义不能分行 
+        text: 不能通过编译因为类头定义不能分行
       - id: bbb
         text: 能通过编译若组件用该类作为Mouse的监听者并且接收了mouse-exited事件则在执行过程中会抛出异常
       - id: ccc
@@ -1572,32 +1572,32 @@
   content: |
     编译运行下面的代码会发生什么(           )
     ```java
-    public class Test { 
-        public static void main(String argv[]) { 
-            Pmcraven pm1 = new Pmcraven("one"); 
-            pm1.run(); 
-            Pmcraven pm2 = new Pmcraven("two"); 
-            pm2.run(); 
-        } 
-    } 
+    public class Test {
+        public static void main(String argv[]) {
+            Pmcraven pm1 = new Pmcraven("one");
+            pm1.run();
+            Pmcraven pm2 = new Pmcraven("two");
+            pm2.run();
+        }
+    }
 
-    class Pmcraven extends Thread { 
-        private String sTname = "";  
-        Pmcraven(String s) { 
-            sTname = s; 
-        } 
+    class Pmcraven extends Thread {
+        private String sTname = "";
+        Pmcraven(String s) {
+            sTname = s;
+        }
 
-        public void run() { 
-            for (int i = 0; i < 2; i++) { 
-                try { 
-                    sleep(1000); 
-                } catch (InterruptedException e) { 
-                } 
-                yield(); 
-                System.out.println(sTname); 
-            } 
-       } 
-    } 
+        public void run() {
+            for (int i = 0; i < 2; i++) {
+                try {
+                    sleep(1000);
+                } catch (InterruptedException e) {
+                }
+                yield();
+                System.out.println(sTname);
+            }
+       }
+    }
     ```
     输出结果是什么?
   content_format: md
@@ -1617,13 +1617,13 @@
   content: |
     类Test1、Test2定义如下
     ```java
-    1 public class  Test1 
-    2{ public  float  aMethodfloat afloat b throws 
-    3  IOException {      } 
-    4    } 
-    5    public  class  Test2  extends  Test1{ 
-    6 
-    7} 
+    1 public class  Test1
+    2{ public  float  aMethodfloat afloat b throws
+    3  IOException {      }
+    4    }
+    5    public  class  Test2  extends  Test1{
+    6
+    7}
     ```
     将以下哪种方法插入行6是不合法的。
   content_format: md
@@ -1658,19 +1658,19 @@
   content: |
     编译运行下面的代码会发生什么情况为
     ```java
-    public class Bground extends Thread{ 
-        public static void main(String argv[]) 
-        { 
-            Bground b = new Bground(); 
-            b.run(); 
-        } 
-        public void start() 
-        { 
-           for (int i = 0; i <10; i++){ 
-               System.out.println("Value of i = " + i); 
-           } 
-        } 
-    } 
+    public class Bground extends Thread{
+        public static void main(String argv[])
+        {
+            Bground b = new Bground();
+            b.run();
+        }
+        public void start()
+        {
+           for (int i = 0; i <10; i++){
+               System.out.println("Value of i = " + i);
+           }
+        }
+    }
     ```
   content_format: md
   answer:
@@ -1686,7 +1686,7 @@
     correct: ddd
 
 - kind: single_choice
-  content:下列哪个是不属于容器的组件
+  content: 下列哪个是不属于容器的组件
   content_format: text
   answer:
     choices:
@@ -1701,19 +1701,18 @@
     correct: aaa
 
 - kind: single_choice
-  content: 在Java语言中,当定义一个变量为基本数据类型时,Java的JVM就为该变量分配内存,并给该变量赋初值,当定义一个复合数据类型变量时,该变量代表该类型对象的引用名,Java的JVM并不为对象创建内存空
-间,该变量引用的值为null,要创建对象实例,需要使用的关键字为
+  content: 在Java语言中,当定义一个变量为基本数据类型时,Java的JVM就为该变量分配内存,并给该变量赋初值,当定义一个复合数据类型变量时,该变量代表该类型对象的引用名,Java的JVM并不为对象创建内存空间,该变量引用的值为null,要创建对象实例,需要使用的关键字为
   content_format: text
   answer:
     choices:
       - id: aaa
         text: new
       - id: bbb
-        text: public 
+        text: public
       - id: ccc
-        text: super 
+        text: super
       - id: ddd
-        text: this 
+        text: this
     correct: aaa
 
 - kind: single_choice
@@ -1735,10 +1734,10 @@
   content: |
     下列程序段运行后变量temp的值是
     ```java
-    int temp = 2 ; 
-    temp++; 
-    temp*=5; 
-    temp/=2 
+    int temp = 2 ;
+    temp++;
+    temp*=5;
+    temp/=2
     ```
   content_format: md
   answer:
@@ -1759,7 +1758,7 @@
   answer:
     choices:
       - id: aaa
-        text: Java语言规定构造方法不可以重载 
+        text: Java语言规定构造方法不可以重载
       - id: bbb
         text: Java语言规定构造方法没有返回值但不用void声明
       - id: ccc
@@ -1774,7 +1773,7 @@
   answer:
     choices:
       - id: aaa
-        text: 树形、网形、环形 
+        text: 树形、网形、环形
       - id: bbb
         text: 顺序、选择、循环
       - id: ccc
@@ -1797,7 +1796,7 @@
       - id: ddd
         text: String类的toUpperCase()方法
       - id: eee
-        text: String类的replace()方法 
+        text: String类的replace()方法
     correct: ccc
 - kind: single_choice
   content: 在代码中使用catch(Exception e)的好处是(          )
@@ -1813,5 +1812,3 @@
       - id: ddd
         text: 忽略一些异常
     correct: bbb
-
-
