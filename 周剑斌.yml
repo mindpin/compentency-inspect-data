@@ -1,39 +1,39 @@
-#java笔试题以及答案详解 一 
+#java笔试题以及答案详解 一
 
 #单选
 
 - kind: single_choice
-  content:Java是从（）语言改进重新设计
+  content: Java是从()语言改进重新设计
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: Ada 
+        text: Ada
       - id: bbb
         text: C++
       - id: ccc
-        text: Pasacal 
+        text: Pasacal
       - id: ddd
         text: BASIC
     correct: bbb
 
 - kind: single_choice
-  content:下列语句哪一个正确（）
+  content: 下列语句哪一个正确()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text:  Java程序经编译后会产生machine code 
+        text:  Java程序经编译后会产生machine code
       - id: bbb
         text: Java程序经编译后会产生byte code
       - id: ccc
-        text: Java程序经编译后会产生DLL 
+        text: Java程序经编译后会产生DLL
       - id: ddd
         text: 以上都不正确
     correct: bbb
 
 - kind: single_choice
-  content:下列说法正确的有（）
+  content: 下列说法正确的有
   content_format: text
   answer:
     choices:
@@ -68,24 +68,25 @@
   answer:
     choices:
       - id: aaa
-        text: &&
+        text: "&&"
       - id: bbb
-        text: <>
+        text: "<>"
       - id: ccc
         text: fi
       - id: ddd
-        text: :=
+        text: ":="
     correct: aaa
 
 - kind: single_choice
   content: |
     执行如下程序代码
     ```java
-    a = 0; c = 0;
-　do{
+    a = 0;
+    c = 0;
+    do{
       --c;
-　  a = a - 1;
-　}while(a>0);
+      a = a - 1;
+    }while(a>0);
     ```
     后，C的值是（）
   content_format: md
@@ -139,7 +140,7 @@
       - id: aaa
         text: 实例方法可直接调用超类的实例方法
       - id: bbb
-        text: 实例方法可直接调用超类的类方法 
+        text: 实例方法可直接调用超类的类方法
       - id: ccc
         text: 实例方法可直接调用其他类的实例方法
       - id: ddd
@@ -190,11 +191,11 @@
   answer:
     choices:
       - id: aaa
-        text: new 
+        text: new
       - id: bbb
         text: $Usdollars
       - id: ccc
-        text: 1234 
+        text: 1234
       - id: ddd
         text: car.taxi
     corrects:
@@ -226,11 +227,11 @@
   answer:
     choices:
       - id: aaa
-        text: private 
+        text: private
       - id: bbb
-        text: public 
+        text: public
       - id: ccc
-        text: protected 
+        text: protected
       - id: ddd
         text: static
     corrects:
@@ -324,11 +325,6 @@
   content_format: text
   answer: false
 
-- kind: bool
-  content: 
-  content_format: text
-  answer: false
-
 # 简答题
 
 - kind: essay
@@ -340,20 +336,19 @@
 # 单选题
 
 - kind: single_choice
-  content: 2年前,2013年6月18日,中国天河2号成为全银河系列中速度最快的超级计
-算机。它以峰值计算速度每秒5.49亿亿次、持续计算速度每秒3.39亿亿次双精
-度浮点运算的优异性能位居榜首。若需要存储以上两个数值,最好使用( )类型的变量。
+  content: |
+    2年前,2013年6月18日,中国天河2号成为全银河系列中速度最快的超级计算机。它以峰值计算速度每秒5.49亿亿次、持续计算速度每秒3.39亿亿次双精度浮点运算的优异性能位居榜首。若需要存储以上两个数值,最好使用( )类型的变量。
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: int         
+        text: int
       - id: bbb
-        text: long        
+        text: long
       - id: ccc
-        text: float           
+        text: float
       - id: ddd
-        text: double 
+        text: double
     correct: ddd
 
 - kind: single_choice
@@ -375,16 +370,16 @@
   content: |
     对于下列代码
     ```java
-    1)  class Person {  
-    2)  public void printValue(int i, int j) {//... }  
-    3)  public void printValue(int i){//... } 
-    4)  }  
-    5)  public class Teacher extends Person {  
-    6)  public void printValue() {//... }  
-    7)  public void printValue(int i) {//...}  
-    8)  public static void main(String args[]){  
-    9)  Person t = new Teacher();  
-   10)  
+    1)  class Person {
+    2)  public void printValue(int i, int j) {//... }
+    3)  public void printValue(int i){//... }
+    4)  }
+    5)  public class Teacher extends Person {
+    6)  public void printValue() {//... }
+    7)  public void printValue(int i) {//...}
+    8)  public static void main(String args[]){
+    9)  Person t = new Teacher();
+    10)
     ```
     第10行语句将调用哪行语句 ( )
   content_format: md
@@ -406,9 +401,9 @@
   answer:
     choices:
       - id: aaa
-        text: p.add(b);      
+        text: p.add(b);
       - id: bbb
-        text: p.add(b,"North"); 
+        text: p.add(b,"North");
       - id: ccc
         text: p.add(b,"South");
       - id: ddd
@@ -419,10 +414,10 @@
   content: |
     应用程序的main方法中有以下语句
     ```java
-    String  s1="abc"; 
-    String  s2="abc"; 
-    boolean b1=s1.equals(s2); 
-    boolean b2=(s1==s2); 
+    String  s1="abc";
+    String  s2="abc";
+    boolean b1=s1.equals(s2);
+    boolean b2=(s1==s2);
     System.out.print(b1+"   "+b2);
     ```
     则输出的结果是 ( )
@@ -443,38 +438,38 @@
   content: |
     以下程序段
     ```java
-    String   s="12345#aaa#bbb#67890"; 
-    int   n=s.indexOf("#"); 
-    int   k=s.indexOf("#",n+1); 
-    int   m=s.indexOf("#",k+1); 
-    String  s2=s.substring(m+1); 
-    System.out.println(s2); 
+    String   s="12345#aaa#bbb#67890";
+    int   n=s.indexOf("#");
+    int   k=s.indexOf("#",n+1);
+    int   m=s.indexOf("#",k+1);
+    String  s2=s.substring(m+1);
+    System.out.println(s2);
     ```
     的输出结果是 ( )
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 123456     
+        text: 123456
       - id: bbb
-        text: 67890     
+        text: 67890
       - id: ccc
-        text: aaa      
+        text: aaa
       - id: ddd
-        text: bbb 
+        text: bbb
     correct: bbb
 
 - kind: single_choice
-  content:|
+  content: |
     应用程序的main方法中有以下语句
     ```java
-    int  b[][]={{1}, {2,2}, {2,2,2}}; 
-      int sum=0; 
-      for(int i=0;i<b.length;i++) { 
-        for(int j=0;j<b[i].length;j++) { 
-          sum+=b[i][j]; 
-        } 
-      } 
+    int  b[][]={{1}, {2,2}, {2,2,2}};
+      int sum=0;
+      for(int i=0;i<b.length;i++) {
+        for(int j=0;j<b[i].length;j++) {
+          sum+=b[i][j];
+        }
+      }
     System.out.println("sum="+sum);
     ```
     则输出的结果是 ( )
@@ -482,29 +477,29 @@
   answer:
     choices:
       - id: aaa
-        text: 32     
+        text: 32
       - id: bbb
-        text: 11     
+        text: 11
       - id: ccc
-        text: 2     
+        text: 2
       - id: ddd
-        text: 3 
+        text: 3
     correct: aaa
 
 - kind: single_choice
-  content:|
+  content: |
     应用程序的main方法中有以下语句
     ```java
-    int[]  x={125,21,5,168,98}; 
-    int  min=x[0]; 
-    int  index=0; 
-    for(int i=1;i<x.length;i++){ 
-      if(x[i]<min) 
-      { 
-        min = x[i]; 
+    int[]  x={125,21,5,168,98};
+    int  min=x[0];
+    int  index=0;
+    for(int i=1;i<x.length;i++){
+      if(x[i]<min)
+      {
+        min = x[i];
         index = i;
-      } 
-    } 
+      }
+    }
     System.out.println(min+", "+index);
     ```
     则执行后输出的结果是 ( )
@@ -512,34 +507,34 @@
   answer:
     choices:
       - id: aaa
-        text: 125, 0  
+        text: 125, 0
       - id: bbb
         text: 5, 2
       - id: ccc
-        text: 98, 4  
+        text: 98, 4
       - id: ddd
-        text:  168, 3 
+        text:  168, 3
     correct: bbb
 
 - kind: single_choice
-  content:|
+  content: |
     如下代码
     ```java
-    public class Test { 
-      String s1="java"; 
-      public static void main(String args[]) { 
-        int z=2; 
-        Test t=new Test();          
-        System.out.println(t.s1+z); 
-      } 
-    } 
+    public class Test {
+      String s1="java";
+      public static void main(String args[]) {
+        int z=2;
+        Test t=new Test();
+        System.out.println(t.s1+z);
+      }
+    }
     ```
     程序Test.java编译运行后输出的结果是 ( )
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: java2     
+        text: java2
       - id: bbb
         text: 2
       - id: ccc
@@ -549,12 +544,12 @@
     correct: aaa
 
 - kind: single_choice
-  content:|
+  content: |
     应用程序的main方法中有以下语句
     ```java
-    String s1="0.5", s2="12"; 
-    double x=Double.parseDouble(s1); 
-    int    y=Integer.parseInt(s2); 
+    String s1="0.5", s2="12";
+    double x=Double.parseDouble(s1);
+    int    y=Integer.parseInt(s2);
     System.out.println(""+x+y);
     ```
     则输出的结果是 ( )
@@ -579,13 +574,13 @@
   answer:
     choices:
       - id: aaa
-        text: System    
+        text: System
       - id: bbb
-        text: out    
+        text: out
       - id: ccc
-        text: println    
+        text: println
       - id: ddd
-        text: 没有 
+        text: 没有
     corrects:
       - bbb
       - ccc
@@ -596,13 +591,13 @@
   answer:
     choices:
       - id: aaa
-        text: 封装  
+        text: 封装
       - id: bbb
-        text: 封闭  
+        text: 封闭
       - id: ccc
-        text: 继承 
+        text: 继承
       - id: ddd
-        text: 多态 
+        text: 多态
     corrects:
       - aaa
       - ccc
@@ -611,29 +606,21 @@
 # 简答题
 
 - kind: essay
-  content: 下列哪些存储相关内容会放在栈中,哪些会放在堆中,请画出与此相关的堆栈示意图。 
-      int i; 
-      int[][] x = new int[10][20]; 
-      String s = "Hello";
+  content: |
+    下列哪些存储相关内容会放在栈中,哪些会放在堆中,请画出与此相关的堆栈示意图。
+    ```java
+    int i;
+    int[][] x = new int[10][20];
+    String s = "Hello";
+    ```
+  content_format: md
+
+- kind: essay
+  content: 请举例说明三个词语final,finally,finalize的五种功能
   content_format: text
 
 - kind: essay
-  content:  请举例说明三个词语final,finally,finalize的五种功能。
-          Final——修饰符（关键字）如果一个类被声明为final，意味着它不能再派生出新的子类，不能作
-  为父类被继承。因此一个类不能既被声明为 abstract的，又被声明为final的。将变量或方法声
-  明为final，可以保证它们在使用中不被改变。被声明为final的变量必须在声明时给定初值，而
-  在以后的引用中只能读取，不可修改。被声明为final的方法也同样只能使用不能重载。
-          Finally，再异常处理时提供 finally 块来执行任何清除操作。如果抛出一个异常，那么相匹
-  配的 catch 子句就会执行然后控制就会进入 finally 块（如果有的话）。  
-          Finalize——方法名。Java 技术允许使用 finalize（）方法在垃圾收集器将对象从内存中清除
-  出去之前做必要的清理工作。这个方法是由垃圾收集器在确定这个对象没有被引用时对这个对
-  象调用的。它是在 Object 类中定义的，因此所有的类都继承了它。子类覆盖 finalize（）方
-  法以整理系统资源或者执行其他清理工作。finalize（）方法是在垃圾收集器删除对象之前对这
-  个对象调用的。
-  content_format: text
-
-- kind: essay
-  content: Java的继承机制有何特点? 请举一例予以说明。 
+  content: Java的继承机制有何特点? 请举一例予以说明。
   content_format: text
 
 - kind: essay
@@ -713,7 +700,7 @@
   content_format: text
 
 - kind: essay
-  content: Servlet的生命周期是什么？ 
+  content: Servlet的生命周期是什么？
   content_format: text
 
 - kind: essay
@@ -866,4 +853,3 @@
     corrects:
       - aaa
       - ccc
-
