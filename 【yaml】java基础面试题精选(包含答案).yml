@@ -1,0 +1,608 @@
+﻿# 单选
+
+- kind: single_choice
+  content: Java是从什么语言改进重新设计
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Ada
+      - id: bbb
+        text: C++
+      - id: ccc
+        text: Pasacal
+      - id: ddd
+        text: BASIC
+    correct: bbb
+
+- kind: single_choice
+  content: 下列语句哪一个正确
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Java程序经编译后会产生machine code
+      - id: bbb
+        text: Java程序经编译后会产生byte code
+      - id: ccc
+        text: Java程序经编译后会产生DLL
+      - id: ddd
+        text: 以上都不正确
+    correct: bbb
+
+- kind: single_choice
+  content: 下列说法正确的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: class中的constructor不可省略
+      - id: bbb
+        text: constructor必须与class同名，但方法不能与class同名
+      - id: ccc
+        text: constructor在一个对象被new时执行
+      - id: ddd
+        text: 一个class只能定义一个constructor
+    correct: ccc
+
+- kind: single_choice
+  content: 提供Java存取数据库能力的包是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: "java.sql"
+      - id: bbb
+        text: "java.awt"
+      - id: ccc
+        text: "java.lang"
+      - id: ddd
+        text: "java.swing"
+    correct: aaa
+
+- kind: single_choice
+  content: 下列运算符合法的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: "&&"
+      - id: bbb
+        text: "<>"
+      - id: ccc
+        text: "if"
+      - id: ddd
+        text: ":="
+    correct: aaa
+
+- kind: single_choice
+  content: |
+　　执行如下程序代码
+　　```
+　　a=0;c=0;
+　　do{
+　　--c;
+　　a=a-1;
+　　}while(a>0);
+　　```
+　　后，C的值是（ ）
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 0
+      - id: bbb
+        text: 1
+      - id: ccc
+        text: -1
+      - id: ddd
+        text: 死循环
+    correct: ccc
+
+
+- kind: single_choice
+  content: 下列哪一种叙述是正确的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: abstract修饰符可修饰字段、方法和类
+      - id: bbb
+        text: 抽象方法的body部分必须用一对大括号"{ }"包住
+      - id: ccc
+        text: 声明抽象方法，大括号可有可无
+      - id: ddd
+        text: 声明抽象方法不可写出大括号
+    correct: ddd
+
+- kind: single_choice
+  content: 下列语句正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 形式参数可被视为local variable
+      - id: bbb
+        text: 形式参数可被字段修饰符修饰
+      - id: ccc
+        text: 形式参数为方法被调用时，真正被传递的参数
+      - id: ddd
+        text: 形式参数不可以是对象
+    correct: aaa
+
+- kind: single_choice
+  content: 下列哪种说法是正确的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 实例方法可直接调用超类的实例方法
+      - id: bbb
+        text: 实例方法可直接调用超类的类方法
+      - id: ccc
+        text: 实例方法可直接调用其他类的实例方法
+      - id: ddd
+        text: 实例方法可直接调用本类的类方法
+    correct: ddd
+
+
+# 多选
+
+- kind: multi_choice
+  content: Java程序的种类有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 类"（Class）"
+      - id: bbb
+        text: Applet
+      - id: ccc
+        text: Application
+      - id: ddd
+        text: Servlet
+    corrects:
+      - aaa
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 下列说法正确的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 环境变量可在编译source code时指定
+      - id: bbb
+        text: 在编译程序时，所能指定的环境变量不包括class path
+      - id: ccc
+        text: javac一次可同时编译数个Java源文件
+      - id: ddd
+        text: "javac.exe"能指定编译结果要置于哪个目录"（directory）"
+    corrects:
+      - bbb
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 下列标识符不合法的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: new
+      - id: bbb
+        text: "$Usdollars"
+      - id: ccc
+        text: 1234
+      - id: ddd
+        text: "car.taxi"
+    corrects:
+      - aaa
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 下列说法错误的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 数组是一种对象
+      - id: bbb
+        text: 数组属于一种原生类
+      - id: ccc
+        text: "int number=[]={31,23,33,43,35,63}"
+      - id: ddd
+        text: 数组的大小可以任意改变
+    corrects:
+      - bbb
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 不能用来修饰interface的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: private
+      - id: bbb
+        text: public
+      - id: ccc
+        text: protected
+      - id: ddd
+        text: static
+    corrects:
+      - aaa
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 下列正确的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: call by value不会改变实际参数的数值
+      - id: bbb
+        text: call by reference能改变实际参数的参考地址
+      - id: ccc
+        text: call by reference不能改变实际参数的参考地址
+      - id: ddd
+        text: call by reference能改变实际参数的内容
+    corrects:
+      - aaa
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 下列说法错误的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 在类方法中可用this来调用本类的类方法
+      - id: bbb
+        text: 在类方法中调用本类的类方法时可直接调用
+      - id: ccc
+        text: 在类方法中只能调用本类中的类方法
+      - id: ddd
+        text: 在类方法中绝对不能调用实例方法
+    corrects:
+      - aaa
+      - ccc
+      - ddd
+
+- kind: multi_choice
+  content: 下列说法错误的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Java面向对象语言容许单独的过程与函数存在
+      - id: bbb
+        text: Java面向对象语言容许单独的方法存在
+      - id: ccc
+        text: Java语言中的方法属于类中的成员"（member）"
+      - id: ddd
+        text: Java语言中的方法必定隶属于某一类"（对象），"调用方法与过程或函数相同
+    corrects:
+      - aaa
+      - bbb
+      - ccc
+
+
+- kind: multi_choice
+  content: 下列说法错误的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 能被"java.exe"成功运行的java class文件必须有"main()"方法
+      - id: bbb
+        text: J2SDK就是Java API
+      - id: ccc
+        text: "Appletviewer.exe"可利用jar选项运行".jar"文件
+      - id: ddd
+        text: 能被Appletviewer成功运行的java class文件必须有"main()"方法
+    corrects:
+      - bbb
+      - ccc
+      - ddd
+
+# 判断
+
+- kind: bool
+  content: Java程序中的起始类名称必须与存放该类的文件名相同
+  content_format: text
+  answer: true
+
+- kind: bool
+  content: Unicode是用16位来表示一个字的
+  content_format: text
+  answer: true
+
+- kind: bool
+  content: 原生类中的数据类型均可任意转换
+  content_format: text
+  answer: false
+
+# 简答
+- kind: essay
+  content: 什么是抽象
+  content_format: text
+
+- kind: essay
+  content: 什么是继承
+  content_format: text
+
+- kind: essay
+  content: 什么是封装
+  content_format: text
+
+- kind: essay
+  content: 什么是多态性
+  content_format: text
+
+- kind: essay
+  content: String是最基本的数据类型吗
+  content_format: text
+
+- kind: essay
+  content: int 和 Integer 有什么区别
+  content_format: text
+
+- kind: essay
+  content: String 和 StringBuffer 有什么区别
+  content_format: text
+
+- kind: essay
+  content: 运行时异常与一般异常有何异同
+  content_format: text
+
+- kind: essay
+  content: 说出Servlet的生命周期，并说出Servlet和CGI的区别
+  content_format: text
+
+- kind: essay
+  content: 说出"ArrayList,Vector, LinkedList"的存储性能和特性
+  content_format: text
+
+- kind: essay
+  content: EJB是基于哪些技术实现的？并说出SessionBean和EntityBean的区别，StatefulBean和StatelessBean的区别
+  content_format: text
+
+- kind: essay
+  content: Collection 和 Collections 有什么区别
+  content_format: text
+
+- kind: essay
+  content: "&和&&有什么区别"
+  content_format: text
+
+- kind: essay
+  content: HashMap 和 Hashtable 有什么区别
+  content_format: text
+
+- kind: essay
+  content: "final, finally, finalize 有什么区别"
+  content_format: text
+
+- kind: essay
+  content: "sleep() 和 wait() 有什么区别"
+  content_format: text
+
+- kind: essay
+  content: Overload和Override的区别，Overloaded的方法是否可以改变返回值的类型
+  content_format: text
+
+- kind: essay
+  content: error 和 exception 有什么区别
+  content_format: text
+
+- kind: essay
+  content: 同步和异步有何异同，在什么情况下分别使用他们？举例说明
+  content_format: text
+
+- kind: essay
+  content: abstract class和interface有什么区别
+  content_format: text
+
+- kind: essay
+  content: heap和stack有什么区别
+  content_format: text
+
+- kind: essay
+  content: forward 和 redirect 有什么区别
+  content_format: text
+
+- kind: essay
+  content: EJB 与JAVA BEAN 有什么区别
+  content_format: text
+
+- kind: essay
+  content: Static Nested Class 和 Inner Class 有什么区别
+  content_format: text
+
+- kind: essay
+  content: JSP中动态INCLUDE与静态INCLUDE的区别
+  content_format: text
+
+- kind: essay
+  content: 什么时候用assert
+  content_format: text
+
+- kind: essay
+  content: GC是什么？为什么要有GC？
+  content_format: text
+
+- kind: essay
+  content: "short s1 = 1; s1 = s1 + 1;有什么错？short s1 = 1; s1 += 1;有什么错？"
+  content_format: text
+
+- kind: essay
+  content: "Math.round(11.5)等于多少? Math.round(-11.5))等于多少？"
+  content_format: text
+
+- kind: essay
+  content: "String s = new String("xyz");创建了几个String Object？"
+  content_format: text
+
+- kind: essay
+  content: "EJB包括（SessionBean,EntityBean）说出他们的生命周期，及如何管理事务的？"
+  content_format: text
+
+- kind: essay
+  content: 应用服务器有那些
+  content_format: text
+
+- kind: essay
+  content: 给我一个你最常见到的runtime exception
+  content_format: text
+
+- kind: essay
+  content: "接口是否可继承接口？抽象类是否可实现(implements)接口？抽象类是否可继承实体类(concrete class)？"
+  content_format: text
+
+- kind: essay
+  content: "List, Set, Map是否继承自Collection接口？"
+  content_format: text
+
+- kind: essay
+  content: 说出数据连接池的工作机制是什么
+  content_format: text
+
+- kind: essay
+  content: abstract的method是否可同时是static，是否可同时是native，是否可同时是synchronized？
+  content_format: text
+
+- kind: essay
+  content: "数组有没有length()这个方法? String有没有length()这个方法？"
+  content_format: text
+
+- kind: essay
+  content: "Set里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用==还是equals()？它们有何区别？"
+  content_format: text
+
+- kind: essay
+  content: 构造器Constructor是否可被override？
+  content_format: text
+
+- kind: essay
+  content: 是否可以继承String类？
+  content_format: text
+
+- kind: essay
+  content: swtich是否能作用在byte上，是否能作用在long上，是否能作用在String上？
+  content_format: text
+
+- kind: essay
+  content: "try {}里有一个return语句，那么紧跟在这个try后的finally {}里的code会不会被执行，什么时候被执行，在return前还是后？"
+  content_format: text
+
+- kind: essay
+  content: 用最有效率的方法算出2乘以8等于几
+  content_format: text
+
+- kind: essay
+  content: "两个对象值相同(x.equals(y) == true)，但却可有不同的hash code，这句话对不对？"
+  content_format: text
+
+- kind: essay
+  content: 当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递？
+  content_format: text
+
+- kind: essay
+  content: 当一个线程进入一个对象的一个synchronized方法后，其它线程是否可进入此对象的其它方法？
+  content_format: text
+
+- kind: essay
+  content: Java的接口和C++的虚类的相同和不同处
+  content_format: text
+
+- kind: essay
+  content: Java中的异常处理机制的简单原理和应用
+  content_format: text
+
+- kind: essay
+  content: 垃圾回收的优点和原理并考虑2种回收机制
+  content_format: text
+
+- kind: essay
+  content: 请说出你所知道的线程同步的方法
+  content_format: text
+
+- kind: essay
+  content: 你所知道的集合类都有哪些？主要方法？
+  content_format: text
+
+- kind: essay
+  content: 描述一下JVM加载class文件的原理机
+  content_format: text
+
+- kind: essay
+  content: char型变量中能不能存储一个中文汉字？为什么？
+  content_format: text
+
+- kind: essay
+  content: 多线程有几种实现方法，都是什么？同步有几种实现方法，都是什么？
+  content_format: text
+
+- kind: essay
+  content: JSP的内置对象及方法
+  content_format: text
+
+- kind: essay
+  content: 阐述线程的基本概念，线程的基本状态以及状态之间的关系
+  content_format: text
+
+- kind: essay
+  content: 请说出你所知道的JSP的常用指令
+  content_format: text
+
+- kind: essay
+  content: "什么情况下调用doGet()和doPost()？"
+  content_format: text
+
+- kind: essay
+  content: 请说出servlet的生命周期
+  content_format: text
+
+- kind: essay
+  content: 如何现实servlet的单线程模式
+  content_format: text
+
+- kind: essay
+  content: 请说出页面间对象传递的方法
+  content_format: text
+
+- kind: essay
+  content: JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？
+  content_format: text
+
+- kind: essay
+  content: 解释四种会话跟踪技术
+  content_format: text
+
+- kind: essay
+  content: Request对象的主要方法
+  content_format: text
+
+- kind: essay
+  content: J2EE是技术还是平台还是框架？
+  content_format: text
+
+- kind: essay
+  content: 我们在web应用开发过程中经常遇到输出某种编码的字符，如"iso8859-1"等，如何输出一个某种编码的字符串？
+  content_format: text
+
+- kind: essay
+  content: "简述逻辑操作(&,|,^)与条件操作(&&,||)的区别"
+  content_format: text
+
+# 文件上传
+
+- kind: file_upload
+  content: 写一个Singleton出来
+  content_format: text
