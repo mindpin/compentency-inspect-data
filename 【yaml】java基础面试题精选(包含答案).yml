@@ -76,31 +76,6 @@
     correct: aaa
 
 - kind: single_choice
-  content: |
-　　执行如下程序代码
-　　```
-　　a=0;c=0;
-　　do{
-　　--c;
-　　a=a-1;
-　　}while(a>0);
-　　```
-　　后，C的值是（ ）
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 0
-      - id: bbb
-        text: 1
-      - id: ccc
-        text: -1
-      - id: ddd
-        text: 死循环
-    correct: ccc
-
-
-- kind: single_choice
   content: 下列哪一种叙述是正确的
   content_format: text
   answer:
@@ -178,7 +153,7 @@
       - id: ccc
         text: javac一次可同时编译数个Java源文件
       - id: ddd
-        text: "javac.exe"能指定编译结果要置于哪个目录"（directory）"
+        text: '"javac.exe"能指定编译结果要置于哪个目录"（directory）"'
     corrects:
       - bbb
       - ccc
@@ -303,9 +278,9 @@
       - id: bbb
         text: J2SDK就是Java API
       - id: ccc
-        text: "Appletviewer.exe"可利用jar选项运行".jar"文件
+        text: '"Appletviewer.exe"可利用jar选项运行".jar"文件'
       - id: ddd
-        text: 能被Appletviewer成功运行的java class文件必须有"main()"方法
+        text: 能被Appletviewer成功运行的java class文件必须有main()方法
     corrects:
       - bbb
       - ccc
@@ -446,7 +421,7 @@
   content_format: text
 
 - kind: essay
-  content: "String s = new String("xyz");创建了几个String Object？"
+  content: 'String s = new String("xyz");创建了几个String Object？'
   content_format: text
 
 - kind: essay
