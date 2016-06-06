@@ -49,8 +49,8 @@
       - ddd
 
 - kind: bool
-  content: `-0.0 == 0.0` 是相等的
-  content_format: text
+  content: "`-0.0 == 0.0` 是相等的"
+  content_format: md
   answer: true
 
 - kind: bool
@@ -91,7 +91,7 @@
   content_format: text
 
 - kind: essay
-  content: &和&&的区别
+  content: "&和&&的区别"
   content_format: text
 
 - kind: essay
@@ -115,7 +115,7 @@
   content_format: text
 
 - kind: essay
-  content: "=="与equal有何区别?
+  content: '"=="与equal有何区别?'
   content_format: text
 
 - kind: essay

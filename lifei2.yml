@@ -167,13 +167,13 @@
   answer:
     choices:
       - id: aaa
-        text: "john" == "john"
+        text: '"john" == john"'
       - id: bbb
-        text: "john".equals("john")
+        text: '"john".equals("john")'
       - id: ccc
-        text: "john" = "john"
+        text: '"john" = "john"'
       - id: ddd
-        text: "john".equals(new String("john"))
+        text: '"john".equals(new String("john"))'
     correct: ccc
 
 - kind: single_choice
