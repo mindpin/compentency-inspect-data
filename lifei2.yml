@@ -1,0 +1,807 @@
+#  JAVA试题及答案(50道选择题).doc
+- kind: single_choice
+  content: 下列说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: JAVA程序的main方法必须写在类里面
+      - id: bbb
+        text: JAVA程序中可以有多个main方法
+      - id: ccc
+        text: JAVA程序中类名必须与文件名一样
+      - id: ddd
+        text: JAVA程序的main方法中如果只有一条语句，可以不用{}(大括号)括起来
+    correct: aaa
+
+
+- kind: single_choice
+  content: |
+    Java中，在如下所示的Test类中，共有（）个构造方法
+    ```Java
+      public class Test{
+        private int x;
+        public Test(){
+          x=35;
+        }
+        public void Test(double f){
+          This.x=(int)f;
+        }
+        public Test(String s){}
+      }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 0
+      - id: bbb
+        text: 1
+      - id: ccc
+        text: 2
+      - id: ddd
+        text: 3
+    correct: ccc
+
+- kind: single_choice
+  content: 变量命名规范说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 变量由字母、下划线、数字、$符号随意组成
+      - id: bbb
+        text: 变量不能以数字作为开头
+      - id: ccc
+        text: A和a在java中是同一个变量
+      - id: ddd
+        text: 不同类型的变量，可以起相同的名字
+    correct: bbb
+
+- kind: single_choice
+  content: 下列javaDoc注释正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: /*我爱北京天安门*/
+      - id: bbb
+        text: //我爱北京天安门*/
+      - id: ccc
+        text: /**我爱北京天安门*/
+      - id: ddd
+        text: /*我爱北京天安门**/
+    correct: ccc
+
+- kind: single_choice
+  content: 为一个boolean类型变量赋值时，可以使用()方式
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: boolean = 1;
+      - id: bbb
+        text: boolean a = (9 >= 10);
+      - id: ccc
+        text: boolean a="真";
+      - id: ddd
+        text: boolean a == false;
+    correct: bbb
+
+- kind: single_choice
+  content: 以下()不是合法的标识符
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: STRING
+      - id: bbb
+        text: x3x;
+      - id: ccc
+        text: void
+      - id: ddd
+        text: de$f
+    correct: ccc
+
+
+- kind: single_choice
+  content: "表达式 (11+3*8)/4%3 的值是"
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 31
+      - id: bbb
+        text: 0
+      - id: ccc
+        text: 1
+      - id: ddd
+        text: 2
+    correct: ddd
+
+- kind: single_choice
+  content: 以下哪个表达式不可以作为循环条件
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: i++;
+      - id: bbb
+        text: i>5;
+      - id: ccc
+        text: bEqual = str.equals("q");
+      - id: ddd
+        text: count == i;
+    correct: aaa
+
+- kind: single_choice
+  content: |
+    以下程序的运行结果是
+    ```java
+    public class Increment{
+      public static void main(String args[]) {
+        int a;
+        a = 6;
+        System.out.print(a);
+        System.out.print(a++);
+        System.out.print(a);
+      }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 666
+      - id: bbb
+        text: 667
+      - id: ccc
+        text: 677
+      - id: ddd
+        text: 676
+    correct: bbb
+
+- kind: single_choice
+  content: 下列值不为true的表达式有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: "john" == "john"
+      - id: bbb
+        text: "john".equals("john")
+      - id: ccc
+        text: "john" = "john"
+      - id: ddd
+        text: "john".equals(new String("john"))
+    correct: ccc
+
+- kind: single_choice
+  content: |
+    下列输出结果是
+    ```java
+    int a = 0;
+    while(a < 5) {
+      switch(a){
+        case 0:
+        case 3: a = a + 2;
+        case 1:
+        case 2: a = a + 3;
+        default: a = a + 5;
+      }
+    }
+    System.out.print(a);
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 0
+      - id: bbb
+        text: 5
+      - id: ccc
+        text: 10
+      - id: ddd
+        text: 其他
+    correct: ccc
+
+- kind: single_choice
+  content: |
+    下列代码输出结果是
+    ```java
+    int i = 10;
+    while(i > 0){
+      i = i + 1;
+      if(i == 10){
+        break;
+      }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: while循环执行10次
+      - id: bbb
+        text: 死循环
+      - id: ccc
+        text: 循环一次都不执行
+      - id: ddd
+        text: 循环执行一次
+    correct: bbb
+
+- kind: single_choice
+  content: 下面有关for循环的描述正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: for循环体语句中，可以包含多条语句，但要用大括号括起来
+      - id: bbb
+        text: for循环只能用于循环次数已经确定的情况
+      - id: ccc
+        text: 在for循环中，不能使用break语句跳出循环
+      - id: ddd
+        text: for循环是先执行循环体语句，后进行条件判断
+    correct: aaa
+
+
+- kind: multi_choice
+  content: 下列哪些属于引用数据类型
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: String
+      - id: bbb
+        text: char
+      - id: ccc
+        text: 用户自定义的Student类类型
+      - id: ddd
+        text: int
+    corrects:
+      - aaa
+      - ccc
+
+
+- kind: single_choice
+  content: 对象的特征在类中表示为变量，称为类的()
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 对象
+      - id: bbb
+        text: 属性
+      - id: ccc
+        text: 方法
+      - id: ddd
+        text: 数据类型
+    correct: bbb
+
+
+- kind: single_choice
+  content: 在java中下列关于自动类型转换说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 基本数据类型和String相加结果一定是字符串型
+      - id: bbb
+        text: char类型和int类型相加结果一定是字符
+      - id: ccc
+        text: double类型可以自动转换为int
+      - id: ddd
+        text: char + int + double + "" 结果一定是double
+    correct: aaa
+
+- kind: multi_choice
+  content: 关于类的描叙正确的是(选择两项)
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 在类中定义的变量称为类的成员变量，在别的类中可以直接使用
+      - id: bbb
+        text: 局部变量的作用范围仅仅在定义它的方法内，或者是在定义它的控制流块中
+      - id: ccc
+        text: 使用别的类的方法仅仅需要引用方法的名字即可
+      - id: ddd
+        text: 一个类的方法使用该类的另一个方法时可以直接引用方法名
+    corrects:
+      - bbb
+      - ddd
+
+- kind: multi_choice
+  content: 下列关于字符串的描叙中错误的是(选择两项)
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 字符串是对象
+      - id: bbb
+        text: String对象存储字符串的效率比StringBuffer高
+      - id: ccc
+        text: 可以使用 StringBuffer sb="这里是字符串" 声明并初始化StringBuffer对象sb
+      - id: ddd
+        text: String类提供了许多用来操作字符串的方法：连接，提取，查询等
+    corrects:
+      - bbb
+      - ccc
+
+- kind: single_choice
+  content: 以下()代码，能够对数组正确初始化
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: int[] a;
+      - id: bbb
+        text: a = {1, 2, 3, 4, 5};
+      - id: ccc
+        text: int[] a = new int[5]{1, 2, 3, 4, 5};
+      - id: ddd
+        text: int[] a = new int[5];
+    correct: ddd
+
+
+- kind: single_choice
+  content: |
+    score是一个整数数组，有五个元素，已经正确初始化并赋值，仔细阅读下面代码，程序运行结果是
+    ```java
+    temp = score[0];
+    for (int index = 1;index < 5;index++) {
+        if (score[index] < temp) {
+            temp = score[index];
+        }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 求最大数
+      - id: bbb
+        text: 求最小数
+      - id: ccc
+        text: 找到数组最后一个元素
+      - id: ddd
+        text: 编译出错
+    correct: bbb
+
+- kind: multi_choice
+  content: 下面关于数组的说法中，错误的是(选择两项)
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 在类中声明一个整数数组作为成员变量，如果没有给它赋值，数值元素值为空
+      - id: bbb
+        text: 数组可以在内存空间连续存储任意一组数据
+      - id: ccc
+        text: 数组必须先声明，然后才能使用
+      - id: ddd
+        text: 数组本身是一个对象
+    corrects:
+      - aaa
+      - bbb
+
+- kind: single_choice
+  content: |
+    在Java中下面代码是()条语句
+    ```Java
+    int i;i=123;
+    int j=0,k=0;
+    System.out.println(i+";"+";"+j+""+k);
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 3
+      - id: bbb
+        text: 4
+      - id: ccc
+        text: 5
+      - id: ddd
+        text: 6
+    correct: bbb
+
+
+- kind: single_choice
+  content: 在Java中,关于构造方法，下列说法错误的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 构造方法的名称必须与类名相同
+      - id: bbb
+        text: 构造方法可以带参数
+      - id: ccc
+        text: 构造方法不可以重载
+      - id: ddd
+        text: 构造方法绝对不能有返回值
+    correct: ccc
+
+- kind: single_choice
+  content: |
+    执行下面代码结果
+    ```java
+    for(int i=0;;){
+      System.out.println("这是"+i);
+      break；
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 语法错误，缺少表达式2和表达式3
+      - id: bbb
+        text: 死循环
+      - id: ccc
+        text: 程序什么都不输出
+      - id: ddd
+        text: 输出：这是0
+    correct: ddd
+
+
+- kind: single_choice
+  content: |
+    下面代码输出结果是
+    ```java
+    int i=0,s=0;
+    do{
+      if (i%2 == 0 ){
+        i++;
+        continue;
+      }
+      i++;
+      s = s + i;
+    } while (i<7);
+    System.out.println(s);
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 16
+      - id: bbb
+        text: 12
+      - id: ccc
+        text: 28
+      - id: ddd
+        text: 21
+    correct: bbb
+
+
+- kind: single_choice
+  content: 下面()不是String类提供的合法的方法
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: equals(String)
+      - id: bbb
+        text: trim()
+      - id: ccc
+        text: append()
+      - id: ddd
+        text: indexOf()
+    correct: ccc
+
+- kind: single_choice
+  content: 在JAVA中，以下()类的对象以键值的方式存储对象
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: java.util.List
+      - id: bbb
+        text: java.util.ArrayList
+      - id: ccc
+        text: java.util.HashMap
+      - id: ddd
+        text: java.util.LinkedList
+    correct: ccc
+
+
+- kind: single_choice
+  content: |
+    给定如下所示的JAVA代码，则运行时，会产生()类型的异常
+    ```java
+    String s = null;
+    s.concat("abc");
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: ArithmeticException
+      - id: bbb
+        text: NullPointerException
+      - id: ccc
+        text: IOException
+      - id: ddd
+        text: ClassNotFoundException
+    correct: bbb
+
+
+- kind: multi_choice
+  content: |
+    给定java代码如下所示，在A处新增下列()方法，是对cal方法的重载(选择两项)
+    ```java
+    public class Test {
+      public void cal(int x, int y, int z) {
+      }
+      //A
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: public int cal(int x,int y,float z){return 0;}
+      - id: bbb
+        text: public int cal(int x,int y,int z){return 0;}
+      - id: ccc
+        text: public void cal(int x,int z){}
+      - id: ddd
+        text: public viod cal(int z,int y,int x){}
+    corrects:
+      - aaa
+      - ccc
+
+
+- kind: single_choice
+  content: |
+    给定如下Java 程序代码片段，编译运行这段代码，结果是
+    ```Java
+    java.util.HashMap map = new java.util.HashMap();
+    map.put("name",null);
+    map.put("name","Jack");
+    System.out.println(map.get("name"));
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: null
+      - id: bbb
+        text: Jack
+      - id: ccc
+        text: nullJack
+      - id: ddd
+        text: 运行时出现异常
+    correct: bbb
+
+- kind: single_choice
+  content: |
+    给定以下JAVA代码，这段代码编译运行后输出的结果是
+    ```java
+    public class Test {
+      public static int aMethod(int i) throws Exception {
+        try{
+          return i/10;
+        }catch(Exception ex){
+          throw new Exception ("exception in a aMothod");
+        }finally{
+          System.out.print("finally");
+        }
+      }
+      public static void main(String [] args) {
+        try{
+          aMethod(0);
+        }catch(Exception ex){
+          System.out.print("exception in main");
+        }
+        System.out.print("finished");
+      }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: finallyexception in mainfinished
+      - id: bbb
+        text: exception in mainfinally
+      - id: ccc
+        text: finallyfinished
+      - id: ddd
+        text: finallyexception in mainfinished
+    correct: aaa
+
+
+- kind: multi_choice
+  content: 在Java中，下面对于构造函数的描述错误的是(选择两项)
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 类不一定要显式定义构造函数
+      - id: bbb
+        text: 构造函数的返回类型是void
+      - id: ccc
+        text: 如果构造函数不带任何参数，那么构造函数的名称和类名可以不同
+      - id: ddd
+        text: 一个类可以定义多个构造函数
+    corrects:
+      - bbb
+      - ccc
+
+
+- kind: single_choice
+  content: 在Java语言中，下列关于类的继承的描述，正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 一个类可以继承多个父类
+      - id: bbb
+        text: 一个类可以具有多个子类
+      - id: ccc
+        text: 子类可以使用父类的所有方法
+      - id: ddd
+        text: 子类一定比父类有更多的成员方法
+    correct: bbb
+
+
+- kind: single_choice
+  content: 下列选项中关于Java中super关键字的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: super关键字是在子类对象内部指代其父类对象的引用
+      - id: bbb
+        text: super关键字不仅可以指代子类的直接父类，还可以指代父类的父类
+      - id: ccc
+        text: 子类通过super关键字只能调用父类的方法，而不能调用父类的属性
+      - id: ddd
+        text: 子类通过super关键字只能调用父类的属性，而不能调用父类的方法
+    correct: aaa
+
+
+- kind: multi_choice
+  content: 在Java接口中，下列选项中有效的方法声明是(选择二项)
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: public void aMethod();
+      - id: bbb
+        text: void aMethod();
+      - id: ccc
+        text: protected void aMethod();
+      - id: ddd
+        text: private void aMethod();
+    corrects:
+      - aaa
+      - bbb
+
+- kind: single_choice
+  content: 在JAVA的异常处理模型中，能单独和finally语句一起使用的块是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: try
+      - id: bbb
+        text: catch
+      - id: ccc
+        text: throw
+      - id: ddd
+        text: throws
+    correct: aaa
+
+
+- kind: single_choice
+  content: |
+    分析如下Java代码，编译运行后将输出
+    ```java
+    public class Test {
+      public Test(){}
+      static void print(ArrayList al){
+        al.add(2);
+        al=new ArrayList();
+        al.add(3);
+        al.add(4);
+      }
+      public static void main(String[]args){
+        Test test=new Test();
+        ArrayList al=new ArrayList();
+        al.add(1);
+        print(al);
+        System.out.println(al.get(1));
+      }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 1
+      - id: bbb
+        text: 2
+      - id: ccc
+        text: 3
+      - id: ddd
+        text: 4
+    correct: bbb
+
+- kind: single_choice
+  content: 在JAVA中，Object类是所有类的父亲，用户自定义类默认扩展自Object类，下列选项中的()方法不属于Object类的方法
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: equals(Object obj)
+      - id: bbb
+        text: getClass()
+      - id: ccc
+        text: toString()
+      - id: ddd
+        text: trim()
+    correct: ddd
+
+- kind: single_choice
+  content: 下列选项中关于Java中封装的说法错误的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 封装就是将属性私有化，提供共有的方法访问私有属性
+      - id: bbb
+        text: 属性的访问方法包括setter方法和getter方法
+      - id: ccc
+        text: setter方法用于赋值，getter方法用于取值
+      - id: ddd
+        text: 包含属性的类都必须封装属性，否则无法通过编译
+    correct: ddd
+
+
+- kind: single_choice
+  content: Java中，如果类C是类B的子类，类B是类A的子类，那么下面描述正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: C不仅继承了B中的成员，同样也继承了A中的成员
+      - id: bbb
+        text: C只继承了B中的成员
+      - id: ccc
+        text: C只继承了A中的成员
+      - id: ddd
+        text: C不能继承A或B中的成员
+    correct: aaa
+
+- kind: single_choice
+  content: 分析选项中关于Java中this关键字的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: this关键字是在对象内部指代自身的引用
+      - id: bbb
+        text: this关键字可以在类中的任何位置使用
+      - id: ccc
+        text: this关键字和类关联，而不是和特定的对象关联
+      - id: ddd
+        text: 同一个类的不同对象共用一个this
+    correct: aaa
+
+- kind: single_choice
+  content: 在JAVA中，LinkedList类和ArrayList类同属于集合框架类，下列()选项中的方法是LinkedList类有而ArrayList类没有的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: add(Object o)
+      - id: bbb
+        text: add(int index，Object o)
+      - id: ccc
+        text: remove(Object o)
+      - id: ddd
+        text: removeLast()
+    correct: ddd
