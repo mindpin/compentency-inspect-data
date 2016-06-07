@@ -1,0 +1,47 @@
+- kind: essay
+  content: Lock与Synchronized的区别
+  content_format: text
+  points:
+    - 线程
+
+- kind: essay
+  content: Java HashSet工作原理及实现
+  content_format: text
+  points:
+    - 常见数据类型
+
+- kind: essay
+  content: 画图说明，下面的代码在堆、栈以及常量池中的区别
+  content_format: text
+  points:
+    - 语法基础
+
+- kind: essay
+  content: 详述JAVA异常处理机制
+  content_format: text
+  points:
+    - 语法基础
+
+- kind: essay
+  content: 画图解释SQL Join 语句
+  content_format: text
+  points:
+    - SQL
+
+- kind: essay
+  content: 从多个层面解释抽像类与接口的区别
+  content_format: text
+  points:
+    - 抽象类，接口，继承
+
+- kind: essay
+  content: 举例说明JS中的this指向
+  content_format: text
+  points:
+    - js基础
+
+- kind: essay
+  content: 举例说明JS创建对象的模式
+  content_format: text
+  points:
+    - js基础

@@ -27,9 +27,7 @@ path = File.expand_path("../", __FILE__)
 Dir[File.join(path, "*.yml")].each do |yaml_file|
   yaml = YAML.load_file yaml_file
   yaml.each do |item|
-    next if item["points"].nil?
-    next if item["points"][0].nil?
-
+    p item
     kind  = item["kind"]
     point = item["points"][0]
     tongji_info[point][kind][:count] += 1
