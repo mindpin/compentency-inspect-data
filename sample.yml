@@ -3,36 +3,50 @@
   content: abstract 修饰符可修饰字段、方法和类
   content_format: text
   answer: false
+  points:
+    - 抽象类，接口，继承
 
 - kind: bool
   content: 声明抽象方法不可写出大括号
   content_format: text
   answer: true
+  points:
+    - 抽象类，接口，继承
 
 - kind: bool
   content: Runable接口里只有一个抽象的run()方法
   content_format: text
   answer: true
+  points:
+    - 线程
 
 - kind: bool
   content: 类成员的默认访问权限是private
   content_format: text
   answer: false
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: 在类内使用类的成员时,不需要使用对象名或类名作前缀
   content_format: text
   answer: false
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: Java的源代码中定义几个类,就编译成几个以.class为后缀的字节码文件
   content_format: text
   answer: true
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: 有抽象方法的类可以定义为抽象类,但抽象类中可以没有抽象方法
   content_format: text
   answer: true
+  points:
+    - 抽象类，接口，继承
 
 # 单选
 
@@ -68,40 +82,8 @@
       - id: ddd
         text: 编译失败
     correct: ddd
-
-- kind: single_choice
-  content: |
-    如下代码
-    ```java
-    class Super {
-      public Integer getLenght() { return new Integer(4); }
-    }
-
-    public class Sub extends Super {
-      public Long getLenght() { return new Long(5); }
-      public static void main(String[] args) {
-        Super sooper = new Super();
-        Sub sub = new Sub();
-        System.out.println(sooper.getLenght().toString() + "," +
-        sub.getLenght().toString() );
-      }
-    }
-    ```
-    输出是什么?
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 4,4
-      - id: bbb
-        text: 4,5
-      - id: ccc
-        text: 5,4
-      - id: ddd
-        text: 5,5
-      - id: eee
-        text: 编译失败,重定时不能改变返回类型
-    correct: aaa
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在 Servlet 处理请求的方式为
@@ -117,6 +99,8 @@
       - id: ddd
         text: 以响应的方式
     correct: ccc
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: JDBC中,用于表示数据库连接的对象是
@@ -132,6 +116,8 @@
       - id: ddd
         text: PreparedStatement
     correct: bbb
+  points:
+    - jdbc 相关概念
 
 - kind: single_choice
   content: 用于调用存储过程的对象是
@@ -147,6 +133,8 @@
       - id: ddd
         text: PreparedStatement
     correct: ccc
+  points:
+    - jdbc 相关概念
 
 - kind: single_choice
   content: 按照MVC设计模式,JSP用于实现
@@ -162,6 +150,8 @@
       - id: ddd
         text: 容器
     correct: bbb
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: |
@@ -189,6 +179,8 @@
       - id: ddd
         text: 16行以后
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -219,6 +211,8 @@
       - id: eee
         text: 运行时抛出异常
     correct: bbb
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 在 J2EE 中属于 Web 层的组件有
@@ -234,6 +228,8 @@
       - id: ddd
         text: HTML
     correct: aaa
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: 在 Servlet 的生命周期中,容器只调用一次的方法是
@@ -249,6 +245,8 @@
       - id: ddd
         text: destroy
     correct: ccc
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: 以下关于异常的说法正确的是?
@@ -264,6 +262,8 @@
       - id: ddd
         text: 可能抛出系统异常的方法是不需要申明异常的
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -292,6 +292,8 @@
       - id: ddd
         text: 运行时抛出异常
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: jsp 指令中`isELIgnored="boolean"`的意思是?
@@ -307,21 +309,8 @@
       - id: ddd
         text: 没有具体的含义
     correct: ccc
-
-- kind: single_choice
-  content: 下面关于 Java 的引用,说法正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 引用实际上就是指针
-      - id: bbb
-        text: 引用本身是 Primitive
-      - id: ccc
-        text: 引用就是对象本身
-      - id: ddd
-        text: 一个对象只能被一个引用所指引
-    correct: bbb
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: 对于 import java.util 包,以下那种说法是错误的
@@ -337,6 +326,8 @@
       - id: ddd
         text: Vector 类是 Sun 公司的产品
     correct: ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 在一个线程中 Sleep(1000) 方法,将使得该线程在多少时间后获得对 CPU 的控制(假设睡眠过程中不会有其他事件唤醒该线程)?
@@ -352,6 +343,8 @@
       - id: ddd
         text: 不一定
     correct: ccc
+  points:
+    - 线程
 
 - kind: single_choice
   content: 在WEB-INF目录下,必须存放的文件为
@@ -367,64 +360,8 @@
       - id: ddd
         text: html文件
     correct: bbb
-
-- kind: single_choice
-  content: 下面关于垃圾收集的说法正确的是?
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 一旦一个对象成为垃圾,就立刻被收集掉
-      - id: bbb
-        text: 对象空间被收集掉之后,会执行该对象的finalize方法
-      - id: ccc
-        text: finalize方法和C++的析构函数是完全一回事情
-      - id: ddd
-        text: 一个对象成为垃圾是因为不再有引用指着它,但是线程并非如此。
-    correct: ddd
-
-- kind: single_choice
-  content: |
-    下面的语句会产生什么样的输出?
-    ```java
-      System.out.println(4&7);
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 4
-      - id: bbb
-        text: 5
-      - id: ccc
-        text: 6
-      - id: ddd
-        text: 7
-      - id: eee
-        text: 0
-    correct: aaa
-
-- kind: single_choice
-  content: |
-    下面的程序中,temp的最终值是什么?
-    ```java
-      long temp=(int)3.9;
-      temp%=2;
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 0
-      - id: bbb
-        text: 1
-      - id: ccc
-        text: 2
-      - id: ddd
-        text: 3
-      - id: eee
-        text: 4
-    correct: bbb
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: 下面哪个不是JAVA关键字?
@@ -440,36 +377,8 @@
       - id: ddd
         text: default
     correct: aaa
-
-- kind: single_choice
-  content: Which method is used by a Servlet to place its session ID in a URL that is written to the servlet‘s response output stream?
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: The encodeURL method of the HttpServletRequest interface
-      - id: bbb
-        text: The encodeURL method of the HttpServletResponse interface
-      - id: ccc
-        text: The rewriteURL method of the HttpServletRequest interface
-      - id: ddd
-        text: The rewriteURL method of the HttpServletResponse interface
-    correct: bbb
-
-- kind: single_choice
-  content: 每个使用Swing构件的程序必须有一个()
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 按钮
-      - id: bbb
-        text: 标签
-      - id: ccc
-        text: 菜单
-      - id: ddd
-        text: 容器
-    correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列标识符(名字)命名原则中,正确的是()
@@ -485,13 +394,15 @@
       - id: ddd
         text: 常量完全大写
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
     类Test1定义如下:
     ```
     1. public class Test1{
-    2. public float aMethodfloat afloat b{ return 0;}
+    2. public float aMethod(float a, float b){ return 0;}
     3.
     4. }
     ```
@@ -508,6 +419,8 @@
       - id: ddd
         text: private float aMethod(int a, int b, int c){ return 0;}
     correct: bbb
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 哪个语句创建了一个数组实例?
@@ -523,6 +436,8 @@
       - id: ddd
         text: int ia [][] = {4, 5, 6} {1, 2, 3};
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: "以public修饰的类如: public class Car{...} 则Car( )"
@@ -538,36 +453,8 @@
       - id: ddd
         text: 不能被其它类继承
     correct: aaa
-
-- kind: single_choice
-  content: 下列哪个属于容器型构件
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: JEdit
-      - id: bbb
-        text: JButton
-      - id: ccc
-        text: JPanel
-      - id: ddd
-        text: JTextField
-    correct: ccc
-
-- kind: single_choice
-  content: Java程序的执行过程中用到一套JDK工具,其中java.exe是指
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Java文档生成器
-      - id: bbb
-        text: Java解释器
-      - id: ccc
-        text: Java编译器
-      - id: ddd
-        text: Java类分解器
-    correct: bbb
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 下列关于构造方法的叙述中,错误的是
@@ -583,6 +470,8 @@
       - id: ddd
         text: Java语言规定构造方法只能通过new自动调用
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 构造函数何时被调用?
@@ -598,6 +487,8 @@
       - id: ddd
         text: 使用对象的变量时
     correct: bbb
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: break语句()
@@ -613,6 +504,8 @@
       - id: ddd
         text: 只中断某一层的循环
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: Java语言中下面哪个可以用作正确的变量名称()
@@ -628,21 +521,8 @@
       - id: ddd
         text: implements
     correct: bbb
-
-- kind: single_choice
-  content: 下面哪一个不能作JSP的服务器()
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: IBM WebSphere
-      - id: bbb
-        text: BEA WebLogic
-      - id: ccc
-        text: Tomcat
-      - id: ddd
-        text: pws
-    correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下面哪项不是JSP操作指令()
@@ -658,21 +538,8 @@
       - id: ddd
         text: import
     correct: ddd
-
-- kind: single_choice
-  content: 如果希望控件在界面上按表格行分列排列,应使用下列那种布局管理器?
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: BoxLayout
-      - id: bbb
-        text: GridLayout
-      - id: ccc
-        text: BorderLayout
-      - id: ddd
-        text: FlowLouLayout
-    correct: bbb
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: 下面哪一项不是Java类访问控制关键字?
@@ -688,6 +555,8 @@
       - id: ddd
         text: private
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在配置tomcat虚拟目录时,需要打开哪个文件?
@@ -703,21 +572,8 @@
       - id: ddd
         text: 其他都不是
     correct: ccc
-
-- kind: single_choice
-  content: 下面哪个不是表单标记
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: INPUT
-      - id: bbb
-        text: RADIO
-      - id: ccc
-        text: CHECKBOX
-      - id: ddd
-        text: TR
-    correct: ddd
+  points:
+    - tomcat, glassfish, weblogic 等中间件配置使用
 
 - kind: single_choice
   content: 下面哪项不是response对象的方法
@@ -733,6 +589,8 @@
       - id: ddd
         text: sendError(int errorcode)
     correct: ccc
+  points:
+    - servlet, jsp
 
 - kind: single_choice
   content: 以下()是编写Servlet必须导入的包
@@ -748,21 +606,8 @@
       - id: ddd
         text: java.lang.*
     correct: bbb
-
-- kind: single_choice
-  content: 下面哪项不属于SQL语句的子类
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 数据定义语言(DDL)
-      - id: bbb
-        text: 数据查询语言(DQL)
-      - id: ccc
-        text: 事务控制语言(TCL)
-      - id: ddd
-        text: 数据插入语言(DIL)
-    correct: ddd
+  points:
+    - servlet, jsp
 
 # 多选
 
@@ -782,6 +627,8 @@
     corrects:
       - aaa
       - ddd
+  points:
+    - servlet, jsp
 
 - kind: multi_choice
   content: 按照学生平均成绩(avg_grade)将students表中的数据检索出来,下面SQL语句正确的是
@@ -800,6 +647,8 @@
       - aaa
       - ccc
       - ddd
+  points:
+    - SQL
 
 - kind: multi_choice
   content: 下列是jsp作用域的通信对象的有
@@ -818,6 +667,8 @@
       - aaa
       - bbb
       - ccc
+  points:
+    - servlet, jsp
 
 - kind: multi_choice
   content: 在接口中以下哪条定义是正确的?
@@ -837,6 +688,8 @@
     corrects:
       - aaa
       - bbb
+  points:
+    - 抽象类，接口，继承
 
 - kind: multi_choice
   content: 下面哪个语句正确地声明一个整型的二维数组
@@ -857,7 +710,8 @@
       - ccc
       - ddd
       - eee
-
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面哪些不是java的简单数据类型?
@@ -875,6 +729,8 @@
     corrects:
       - bbb
       - ccc
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面哪些语句能够正确地生成5个空字符串?
@@ -894,24 +750,8 @@
     corrects:
       - aaa
       - bbb
-
-- kind: multi_choice
-  content: 下列说法错误的有
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 数组是一种对象
-      - id: bbb
-        text: 数组属于一种原生类
-      - id: ccc
-        text: int number=[]={31,23,33,43,35,63}
-      - id: ddd
-        text: 数组的大小可以任意改变
-    corrects:
-      - bbb
-      - ccc
-      - ddd
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 不能用来修饰interface的有
@@ -930,26 +770,8 @@
       - aaa
       - ccc
       - ddd
-
-
-- kind: multi_choice
-  content: 下列说法错误的有
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 在类方法中可用this来调用本类的类方法
-      - id: bbb
-        text: 在类方法中调用本类的类方法时可直接调用
-      - id: ccc
-        text: 在类方法中只能调用本类中的类方法
-      - id: ddd
-        text: 在类方法中绝对不能调用实例方法
-    corrects:
-      - aaa
-      - ccc
-      - ddd
-
+  points:
+    - 抽象类，接口，继承
 
 - kind: multi_choice
   content: |
@@ -976,6 +798,8 @@
     corrects:
       - bbb
       - ddd
+  points:
+    - 抽象类，接口，继承
 
 - kind: multi_choice
   content: 下列标识符不合法的有
@@ -994,25 +818,8 @@
       - aaa
       - ccc
       - ddd
-
-- kind: multi_choice
-  content: 在接口中以下哪条定义是正确的?
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: void methoda();
-      - id: bbb
-        text: public double methoda();
-      - id: ccc
-        text: public final double methoda();
-      - id: ddd
-        text: static void methoda(double d1);
-      - id: eee
-        text: protected void methoda(double d1);
-    corrects:
-      - aaa
-      - bbb
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 以下哪四个能使用throw抛出?
@@ -1036,6 +843,8 @@
       - ddd
       - eee
       - fff
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: javax.Servlet的包中,属于类的是
@@ -1053,6 +862,8 @@
     corrects:
       - bbb
       - ccc
+  points:
+    - servlet, jsp
 
 - kind: multi_choice
   content: |
@@ -1081,6 +892,8 @@
     corrects:
       - ccc
       - eee
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 对该段代码描述正确的有`<% int i = Integer.parseInt(request.getParemeter("value")) %>`
@@ -1090,7 +903,7 @@
       - id: aaa
         text: 不会有错
       - id: bbb
-        text: 当value与int类型不匹配时回报错
+        text: 当value与int类型不匹配时会报错
       - id: ccc
         text: 当value=""时会报错
       - id: ddd
@@ -1099,29 +912,8 @@
       - bbb
       - ccc
       - ddd
-
-- kind: multi_choice
-  content: 选出所有正确的答案
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: <%= YoshiBean.size %>
-      - id: bbb
-        text: <%= YoshiBean.getSize() %>
-      - id: ccc
-        text: <%= YoshiBean.getProperty("size") %>
-      - id: ddd
-        text: <JSP:getProperty id="YoshiBean" param="size"/>
-      - id: eee
-        text: <jsp:getProperty name="YoshiBean" param="size"/>
-      - id: fff
-        text: <jsp:getProperty id="YoshiBean" property="size"/>
-      - id: ggg
-        text: <jsp:getProperty name="YoshiBean" property="size"/>
-    corrects:
-      - bbb
-      - ggg
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面哪三个描述是正确的
@@ -1142,6 +934,8 @@
       - bbb
       - ccc
       - eee
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 哪二种声明防止方法覆盖?
@@ -1161,58 +955,18 @@
     corrects:
       - aaa
       - ddd
+  points:
+    - 类，对象，方法
 
 # 简答
 - kind: essay
   content: JSP和Servlet有哪些相同点和不同点,他们之间的联系是什么
   content_format: text
-
-- kind: essay
-  content: swtich是否能作用在byte上,是否能作用在long上,是否能作用在String上?
-  content_format: text
-
-- kind: essay
-  content: 说出数据连接池的工作机制是什么?
-  content_format: text
+  points:
+    - servlet, jsp
 
 - kind: essay
   content: 多线程有几种实现方法,都是什么?同步有几种实现方法,都是什么?
   content_format: text
-
-- kind: essay
-  content: 描述 forward 和 redirect 的区别
-  content_format: text
-
-- kind: essay
-  content: Static变量是什么含义
-  content_format: text
-
-- kind: essay
-  content: 垃圾回收器的基本原理是什么?垃圾回收器可以马上回收内存吗?有什么办法主动通知虚拟机进行垃圾回收?
-  content_format: text
-
-- kind: essay
-  content: Overload和Override的区别。Overloaded的方法是否可以改变返回值的类型?
-  content_format: text
-
-- kind: essay
-  content: 说出Servlet的生命周期,并说出Servlet和CGI的区别
-  content_format: text
-
-# 文件上传
-
-- kind: file_upload
-  content: 写一个算法对 1 8 5 2 4 9 7 进行顺序排列。
-  content_format: text
-
-- kind: file_upload
-  content: 写一段Jdbc连接Oracle的程序,并实现数据查询。
-  content_format: text
-
-- kind: file_upload
-  content: 写一个Singleton(单例模式)出来。
-  content_format: text
-
-- kind: file_upload
-  content: 用循环控制语句打印输出:1+3+5+??.+99=? 结果。
-  content_format: text
+  points:
+    - 线程

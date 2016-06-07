@@ -13,7 +13,8 @@
       - id: ddd
         text: JAVA程序的main方法中如果只有一条语句，可以不用{}(大括号)括起来
     correct: aaa
-
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -42,6 +43,8 @@
       - id: ddd
         text: 3
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 变量命名规范说法正确的是
@@ -57,6 +60,8 @@
       - id: ddd
         text: 不同类型的变量，可以起相同的名字
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列javaDoc注释正确的是
@@ -72,6 +77,8 @@
       - id: ddd
         text: /*我爱北京天安门**/
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 为一个boolean类型变量赋值时，可以使用()方式
@@ -87,6 +94,8 @@
       - id: ddd
         text: boolean a == false;
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 以下()不是合法的标识符
@@ -102,7 +111,8 @@
       - id: ddd
         text: de$f
     correct: ccc
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: "表达式 (11+3*8)/4%3 的值是"
@@ -118,6 +128,8 @@
       - id: ddd
         text: 2
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 以下哪个表达式不可以作为循环条件
@@ -133,6 +145,8 @@
       - id: ddd
         text: count == i;
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -160,6 +174,8 @@
       - id: ddd
         text: 676
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列值不为true的表达式有
@@ -175,6 +191,8 @@
       - id: ddd
         text: '"john".equals(new String("john"))'
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -204,6 +222,8 @@
       - id: ddd
         text: 其他
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -229,6 +249,8 @@
       - id: ddd
         text: 循环执行一次
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下面有关for循环的描述正确的是
@@ -244,7 +266,8 @@
       - id: ddd
         text: for循环是先执行循环体语句，后进行条件判断
     correct: aaa
-
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下列哪些属于引用数据类型
@@ -262,7 +285,8 @@
     corrects:
       - aaa
       - ccc
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 对象的特征在类中表示为变量，称为类的()
@@ -278,7 +302,8 @@
       - id: ddd
         text: 数据类型
     correct: bbb
-
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在java中下列关于自动类型转换说法正确的是
@@ -294,6 +319,8 @@
       - id: ddd
         text: char + int + double + "" 结果一定是double
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 关于类的描叙正确的是(选择两项)
@@ -311,6 +338,8 @@
     corrects:
       - bbb
       - ddd
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 下列关于字符串的描叙中错误的是(选择两项)
@@ -328,6 +357,8 @@
     corrects:
       - bbb
       - ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 以下()代码，能够对数组正确初始化
@@ -343,7 +374,8 @@
       - id: ddd
         text: int[] a = new int[5];
     correct: ddd
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -368,6 +400,8 @@
       - id: ddd
         text: 编译出错
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面关于数组的说法中，错误的是(选择两项)
@@ -385,6 +419,8 @@
     corrects:
       - aaa
       - bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -406,7 +442,8 @@
       - id: ddd
         text: 6
     correct: bbb
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 在Java中,关于构造方法，下列说法错误的是
@@ -422,6 +459,8 @@
       - id: ddd
         text: 构造方法绝对不能有返回值
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -444,7 +483,8 @@
       - id: ddd
         text: 输出：这是0
     correct: ddd
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -473,7 +513,8 @@
       - id: ddd
         text: 21
     correct: bbb
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下面()不是String类提供的合法的方法
@@ -489,6 +530,8 @@
       - id: ddd
         text: indexOf()
     correct: ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 在JAVA中，以下()类的对象以键值的方式存储对象
@@ -504,7 +547,8 @@
       - id: ddd
         text: java.util.LinkedList
     correct: ccc
-
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: |
@@ -525,7 +569,8 @@
       - id: ddd
         text: ClassNotFoundException
     correct: bbb
-
+  points:
+    - 常用基础类库
 
 - kind: multi_choice
   content: |
@@ -551,7 +596,8 @@
     corrects:
       - aaa
       - ccc
-
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -574,6 +620,8 @@
       - id: ddd
         text: 运行时出现异常
     correct: bbb
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -611,7 +659,8 @@
       - id: ddd
         text: finallyexception in mainfinished
     correct: aaa
-
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 在Java中，下面对于构造函数的描述错误的是(选择两项)
@@ -629,7 +678,8 @@
     corrects:
       - bbb
       - ccc
-
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在Java语言中，下列关于类的继承的描述，正确的是
@@ -645,7 +695,8 @@
       - id: ddd
         text: 子类一定比父类有更多的成员方法
     correct: bbb
-
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 下列选项中关于Java中super关键字的说法正确的是
@@ -661,7 +712,8 @@
       - id: ddd
         text: 子类通过super关键字只能调用父类的属性，而不能调用父类的方法
     correct: aaa
-
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 在Java接口中，下列选项中有效的方法声明是(选择二项)
@@ -679,6 +731,8 @@
     corrects:
       - aaa
       - bbb
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 在JAVA的异常处理模型中，能单独和finally语句一起使用的块是
@@ -694,7 +748,8 @@
       - id: ddd
         text: throws
     correct: aaa
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -729,6 +784,8 @@
       - id: ddd
         text: 4
     correct: bbb
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: 在JAVA中，Object类是所有类的父亲，用户自定义类默认扩展自Object类，下列选项中的()方法不属于Object类的方法
@@ -744,6 +801,8 @@
       - id: ddd
         text: trim()
     correct: ddd
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 下列选项中关于Java中封装的说法错误的是
@@ -759,7 +818,8 @@
       - id: ddd
         text: 包含属性的类都必须封装属性，否则无法通过编译
     correct: ddd
-
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: Java中，如果类C是类B的子类，类B是类A的子类，那么下面描述正确的是
@@ -775,6 +835,8 @@
       - id: ddd
         text: C不能继承A或B中的成员
     correct: aaa
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 分析选项中关于Java中this关键字的说法正确的是
@@ -790,6 +852,8 @@
       - id: ddd
         text: 同一个类的不同对象共用一个this
     correct: aaa
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在JAVA中，LinkedList类和ArrayList类同属于集合框架类，下列()选项中的方法是LinkedList类有而ArrayList类没有的
@@ -805,3 +869,5 @@
       - id: ddd
         text: removeLast()
     correct: ddd
+  points:
+    - 常见数据类型
