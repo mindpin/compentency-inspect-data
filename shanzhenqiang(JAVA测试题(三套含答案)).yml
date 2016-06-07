@@ -971,24 +971,6 @@
       - ddd
 
 - kind: multi_choice
-  content: 下列正确的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: call by value不会改变实际参数的数值
-      - id: bbb
-        text: call by reference能改变实际参数的参考地址
-      - id: ccc
-        text: call by reference不能改变实际参数的参考地址
-      - id: ddd
-        text: call by reference能改变实际参数的内容
-    corrects:
-      - aaa
-      - ccc
-      - ddd
-
-- kind: multi_choice
   content: 下列说法错误的有（）
   content_format: text
   answer:
@@ -1003,42 +985,6 @@
         text: 在类方法中绝对不能调用实例方法
     corrects:
       - aaa
-      - ccc
-      - ddd
-
-- kind: multi_choice
-  content: 下列说法错误的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Java面向对象语言容许单独的过程与函数存在
-      - id: bbb
-        text: Java面向对象语言容许单独的方法存在
-      - id: ccc
-        text: Java语言中的方法属于类中的成员（member）
-      - id: ddd
-        text: Java语言中的方法必定隶属于某一类（对象），调用方法与过程或函数相同
-    corrects:
-      - aaa
-      - bbb
-      - ccc
-
-- kind: multi_choice
-  content: 下列说法错误的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 能被java.exe成功运行的java class文件必须有main()方法
-      - id: bbb
-        text: J2SDK就是Java API
-      - id: ccc
-        text: Appletviewer.exe可利用jar选项运行.jar文件
-      - id: ddd
-        text: 能被Appletviewer成功运行的java class文件必须有main()方法
-    corrects:
-      - bbb
       - ccc
       - ddd
 

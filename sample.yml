@@ -774,26 +774,6 @@
     - 抽象类，接口，继承
 
 - kind: multi_choice
-  content: 下列说法错误的有
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 在类方法中可用this来调用本类的类方法
-      - id: bbb
-        text: 在类方法中调用本类的类方法时可直接调用
-      - id: ccc
-        text: 在类方法中只能调用本类中的类方法
-      - id: ddd
-        text: 在类方法中绝对不能调用实例方法
-    corrects:
-      - aaa
-      - ccc
-      - ddd
-  points:
-    - 类，对象，方法
-
-- kind: multi_choice
   content: |
     如下代码
     ```java
