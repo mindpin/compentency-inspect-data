@@ -1,62 +1,22 @@
-- kind: multi_choice
-  content: Linux 高效、灵活的系统管理离不开文本环境操作。vi 编辑器是Linux 系统中最常用的编辑器，使用文本编辑器具有的优点是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 文字环境操作方式下可以高效地完成所有的任务
-      - id: bbb
-        text: 可以比较容易地了解到Linux 的运作状况
-      - id: ccc
-        text: 对于要求做服务器的主机，使用字符界面不用启动图形工作环境，大大地节省了系统资 源开销
-      - id: ddd
-        text: 命令好记忆
-    corrects:
-      - aaa
-      - bbb
-      - ccc
-  points:
-    - shell脚本
-
 - kind: single_choice
   content: Shell脚本可以包含任意从键盘输入的Linux 命令。建立 Shell脚本的步骤与建立普通文本文件的步骤相同，利用编辑器( 如 vi) 进行程序录入和编辑加工，虽然脚本名没有什么限制，为了方便认识，还是建议脚本的后缀名最好为
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: exe 
+        text: exe
       - id: bbb
-        text: doc 
+        text: doc
       - id: ccc
-        text: c 
+        text: c
       - id: ddd
-        text: sh 
+        text: sh
     correct: ddd
   points:
     - shell脚本
 
-- kind: multi_choice
-  content: 执行Shell脚本的方式包括
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 输入重定向：即用输入重定向方式让 Shell从给定文件中读入命令行，并进行相应 处理。其一般形式为：bash<  脚本名
-      - id: bbb
-        text: 以脚本名作为参数。其一般形式为：bash   脚本名
-      - id: ccc
-        text: 将Shell脚本的权限设置为可执行，然后在提示符后输入脚本名直接执行。
-      - id: ddd
-        text: 将Shell脚本的权限设置为不可执行
-    corrects:
-      - aaa
-      - bbb
-      - ccc
-  points:
-    - shell脚本
-
 - kind: single_choice
-  content: 要使用环境变量或其他Shell变量，必须在变量名前加上一个 “（  ）”符号而不能直接使用变量名。
+  content: 要使用环境变量或其他Shell变量，必须在变量名前加上一个（）符号而不能直接使用变量名。
   content_format: text
   answer:
     choices:
@@ -65,7 +25,7 @@
       - id: bbb
         text: '#'
       - id: ccc
-        text: ~ 
+        text: ~
       - id: ddd
         text: '&'
     correct: aaa
@@ -73,80 +33,35 @@
     - shell脚本
 
 - kind: single_choice
-  content: Shell从环境变量（   ）中查找命令的目录列表。它是一个非常重要的Shell变量。该环境变量中包含有带冒号分界符的字符串，这些字符串指向包含所使用命令的目录。该环境变量中的字符串顺序决定了先从哪个目录查找。
+  content: Shell从环境变量（）中查找命令的目录列表。它是一个非常重要的Shell变量。该环境变量中包含有带冒号分界符的字符串，这些字符串指向包含所使用命令的目录。该环境变量中的字符串顺序决定了先从哪个目录查找。
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: HOME 
+        text: HOME
       - id: bbb
         text: LOGNAME
       - id: ccc
-        text: PATH 
+        text: PATH
       - id: ddd
-        text: LANG 
+        text: LANG
     correct: ccc
   points:
     - shell脚本
 
 - kind: single_choice
-  content: 下面环境变量（  ）表示命令行中输入的所有参数串。
+  content: 下面环境变量（）表示命令行中输入的所有参数串。
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: '$# '
+        text: '$#'
       - id: bbb
-        text: $@ 
+        text: $@
       - id: ccc
-        text: $$ 
+        text: $$
       - id: ddd
         text: $*
     correct: bbb
-  points:
-    - shell脚本
-
-- kind: bool
-  content: Shell变量比C语言中的变量简单得多，没有众多存储类及类型的限制，也不需要预先定义，然后才能赋值，可以在使用时“现定义、现赋值”。
-  content_format: text
-  answer: true
-  points:
-    - shell脚本
-
-- kind: bool
-  content: 用户定义的变量是最普通的Shell变量。变量名是以字母或下划线打头的字母、数字和 下线线序列，并且大小写字母意义相同同。例如，dir与Dir是不同的变量。这与C语言中标识符的定义相同。变量名的长度不受限制。
-  content_format: text
-  answer: false
-  points:
-    - shell脚本
-
-- kind: bool
-  content: 在赋值语句中，赋值号“=”的两边没有空格，否则在执行时会引起错误。
-  content_format: text
-  answer: true
-  points:
-    - shell脚本
-
-- kind: bool
-  content: Shell字符串变量中，若有空格符可以使用双引号“"”或单引号 “'”来将变量内容结合起来，但需要特别留意，双引号内的特殊字符可以保有变量特性。
-  content_format: text
-  answer: true
-  points:
-    - shell脚本
-
-- kind: single_choice
-  content: 在程序中使用变量的值时，要在变量名前面加上一个符号“（  ）”。这个符号告诉shell，要取出其后变量的值。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: ~ 
-      - id: bbb
-        text: '#'
-      - id: ccc
-        text: $ 
-      - id: ddd
-        text: '&'
-    correct: ccc
   points:
     - shell脚本

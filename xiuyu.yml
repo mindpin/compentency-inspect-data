@@ -11,8 +11,17 @@
     - 常见数据类型
 
 - kind: file_upload
-  content: 画图说明，下面的代码在堆、栈以及常量池中的区别
-  content_format: text
+  content: |
+    画图说明，下面的代码在堆、栈以及常量池中的区别
+    ```java
+      1. String s1 = "china";  
+      2. String s2 = "china";  
+      3. String s3 = "china";  
+      4. String ss1 = new String("china");  
+      5. String ss2 = new String("china");  
+      6. String ss3 = new String("china");
+    ```
+  content_format: md
   points:
     - 语法基础
 
