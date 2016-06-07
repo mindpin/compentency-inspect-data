@@ -10,7 +10,7 @@
   points:
     - 常见数据类型
 
-- kind: essay
+- kind: file_upload
   content: 画图说明，下面的代码在堆、栈以及常量池中的区别
   content_format: text
   points:
