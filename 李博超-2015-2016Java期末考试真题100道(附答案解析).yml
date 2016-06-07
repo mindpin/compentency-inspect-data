@@ -125,57 +125,57 @@
   content: |
     关于以下程序代码的说明正确的是
     ```java
-    1class  HasStatic{
-    2    private  static  int  x=100
-    3    public  static  void  main(String  args[  ]){
-    4        HasStatic  hs1=new  HasStatic(  );
-    5        hs1.x++;
-    6        HasStatic  hs2=new  HasStatic(  );
-    7        hs2.x++;
-    8        hs1=new  HasStatic( );
-    9        hs1.x++;
-    10              HasStatic.x- -;
-    11                 System.out.println(“x=”+x);
-    12              }
-    13                  }
+    1 class  HasStatic{
+    2    private  static  int  x=100
+    3    public  static  void  main(String  args[  ]){
+    4      HasStatic  hs1=new  HasStatic(  );
+    5      hs1.x++;
+    6      HasStatic  hs2=new  HasStatic(  );
+    7      hs2.x++;
+    8      hs1=new  HasStatic( );
+    9      hs1.x++;
+    10     HasStatic.x- -;
+    11     System.out.println(“x=”+x);
+    12 }
+    13}
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 程序通过编译输出结果为x=102
+        text: 程序通过编译输出结果为 x=102
       - id: bbb
-        text: 10行不能通过编译因为x是私有静态变量
+        text: 10行不能通过编译,因为x是私有静态变量
       - id: ccc
-        text: 5行不能通过编译因为引用了私有静态变量
+        text: 5行不能通过编译,因为引用了私有静态变量
       - id: ddd
-        text: 程序通过编译输出结果为x=103
+        text: 程序通过编译输出结果为 x=103
     correct: aaa
   points:
     - 语法基础
 
 - kind: single_choice
   content: |
-    编译运行以下程序后关于输出结果的说明正确的是
+    编译运行以下程序后,关于输出结果的说明正确的是
     ```java
     public  class   Conditional{
-          public  static  void  main(String  args[  ]){
-                 int  x=4;
-                 System.out.println(“value  is  “ + ((x>4) ? 99.9 :9)); 3
-           }
+      public  static  void  main(String  args[  ]){
+        int  x=4;
+        System.out.println(“value  is  “ + ((x>4) ? 99.9 :9)); 3
+      }
     }
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 输出结果为value is 99.99
+        text: 输出结果为 value is 99.99
       - id: bbb
-        text: 输出结果为value is 9.0
+        text: 输出结果为 value is 9.0
       - id: ccc
         text: 编译错误
       - id: ddd
-        text: 输出结果为value is 9
+        text: 输出结果为 value is 9
     correct: bbb
   points:
     - 语法基础
@@ -246,7 +246,7 @@
       - id: bbb
         text: instanceof
       - id: ccc
-        text: 以上都对
+        text: 其他都对
       - id: ddd
         text: equal
     correct: bbb
@@ -310,13 +310,13 @@
   answer:
     choices:
       - id: aaa
-        text: main
+        text: main
       - id: bbb
-        text: init
+        text: init
       - id: ccc
-        text: paint
+        text: paint
       - id: ddd
-        text: start
+        text: start
     correct: aaa
   points:
     - 语法基础
@@ -373,31 +373,6 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: |
-    类Test1定义如下
-    ```java
-    1public  class  Test1{
-    2  public  float  aMethodfloat  afloat  b{   }
-    3
-    4}
-    ```
-    将以下哪种方法插入行3是不合法的
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: public float aMethodfloat cfloat d{ }
-      - id: bbb
-        text: private float aMethodint aint bint c{ }
-      - id: ccc
-        text: public float aMethodfloat a float bfloat c{ }
-      - id: ddd
-        text: public int aMethodint a int b{ }
-    correct: aaa
-  points:
-    - 语法基础
-
-- kind: single_choice
   content: 当要将一文本文件当作一个数据库访问,读完一个纪录后,跳到另一个纪录,它们在文件的不同地方时,一般使用    类访问。
   content_format: text
   answer:
@@ -415,7 +390,7 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: java中用来抛出异常的关键字是  (         )
+  content: java中用来抛出异常的关键字是  ()
   content_format: text
   answer:
     choices:
@@ -636,7 +611,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 关于异常下列说法正确的是 (      )
+  content: 关于异常,下列说法正确的是 (      )
   content_format: text
   answer:
     choices:
@@ -671,30 +646,30 @@
 
 - kind: single_choice
   content: |
-    关于以下application的说明正确的是
+    关于以下application的说明,正确的是
     ```java
-    1 class   StaticStuff
-    2 {
-    3                  static  int  x=10
-    4                  static  { x+=5}
-    5                  public  static  void  mainString  args[ ]
-    6                  {
-    7                       System.out.println(“x=” + x);
-    8                  }
-    9                  static  { x/=3;}
-    10.   }
+    1 class StaticStuff
+    2 {
+    3   static  int  x=10
+    4   static  { x+=5}
+    5   public  static  void  main(String  args[])
+    6   {
+    7     System.out.println(“x=” + x);
+    8   }
+    9   static  { x/=3;}
+    10 }
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 编译通过执行结果为x=3
+        text: 编译通过,执行结果为 x=3
       - id: bbb
-        text: 4行与9行不能通过编译因为缺少方法名和返回类型
+        text: 4行与9行不能通过编译,因为缺少方法名和返回类型
       - id: ccc
         text: 9行不能通过编译因为只能有一个静态初始化器
       - id: ddd
-        text: 编译通过执行结果为x=5
+        text: 编译通过,执行结果为 x=5
     correct: ddd
   points:
     - 语法基础
@@ -776,7 +751,7 @@
 
 - kind: single_choice
   content: |
-    下列程序段运行后变量x,y,z的值描述正确的是
+    下列程序段运行后,变量x,y,z的值描述正确的是
     ```java
     int x=1;
     int y=(x++)*2;
@@ -786,13 +761,13 @@
   answer:
     choices:
       - id: aaa
-        text: x的值是1y的值是1z的值是6
+        text: x的值是1,y的值是1,z的值是6
       - id: bbb
-        text: x的值是2y的值是1z的值是3
+        text: x的值是2,y的值是1,z的值是3
       - id: ccc
-        text: x的值是1y的值是2z的值是3
+        text: x的值是1,y的值是2,z的值是3
       - id: ddd
-        text: x的值是2y的值是1z的值是6
+        text: x的值是2,y的值是1,z的值是6
     correct: bbb
   points:
     - 语法基础
@@ -832,18 +807,18 @@
     - 语法基础
 
 - kind: single_choice
-  content: 对于catch子句的排列下列哪种是正确的(      )
+  content: 对于catch子句的排列,下列哪种是正确的(      )
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 子类在先父类在后
+        text: 子类在先,父类在后
       - id: bbb
         text: 有继承关系的异常不能在同一个try程序段内
       - id: ccc
-        text: 父类在先子类在后
+        text: 父类在先,子类在后
       - id: ddd
-        text: 先有子类其他如何排列都无关
+        text: 先有子类,其他如何排列都无关
     correct: aaa
   points:
     - 语法基础
@@ -1074,8 +1049,6 @@
   content_format: text
   answer:
     choices:
-      - id: aaa
-        text: 以上都不对
       - id: bbb
         text: 构造方法仅供虚拟机调用,当系统完成对象的创建后,自动调用相应的构造方法
       - id: ccc
@@ -1104,12 +1077,12 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: 下列说法正确的是(        )
+  content: 下列说法正确的是
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 用final修饰的变量在程序中可对这个变量的值进行更改
+        text: 用final修饰的变量,在程序中可对这个变量的值进行更改
       - id: bbb
         text: final 可修饰类、属性、方法
       - id: ccc
@@ -1121,7 +1094,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 在switchexpression语句中expression的数据类型不能是(        )
+  content: 在switch expression 语句中 expression 的数据类型不能是
   content_format: text
   answer:
     choices:
@@ -1138,7 +1111,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 假设你正在为应用系统设计一个Java图形用户界面GUI,需要能输入多行文本信息,下列组件中最能满足这个要求的是(         )
+  content: 假设你正在为应用系统设计一个Java图形用户界面GUI,需要能输入多行文本信息,下列组件中最能满足这个要求的是
   content_format: text
   answer:
     choices:
@@ -1239,34 +1212,6 @@
     correct: ddd
   points:
     - 类，对象，方法
-
-- kind: single_choice
-  content: |
-    关于以下程序段的说法类包含不考虑情况下正确的是
-    ```java
-    1class   MyListener  implements
-    2                  ActionListenerItemListener{
-    3                  public  void  actionPerformedActionEvent  ae{
-    4                       System.out.println("Action");}
-    5                   public  void  itemStateChanged(ItemEvent  ie){
-    6                  System.out.println("Item");
-    7                  }
-    8}
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 第2行产生编译错误
-      - id: bbb
-        text: 第3行产生编译错误
-      - id: ccc
-        text: 第5行产生编译错误
-      - id: ddd
-        text: 可通过编译
-    correct: ddd
-  points:
-    - 常用基础类库
 
 - kind: single_choice
   content: 下面关于类的说法错误的是
@@ -1438,31 +1383,6 @@
 
 - kind: single_choice
   content: |
-    以下说法哪项是正确的
-    ```java
-    1class  MyListener
-    2extends  MouseAdapter  implements  MouseListener{
-    3    public void mouseEnteredMouseEvent  mev
-    4      { System.out.println("Mouse  entered.");  }
-    5     }
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 不能通过编译因为类头定义不能分行
-      - id: bbb
-        text: 能通过编译若组件用该类作为Mouse的监听者并且接收了mouse-exited事件则在执行过程中会抛出异常
-      - id: ccc
-        text: 以上代码可通过编译
-      - id: ddd
-        text: 不能通过编译因为没有实现MouseListener接口中的所有方法
-    correct: ccc
-  points:
-    - 常用基础类库
-
-- kind: single_choice
-  content: |
     编译运行下面的代码会发生什么(           )
     ```java
     public class Test {
@@ -1512,26 +1432,26 @@
   content: |
     类Test1、Test2定义如下
     ```java
-    1 public class  Test1
-    2{ public  float  aMethodfloat afloat b throws
-    3  IOException {      }
-    4    }
-    5    public  class  Test2  extends  Test1{
-    6
-    7}
+    1 public class  Test1
+    2 { public  float  aMethod(float a, float b) throws
+    3  IOException {      }
+    4 }
+    5  public  class  Test2  extends  Test1{
+    6
+    7 }
     ```
     将以下哪种方法插入行6是不合法的。
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: public int aMethodint aint bthrows Exception{ }
+        text: public int aMethod(int a, int b) throws Exception{ }
       - id: bbb
-        text: float aMethodfloat afloat b{ }
+        text: float aMethod(float a, float b){ }
       - id: ccc
-        text: public int aMethodint aint bthrows IOException{ }
+        text: public int aMethod(int a, int b) throws IOException{ }
       - id: ddd
-        text: public float aMethodfloat pfloat q{ }
+        text: public float aMethod(float p, float q){ }
     correct: ddd
   points:
     - 抽象类，接口，继承
@@ -1605,7 +1525,7 @@
 
 - kind: single_choice
   content: |
-    下列程序段运行后变量temp的值是
+    下列程序段运行后,变量temp的值是
     ```java
     int temp = 2 ;
     temp++;
@@ -1628,14 +1548,14 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列关于构造方法的叙述中错误的是
+  content: 下列关于构造方法的叙述中,错误的是
   content_format: text
   answer:
     choices:
       - id: aaa
         text: Java语言规定构造方法不可以重载
       - id: bbb
-        text: Java语言规定构造方法没有返回值但不用void声明
+        text: Java语言规定构造方法没有返回值,但不用void声明
       - id: ccc
         text: Java语言规定构造方法只能通过new自动调用
       - id: ddd
@@ -1679,4 +1599,3 @@
     correct: bbb
   points:
     - 语法基础
-

@@ -720,8 +720,6 @@
         text: 必须没有
       - id: ccc
         text: 可以有，也可以没有
-      - id: ddd
-        text: 以上说法均不正确
     correct: ccc
   points:
     - hibernate

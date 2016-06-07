@@ -134,26 +134,6 @@
 # 多选题
 
 - kind: multi_choice
-  content: 下列标识符不合法的有 （）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: new
-      - id: bbb
-        text: $Usdollars
-      - id: ccc
-        text: 1234
-      - id: ddd
-        text: car.taxi
-    corrects:
-      - aaa
-      - ccc
-      - ddd
-  points:
-    - 语法基础
-
-- kind: multi_choice
   content: 下列说法错误的有（）
   content_format: text
   answer:

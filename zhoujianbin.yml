@@ -743,8 +743,6 @@
         text: ApplicationContext
       - id: ccc
         text: FileSystemXmlApplicationContext
-      - id: ddd
-        text: 以上都是
     corrects:
       - aaa
       - ccc
