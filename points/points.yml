@@ -39,4 +39,5 @@
 - 身份验证
 - webservice 实现
 - tomcat, glassfish, weblogic 等中间件配置使用
-- 前端开发框架（jQuery, bootstrap）
+- jQuery
+- bootstrap
