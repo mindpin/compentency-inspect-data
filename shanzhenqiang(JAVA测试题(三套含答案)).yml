@@ -950,10 +950,10 @@
         text: javac一次可同时编译数个Java源文件
       - id: ddd
         text: javac.exe能指定编译结果要置于哪个目录（directory）
-    correct: 
-      -bbb
-      -ccc
-      -ddd
+    corrects: 
+      - bbb
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列标识符不合法的有（）
@@ -968,10 +968,10 @@
         text: 1234
       - id: ddd
         text: car.taxi
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+    corrects: 
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -986,10 +986,10 @@
         text: int number=[]={31,23,33,43,35,63} 
       - id: ddd
         text: 数组的大小可以任意改变
-    correct: 
-      -bbb
-      -ccc
-      -ddd
+    corrects: 
+      - bbb
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 不能用来修饰interface的有（）
@@ -1004,10 +1004,10 @@
         text: protected
       - id: ddd
         text: static
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+    corrects: 
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列正确的有（）
@@ -1022,10 +1022,10 @@
         text: call by reference不能改变实际参数的参考地址
       - id: ddd
         text: call by reference能改变实际参数的内容 
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+    corrects: 
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -1040,10 +1040,10 @@
         text: 在类方法中只能调用本类中的类方法 
       - id: ddd
         text: 在类方法中绝对不能调用实例方法 
-    correct: 
-      -aaa
-      -ccc
-      -ddd
+    corrects: 
+      - aaa
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -1058,10 +1058,10 @@
         text: Java语言中的方法属于类中的成员（member） 
       - id: ddd
         text: Java语言中的方法必定隶属于某一类（对象），调用方法与过程或函数相同
-    correct: 
-      -aaa
-      -bbb
-      -ccc
+    corrects: 
+      - aaa
+      - bbb
+      - ccc
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -1076,10 +1076,10 @@
         text: Appletviewer.exe可利用jar选项运行.jar文件 
       - id: ddd
         text: 能被Appletviewer成功运行的java class文件必须有main()方法
-    correct: 
-      -bbb
-      -ccc
-      -ddd
+    corrects: 
+      - bbb
+      - ccc
+      - ddd
 
 - kind: multi_choice
   content: 在下面的选项中合法的标识符有。（）
@@ -1098,11 +1098,11 @@
         text: const
       - id: fff
         text: ILikeJLCSS
-    correct: 
-      -aaa
-      -ddd
-      -eee
-      -fff
+    corrects: 
+      - aaa
+      - ddd
+      - eee
+      - fff
 
 - kind: multi_choice
   content: 下面的选项中哪些不是java的关键字。（）
@@ -1121,10 +1121,10 @@
         text: super
       - id: fff
         text: void
-    correct: 
-      -aaa
-      -bbb
-      -ddd
+    corrects: 
+      - aaa
+      - bbb
+      - ddd
 
 - kind: multi_choice
   content: 下面的叙述中正确的有。（）
@@ -1139,9 +1139,9 @@
         text: javac一次可同时编译数个Java源文件。
       - id: ddd
         text: javac.exe能指定编译结果要置于哪个目录（directory）。
-    correct: 
-      -aaa
-      -ccc
+    corrects: 
+      - aaa
+      - ccc
 
 - kind: multi_choice
   content: 下面的叙述中正确的有。（）
@@ -1156,8 +1156,8 @@
         text: equals()方法只有在两个对象的内容一致时返回true。 
       - id: ddd
         text: 类File重写方法equals()在两个分立的对象的内容和类型一致时返回true。
-    correct:
-      -ccc
+    corrects:
+      - ccc
 
 - kind: multi_choice
   content: 下面有关变量及其作用域的陈述哪些是对的。（）
@@ -1172,9 +1172,9 @@
         text: 在方法外面定义的变量（译注：即实例变量）在对象被构造时创建。
       - id: ddd
         text: 在方法中定义的方法的参变量只要该对象被需要就一直存在。
-    correct:
-      -aaa
-      -ccc
+    corrects:
+      - aaa
+      - ccc
 
 - kind: multi_choice
   content: |
@@ -1194,8 +1194,8 @@
         text: 抛出一个NullPointerException异常
       - id: eee
         text: 抛出一个ArrayIndexOutOfBoundsException异常
-    correct: 
-      -aaa
+    corrects: 
+      - aaa
 
 - kind: multi_choice
   content: |
@@ -1225,9 +1225,9 @@
         text: Doing it for i is 0
       - id: eee
         text: Finished
-    correct: 
-      -ddd
-      -eee
+    corrects: 
+      - ddd
+      - eee
 
 - kind: multi_choice
   content: 选择定义在Graphics类中的方法：
@@ -1246,9 +1246,9 @@
         text: setVisible(boolean);
       - id: fff
         text: setLayout(Object);
-    correct: 
-      -aaa
-      -ccc
+    corrects: 
+      - aaa
+      - ccc
 
 - kind: multi_choice
   content: 选择可以建立线程的接口：
@@ -1265,8 +1265,8 @@
         text: Thread
       - id: eee
         text: Executable
-    correct: 
-      -aaa
+    corrects: 
+      - aaa
 
 - kind: multi_choice
   content: |
@@ -1440,7 +1440,8 @@
         text: while
       - id: eee
         text: case
-    correct: bbb
+    corrects: 
+      -bbb
 
 - kind: multi_choice
   content: 下面那些不是合法的变量定义：

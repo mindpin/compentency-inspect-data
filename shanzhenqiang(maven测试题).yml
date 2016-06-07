@@ -1,0 +1,55 @@
+# 简答题
+- kind: essay
+  content: Maven是什么?
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content: Maven的生命周期及各个生命周期的作用?
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content: 聚合与继承的共同点？区别?
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content: Maven可继承的POM元素（至少列举五个）
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content: |
+    Maven目录结构中包括哪几个目录（列举三个即可），且说明包含文件的类型
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content: 列举至少四个Maven命令及命令的作用
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content:  pom.xml在Maven中的作用是什么？
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content:  Maven中有哪几种依赖范围
+  content_format: text
+  points:
+    - maven
+
+- kind: essay
+  content:  Maven有哪几个仓库,这几个仓库的定义是什么？
+  content_format: text
+  points:
+    - maven
