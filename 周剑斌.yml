@@ -3,36 +3,6 @@
 #单选
 
 - kind: single_choice
-  content: Java是从()语言改进重新设计
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Ada
-      - id: bbb
-        text: C++
-      - id: ccc
-        text: Pasacal
-      - id: ddd
-        text: BASIC
-    correct: bbb
-
-- kind: single_choice
-  content: 下列语句哪一个正确()
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text:  Java程序经编译后会产生machine code
-      - id: bbb
-        text: Java程序经编译后会产生byte code
-      - id: ccc
-        text: Java程序经编译后会产生DLL
-      - id: ddd
-        text: 以上都不正确
-    correct: bbb
-
-- kind: single_choice
   content: 下列说法正确的有
   content_format: text
   answer:
@@ -46,6 +16,8 @@
       - id: ddd
         text: 一个class只能定义一个constructor
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 提供Java存取数据库能力的包是（）
@@ -61,6 +33,8 @@
       - id: ddd
         text: java.swing
     correct: aaa
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 下列运算符合法的是（）
@@ -76,6 +50,8 @@
       - id: ddd
         text: ":="
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -101,6 +77,8 @@
       - id: ddd
         text: 死循环
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列哪一种叙述是正确的（）
@@ -116,6 +94,8 @@
       - id: ddd
         text: 声明抽象方法不可写出大括号
     correct: ddd
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 下列语句正确的是（）
@@ -131,6 +111,8 @@
       - id: ddd
         text: 形式参数不可以是对象
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列哪种说法是正确的（）
@@ -146,44 +128,10 @@
       - id: ddd
         text: 实例方法可直接调用本类的 类方法
     correct: ddd
+  points:
+    - 类，对象，方法
 
 # 多选题
-
-- kind: multi_choice
-  content: Java程序的种类有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 类 （Class）
-      - id: bbb
-        text: Applet
-      - id: ccc
-        text: Application
-      - id: ddd
-        text: Servlet
-    corrects:
-      - bbb
-      - ccc
-      - ddd
-
-- kind: multi_choice
-  content: 下列说法正确的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 环境变量可在编译source code时指定
-      - id: bbb
-        text: 在编译程序时，所能指定的环境变量不包括 class path
-      - id: ccc
-        text: javac一次可同时编译数个Java源文件
-      - id: ddd
-        text: javac.exe能指定编译结果要置于哪个目录（directory）
-    corrects:
-      - bbb
-      - ccc
-      - ddd
 
 - kind: multi_choice
   content: 下列标识符不合法的有 （）
@@ -202,6 +150,8 @@
       - aaa
       - ccc
       - ddd
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -220,6 +170,8 @@
       - bbb
       - ccc
       - ddd
+  points:
+    - 常见数据类型
 
 - kind: multi_choice
   content: 不能用来修饰interface的有（）
@@ -238,24 +190,8 @@
       - aaa
       - ccc
       - ddd
-
-- kind: multi_choice
-  content: 下列正确的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: call by value不会改变实际参数的数值
-      - id: bbb
-        text: call by reference能改变实际参数的参考地址
-      - id: ccc
-        text: call by reference不能改变实际参数的参考地址
-      - id: ddd
-        text: call by reference能改变实际参数的内容
-    corrects:
-      - aaa
-      - ccc
-      - ddd
+  points:
+    - 抽象类，接口，继承
 
 - kind: multi_choice
   content: 下列说法 错误的有（）
@@ -273,6 +209,8 @@
     corrects:
       - ccc
       - ddd
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -291,45 +229,23 @@
       - aaa
       - bbb
       - ccc
-
-- kind: multi_choice
-  content: 下列说法错误的有 （）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 能被java.exe成功运行的java class文件必须有main()方法
-      - id: bbb
-        text: J2SDK就是Java API
-      - id: ccc
-        text: Appletviewer.exe可利用jar选项运行.jar文件
-      - id: ddd
-        text: 能被 Appletviewer成功运行的java class文件必须有main()方法
-    corrects:
-      - bbb
-      - ccc
-      - ddd
-
-- kind: bool
-  content: Java程序中的起始类名称必须与存放该类的文件名相同。（）
-  content_format: text
-  answer: true
-
-- kind: bool
-  content: Unicode是用16位来表示 一个字的。（）
-  content_format: text
-  answer: true
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: 原生类中的数据类型均可任意转换。（）
   content_format: text
   answer: false
+  points:
+    - 常见数据类型
 
 # 简答题
 
-- kind: essay
-  content: 分别写出BOOL,int,float,指针类型的变量a 与“零”的比较语句。
-  content_format: text
+#- kind: essay
+  #content: 分别写出BOOL,int,float,指针类型的变量a 与“零”的比较语句。
+  #content_format: text
+  #points:
+    #- 常见数据类型
 
 # JAVA期末考试2015选修班试卷及部分答案
 
@@ -350,21 +266,8 @@
       - id: ddd
         text: double
     correct: ddd
-
-- kind: single_choice
-  content: 程序的一次执行过程叫做 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 过程
-      - id: bbb
-        text: 线程
-      - id: ccc
-        text: 进程
-      - id: ddd
-        text: 运程
-    correct: ccc
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -394,21 +297,23 @@
       - id: ddd
         text: 第7行
     correct: ddd
+  points:
+    - 抽象类，接口，继承
 
-- kind: single_choice
-  content: 如果容器组件p的布局是BorderLayout,则在p的一边中添加一个按钮b,应该使用的语句是( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: p.add(b);
-      - id: bbb
-        text: p.add(b,"North");
-      - id: ccc
-        text: p.add(b,"South");
-      - id: ddd
-        text: b.add(p,"North")
-    correct: ccc
+#- kind: single_choice
+  #content: 如果容器组件p的布局是BorderLayout,则在p的一边中添加一个按钮b,应该使用的语句是( )
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: p.add(b);
+      #- id: bbb
+        #text: p.add(b,"North");
+      #- id: ccc
+        #text: p.add(b,"South");
+      #- id: ddd
+        #text: b.add(p,"North")
+    #correct: ccc
 
 - kind: single_choice
   content: |
@@ -433,6 +338,8 @@
       - id: ddd
         text: false  false
     correct: aaa
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -458,6 +365,8 @@
       - id: ddd
         text: bbb
     correct: bbb
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -485,6 +394,8 @@
       - id: ddd
         text: 3
     correct: aaa
+  points:
+    - 基础数据结构和基础算法
 
 - kind: single_choice
   content: |
@@ -515,6 +426,8 @@
       - id: ddd
         text:  168, 3
     correct: bbb
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -542,6 +455,8 @@
       - id: ddd
         text: java
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -565,6 +480,8 @@
       - id: ddd
         text: “12.5”
     correct: aaa
+  points:
+    - 常见数据类型
 
 # 多选题
 
@@ -584,6 +501,8 @@
     corrects:
       - bbb
       - ccc
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 面向对象编程技术的基本特征是
@@ -602,6 +521,8 @@
       - aaa
       - ccc
       - ddd
+  points:
+    - 类，对象，方法
 
 # 简答题
 
@@ -614,22 +535,32 @@
     String s = "Hello";
     ```
   content_format: md
+  points:
+    - 基础数据结构和基础算法
 
 - kind: essay
   content: 请举例说明三个词语final,finally,finalize的五种功能
   content_format: text
+  points:
+    - 语法基础
 
 - kind: essay
   content: Java的继承机制有何特点? 请举一例予以说明。
   content_format: text
+  points:
+    - 抽象类，接口，继承
 
 - kind: essay
   content: 请举例说明三个词语throw,throws,Throwable的功能。
   content_format: text
+  points:
+    - 语法基础
 
 - kind: essay
   content: package与import的作用有何区别? 请举一例说明。
   content_format: text
+  points:
+    - 类，对象，方法
 
 # 各大公司Java笔试题汇总
 
@@ -638,135 +569,191 @@
 - kind: essay
   content: int和intager区别
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: string和stringB区别
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: 线程的实现方式有几种 分别是什么？STOP()和SUSPEND()为何不推荐？
   content_format: text
+  points:
+    - 线程
 
 - kind: essay
   content: 选择语句case中，允许使用的值有哪些？
   content_format: text
+  points:
+    - 语法基础
 
 - kind: essay
   content: Collection与Collections的区别？
   content_format: text
+  points:
+    - 常用基础类库
 
 - kind: essay
   content: Java成员变量默认初始化的值？
   content_format: text
+  points:
+    - 常用基础类库
 
 - kind: essay
   content: 面向对象的特征有哪些方面？
   content_format: text
+  points:
+    - 类，对象，方法
 
 - kind: essay
   content: String是最基本的数据类型吗？String 和 StringBuffer的区别？
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: int 和 Integer 有什么区别？
   content_format: text
+  points:
+    - 常见数据类型
 
-- kind: essay
-  content: 运行时异常与一般异常有何异同？
-  content_format: text
+#- kind: essay
+  #content: 运行时异常与一般异常有何异同？
+  #content_format: text
 
 - kind: essay
   content: 说出一些常用的类，包，接口，请各举5个？
   content_format: text
+  points:
+    - 常用基础类库
 
 - kind: essay
   content: 说出ArrayList,Vector, LinkedList的存储性能和特性？
   content_format: text
+  points:
+    - 常用基础类库
 
 - kind: essay
   content: 设计4个线程，其中两个线程每次对j增加1，另外两个线程对j每次减少1。写出程序。
   content_format: text
+  points:
+    - 线程
 
 - kind: essay
   content: JAVA的基本数据类型有哪几种？String是基本数据类型吗？它们之间的区别是什么？
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: 怎样将数值类型转化为数字类型（Interger、Double）怎样将数字类型转化为字符串类型？怎样取得小数点的前两位，并且进行四舍五入？
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: JSP的内置对象有那些，他们的方法是什么？
   content_format: text
+  points:
+    - servlet, jsp
 
 - kind: essay
   content: Servlet的生命周期是什么？
   content_format: text
+  points:
+    - servlet, jsp
 
 - kind: essay
   content: Socket（TCP、UDP）和JAVA中的通信有什么却别，它们是怎样实现的？
   content_format: text
+  points:
+    - IP，端口，网络环境基础概念
 
 - kind: essay
   content: 启动一个线程的方式run()还是start（）？
   content_format: text
+  points:
+    - 线程
 
 - kind: essay
   content: 当一个数据类型的长度超过了long型，请设计一种数据结构来存储这个数据。
   content_format: text
+  points:
+    - 基础数据结构和基础算法
 
 - kind: essay
   content: 内部类是以什么方式实现的？
   content_format: text
+  points:
+    - 类，对象，方法
 
-- kind: essay
-  content: JAVA三大特征是什么？
-  content_format: text
+#- kind: essay
+  #content: JAVA三大特征是什么？
+  #content_format: text
 
-- kind: essay
-  content: 垃圾回收器
-  content_format: text
+#- kind: essay
+  #content: 垃圾回收器
+  #content_format: text
 # 判断题
 
 - kind: bool
   content: 在main(String[] args)方法内可以调用一个非静态方法
   content_format: text
   answer: false
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: 同一个文件里可以有两个public类
   content_format: text
   answer: false
+  points:
+    - 语法基础
 
 - kind: bool
   content: 方法名可以与构造器的名字相同
   content_format: text
   answer: true
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: 初始化了一个没有run()方法的线程类,会出错
   content_format: text
   answer: false
+  points:
+    - 线程
 
 - kind: bool
   content: 局部内部类可以访问非final变量
   content_format: text
   answer: false
+  points:
+    - 类，对象，方法
 
 - kind: bool
   content: if(-0.0 == 0.0)是相等
   content_format: text
   answer: true
+  points:
+    - 常见数据类型
 
 - kind: bool
   content: 一个抽象类可以没有抽象方法
   content_format: text
   answer: true
+  points:
+    - 抽象类，接口，继承
 
 - kind: bool
   content: RandomAccessFile 类继承 Object，并且实现了DataInput和DataOutput接口
   content_format: text
   answer: true
+  points:
+    - 常用基础类库
 
 # JAVA试题及答案(50道选择题)
 
@@ -786,21 +773,23 @@
       - id: ddd
         text: 现实世界中的某些实体不能用类来描述
     correct: aaa
+  points:
+    - 类，对象，方法
 
-- kind: single_choice
-  content: 以下关于布局的说法，错误的是（   ）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: BorderLayout是边框布局，它是窗体的默认布局
-      - id: bbb
-        text: null是空布局，它是面板的默认布局
-      - id: ccc
-        text: FlowLayout是流布局，这种布局将其中的组件按照加入的先后顺序从左向右排列， 一行排满之后就转到下一行继续从左至右排列
-      - id: ddd
-        text: GridLayout是网格布局，它以矩形网格形式对容器的组件进行布置。容器被分成大小相等的矩形，一个矩形中放置一个组件
-    correct: bbb
+#- kind: single_choice
+  #content: 以下关于布局的说法，错误的是（   ）
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: BorderLayout是边框布局，它是窗体的默认布局
+      #- id: bbb
+        #text: null是空布局，它是面板的默认布局
+      #- id: ccc
+        #text: FlowLayout是流布局，这种布局将其中的组件按照加入的先后顺序从左向右排列， 一行排满之后就转到下一行继续从左至右排列
+      #- id: ddd
+        #text: GridLayout是网格布局，它以矩形网格形式对容器的组件进行布置。容器被分成大小相等的矩形，一个矩形中放置一个组件
+    #correct: bbb
 
 - kind: single_choice
   content: 在JAVA中ArrayList类实现了可变大小的数组，便于遍历元素和随机访问元素，已知获得了ArrayList类的对象bookTypeList，则下列语句中能够实现判断列表中是否存在字符串“小说”的是（    ）
@@ -816,6 +805,8 @@
       - id: ddd
         text: bookTypeList.remove("小说");
     correct: ccc
+  points:
+    - 常用基础类库
 
 # 多选题
 
@@ -836,20 +827,22 @@
         text: 接口中的方法都必须加上public关键字
     corrects:
       - eee
+  points:
+    - 抽象类，接口，继承
 
-- kind: multi_choice
-  content: 48、以下用于创建容器对象的类是（    ）（选择两项）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Frame
-      - id: bbb
-        text: Checkbox
-      - id: ccc
-        text: Panel
-      - id: ddd
-        text: TextField
-    corrects:
-      - aaa
-      - ccc
+#- kind: multi_choice
+  #content: 48、以下用于创建容器对象的类是（    ）（选择两项）
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: Frame
+      #- id: bbb
+        #text: Checkbox
+      #- id: ccc
+        #text: Panel
+      #- id: ddd
+        #text: TextField
+    #corrects:
+      #- aaa
+      #- ccc
