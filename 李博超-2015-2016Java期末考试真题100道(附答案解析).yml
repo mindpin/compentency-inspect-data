@@ -1,0 +1,1682 @@
+# 2015-2016Java期末考试真题100道(附答案解析)
+- kind: single_choice
+  content: 访问权限修饰符有public、private、protected和默认修饰符,他们既可以用来修饰类,也可以用来修饰类中的成员,使用private修饰符的成员可见情况有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 同一类
+      - id: bbb
+        text: 不同包中的子类
+      - id: ccc
+        text: 同一包中的非子类
+      - id: ddd
+        text: 同一包中的子类
+    correct: aaa
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 下列关于变量的叙述哪个是错的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 局部变量在使用前必须被初始化
+      - id: bbb
+        text: 实例变量是类的成员变量
+      - id: ccc
+        text: 实例变量用关键字static声明
+      - id: ddd
+        text: 在方法中定义的局部变量在该方法被执行时创建
+    correct: ccc
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: |
+    关于以下程序段正确的说法是
+    ```java
+    1. String  s1=”abc”+”def”;
+    2. String  s2=new  Strings1;
+    3.  ifs1= =s2
+    4.   System.out.println(“= = succeeded”);
+    5.    if (s1.equals(s2))
+    6.      System.out.println(“.equals()  succeeded”);
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 行6执行行4不执行;
+      - id: bbb
+        text: 行4与行6都将执行 ;
+      - id: ccc
+        text: 行4执行行6不执行 ;
+      - id: ddd
+        text: 行4、行6都不执行 ;
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    下列程序代码段运行后,变量x的结果是(             )
+    ```java
+    int x=0;
+    int y=3;
+    switch(y){
+    case 1:x++;
+    case 2:x++;x++;
+    case 3:x++;x++;x++;
+    case 4:x+=4;
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 10
+      - id: bbb
+        text: 6
+      - id: ccc
+        text: 7
+      - id: ddd
+        text: 3
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 已知A类被打包在packageA , B类被打包在packageB,且B类被声明为public,且有一个成员变量x被声明为protected控制方式。C类也位于packageA包,且继承了B类。则以下说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: A类的实例不能访问到B类的实例
+      - id: bbb
+        text: A类的实例能够访问到B类一个实例的x成员
+      - id: ccc
+        text: C类的实例不能访问到B类的实例
+      - id: ddd
+        text: C类的实例可以访问到B类一个实例的x成员
+    correct: ddd
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 下列Java常见事件类中哪个是鼠标事件类
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: WindowEvent
+      - id: bbb
+        text: KeyEvent
+      - id: ccc
+        text: InputEvent
+      - id: ddd
+        text: MouseEvent
+    correct: ddd
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: |
+    关于以下程序代码的说明正确的是
+    ```java
+    1class  HasStatic{
+    2    private  static  int  x=100
+    3    public  static  void  main(String  args[  ]){
+    4        HasStatic  hs1=new  HasStatic(  );
+    5        hs1.x++;
+    6        HasStatic  hs2=new  HasStatic(  );
+    7        hs2.x++;
+    8        hs1=new  HasStatic( );
+    9        hs1.x++;
+    10              HasStatic.x- -;
+    11                 System.out.println(“x=”+x);
+    12              }
+    13                  }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 程序通过编译输出结果为x=102
+      - id: bbb
+        text: 10行不能通过编译因为x是私有静态变量
+      - id: ccc
+        text: 5行不能通过编译因为引用了私有静态变量
+      - id: ddd
+        text: 程序通过编译输出结果为x=103
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    编译运行以下程序后关于输出结果的说明正确的是
+    ```java
+    public  class   Conditional{
+          public  static  void  main(String  args[  ]){
+                 int  x=4;
+                 System.out.println(“value  is  “ + ((x>4) ? 99.9 :9)); 3
+           }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 输出结果为value is 99.99
+      - id: bbb
+        text: 输出结果为value is 9.0
+      - id: ccc
+        text: 编译错误
+      - id: ddd
+        text: 输出结果为value is 9
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    编译运行下面的代码会发生什么(         )
+    ```java
+    public class Test extends Thread {
+        private String sThreadName;
+        public static void main(String argv[]) {
+            Test h = new Test();
+            h.go();
+        }
+
+        Test() {
+        }
+
+        Test(String s) {
+            sThreadName = s;
+        }
+
+        public String getThreadName() {
+            return sThreadName;
+        }
+
+        public void go() {
+            Test first = new Test("first");
+            first.start();
+            Test second = new Test("second");
+            second.start();
+        }
+
+        public void start() {
+            for (int i = 0; i < 2; i++) {
+                System.out.println(getThreadName() + i);
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 运行时错误
+      - id: bbb
+        text: 输出first0, second0, first1, second1
+      - id: ccc
+        text: 编译错误
+      - id: ddd
+        text: 输出first0, first1, second0, second1.
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: java程序运行时,用于判定一个对象实例的类型运算符是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: ==
+      - id: bbb
+        text: instanceof
+      - id: ccc
+        text: 以上都对
+      - id: ddd
+        text: equal
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列哪一项不是Java保留字
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: abstract
+      - id: bbb
+        text: sizeof
+      - id: ccc
+        text: super
+      - id: ddd
+        text: break
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 当处理的数据量很多或向文件输出很多次小数据一般使用的流是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: DataOutputStream
+      - id: bbb
+        text: PipedOutputStream
+      - id: ccc
+        text: BufferedOutputStream
+      - id: ddd
+        text: FileOutputStream
+    correct: ccc
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 获取一个不包含路径的文件名的方式为
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: String getPath()
+      - id: bbb
+        text: String getAbslutePath()
+      - id: ccc
+        text: String getParent()
+      - id: ddd
+        text: String getName()
+    correct: ddd
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: Java应用程序的入口方法是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: main
+      - id: bbb
+        text: init
+      - id: ccc
+        text: paint
+      - id: ddd
+        text: start
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列不属于FileInputStream输入流的read()成员函数的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: int read(int line)
+      - id: bbb
+        text: int read()
+      - id: ccc
+        text: int read(byte b[])
+      - id: ddd
+        text: int read(byte b[],intoffset,int len)
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 下面关于Java语言中实例方法和类方法的说法哪项是对的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 实例方法可以直接通过类名调用
+      - id: bbb
+        text: 类方法可以操作实例变量也可以操作类变量
+      - id: ccc
+        text: 实例方法可以操作实例变量也可以操作类变量
+      - id: ddd
+        text: 类方法可以直接通过类名调用
+    correct: ddd
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 监听事件和处理事件
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 都由Listener完成
+      - id: bbb
+        text: 由Listener和构件分别完成
+      - id: ccc
+        text: 都由相应事件Listener处登记过的构件完成[正确选项]
+      - id: ddd
+        text: 由Listener和窗口分别完成
+    correct: ccc
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: |
+    类Test1定义如下
+    ```java
+    1public  class  Test1{
+    2  public  float  aMethodfloat  afloat  b{   }
+    3
+    4}
+    ```
+    将以下哪种方法插入行3是不合法的
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: public float aMethodfloat cfloat d{ }
+      - id: bbb
+        text: private float aMethodint aint bint c{ }
+      - id: ccc
+        text: public float aMethodfloat a float bfloat c{ }
+      - id: ddd
+        text: public int aMethodint a int b{ }
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 当要将一文本文件当作一个数据库访问,读完一个纪录后,跳到另一个纪录,它们在文件的不同地方时,一般使用    类访问。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: BufferedOutputStream
+      - id: bbb
+        text: FileOutputStream
+      - id: ccc
+        text: PipedOutputStream
+      - id: ddd
+        text: RandomAccessFile
+    correct: ddd
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: java中用来抛出异常的关键字是  (         )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: throw
+      - id: bbb
+        text: finally
+      - id: ccc
+        text: catch
+      - id: ddd
+        text: try
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列数组初始化形式正确的是(           )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: int t4[][]; t4={1,2,3,4,5,6};
+      - id: bbb
+        text: int t2[][]={1,2,3,4,5,6};
+      - id: ccc
+        text: int t1[][]={{1,2},{3,4},{5,6}};
+      - id: ddd
+        text: int t3[3][2]={1,2,3,4,5,6};
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 异常包含下列哪些内容
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 程序事先定义好的可能出现的意外情况
+      - id: bbb
+        text: 程序中的语法错误
+      - id: ccc
+        text: 程序执行过程中遇到的事先没有预料到的情况
+      - id: ddd
+        text: 程序的编译错误
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下面哪个关键字不是用来控制对类成员的访问的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: public
+      - id: bbb
+        text: private
+      - id: ccc
+        text: default
+      - id: ddd
+        text: protected
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列整型数据类型中需要内存空间最少的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: byte
+      - id: bbb
+        text: long
+      - id: ccc
+        text: short
+      - id: ddd
+        text: int
+    correct: aaa
+  points:
+    - 常见数据类型
+
+- kind: single_choice
+  content: Character流与Byte流的区别是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 前者是块读写后者是字节读写
+      - id: bbb
+        text: 二者没有区别可以互换使用
+      - id: ccc
+        text: 前者带有缓冲后者没有
+      - id: ddd
+        text: 每次读入的字节数不同
+    correct: aaa
+  points:
+    - 常见数据类型
+
+- kind: single_choice
+  content: 当把一个程序、线程或代码段的输出连接到另一个程序、线程或代码段的输入时,应使用的流是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: BufferedOutputStream
+      - id: bbb
+        text: PipedOutputStream
+      - id: ccc
+        text: FileOutputStream
+      - id: ddd
+        text: DataOutputStream
+    correct: bbb
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 下列有关子类继承父类构造函数的描述正确的是(          )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 子类必须通过super关键字调用父类的构造函数
+      - id: bbb
+        text: 创建子类的对象时先调用子类自己的构造函数然后调用父类的构造函数
+      - id: ccc
+        text: 子类无法继承父类的构造函数
+      - id: ddd
+        text: 子类无条件地继承父类不含参数的构造函数
+    correct: aaa
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 在异常处理中如释放资源、关闭文件、关闭数据库等由(       )来完成
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: finally子句
+      - id: bbb
+        text: try子句
+      - id: ccc
+        text: throw子句
+      - id: ddd
+        text: catch子句
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 执行完以下代码int [ ]  x = new int[10]后以下哪项说明是正确的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: x[9]未定义
+      - id: bbb
+        text: x[9]为0 [正确选项]
+      - id: ccc
+        text: x[0]为空
+      - id: ddd
+        text: x[10]为0
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: Java语言正确的常量修饰符应该是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: static final
+      - id: bbb
+        text: static
+      - id: ccc
+        text: final
+      - id: ddd
+        text: public static final
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列选项中哪一个是表达式1 + 2 + "aa" + 3的值
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: "3aa3"
+      - id: bbb
+        text: "12aa3"
+      - id: ccc
+        text: "aa3"
+      - id: ddd
+        text: "12aa"
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 哪个关键字可以抛出异常
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: throws
+      - id: bbb
+        text: finally
+      - id: ccc
+        text: throw
+      - id: ddd
+        text: try
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 关于异常下列说法正确的是 (      )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 异常是一种对象
+      - id: bbb
+        text: 一旦程序运行异常将被创建
+      - id: ccc
+        text: 为了保证程序运行速度要尽量避免异常控制
+      - id: ddd
+        text: 没有正确答案
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 所有异常类的父类
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Exception
+      - id: bbb
+        text: Throwable
+      - id: ccc
+        text: AWTError
+      - id: ddd
+        text: Error
+    correct: bbb
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: |
+    关于以下application的说明正确的是
+    ```java
+    1 class   StaticStuff
+    2 {
+    3                  static  int  x=10
+    4                  static  { x+=5}
+    5                  public  static  void  mainString  args[ ]
+    6                  {
+    7                       System.out.println(“x=” + x);
+    8                  }
+    9                  static  { x/=3;}
+    10.   }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 编译通过执行结果为x=3
+      - id: bbb
+        text: 4行与9行不能通过编译因为缺少方法名和返回类型
+      - id: ccc
+        text: 9行不能通过编译因为只能有一个静态初始化器
+      - id: ddd
+        text: 编译通过执行结果为x=5
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    下述4行代码组成的小程序总共创建String对象的个数为
+    ```java
+    String s1 = "abc";
+    String s2 = new String("abc");
+    String s3 = "abc";
+    String s4 = new String("abc");
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 1
+      - id: bbb
+        text: 4
+      - id: ccc
+        text: 2
+      - id: ddd
+        text: 3
+    correct: ddd
+  points:
+    - 常见数据类型
+
+- kind: single_choice
+  content: 下列哪一项说法最好地描述了Java中的对象
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 对象是方法的集合这些方法在小程序窗口或应用程序窗口中产生图形元素或者计算和返回值
+      - id: bbb
+        text: 对象是通过import命令引入到程序中的所有事情
+      - id: ccc
+        text: 对象是一种数据结构它具有操作数据的方法
+      - id: ddd
+        text: 对象是一组具有共同的结构和行为的类
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列说法中错误的一项是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 线程就是程序
+      - id: bbb
+        text: 多线程用于实现并发
+      - id: ccc
+        text: 多线程是指一个程序的多个执行流
+      - id: ddd
+        text: 线程是一个程序的单个执行流
+    correct: aaa
+  points:
+    - 线程
+
+- kind: single_choice
+  content: 如果str表示一个String对象“73”那么以下哪些表达式将会把这个字符串转换为int值73请选出正确答案。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Integer.getInt(str)
+      - id: bbb
+        text: (new Integer(str)).intValue()
+      - id: ccc
+        text: ((int) str)
+      - id: ddd
+        text: Integer.intValue(str)
+    correct: bbb
+  points:
+    - 常见数据类型
+
+- kind: single_choice
+  content: |
+    下列程序段运行后变量x,y,z的值描述正确的是
+    ```java
+    int x=1;
+    int y=(x++)*2;
+    int z=(--y)*3;
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: x的值是1y的值是1z的值是6
+      - id: bbb
+        text: x的值是2y的值是1z的值是3
+      - id: ccc
+        text: x的值是1y的值是2z的值是3
+      - id: ddd
+        text: x的值是2y的值是1z的值是6
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列常见的系统定义的异常中哪个是输入、输出异常?
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: IOException
+      - id: bbb
+        text: FileNotFoundException
+      - id: ccc
+        text: ClassNotFoundException
+      - id: ddd
+        text: UnknownHostException
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 使用以下哪个保留字可以使只有在定义该类的包中的其他类才能访问该类
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 不使用保留字
+      - id: bbb
+        text: private
+      - id: ccc
+        text: abstract
+      - id: ddd
+        text: protected
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 对于catch子句的排列下列哪种是正确的(      )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 子类在先父类在后
+      - id: bbb
+        text: 有继承关系的异常不能在同一个try程序段内
+      - id: ccc
+        text: 父类在先子类在后
+      - id: ddd
+        text: 先有子类其他如何排列都无关
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 关于类继承的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 接口和类都允许多继承
+      - id: bbb
+        text: Java接口允许多继承
+      - id: ccc
+        text: 接口和类都不允许多继承
+      - id: ddd
+        text: Java 类允许多重继承
+    correct: bbb
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: |
+    运行如下代码的结果是
+    ```java
+    public class MyObj{
+       int x=3;
+       public MyObj(int x){
+          this.x=x;
+        }
+        public static void main(String[] args){
+           MyObj obj=new MyObj(50);
+           System.out.println(obj.x);
+        }
+     }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 编译错误
+      - id: bbb
+        text: 3
+      - id: ccc
+        text: 50
+      - id: ddd
+        text: 编译通过但运行错误
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: Java语言的类间的继承关系是(        )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 多重的
+      - id: bbb
+        text: 单重的
+      - id: ccc
+        text: 不能继承
+      - id: ddd
+        text: 线程的
+    correct: bbb
+  points:
+    - 抽象类，接口，继承
+
+- kind: single_choice
+  content: 有整型数组int[] x={2,33,88,5,10};, 则调用方法 Arrays.sort(x) 后数组x中的元素值依次是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 88102335
+      - id: bbb
+        text: 25103388
+      - id: ccc
+        text: 53321088
+      - id: ddd
+        text: 88331052
+    correct: bbb
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: |
+    下面是Example.java文件的完整代码请找出会产生编译错误的行
+    ```java
+    1.     class BaseClass {
+    2.          public String str;
+    3.          public BaseClass {
+    4.          System.out.println(“ok”);}
+    5.          public BaseClass(String s){
+    6.           str=s;}}
+    7.         class SubClass extends BaseClass{
+    8.         }
+    9.       public class Example{
+    10.         public void method {
+    11.           SubClass s=new SubClass(“hello”);
+    12.         BaseClass b=new BaseClass(“world”);
+    13.      }
+    14.  }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 12
+      - id: bbb
+        text: 7
+      - id: ccc
+        text: 10
+      - id: ddd
+        text: 11
+    correct: ddd
+  points:
+    - 抽象类，接口，继承
+
+- kind: single_choice
+  content: |
+    关于下面一段代码描述正确的是
+    ```java
+    public class Agg {
+      public static void main(String argv[]) {
+          Agg a = new Agg();
+          a.go();
+      }
+
+      public void go() {
+          DSRoss ds1 = new DSRoss("one");
+          ds1.start();
+      }
+    }
+
+    class DSRoss extends Thread {
+        private String sTname = "";
+        DSRoss(String s) {
+            sTname = s;
+        }
+
+        public void run() {
+            notwait(); 12
+             System.out.println("finished");
+        }
+
+        public void notwait() {
+            while (true) {
+                try {
+                    System.out.println("waiting");
+                    wait();
+                } catch (InterruptedException ie) {
+                }
+                System.out.println(sTname);
+                notifyAll();
+            }
+        }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 运行时错误会抛异常
+      - id: bbb
+        text: 编译错误
+      - id: ccc
+        text: 能够编译输出“waiting"
+      - id: ddd
+        text: 能够编译, 输出“waiting"紧接着输出"finish"
+    correct: aaa
+  points:
+    - 线程
+
+- kind: single_choice
+  content: 关于以下的组件的接口正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: List组件可实现的接口除了ItemListener还可以是ActionListener
+      - id: bbb
+        text: 其他都不对
+      - id: ccc
+        text: Choice组件可实现的接口是ActionListener
+      - id: ddd
+        text: TextArea组件可实现的接口是ActionListener
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: java语言中异常处理的出口是下列哪一子句 (     )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: catch{}子句
+      - id: bbb
+        text: try{}子句
+      - id: ccc
+        text: 没有正确选项
+      - id: ddd
+        text: finally{}子句
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 一个可以独立运行的Java应用程序(           )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 可以有一个或多个main方法
+      - id: bbb
+        text: 只能有一个main方法
+      - id: ccc
+        text: 可以有一个或零个main方法
+      - id: ddd
+        text: 最多只能有两个main方法
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列关于构造方法使用的描述正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 以上都不对
+      - id: bbb
+        text: 构造方法仅供虚拟机调用,当系统完成对象的创建后,自动调用相应的构造方法
+      - id: ccc
+        text: 在对象消除时,调用构造方法
+      - id: ddd
+        text: 程序员可以在程序中调用对象的构造方法
+    correct: bbb
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 下列属于能操作文件输入输出类的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 全部都是
+      - id: bbb
+        text: BufferInputStream和BufferOutputStream
+      - id: ccc
+        text: PipedInputStream和PipedOutputStream
+      - id: ddd
+        text: FileInputStream和FileOutputStream
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 下列说法正确的是(        )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 用final修饰的变量在程序中可对这个变量的值进行更改
+      - id: bbb
+        text: final 可修饰类、属性、方法
+      - id: ccc
+        text: 定义抽象方法需有方法的返回类型、名称、参数列表和方法体
+      - id: ddd
+        text: abstract可修饰类、属性、方法
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 在switchexpression语句中expression的数据类型不能是(        )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: byte
+      - id: bbb
+        text: double
+      - id: ccc
+        text: short
+      - id: ddd
+        text: char
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 假设你正在为应用系统设计一个Java图形用户界面GUI,需要能输入多行文本信息,下列组件中最能满足这个要求的是(         )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: TextArea
+      - id: bbb
+        text: TextField
+      - id: ccc
+        text: Checkbox
+      - id: ddd
+        text: Label
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 下列哪个命题为真
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 构造函数必须有返回值
+      - id: bbb
+        text: 构造函数必须初始化类的所有数据成员
+      - id: ccc
+        text: 所有类都必须定义一个构造函数
+      - id: ddd
+        text: 构造函数可以访问类的非静态成员
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    下面的程序段执行后输出的结果是
+    ```java
+    StringBuffer buf=new StringBuffer("China2008");
+    buf.insert(5,"@");
+    System.out.println(buf.toString );
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: China@2008
+      - id: bbb
+        text: "@China2008"
+      - id: ccc
+        text: China2008@
+      - id: ddd
+        text: China#2008
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: |
+    阅读以下代码
+    ```java
+    import java.io.*;
+    import java.util.*;
+    public class foo{
+    public static void main (String[] args){
+    String s;
+    System.out.println("s=" + s);
+    }
+    }
+    ```
+    输出结果是什么?
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 代码得到编译,但捕获到 NullPointException异常
+      - id: bbb
+        text: 由于String s没有初始化,代码不能编译通过
+      - id: ccc
+        text: 代码得到编译,并输出“s=null”
+      - id: ddd
+        text: 代码得到编译,并输出“s=”
+    correct: bbb
+  points:
+    - 常见数据类型
+
+- kind: single_choice
+  content: 为了区分重载多态中同名的不同方法要求(         )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 调用时用类名或对象名做前缀
+      - id: bbb
+        text: 参数名不同
+      - id: ccc
+        text: 返回值类型不同
+      - id: ddd
+        text: 采用不同的参数列表
+    correct: ddd
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: |
+    关于以下程序段的说法类包含不考虑情况下正确的是
+    ```java
+    1class   MyListener  implements
+    2                  ActionListenerItemListener{
+    3                  public  void  actionPerformedActionEvent  ae{
+    4                       System.out.println("Action");}
+    5                   public  void  itemStateChanged(ItemEvent  ie){
+    6                  System.out.println("Item");
+    7                  }
+    8}
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 第2行产生编译错误
+      - id: bbb
+        text: 第3行产生编译错误
+      - id: ccc
+        text: 第5行产生编译错误
+      - id: ddd
+        text: 可通过编译
+    correct: ddd
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 下面关于类的说法错误的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 类中包含数据变量和方法
+      - id: bbb
+        text: Java语言的类支持单继承和多继承
+      - id: ccc
+        text: 类是Java语言中的一种复合数据类型
+      - id: ddd
+        text: 类是对所有具有一定共性的对象的抽象
+    correct: bbb
+  points:
+    - 抽象类，接口，继承
+
+- kind: single_choice
+  content: |
+    编译下列源程序会得到哪些文件?
+    ```java
+    class A1{
+    }
+    class A2{
+    }
+    public class B{
+    public static void main(String args[]){
+    }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 编译不成功
+      - id: bbb
+        text: 编译失败
+      - id: ccc
+        text: 代码正常运行但没有任何输出
+      - id: ddd
+        text: 运行时抛出异常
+    correct: aaa
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: |
+    以下程序的运行结果是
+    ```java
+    public class Increment{
+    public static void main(String args[]){
+            int c;
+            c = 2;
+            System.out.print(c);
+            System.out.print(c++);
+            System.out.println(c);
+    }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 2 2 2
+      - id: bbb
+        text: 2 2 3
+      - id: ccc
+        text: 3 4 4
+      - id: ddd
+        text: 2 3 3
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下面是Java的Boolean对象的值为
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Boolean
+      - id: bbb
+        text: new Boolean(true)
+      - id: ccc
+        text: true
+      - id: ddd
+        text: false
+    correct: bbb
+  points:
+    - 常见数据类型
+
+- kind: single_choice
+  content: 下列哪种说法是正确的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 覆盖方法中的参数清单必须是被覆盖方法参数清单的子集
+      - id: bbb
+        text: 子类可以覆盖超类中的任何方法
+      - id: ccc
+        text: 私有方法不能被子类覆盖
+      - id: ddd
+        text: 覆盖方法可以声明自己抛出的异常多于那个被覆盖的方法
+    correct: ccc
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 以下声明合法的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: abstract final double hyperbolicCosine( )
+      - id: bbb
+        text: default String
+      - id: ccc
+        text: abstract double d
+      - id: ddd
+        text: public final static native int w( )
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下面不属于Java关键字的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: transient
+      - id: bbb
+        text: private
+      - id: ccc
+        text: new
+      - id: ddd
+        text: sealed
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    当在命令行输入java myprog good morning 运行以下代码输出结果是
+    ```java
+    public class myprog{
+           public static void main(String argv[])
+          {
+               System.out.println(argv[2]);
+          }
+      }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: myprog
+      - id: bbb
+        text: 'Exception raised: "java.lang.ArrayIndexOutOfBoundsException: 2"'
+      - id: ccc
+        text: good
+      - id: ddd
+        text: morning
+    correct: bbb
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    以下说法哪项是正确的
+    ```java
+    1class  MyListener
+    2extends  MouseAdapter  implements  MouseListener{
+    3    public void mouseEnteredMouseEvent  mev
+    4      { System.out.println("Mouse  entered.");  }
+    5     }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 不能通过编译因为类头定义不能分行
+      - id: bbb
+        text: 能通过编译若组件用该类作为Mouse的监听者并且接收了mouse-exited事件则在执行过程中会抛出异常
+      - id: ccc
+        text: 以上代码可通过编译
+      - id: ddd
+        text: 不能通过编译因为没有实现MouseListener接口中的所有方法
+    correct: ccc
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: |
+    编译运行下面的代码会发生什么(           )
+    ```java
+    public class Test {
+        public static void main(String argv[]) {
+            Pmcraven pm1 = new Pmcraven("one");
+            pm1.run();
+            Pmcraven pm2 = new Pmcraven("two");
+            pm2.run();
+        }
+    }
+
+    class Pmcraven extends Thread {
+        private String sTname = "";
+        Pmcraven(String s) {
+            sTname = s;
+        }
+
+        public void run() {
+            for (int i = 0; i < 2; i++) {
+                try {
+                    sleep(1000);
+                } catch (InterruptedException e) {
+                }
+                yield();
+                System.out.println(sTname);
+            }
+       }
+    }
+    ```
+    输出结果是什么?
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 输出One One Two Two
+      - id: bbb
+        text: 输出One Two One Two
+      - id: ccc
+        text: 编译错误
+      - id: ddd
+        text: 输出Two Two One One
+    correct: aaa
+  points:
+    - 线程
+
+- kind: single_choice
+  content: |
+    类Test1、Test2定义如下
+    ```java
+    1 public class  Test1
+    2{ public  float  aMethodfloat afloat b throws
+    3  IOException {      }
+    4    }
+    5    public  class  Test2  extends  Test1{
+    6
+    7}
+    ```
+    将以下哪种方法插入行6是不合法的。
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: public int aMethodint aint bthrows Exception{ }
+      - id: bbb
+        text: float aMethodfloat afloat b{ }
+      - id: ccc
+        text: public int aMethodint aint bthrows IOException{ }
+      - id: ddd
+        text: public float aMethodfloat pfloat q{ }
+    correct: ddd
+  points:
+    - 抽象类，接口，继承
+
+- kind: single_choice
+  content: 以下关于abstract的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: abstract类中必须有abstract方法
+      - id: bbb
+        text: abstract只能修饰类
+      - id: ccc
+        text: abstarct方法所在的类必须用abstract修饰
+      - id: ddd
+        text: abstract只能修饰方法
+    correct: ccc
+  points:
+    - 抽象类，接口，继承
+
+- kind: single_choice
+  content: |
+    编译运行下面的代码会发生什么情况为
+    ```java
+    public class Bground extends Thread{
+        public static void main(String argv[])
+        {
+            Bground b = new Bground();
+            b.run();
+        }
+        public void start()
+        {
+           for (int i = 0; i <10; i++){
+               System.out.println("Value of i = " + i);
+           }
+        }
+    }
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 运行时错误Thread类中的run方法没有定义
+      - id: bbb
+        text: 编译错误Thread类中的run方法没有定义
+      - id: ccc
+        text: 编译无错打印0到9
+      - id: ddd
+        text: 编译无错不打印任何值
+    correct: ddd
+  points:
+    - 线程
+
+- kind: single_choice
+  content: 下列哪个类的声明是正确的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: protected private number
+      - id: bbb
+        text: abstract final class HI{}
+      - id: ccc
+        text: public abstract class Car{}
+      - id: ddd
+        text: abstract private move(){}
+    correct: ccc
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: |
+    下列程序段运行后变量temp的值是
+    ```java
+    int temp = 2 ;
+    temp++;
+    temp*=5;
+    temp/=2
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 15
+      - id: bbb
+        text: 7.5
+      - id: ccc
+        text: 2
+      - id: ddd
+        text: 7
+    correct: ddd
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列关于构造方法的叙述中错误的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Java语言规定构造方法不可以重载
+      - id: bbb
+        text: Java语言规定构造方法没有返回值但不用void声明
+      - id: ccc
+        text: Java语言规定构造方法只能通过new自动调用
+      - id: ddd
+        text: Java语言规定构造方法名与类名必须相同
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: String或StringBuffer类的对象在调用以下哪个方法时其自身会发生更改
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: String类的charAt()方法
+      - id: bbb
+        text: StringBuffer类的length ()方法
+      - id: ccc
+        text: StringBuffer类的reverse ()方法
+      - id: ddd
+        text: String类的toUpperCase()方法
+      - id: eee
+        text: String类的replace()方法
+    correct: ccc
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 在代码中使用catch(Exception e)的好处是(          )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 只会捕获个别类型的异常
+      - id: bbb
+        text: 捕获try块中产生的所有类型的异常
+      - id: ccc
+        text: 执行一些程序
+      - id: ddd
+        text: 忽略一些异常
+    correct: bbb
+  points:
+    - 语法基础
+

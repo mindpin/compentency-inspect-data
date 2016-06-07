@@ -1,0 +1,1050 @@
+- kind: single_choice
+  content: 在/etc/fstab文件中指定的文件系统加载参数中， ( )参数一般用于CD-ROM等移动设备
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: defaults
+      - id: bbb
+        text: sw
+      - id: ccc
+        text: rw和ro
+      - id: ddd
+        text: noauto
+    correct: ddd
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: Linux文件权限一共10位长度，分成四段，第三段表示的内容是 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 文件类型
+      - id: bbb
+        text: 文件所有者的权限
+      - id: ccc
+        text: 文件所有者所在组的权限
+      - id: ddd
+        text: 其他用户的权限
+    correct: ccc
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 终止一个前台进程可能用到的命令和操作 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: kill
+      - id: bbb
+        text: ctrl+C
+      - id: ccc
+        text: shut down
+      - id: ddd
+        text: halt
+    correct: bbb
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 在使用mkdir命令创建新的目录时，在其父目录不存在时先创建父目录的选项是 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: -m
+      - id: bbb
+        text: -d
+      - id: ccc
+        text: -f
+      - id: ddd
+        text: -p
+    correct: ddd
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 局域网的网络地址192.168.1.0/24，局域网络连接其它网络的网关地址是192.168.1.1。主机192.168.1.20访问172.16.1.0/24网络时，其路由设置正确的是 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: route add –net 192.168.1.0 gw 192.168.1.1 netmask 255.255.255.0 metric 1
+      - id: bbb
+        text: route add –net 172.16.1.0 gw 192.168.1.1 netmask 255.255.255.255 metric 1
+      - id: ccc
+        text: route add –net 172.16.1.0 gw 172.16.1.1 netmask 255.255.255.0 metric 1
+      - id: ddd
+        text: route add default 192.168.1.0 netmask 172.168.1.1 metric 1
+    correct: bbb
+  points:
+    - IP，端口，网络环境基础概念
+
+- kind: single_choice
+  content: 下列关于链接描述，错误的是 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 硬链接就是让链接文件的i节点号指向被链接文件的i节点
+      - id: bbb
+        text: 硬链接和符号连接都是产生一个新的i节点
+      - id: ccc
+        text: 链接分为硬链接和符号链接
+      - id: ddd
+        text: 硬连接不能链接目录文件
+    correct: bbb
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 在局域网络内的某台主机用ping命令测试网络连接时发现网络内部的主机都可以连同，而不能与公网连通，问题可能是 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 主机Ip设置有误
+      - id: bbb
+        text: 没有设置连接局域网的网关
+      - id: ccc
+        text: 局域网的网关或主机的网关设置有误
+      - id: ddd
+        text: 局域网DNS服务器设置有误
+    correct: ccc
+  points:
+    - IP，端口，网络环境基础概念
+
+- kind: single_choice
+  content: 下列文件中，包含了主机名到Ip地址的映射关系的文件是 ( )
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: /etc/HOSTNAME
+      - id: bbb
+        text: /etc/hosts
+      - id: ccc
+        text: /etc/resolv.conf
+      - id: ddd
+        text: /etc/networks
+    correct: bbb
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: ( )命令可以从文本文件的每一行中截取指定内容的数据。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: cp
+      - id: bbb
+        text: dd
+      - id: ccc
+        text: fmt
+      - id: ddd
+        text: cut
+    correct: ddd
+  points:
+    - linux命令
+
+- kind: multi_choice
+  content: 下面关于IOC的理解，正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 控制反转
+      - id: bbb
+        text: 对象被动的接受依赖类
+      - id: ccc
+        text: 对象主动的去找依赖类
+      - id: ddd
+        text: 一定要用接口
+    corrects:
+      - aaa
+      - bbb
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于AOP的理解，正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 面向纵向的开发
+      - id: bbb
+        text: 面向横向的开发
+      - id: ccc
+        text: AOP关注是面
+      - id: ddd
+        text: AOP关注的是点
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - spring
+
+- kind: multi_choice
+  content: Spring各模块之间关系
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring各模块之间是紧密联系的，相互依赖的
+      - id: bbb
+        text: Spring各模块之间可以单独存在
+      - id: ccc
+        text: Spring的核心模块是必须的，其他模块是基于核心模块
+      - id: ddd
+        text: Spring的核心模块不是必须的，可以不要
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring核心模块的作用
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 做AOP的
+      - id: bbb
+        text: 做IOC的，用来管理Bean的
+      - id: ccc
+        text: 是用来支持Hibernete
+      - id: ddd
+        text: 是用来支持Struts的
+    correct: bbb
+  points:
+    - spring
+
+- kind: single_choice
+  content: 对Hibernate的支持主要用到Spring的那个模块
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring核心模块
+      - id: bbb
+        text: Spring ORM模块
+      - id: ccc
+        text: Spring MVC模块
+      - id: ddd
+        text: Spring Web模块
+    correct: bbb
+  points:
+    - spring
+
+- kind: single_choice
+  content: 对Struts的支持主要用到Spring的那个模块
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring核心模块
+      - id: bbb
+        text: Spring ORM模块
+      - id: ccc
+        text: Spring MVC模块
+      - id: ddd
+        text: Spring Web模块
+    correct: ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: Spring的通知类型有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Before通知
+      - id: bbb
+        text: After return通知
+      - id: ccc
+        text: Throws通知
+      - id: ddd
+        text: Around通知
+    corrects:
+      - aaa
+      - bbb
+      - ccc
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于切入点的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 是AOP中一系列连连接点的集合
+      - id: bbb
+        text: 在做AOP时定义切入点是必须的
+      - id: ccc
+        text: 在做AOP时定义切入点不是必须的
+      - id: ddd
+        text: 可以用正则表达式来定义切入点
+    corrects:
+      - aaa
+      - ccc
+      - ddd
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring包装Hibernate之后的Hibernate的DAO应该继承那个类
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: HibernateDAO
+      - id: bbb
+        text: SessionFactory
+      - id: ccc
+        text: HibernateDAOSuport
+      - id: ddd
+        text: Session
+    correct: ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring中Before通知的目标对象要实现的接口是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: MethodBeforeAdvice
+      - id: bbb
+        text: ThrowsAdvice
+      - id: ccc
+        text: AfterReturningAdvice
+      - id: ddd
+        text: MethodInterceptor
+    correct: aaa
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring中around通知的目标对象要实现的接口是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: MethodBeforeAdvice
+      - id: bbb
+        text: ThrowsAdvice
+      - id: ccc
+        text: AfterReturningAdvice
+      - id: ddd
+        text: AfterReturningAdvice
+    correct: ddd
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring中Before通知的目标对象要实现的接口中before方法中的三个常用的参数依次是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 方法，方法的参数，目标对象
+      - id: bbb
+        text: 方法的参数，方法，目标对象
+      - id: ccc
+        text: 目标对象，方法，方法的参数
+      - id: ddd
+        text: 方法的参数，目标对象，方法
+    correct:  aaa
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring中around通知的目标对象要实现的接口中invoke中方法的参数是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 方法
+      - id: bbb
+        text: 目标对象
+      - id: ccc
+        text: 方法执行参数
+      - id: ddd
+        text: Exception
+    correct: ccc
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面是Spring依赖注入方式的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: set方法注入
+      - id: bbb
+        text: 构造方法的注入
+      - id: ccc
+        text: get方法的注入
+      - id: ddd
+        text: 接口的注入
+    corrects:
+      - aaa
+      - bbb
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于在Spring中配置Bean的id属性的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: id属性是必须，没有id属性就会报错
+      - id: bbb
+        text: id属性不是必须的，可以没有
+      - id: ccc
+        text: id属性的值可以重复
+      - id: ddd
+        text: id属性的值不可以重复
+    corrects:
+      - bbb
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于在Spring中配置Bean的name属性的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: name属性是必须，没有name属性就会报错
+      - id: bbb
+        text: name属性不是必须的，可以没有
+      - id: ccc
+        text: name属性的值可以重复
+      - id: ddd
+        text: name属性的值不可以重复
+    corrects:
+      - bbb
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面是IOC自动装载方法的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: byName
+      - id: bbb
+        text: byType
+      - id: ccc
+        text: constructor
+      - id: ddd
+        text: byMethod
+    corrects:
+      - aaa
+      - bbb
+  points:
+    - spring
+
+- kind: single_choice
+  content: 下面关于在Spring中配置Bean的init-method的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: init-method是在最前面执行的
+      - id: bbb
+        text: init-method在构造方法后，依赖注入前执行
+      - id: ccc
+        text: init-method在依赖注入之后执行
+      - id: ddd
+        text: init-method在依赖注入之后，构造函数之前执行
+    correct: ccc
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于Spring配置文件说话正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring配置文件必须叫applicationContext.xml
+      - id: bbb
+        text: Spring配置文件可以不叫applicationContext.xml
+      - id: ccc
+        text: Spring配置文件可以有多个
+      - id: ddd
+        text: Spring配置文件只能有一个
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - spring
+
+
+- kind: single_choice
+  content: |
+    对于下列代码
+    ```xml
+    <bean id="userTable" class="com.xfaccp.bean.UserTable">
+      <property name="userName">
+        <value>ACCP</value>
+      </property>
+    </bean>
+    ```
+    说法正确的是 ( )
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 其中<property name="userName">的userName是UserTable中的属性，可以不要get、set方法。
+      - id: bbb
+        text: 其中<property name="userName">的userName是UserTable中的属性，可以不要get方法，但是一定要有set方法
+      - id: ccc
+        text: 其中<property name="userName">的userName是UserTable中的属性，可以不要set方法，但是一定要有get方法
+      - id: ddd
+        text: 其中<property name="userName">的userName是UserTable中的属性，一定要有get和set方法
+    correct: bbb
+  points:
+    - spring
+
+- kind: multi_choice
+  content:  |
+    对于下列代码
+    ```xml
+    <bean id=“user" class=“com.xfaccp.bean.User"/>
+      <constructor-arg>
+        <value>accp</value>
+      </constructor-arg>
+    </bean>
+    ```
+    说法正确的是 ( )
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 必须要有一个接受字符串的构造方法
+      - id: bbb
+        text: 可以没有接受一个字符串的构造方法
+      - id: ccc
+        text: 这个类有且只能有一个只接受一个字符串的构造方法
+      - id: ddd
+        text: 这个类可以有多个构造方法，但是一定要有一个只接受一个字符串的构造方法
+    corrects:
+      - aaa
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content:  |
+    对于下列代码
+    ```xml
+    <bean id="before" class="org.springframework.aop.framework.ProxyFactoryBean">
+      <property name="proxyInterfaces">
+        <value>com.xfaccp.before.BeforeInterface</value>
+      </property>
+      <property name="target">
+        <ref bean="testBefore"/>
+      </property>
+      <property name="interceptorNames">
+        <list>
+          <value>beforeAdvisor</value>
+        </list>
+      </property>
+    </bean>
+    ```
+    说法正确的是 ( )
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 这段代码是做IOC
+      - id: bbb
+        text: 这段代码是做AOP
+      - id: ccc
+        text: 这段代码是在做代理
+      - id: ddd
+        text: 这段代码是在做织入
+    corrects:
+      - bbb
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: Spring包装Hibernate之后，能够来保存数据的方法有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: save
+      - id: bbb
+        text: load
+      - id: ccc
+        text: saveOrUpdate
+      - id: ddd
+        text: merge
+    corrects:
+      - aaa
+      - ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring包装Hibernate之后，关于findByExample方法说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 是根据对象来找，对象中有的属性都作为条件，包括主键，根据对象来动态的查询
+      - id: bbb
+        text: 是根据对象来找，对象中有的属性都作为条件，不包括主键，根据对象来动态的查询
+      - id: ccc
+        text: 是根据SQL语句来找
+      - id: ddd
+        text: 是根据HQL来找
+    correct: bbb
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring包装Hibernate之后，关于merge方法说话正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 用来修改记录
+      - id: bbb
+        text: 用来增加记录
+      - id: ccc
+        text: 根据主键来判断，如果有主键就修改，没有主键就增加记录
+      - id: ddd
+        text: 先查询记录，后修改
+    correct: ddd
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring包装Hibernate之后，关于find方法说话正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 参数是Restrictions对象
+      - id: bbb
+        text: 参数是HQL语句
+      - id: ccc
+        text: 参数是DetachedCriteria对象
+      - id: ddd
+        text: 此方法不支持分页
+    correct: bbb
+  points:
+    - spring
+
+- kind: multi_choice
+  content: Spring包装Struts的动作说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Action配置的type属性还是指向自己的Action类
+      - id: bbb
+        text: Action配置的type属性不需要指向自己的Action类，但是Action要在Spring配置文件中配置
+      - id: ccc
+        text: Action配置的type属性一定要指向Spring提供的代理类，但是Action要在Spring配置文件中配置
+      - id: ddd
+        text: Action配置的type属性可以不指向Spring提供的代理类，可以利用Spring提供的中央处理器来处理，但是Action要在Spring配置文件中配置
+    corrects:
+      - bbb
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: Spring中提供通过Web容器来启动Spring框架的类有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: ContextLoaderListener
+      - id: bbb
+        text: ServletLoaderListner
+      - id: ccc
+        text: ContextLoaderServlet
+      - id: ddd
+        text: ActionServlet
+    corrects:
+      - aaa
+      - ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: 下面关于BeanFactory接口说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: BeanFactory是单例模式的实现，负责创建和管理bean
+      - id: bbb
+        text: BeanFactory是工厂模式的实现，负责创建和管理bean
+      - id: ccc
+        text: ApplicationContext类是它的实现类
+      - id: ddd
+        text: 其他说法都不对
+    correct: bbb
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于ApplicationContext的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 是BeanFactory的实现类
+      - id: bbb
+        text: 是一个接口
+      - id: ccc
+        text: 提供一些BeanFactory的扩展功能
+      - id: ddd
+        text: 功能同BeanFactory一样
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面是BeanFactory的实现类的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: ClassPathXmlApplicationContext
+      - id: bbb
+        text: ApplicationContext
+      - id: ccc
+        text: FileSystemXmlApplicationContext
+      - id: ddd
+        text: 以上都是
+    corrects:
+      - aaa
+      - ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: 下面关于Spring管理Bean的说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Bean在Spring容器中有两种管理方式，工厂模式和单例模式
+      - id: bbb
+        text: Bean在 Spring容器中有两种管理方式，原型模式和单例模式
+      - id: ccc
+        text: Spring默认的利用工厂模式管理Bean
+      - id: ddd
+        text: Spring默认利用原型模式管理Bean
+    correct: bbb
+  points:
+    - spring
+
+- kind: single_choice
+  content: 下面关于设置注入优点说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 构造期即创建一个完整、合法的对象
+      - id: bbb
+        text: 需要写繁琐的setter方法的
+      - id: ccc
+        text: 对于复杂的依赖关系，设置注入更简洁，直观
+      - id: ddd
+        text: 其他说法都不对
+    correct: ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: 下面关于构造注入优点说法错误的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 构造期即创建一个完整、合法的对象
+      - id: bbb
+        text: 不需要写繁琐的setter方法的
+      - id: ccc
+        text: 对于复杂的依赖关系，构造注入更简洁，直观
+      - id: ddd
+        text: 在构造函数中决定依赖关系的注入顺序
+    correct: ccc
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 下面关于AOP的理解正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 能够降低组件之间的依赖关系
+      - id: bbb
+        text: 将项目中的公共的问题集中解决，减少代码量，提高系统的可维护性
+      - id: ccc
+        text: AOP是面向对象的代替品
+      - id: ddd
+        text: AOP不是面向对象的代替品，是面向对象很好的补充
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: 关于Spring 与 Hibernate集成，下面说法错误的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring提供了HibernateDaoSupport类来简化Hibernate的使用
+      - id: bbb
+        text: 在Spring配置文件种可以通过Spring提供的LocalSessionFactoryBean，来获得SessionFactory的实例
+      - id: ccc
+        text: 通过集成Spring和Hibernate，用Spring管理程序的依赖关系，将SessionFactory注入到DataSource中
+      - id: ddd
+        text: 通过Spring，可以在Biz层代码中无需直接实例化DAO类，而是通过注入得到
+    correct: ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: Spring和Hibernate整合过程中各对象注入的顺序是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: DataSource->SessionFactory-> Biz -> DAO
+      - id: bbb
+        text: SessionFactory -> DataSource ->DAO->Biz
+      - id: ccc
+        text: DataSource->SessionFactory->DAO->Biz
+      - id: ddd
+        text: SessionFactory -> DataSource -> Biz -> DAO
+    correct: ccc
+  points:
+    - spring
+
+- kind: multi_choice
+  content: Spring IOC容器管理Action的方式
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 使用org.springframework.web.struts.DelegatingRequestProcessor
+      - id: bbb
+        text: 使用org.springframework.web.struts.DelegatingActionProxy
+      - id: ccc
+        text: 使用org.springframework.web.context.ContextLoaderListener
+      - id: ddd
+        text: 使用org.springframework.web.context.ContextLoaderServlet
+    corrects:
+      - aaa
+      - bbb
+  points:
+    - spring
+
+
+- kind: single_choice
+  content: （ ）模块扩展了BeanFactory的概念，增加了对国际化（I18N，即Internationalization）消息、事件的传播以及验证的支持；同时提供诸多企业服务，支持对模版框架（例如Velocity、FreeMarker）的集成。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring Core
+      - id: bbb
+        text: Spring Context
+      - id: ccc
+        text: Spring AOP
+      - id: ddd
+        text: Spring DAO
+    correct: bbb
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 关于setter注入和构造注入说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 执行效果完全相同
+      - id: bbb
+        text: 注入依赖关系注入时机不同
+      - id: ccc
+        text: setter注入方式依赖对象先注入
+      - id: ddd
+        text: 构造注入方式依赖对象先注入
+    corrects:
+      - bbb
+      - ddd
+  points:
+    - spring
+
+- kind: multi_choice
+  content: 实现AOP代理时，下面说法正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring默认使用用于接口的JDK动态代理
+      - id: bbb
+        text: Spring只能使用JDK动态代理
+      - id: ccc
+        text: Spring也可以使用CGLIB代理
+      - id: ddd
+        text: Spring主要使用JDK动态代理
+    corrects:
+      - aaa
+      - ccc
+  points:
+    - spring
+
+- kind: single_choice
+  content: Linux有三个查看文件的命令，若希望在查看文件内容过程中可以用光标上下移动来查看文件内容，应使用 ( ) 命令
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: cat
+      - id: bbb
+        text: more
+      - id: ccc
+        text: less
+      - id: ddd
+        text: menu
+    correct: ccc
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 下列信息是某系统用ps –ef命令列出的正在运行的进程， （　）进程是运行Internet超级服务器，它负责监听Internet sockets上的连接，并调用合适的服务器来处理接收的信息。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: root 1 4.0 0.0 344 204? S 17:09 0:00 init
+      - id: bbb
+        text: root 2 0.0 0.1 2916 1520? S 17:09 0:00 /sbin/getty
+      - id: ccc
+        text: root 3 0.0 0.2 1364 632? S 17:09 0:00 /usr/sbin/syslogd
+      - id: ddd
+        text: root 4 0.0 1344 1204? S 17:09 0:10 /usr/sbin/inetd
+    correct: ddd
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 在TCp/Ip模型中，应用层包含了所有的高层协议，在下列的一些应用协议中， （ ）是能够实现本地与远程主机之间的文件传输工作。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: telnet
+      - id: bbb
+        text: FTP
+      - id: ccc
+        text: SNMP
+      - id: ddd
+        text: NFS
+    correct: bbb
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 对名为fido的文件用chmod 551 fido 进行了修改，则它的许可权是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: -rwxr-xr-x
+      - id: bbb
+        text: -rwxr--r--
+      - id: ccc
+        text: -r--r--r--
+      - id: ddd
+        text: -r-xr-x—x
+    correct: ddd
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: 用ls –al 命令列出下面的文件列表， （ ）文件是符号连接文件。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: -rw-rw-rw- 2 hel-s users 56 Sep 09 11:05 hello
+      - id: bbb
+        text: -rwxrwxrwx 2 hel-s users 56 Sep 09 11:05 goodbey
+      - id: ccc
+        text: drwxr--r-- 1 hel users 1024 Sep 10 08:10 zhang
+      - id: ddd
+        text: lrwxr--r-- 1 hel users 2024 Sep 12 08:12 cheng
+    correct: ddd
+  points:
+    - linux命令
+
+- kind: single_choice
+  content: DNS域名系统主要负责主机名和 （ ） 之间的解析。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Ip地址
+      - id: bbb
+        text: MAC地址
+      - id: ccc
+        text: 网络地址
+      - id: ddd
+        text: 主机别名
+    correct: aaa
+  points:
+    - IP，端口，网络环境基础概念
+
+- kind: single_choice
+  content: 关闭linux系统(不重新启动)可使用命令
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Ctrl+Alt+Del
+      - id: bbb
+        text: halt
+      - id: ccc
+        text: shutdown -r now
+      - id: ddd
+        text: reboot
+    correct: bbb
+  points:
+    - linux命令

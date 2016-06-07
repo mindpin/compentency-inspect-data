@@ -1,0 +1,85 @@
+# 单选
+- kind: single_choice
+  content: 下列说法正确的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: class中的constructor不可省略
+      - id: bbb
+        text: constructor必须与class同名，但方法不能与class同名
+      - id: ccc
+        text: constructor在一个对象被new时执行
+      - id: ddd
+        text: 一个class只能定义一个constructor
+    correct: ccc
+  points:
+    - 类，对象，方法
+
+- kind: single_choice
+  content: 提供Java存取数据库能力的包是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: "java.sql"
+      - id: bbb
+        text: "java.awt"
+      - id: ccc
+        text: "java.lang"
+      - id: ddd
+        text: "java.swing"
+    correct: aaa
+  points:
+    - 常用基础类库
+
+- kind: single_choice
+  content: 下列运算符合法的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: "&&"
+      - id: bbb
+        text: "<>"
+      - id: ccc
+        text: "if"
+      - id: ddd
+        text: ":="
+    correct: aaa
+  points:
+    - 语法基础
+
+- kind: single_choice
+  content: 下列哪一种叙述是正确的
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: abstract修饰符可修饰字段、方法和类
+      - id: bbb
+        text: 抽象方法的body部分必须用一对大括号"{ }"包住
+      - id: ccc
+        text: 声明抽象方法，大括号可有可无
+      - id: ddd
+        text: 声明抽象方法不可写出大括号
+    correct: ddd
+  points:
+    - 抽象类，接口，继承
+
+- kind: single_choice
+  content: 下列语句正确的是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 形式参数可被视为local variable
+      - id: bbb
+        text: 形式参数可被字段修饰符修饰
+      - id: ccc
+        text: 形式参数为方法被调用时，真正被传递的参数
+      - id: ddd
+        text: 形式参数不可以是对象
+    correct: aaa
+  points:
+    - 类，对象，方法
