@@ -6,7 +6,7 @@
       - id: aaa
         text: Hibernate是一个开放源代码的对象关系映射框架
       - id: bbb
-        text: Hibernate是一个开放源代码的对象关系映射框架
+        text: Hibernate对JDBC进行了轻量级的对象封装
       - id: ccc
         text: Hibernate可以大大减少操作数据库的工作量
       - id: ddd
@@ -15,7 +15,6 @@
       - aaa
       - bbb
       - ccc
-      - ddd
   points:
     - hibernate
 
