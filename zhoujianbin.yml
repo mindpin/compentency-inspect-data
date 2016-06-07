@@ -4,9 +4,9 @@
   answer:
     choices:
       - id: aaa
-        text: defaults 
+        text: defaults
       - id: bbb
-        text: sw 
+        text: sw
       - id: ccc
         text: rw和ro
       - id: ddd
@@ -38,9 +38,9 @@
   answer:
     choices:
       - id: aaa
-        text: kill 
+        text: kill
       - id: bbb
-        text: ;+C
+        text: ctrl+C
       - id: ccc
         text: shut down
       - id: ddd
@@ -67,91 +67,6 @@
     - linux命令
 
 - kind: single_choice
-  content: 下面关于i节点描述错误的是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: i节点和文件是一一对应的
-      - id: bbb
-        text: i节点能描述文件占用的块数
-      - id: ccc
-        text: i节点描述了文件大小和指向数据块的指针
-      - id: ddd
-        text: 通过i节点实现文件的逻辑结构和物理结构的转换
-    correct: aaa
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 一个文件名字为rr.Z，可以用来解压缩的命令是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: tar 
-      - id: bbb
-        text: gzip 
-      - id: ccc
-        text: compress 
-      - id: ddd
-        text: uncompress
-    correct: ddd
-  points:
-    - linux命令
-    
-- kind: single_choice
-  content: 具有很多C语言的功能，又称过滤器的是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: csh
-      - id: bbb
-        text: tcsh
-      - id: ccc
-        text: awk　　
-      - id: ddd
-        text: sed
-    correct: ccc
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 一台主机要实现通过局域网与另一个局域网通信，需要做的工作是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 配置域名服务器
-      - id: bbb
-        text: 定义一条本机指向所在网络的路由
-      - id: ccc
-        text: 定义一条本机指向所在网络网关的路由
-      - id: ddd
-        text: 定义一条本机指向目标网络网关的路由
-    correct: ccc
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 建立动态路由需要用到的文件有 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: /etc/hosts
-      - id: bbb
-        text: /etc/HOSTNAME
-      - id: ccc
-        text: /etc/resolv.conf
-      - id: ddd
-        text: /etc/gateways
-    correct: ddd
-  points:
-    - linux命令
-
-- kind: single_choice
   content: 局域网的网络地址192.168.1.0/24，局域网络连接其它网络的网关地址是192.168.1.1。主机192.168.1.20访问172.16.1.0/24网络时，其路由设置正确的是 ( )
   content_format: text
   answer:
@@ -166,24 +81,7 @@
         text: route add default 192.168.1.0 netmask 172.168.1.1 metric 1
     correct: bbb
   points:
-    - linux命令
-
-- kind: single_choice
-  content: 下列提法中，不属于ifconfig命令作用范围的是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 配置本地回环地址
-      - id: bbb
-        text: 配置网卡的Ip地址
-      - id: ccc
-        text: 激活网络适配器
-      - id: ddd
-        text: 加载网卡到内核中
-    correct: ddd
-  points:
-    - linux命令
+    - IP，端口，网络环境基础概念
 
 - kind: single_choice
   content: 下列关于链接描述，错误的是 ( )
@@ -195,7 +93,7 @@
       - id: bbb
         text: 硬链接和符号连接都是产生一个新的i节点
       - id: ccc
-        text: 链接分为硬链接和符号链接 
+        text: 链接分为硬链接和符号链接
       - id: ddd
         text: 硬连接不能链接目录文件
     correct: bbb
@@ -217,7 +115,7 @@
         text: 局域网DNS服务器设置有误
     correct: ccc
   points:
-    - linux命令
+    - IP，端口，网络环境基础概念
 
 - kind: single_choice
   content: 下列文件中，包含了主机名到Ip地址的映射关系的文件是 ( )
@@ -237,91 +135,21 @@
     - linux命令
 
 - kind: single_choice
-  content: 不需要编译内核的情况是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 删除系统不用的设备驱动程序时
-      - id: bbb
-        text: 升级内核时
-      - id: ccc
-        text: 添加新硬件时
-      - id: ddd
-        text: 将网卡激活
-    correct: ddd
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 在shell中变量的赋值有四种方法，其中，采用name=12的方法称 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 直接赋值
-      - id: bbb
-        text: 使用命令的输出
-      - id: ccc
-        text: 使用命令行参数
-      - id: ddd
-        text: 使用命令的输出
-    correct: aaa
-  points:
-    - linux命令
-
-- kind: single_choice
   content: ( )命令可以从文本文件的每一行中截取指定内容的数据。
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: cp 
+        text: cp
       - id: bbb
-        text: dd 
+        text: dd
       - id: ccc
-        text: fmt 
+        text: fmt
       - id: ddd
         text: cut
     correct: ddd
   points:
     - linux命令
-
-- kind: single_choice
-  content: 下列不是Linux系统进程类型的是 ( )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 交互进程
-      - id: bbb
-        text: 批处理进程
-      - id: ccc
-        text: 守护进程
-      - id: ddd
-        text: 就绪进程(进程状态)
-    correct: ddd
-  points:
-    - linux命令
-
-- kind: multi_choice
-  content: 下面关于Spring的说话正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Spring是一个重量级的框架
-      - id: bbb
-        text: Spring是一个轻量级的框架
-      - id: ccc
-        text: Spring是一个IOC和AOP容器
-      - id: ddd
-        text: Spring是一个入侵式的框架
-    corrects:
-      - bbb
-      - ccc
-  points:
-    - springmvc
 
 - kind: multi_choice
   content: 下面关于IOC的理解，正确的是
@@ -340,7 +168,7 @@
       - aaa
       - bbb
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面关于AOP的理解，正确的是
@@ -359,7 +187,7 @@
       - bbb
       - ccc
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: Spring各模块之间关系
@@ -378,24 +206,7 @@
       - bbb
       - ccc
   points:
-    - springmvc
-
-- kind: single_choice
-  content: Spring的组成一共有( )块组成。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 1
-      - id: bbb
-        text: 3
-      - id: ccc
-        text: 5
-      - id: ddd
-        text: 7
-    correct: ddd
-  points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring核心模块的作用
@@ -412,24 +223,24 @@
         text: 是用来支持Struts的
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
-    content: 对Hibernate的支持主要用到Spring的那个模块
-    content_format: text
-    answer:
-      choices:
-        - id: aaa
-          text: Spring核心模块
-        - id: bbb
-          text: Spring ORM模块
-        - id: ccc
-          text: Spring MVC模块
-        - id: ddd
-          text: Spring Web模块
-      correct: bbb 
+  content: 对Hibernate的支持主要用到Spring的那个模块
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Spring核心模块
+      - id: bbb
+        text: Spring ORM模块
+      - id: ccc
+        text: Spring MVC模块
+      - id: ddd
+        text: Spring Web模块
+    correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: 对Struts的支持主要用到Spring的那个模块
@@ -443,10 +254,10 @@
       - id: ccc
         text: Spring MVC模块
       - id: ddd
-        text: Spring MVC模块
+        text: Spring Web模块
     correct: ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: Spring的通知类型有
@@ -467,7 +278,7 @@
       - ccc
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面关于切入点的说法正确的是
@@ -487,7 +298,7 @@
       - ccc
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring包装Hibernate之后的Hibernate的DAO应该继承那个类
@@ -504,45 +315,7 @@
         text: Session
     correct: ccc
   points:
-    - springmvc
-
-- kind: multi_choice
-  content: 下面对Spring包装Struts1.2的说法正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Spring包装Struts的ActionServlet
-      - id: bbb
-        text: Spring包装Struts的Action
-      - id: ccc
-        text: 主要是利用Spring的依赖注入
-      - id: ddd
-        text: 主要利用Spring的面向方面的编程
-    corrects:
-      - bbb
-      - ccc
-  points:
-    - springmvc
-
-- kind: multi_choice
-  content: Spring包装Struts时那些Spring模块是必须的
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Spring核心模块
-      - id: bbb
-        text: Spring AOP模块
-      - id: ccc
-        text: Spring MVC模块
-      - id: ddd
-        text: Spring WEB模块
-    corrects:
-      - aaa
-      - ddd
-  points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring中Before通知的目标对象要实现的接口是
@@ -559,7 +332,7 @@
         text: MethodInterceptor
     correct: aaa
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring中around通知的目标对象要实现的接口是
@@ -576,24 +349,24 @@
         text: AfterReturningAdvice
     correct: ddd
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
-    content: Spring中Before通知的目标对象要实现的接口中before方法中的三个常用的参数依次是
-    content_format: text
-    answer:
-      choices:
-        - id: aaa
-          text: 方法，方法的参数，目标对象
-        - id: bbb
-          text: 方法的参数，方法，目标对象
-        - id: ccc
-          text: 目标对象，方法，方法的参数
-        - id: ddd
-          text: 方法的参数，目标对象，方法
-      correct:  aaa
+  content: Spring中Before通知的目标对象要实现的接口中before方法中的三个常用的参数依次是
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 方法，方法的参数，目标对象
+      - id: bbb
+        text: 方法的参数，方法，目标对象
+      - id: ccc
+        text: 目标对象，方法，方法的参数
+      - id: ddd
+        text: 方法的参数，目标对象，方法
+    correct:  aaa
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring中around通知的目标对象要实现的接口中invoke中方法的参数是
@@ -610,7 +383,7 @@
         text: Exception
     correct: ccc
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面是Spring依赖注入方式的是
@@ -629,7 +402,7 @@
       - aaa
       - bbb
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面关于在Spring中配置Bean的id属性的说法正确的是
@@ -648,7 +421,7 @@
       - bbb
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面关于在Spring中配置Bean的name属性的说法正确的是
@@ -667,7 +440,7 @@
       - bbb
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面是IOC自动装载方法的是
@@ -686,7 +459,7 @@
       - aaa
       - bbb
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: 下面关于在Spring中配置Bean的init-method的说法正确的是
@@ -703,7 +476,7 @@
         text: init-method在依赖注入之后，构造函数之前执行
     correct: ccc
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面关于Spring配置文件说话正确的是
@@ -722,17 +495,17 @@
       - bbb
       - ccc
   points:
-    - springmvc
+    - spring
 
 
 - kind: single_choice
   content: |
     对于下列代码
-    ```java
+    ```xml
     <bean id="userTable" class="com.xfaccp.bean.UserTable">
-    <property name="userName">
-    <value>ACCP</value>
-    </property>
+      <property name="userName">
+        <value>ACCP</value>
+      </property>
     </bean>
     ```
     说法正确的是 ( )
@@ -749,16 +522,16 @@
         text: 其中<property name="userName">的userName是UserTable中的属性，一定要有get和set方法
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content:  |
     对于下列代码
-    ```java
+    ```xml
     <bean id=“user" class=“com.xfaccp.bean.User"/>
-    <constructor-arg>
-    <value>accp</value>
-    </constructor-arg>
+      <constructor-arg>
+        <value>accp</value>
+      </constructor-arg>
     </bean>
     ```
     说法正确的是 ( )
@@ -777,23 +550,24 @@
       - aaa
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content:  |
     对于下列代码
-    ```java
-    <bean id="before" class="org.springframework.aop.framework.ProxyFactoryBean"> <property name="proxyInterfaces">
-    <value>com.xfaccp.before.BeforeInterface</value>
-    </property>
-    <property name="target">
-    <ref bean="testBefore"/>
-    </property>
-    <property name="interceptorNames">
-    <list>
-    <value>beforeAdvisor</value>
-    </list>
-    </property>
+    ```xml
+    <bean id="before" class="org.springframework.aop.framework.ProxyFactoryBean">
+      <property name="proxyInterfaces">
+        <value>com.xfaccp.before.BeforeInterface</value>
+      </property>
+      <property name="target">
+        <ref bean="testBefore"/>
+      </property>
+      <property name="interceptorNames">
+        <list>
+          <value>beforeAdvisor</value>
+        </list>
+      </property>
     </bean>
     ```
     说法正确的是 ( )
@@ -812,7 +586,7 @@
       - bbb
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: Spring包装Hibernate之后，能够来保存数据的方法有
@@ -831,7 +605,7 @@
       - aaa
       - ccc
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring包装Hibernate之后，关于findByExample方法说法正确的是
@@ -848,7 +622,7 @@
         text: 是根据HQL来找
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring包装Hibernate之后，关于merge方法说话正确的是
@@ -865,7 +639,7 @@
         text: 先查询记录，后修改
     correct: ddd
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: Spring包装Hibernate之后，关于find方法说话正确的是
@@ -882,7 +656,7 @@
         text: 此方法不支持分页
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: Spring包装Struts的动作说法正确的是
@@ -901,7 +675,7 @@
       - bbb
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: Spring中提供通过Web容器来启动Spring框架的类有
@@ -920,43 +694,7 @@
       - aaa
       - ccc
   points:
-    - springmvc
-
-- kind: single_choice
-  content: 在struts1.2同Spring集成的中，需要在struts-config.xml文件中配置一个请求处理器，下面配置办法正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: <controller className="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
-      - id: bbb
-        text: <controller processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
-      - id: ccc
-        text: <processor className="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
-      - id: ddd
-        text: <processor processorClass="org.springframework.web.struts.DelegatingRequestProcessor"></controller>
-    correct: bbb
-  points:
-    - springmvc
-
-- kind: multi_choice
-  content: Struts2同Spring集成的说法正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 可以在struts.properties中增加一个配置：struts.beanFactory=spring
-      - id: bbb
-        text: 可以在struts.xml中配置一个<processor processorClass="org.springframework. web.struts.DelegatingRequestProcessor"></controller>的配置
-      - id: ccc
-        text: 可以在struts.xml中增加一个<constant name="struts.beanFactory" value="spring" />
-      - id: ddd
-        text: 可以在struts.xml中增加一个插件 <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn"><set-property property="contextConfigLocation" value="classpath:applicationContext.xml" />
-    corrects:
-      - aaa
-      - ccc
-  points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: 下面关于BeanFactory接口说法正确的是
@@ -970,10 +708,10 @@
       - id: ccc
         text: ApplicationContext类是它的实现类
       - id: ddd
-        text: 以上说法都不对
+        text: 其他说法都不对
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面关于ApplicationContext的说法正确的是
@@ -992,7 +730,7 @@
       - bbb
       - ccc
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 下面是BeanFactory的实现类的是
@@ -1011,7 +749,7 @@
       - aaa
       - ccc
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: 下面关于Spring管理Bean的说法正确的是
@@ -1028,7 +766,7 @@
         text: Spring默认利用原型模式管理Bean
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: 下面关于设置注入优点说法正确的是
@@ -1042,10 +780,10 @@
       - id: ccc
         text: 对于复杂的依赖关系，设置注入更简洁，直观
       - id: ddd
-        text: 以上说法都不对
+        text: 其他说法都不对
     correct: ccc
   points:
-    - springmvc
+    - spring
 
 - kind: single_choice
   content: 下面关于构造注入优点说法错误的是
@@ -1062,7 +800,7 @@
         text: 在构造函数中决定依赖关系的注入顺序
     correct: ccc
   points:
-    - springmvc 
+    - spring
 
 - kind: multi_choice
   content: 下面关于AOP的理解正确的是
@@ -1081,7 +819,7 @@
       - bbb
       - ccc
   points:
-    - springmvc 
+    - spring
 
 - kind: single_choice
   content: 关于Spring 与 Hibernate集成，下面说法错误的是
@@ -1098,7 +836,7 @@
         text: 通过Spring，可以在Biz层代码中无需直接实例化DAO类，而是通过注入得到
     correct: ccc
   points:
-    - springmvc 
+    - spring
 
 - kind: single_choice
   content: Spring和Hibernate整合过程中各对象注入的顺序是
@@ -1115,7 +853,7 @@
         text: SessionFactory -> DataSource -> Biz -> DAO
     correct: ccc
   points:
-    - springmvc 
+    - spring
 
 - kind: multi_choice
   content: Spring IOC容器管理Action的方式
@@ -1134,7 +872,7 @@
       - aaa
       - bbb
   points:
-    - springmvc
+    - spring
 
 
 - kind: single_choice
@@ -1152,7 +890,7 @@
         text: Spring DAO
     correct: bbb
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 关于setter注入和构造注入说法正确的是
@@ -1171,7 +909,7 @@
       - bbb
       - ddd
   points:
-    - springmvc
+    - spring
 
 - kind: multi_choice
   content: 实现AOP代理时，下面说法正确的是
@@ -1190,92 +928,7 @@
       - aaa
       - ccc
   points:
-    - springmvc
-
-- kind: single_choice
-  content: 配置Apache 1.3.19服务器需要修改的配置文件为
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: httpd.conf
-      - id: bbb
-        text: access.conf
-      - id: ccc
-        text: srm.conf
-      - id: ddd
-        text: named.conf
-    correct: aaa
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 内核不包括的子系统是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 进程管理系统
-      - id: bbb
-        text: 内存管理系统
-      - id: ccc
-        text: I/O管理系统
-      - id: ddd
-        text: 硬件管理系统
-    correct: ddd
-  points:
-    - linux命令
-
-- kind: single_choice
-    content: 在日常管理中，通常CpU会影响系统性能的情况是
-    content_format: text
-    answer:
-      choices:
-        - id: aaa
-          text: CpU已满负荷地运转
-        - id: bbb
-          text: CpU的运行效率为30%
-        - id: ccc
-          text: CpU的运行效率为50%
-        - id: ddd
-          text: CpU的运行效率为80%
-      correct: aaa
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 若一台计算机的内存为128MB，则交换分区的大小通常是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 64MB 
-      - id: bbb
-        text: 128MB 
-      - id: ccc
-        text: 256MB 
-      - id: ddd
-        text: 512MB
-    correct: ccc
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 在安装Linux的过程中的第五步是让用户选择安装方式，如果用户希望安装部分组件(软件程序)，并在选择好后让系统自动安装，应该选择的选项是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: full 
-      - id: bbb
-        text: expert 
-      - id: ccc
-        text: newbie 
-      - id: ddd
-        text: menu
-    correct: ddd
-  points:
-    - linux命令
+    - spring
 
 - kind: single_choice
   content: Linux有三个查看文件的命令，若希望在查看文件内容过程中可以用光标上下移动来查看文件内容，应使用 ( ) 命令
@@ -1283,11 +936,11 @@
   answer:
     choices:
       - id: aaa
-        text: cat 
+        text: cat
       - id: bbb
-        text: more 
+        text: more
       - id: ccc
-        text: less 
+        text: less
       - id: ddd
         text: menu
     correct: ccc
@@ -1317,33 +970,16 @@
   answer:
     choices:
       - id: aaa
-        text: telnet 
+        text: telnet
       - id: bbb
-        text: FTP 
+        text: FTP
       - id: ccc
         text: SNMP
       - id: ddd
         text: NFS
-    correct: bbb 
+    correct: bbb
   points:
-    - linux命令 
-
-- kind: single_choice
-  content: 当我们与某远程网络连接不上时，就需要跟踪路由查看，以便了解在网络的什么位置出现了问题，满足该目的的命令是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: ping 
-      - id: bbb
-        text: ifconfig
-      - id: ccc
-        text: traceroute 
-      - id: ddd
-        text: netstat
-    correct: ccc
-  points:
-    - linux命令 
+    - linux命令
 
 - kind: single_choice
   content: 对名为fido的文件用chmod 551 fido 进行了修改，则它的许可权是
@@ -1360,24 +996,7 @@
         text: -r-xr-x—x
     correct: ddd
   points:
-    - linux命令 
-
-- kind: single_choice
-  content: 在i节点表中的磁盘地址表中，若一个文件的长度是从磁盘地址表的第1块到第11块，则该文件共占有（ ） 块号。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 256 
-      - id: bbb
-        text: 266 
-      - id: ccc
-        text: 11 
-      - id: ddd
-        text: 256×10
-    correct: bbb
-  points:
-    - linux命令 
+    - linux命令
 
 - kind: single_choice
   content: 用ls –al 命令列出下面的文件列表， （ ）文件是符号连接文件。
@@ -1394,7 +1013,7 @@
         text: lrwxr--r-- 1 hel users 2024 Sep 12 08:12 cheng
     correct: ddd
   points:
-    - linux命令 
+    - linux命令
 
 - kind: single_choice
   content: DNS域名系统主要负责主机名和 （ ） 之间的解析。
@@ -1411,109 +1030,7 @@
         text: 主机别名
     correct: aaa
   points:
-    - linux命令 
-
-- kind: single_choice
-  content: WWW服务器是在Internet上使用最为广泛，它采用的是 （ ）结构。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 服务器/工作站
-      - id: bbb
-        text: B/S
-      - id: ccc
-        text: 集中式 
-      - id: ddd
-        text: 分布式
-    correct: bbb
-  points:
-    - linux命令 
-
-- kind: single_choice
-  content: Linux系统通过 （ ） 命令给其他用户发消息。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: less 
-      - id: bbb
-        text: mesg y
-      - id: ccc
-        text: write 
-      - id: ddd
-        text: echo to
-    correct: ccc
-  points:
-    - linux命令 
-
-- kind: single_choice
-  content: NFS是 （ ）系统。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 文件 
-      - id: bbb
-        text: 磁盘 
-      - id: ccc
-        text: 网络文件
-      - id: ddd
-        text: 操作
-    correct: ccc
-  points:
-    - linux命令 
-
-- kind: single_choice
-  content: （ ） 命令可以在Linux的安全系统中完成文件向磁带备份的工作。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: cp 
-      - id: bbb
-        text: tr 
-      - id: ccc
-        text: dir 
-      - id: ddd
-        text: cpio
-    correct: bbb
-  points:
-    - linux命令 
-
-- kind: single_choice
-  content: 网络管理具备以下几大功能：配置管理、 （ ） 、性能管理、安全管理和计费管理等。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 故障管理
-      - id: bbb
-        text: 日常备份管理
-      - id: ccc
-        text: 升级管理
-      - id: ddd
-        text: 发送邮件
-    correct: aaa
-  points:
-    - linux命令 
-
-- kind: single_choice
-  content: 关于代理服务器的论述，正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 使用internet上已有的公开代理服务器，只需配置客户端。
-      - id: bbb
-        text: 代理服务器只能代理客户端http的请求。
-      - id: ccc
-        text: 设置好的代理服务器可以被网络上任何主机使用。
-      - id: ddd
-        text: 使用代理服务器的客户端没有自己的ip地址。
-    correct: aaa
-  points:
-    - linux命令 
+    - IP，端口，网络环境基础概念
 
 - kind: single_choice
   content: 关闭linux系统(不重新启动)可使用命令
@@ -1523,45 +1040,11 @@
       - id: aaa
         text: Ctrl+Alt+Del
       - id: bbb
-        text: halt 
+        text: halt
       - id: ccc
         text: shutdown -r now
       - id: ddd
         text: reboot
     correct: bbb
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 实现从Ip地址到以太网MAC地址转换的命令为
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: ping 
-      - id: bbb
-        text: ifconfig 
-      - id: ccc
-        text: arp 
-      - id: ddd
-        text: traceroute
-    correct: ccc
-  points:
-    - linux命令
-
-- kind: single_choice
-  content: 网络管理员对WWW服务器进行访问、控制存取和运行等控制，这些控制可在 （ ）文件中体现。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: httpd.conf
-      - id: bbb
-        text: lilo.conf
-      - id: ccc
-        text: inetd.conf
-      - id: ddd
-        text: resolv.conf
-    correct: aaa
   points:
     - linux命令

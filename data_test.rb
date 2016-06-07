@@ -22,25 +22,25 @@ describe "yaml" do
         item["content"].is_a?(String).must_equal true
 
         if item["kind"] == "essay"
-          item.keys.count.must_equal 3
+          item.keys.count.must_equal 4
         end
 
         if item["kind"] == "multi_choice"
-          item.keys.count.must_equal 4
+          item.keys.count.must_equal 5
           item["answer"].is_a?(Hash).must_equal true
           item["answer"]["choices"].is_a?(Array).must_equal true
           item["answer"]["corrects"].is_a?(Array).must_equal true
         end
 
         if item["kind"] == "single_choice"
-          item.keys.count.must_equal 4
+          item.keys.count.must_equal 5
           item["answer"].is_a?(Hash).must_equal true
           item["answer"]["choices"].is_a?(Array).must_equal true
           item["answer"]["correct"].is_a?(String).must_equal true
         end
 
         if item["kind"] == "bool"
-          item.keys.count.must_equal 4
+          item.keys.count.must_equal 5
           [true, false].include?(item["answer"]).must_equal true
         end
 
