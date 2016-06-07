@@ -1,0 +1,24 @@
+- kind: essay
+  content: 用sed修改test.txt的23行test为tset；
+  content_format: text
+  points:
+    - shell脚本
+
+- kind: essay
+  content: 如何将本地80端口的请求转发到8080端口，当前主机IP为192.168.2.1
+  content_format: text
+  points:
+    - shell脚本
+
+- kind: essay
+  content: 在shell环境如何查找一个文件？
+  content_format: text
+  points:
+    - shell脚本
+
+- kind: essay
+  content: 显示file.txt的1,3,5,7,10,15行？
+  content_format: text
+  points:
+    - shell脚本
+
