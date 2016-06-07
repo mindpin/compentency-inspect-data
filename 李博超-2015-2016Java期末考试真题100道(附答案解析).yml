@@ -13,6 +13,8 @@
       - id: ddd
         text: 同一包中的子类
     correct: aaa
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 下列关于变量的叙述哪个是错的
@@ -28,6 +30,8 @@
       - id: ddd
         text: 在方法中定义的局部变量在该方法被执行时创建
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -52,6 +56,9 @@
       - id: ddd
         text: 行4、行6都不执行 ;
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: |
     下列程序代码段运行后,变量x的结果是(             )
@@ -77,6 +84,9 @@
       - id: ddd
         text: 3
     correct: ccc
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 已知A类被打包在packageA , B类被打包在packageB,且B类被声明为public,且有一个成员变量x被声明为protected控制方式。C类也位于packageA包,且继承了B类。则以下说法正确的是
   content_format: text
@@ -91,6 +101,9 @@
       - id: ddd
         text: C类的实例可以访问到B类一个实例的x成员
     correct: ddd
+  points:
+    - 类，对象，方法
+
 - kind: single_choice
   content: 下列Java常见事件类中哪个是鼠标事件类
   content_format: text
@@ -105,6 +118,9 @@
       - id: ddd
         text: MouseEvent
     correct: ddd
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: |
     关于以下程序代码的说明正确的是
@@ -135,6 +151,9 @@
       - id: ddd
         text: 程序通过编译输出结果为x=103
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: |
     编译运行以下程序后关于输出结果的说明正确的是
@@ -158,6 +177,9 @@
       - id: ddd
         text: 输出结果为value is 9
     correct: bbb
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: |
     编译运行下面的代码会发生什么(         )
@@ -211,6 +233,8 @@
       - id: ddd
         text: 输出first0, first1, second0, second1.
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: java程序运行时,用于判定一个对象实例的类型运算符是
@@ -226,6 +250,9 @@
       - id: ddd
         text: equal
     correct: bbb
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列哪一项不是Java保留字
   content_format: text
@@ -240,6 +267,9 @@
       - id: ddd
         text: break
     correct: bbb
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 当处理的数据量很多或向文件输出很多次小数据一般使用的流是
   content_format: text
@@ -254,6 +284,9 @@
       - id: ddd
         text: FileOutputStream
     correct: ccc
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: 获取一个不包含路径的文件名的方式为
   content_format: text
@@ -268,6 +301,9 @@
       - id: ddd
         text: String getName()
     correct: ddd
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: Java应用程序的入口方法是
   content_format: text
@@ -282,6 +318,9 @@
       - id: ddd
         text: start
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列不属于FileInputStream输入流的read()成员函数的是
   content_format: text
@@ -296,6 +335,9 @@
       - id: ddd
         text: int read(byte b[],intoffset,int len)
     correct: aaa
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: 下面关于Java语言中实例方法和类方法的说法哪项是对的
   content_format: text
@@ -310,6 +352,9 @@
       - id: ddd
         text: 类方法可以直接通过类名调用
     correct: ddd
+  points:
+    - 类，对象，方法
+
 - kind: single_choice
   content: 监听事件和处理事件
   content_format: text
@@ -324,6 +369,9 @@
       - id: ddd
         text: 由Listener和窗口分别完成
     correct: ccc
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: |
     类Test1定义如下
@@ -346,6 +394,9 @@
       - id: ddd
         text: public int aMethodint a int b{ }
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 当要将一文本文件当作一个数据库访问,读完一个纪录后,跳到另一个纪录,它们在文件的不同地方时,一般使用    类访问。
   content_format: text
@@ -360,6 +411,9 @@
       - id: ddd
         text: RandomAccessFile
     correct: ddd
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: java中用来抛出异常的关键字是  (         )
   content_format: text
@@ -374,6 +428,9 @@
       - id: ddd
         text: try
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列数组初始化形式正确的是(           )
   content_format: text
@@ -388,6 +445,8 @@
       - id: ddd
         text: int t3[3][2]={1,2,3,4,5,6};
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 异常包含下列哪些内容
@@ -403,6 +462,9 @@
       - id: ddd
         text: 程序的编译错误
     correct: ccc
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下面哪个关键字不是用来控制对类成员的访问的
   content_format: text
@@ -417,6 +479,9 @@
       - id: ddd
         text: protected
     correct: ccc
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列整型数据类型中需要内存空间最少的是
   content_format: text
@@ -431,6 +496,9 @@
       - id: ddd
         text: int
     correct: aaa
+  points:
+    - 常见数据类型
+
 - kind: single_choice
   content: Character流与Byte流的区别是
   content_format: text
@@ -445,6 +513,9 @@
       - id: ddd
         text: 每次读入的字节数不同
     correct: aaa
+  points:
+    - 常见数据类型
+
 - kind: single_choice
   content: 当把一个程序、线程或代码段的输出连接到另一个程序、线程或代码段的输入时,应使用的流是
   content_format: text
@@ -459,6 +530,9 @@
       - id: ddd
         text: DataOutputStream
     correct: bbb
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: 下列有关子类继承父类构造函数的描述正确的是(          )
   content_format: text
@@ -473,6 +547,9 @@
       - id: ddd
         text: 子类无条件地继承父类不含参数的构造函数
     correct: aaa
+  points:
+    - 类，对象，方法
+
 - kind: single_choice
   content: 在异常处理中如释放资源、关闭文件、关闭数据库等由(       )来完成
   content_format: text
@@ -487,6 +564,9 @@
       - id: ddd
         text: catch子句
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 执行完以下代码int [ ]  x = new int[10]后以下哪项说明是正确的
   content_format: text
@@ -501,6 +581,9 @@
       - id: ddd
         text: x[10]为0
     correct: bbb
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: Java语言正确的常量修饰符应该是
   content_format: text
@@ -515,6 +598,9 @@
       - id: ddd
         text: public static final
     correct: ddd
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列选项中哪一个是表达式1 + 2 + "aa" + 3的值
   content_format: text
@@ -529,6 +615,9 @@
       - id: ddd
         text: "12aa"
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 哪个关键字可以抛出异常
   content_format: text
@@ -543,20 +632,9 @@
       - id: ddd
         text: try
     correct: ccc
-- kind: single_choice
-  content: Java的JVM是指
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 由Java操作的家用设备通常是一个漂亮的小烤箱
-      - id: bbb
-        text: Java源代码的编译器
-      - id: ccc
-        text: 运行Java 所需的硬件设备
-      - id: ddd
-        text: Java字节代码的解释程序
-    correct: ddd
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 关于异常下列说法正确的是 (      )
   content_format: text
@@ -571,6 +649,9 @@
       - id: ddd
         text: 没有正确答案
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 所有异常类的父类
   content_format: text
@@ -585,6 +666,8 @@
       - id: ddd
         text: Error
     correct: bbb
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: |
@@ -613,6 +696,9 @@
       - id: ddd
         text: 编译通过执行结果为x=5
     correct: ddd
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: |
     下述4行代码组成的小程序总共创建String对象的个数为
@@ -634,6 +720,9 @@
       - id: ddd
         text: 3
     correct: ddd
+  points:
+    - 常见数据类型
+
 - kind: single_choice
   content: 下列哪一项说法最好地描述了Java中的对象
   content_format: text
@@ -648,6 +737,9 @@
       - id: ddd
         text: 对象是一组具有共同的结构和行为的类
     correct: ccc
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列说法中错误的一项是
   content_format: text
@@ -662,6 +754,9 @@
       - id: ddd
         text: 线程是一个程序的单个执行流
     correct: aaa
+  points:
+    - 线程
+
 - kind: single_choice
   content: 如果str表示一个String对象“73”那么以下哪些表达式将会把这个字符串转换为int值73请选出正确答案。
   content_format: text
@@ -676,20 +771,9 @@
       - id: ddd
         text: Integer.intValue(str)
     correct: bbb
-- kind: single_choice
-  content: 运行jar文件中class文件需要在java命令后面加的参数为(  )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: cp
-      - id: bbb
-        text: -verbose
-      - id: ccc
-        text: -g
-      - id: ddd
-        text: -d
-    correct: aaa
+  points:
+    - 常见数据类型
+
 - kind: single_choice
   content: |
     下列程序段运行后变量x,y,z的值描述正确的是
@@ -710,6 +794,9 @@
       - id: ddd
         text: x的值是2y的值是1z的值是6
     correct: bbb
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 下列常见的系统定义的异常中哪个是输入、输出异常?
   content_format: text
@@ -724,20 +811,8 @@
       - id: ddd
         text: UnknownHostException
     correct: aaa
-- kind: single_choice
-  content: 下面关于事件监听的说明哪一个语句是正确的
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 组件不允许附加多个监听器
-      - id: bbb
-        text: 如果多个监听器加在一个组件上那么事件只会触发一个监听器
-      - id: ccc
-        text: 监听器机制允许按照我们的需要任意调用addXxxxListener 方法多次而且没有次序区别
-      - id: ddd
-        text: 所有组件都不允许附加多个监听器
-    correct: ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 使用以下哪个保留字可以使只有在定义该类的包中的其他类才能访问该类
@@ -753,6 +828,9 @@
       - id: ddd
         text: protected
     correct: aaa
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 对于catch子句的排列下列哪种是正确的(      )
   content_format: text
@@ -767,6 +845,8 @@
       - id: ddd
         text: 先有子类其他如何排列都无关
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 关于类继承的说法正确的是
@@ -782,20 +862,9 @@
       - id: ddd
         text: Java 类允许多重继承
     correct: bbb
-- kind: single_choice
-  content: 凡是从中央处理器流向外部设备的数据流称为
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 文件流
-      - id: bbb
-        text: 输入流
-      - id: ccc
-        text: 输出流
-      - id: ddd
-        text: 字符流
-    correct: ccc
+  points:
+    - 类，对象，方法
+
 - kind: single_choice
   content: |
     运行如下代码的结果是
@@ -823,49 +892,9 @@
       - id: ddd
         text: 编译通过但运行错误
     correct: ccc
-- kind: single_choice
-  content: 在Java中关于CLASSPATH环境变量的说法不正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 编译器用它来搜索各自的类文件
-      - id: bbb
-        text: 解释器用它来搜索各自的类文件
-      - id: ccc
-        text: CLASSPATH设置之后不可修改但可以将目录添加到该环境变量中
-      - id: ddd
-        text: CLASSPATH是一个目录列表
-    correct: ccc
+  points:
+    - 语法基础
 
-- kind: single_choice
-  content: 下列不是Java的输入输出流的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 字符流
-      - id: bbb
-        text: 文本流
-      - id: ccc
-        text: 文件流
-      - id: ddd
-        text: 字节流
-    correct: bbb
-- kind: single_choice
-  content: Java JDK中编译的命令是      )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: javac
-      - id: bbb
-        text: javah
-      - id: ccc
-        text: jdb
-      - id: ddd
-        text: java
-    correct: aaa
 - kind: single_choice
   content: Java语言的类间的继承关系是(        )
   content_format: text
@@ -880,34 +909,8 @@
       - id: ddd
         text: 线程的
     correct: bbb
-- kind: single_choice
-  content: 当方法遇到异常又不知如何处理时下列哪种说法是正确的(      )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 嵌套异常
-      - id: bbb
-        text: 声明异常
-      - id: ccc
-        text: 捕获异常
-      - id: ddd
-        text: 抛出异常
-    correct: bbb
-- kind: single_choice
-  content: Java语言具有许多优点和特点下列选项中哪个反映了Java程序并行机制的特点
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 跨平台
-      - id: bbb
-        text: 安全性
-      - id: ccc
-        text: 多线性
-      - id: ddd
-        text: 可移植
-    correct: ccc
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 有整型数组int[] x={2,33,88,5,10};, 则调用方法 Arrays.sort(x) 后数组x中的元素值依次是
@@ -923,6 +926,8 @@
       - id: ddd
         text: 88331052
     correct: bbb
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: |
@@ -955,6 +960,8 @@
       - id: ddd
         text: 11
     correct: ddd
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: |
@@ -1008,21 +1015,8 @@
       - id: ddd
         text: 能够编译, 输出“waiting"紧接着输出"finish"
     correct: aaa
-
-- kind: single_choice
-  content: 在Java中不存在的布局方式是(         )
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 中央布局CenterLayout
-      - id: bbb
-        text: 网络布局GridLayout
-      - id: ccc
-        text: 流布局FlowLayout
-      - id: ddd
-        text: 边界布局BorderLayout
-    correct: aaa
+  points:
+    - 线程
 
 - kind: single_choice
   content: 关于以下的组件的接口正确的是
@@ -1032,12 +1026,14 @@
       - id: aaa
         text: List组件可实现的接口除了ItemListener还可以是ActionListener
       - id: bbb
-        text: 以上都不对
+        text: 其他都不对
       - id: ccc
         text: Choice组件可实现的接口是ActionListener
       - id: ddd
         text: TextArea组件可实现的接口是ActionListener
     correct: aaa
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: java语言中异常处理的出口是下列哪一子句 (     )
@@ -1053,6 +1049,8 @@
       - id: ddd
         text: finally{}子句
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 一个可以独立运行的Java应用程序(           )
@@ -1068,6 +1066,8 @@
       - id: ddd
         text: 最多只能有两个main方法
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列关于构造方法使用的描述正确的是
@@ -1083,49 +1083,8 @@
       - id: ddd
         text: 程序员可以在程序中调用对象的构造方法
     correct: bbb
-
-- kind: single_choice
-  content: 下列程序的执行,说法正确的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 程序只输出第8行的异常信息
-      - id: bbb
-        text: 程序将输出第8行和第19行的异常信息
-      - id: ccc
-        text: 程序将不输出异常信息
-      - id: ddd
-        text: 程序只输出第19行的异常信息
-    correct: bbb
-
-- kind: single_choice
-  content: |
-    运行如下代码的结果是
-    ```java
-    public class MyObj{
-       int x=3;
-       public MyObj(int x){
-         x=x;
-        }
-        public static void main(String[] args){
-           MyObj obj=new MyObj(50);
-           System.out.println(obj.x);
-        }
-     }
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 编译错误
-      - id: bbb
-        text: 50
-      - id: ccc
-        text: 运行错误
-      - id: ddd
-        text: 3
-    correct: ddd
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 下列属于能操作文件输入输出类的是
@@ -1141,6 +1100,8 @@
       - id: ddd
         text: FileInputStream和FileOutputStream
     correct: aaa
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 下列说法正确的是(        )
@@ -1156,6 +1117,8 @@
       - id: ddd
         text: abstract可修饰类、属性、方法
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 在switchexpression语句中expression的数据类型不能是(        )
@@ -1171,6 +1134,9 @@
       - id: ddd
         text: char
     correct: bbb
+  points:
+    - 语法基础
+
 - kind: single_choice
   content: 假设你正在为应用系统设计一个Java图形用户界面GUI,需要能输入多行文本信息,下列组件中最能满足这个要求的是(         )
   content_format: text
@@ -1185,6 +1151,8 @@
       - id: ddd
         text: Label
     correct: aaa
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 下列哪个命题为真
@@ -1200,6 +1168,8 @@
       - id: ddd
         text: 构造函数可以访问类的非静态成员
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -1221,6 +1191,8 @@
       - id: ddd
         text: China#2008
     correct: aaa
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: |
@@ -1248,67 +1220,8 @@
       - id: ddd
         text: 代码得到编译,并输出“s=”
     correct: bbb
-
-- kind: single_choice
-  content: 下列哪个布局管理器中的按钮位置有可能会根据JFrame的大小改变而改变
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: CardLayout
-      - id: bbb
-        text: BorderLayout
-      - id: ccc
-        text: GridLayout
-      - id: ddd
-        text: FlowLayout
-    correct: ddd
-
-- kind: single_choice
-  content: |
-    阅读下列程序
-    ```java
-    import java.awt.Button;
-    import java.awt.GridLayout;
-    import java.awt.Panel;
-    import javax.swing.*;
-      public class X extends JFrame{
-       public X(){
-        setLayout(new GridLayout(2,2));
-        JPanel p1=new JPanel();
-        add(p1);
-        JButton b1=new JButton("One");
-        p1.add(b1);
-        JPanel p2=new JPanel();
-        add(p2);
-        JButton b2=new JButton("Two");
-        p2.add(b2);
-        JButton b3=new JButton("Three");
-        p2.add(b3);
-        JButton b4=new JButton("Four");
-        add(b4);
-       }
-
-      public static void main(String[] args){
-      X x=new X();
-       x.pack();
-      x.setVisible(true);
-    }
-    }
-    ```
-    当frame改变大小时,下面正确的描述为
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: Button "Four"改变高度和宽度
-      - id: bbb
-        text: Button "One" 改变高度
-      - id: ccc
-        text: Button "Two"改变高度
-      - id: ddd
-        text: Button "Three" 改变宽度
-    correct: aaa
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: 为了区分重载多态中同名的不同方法要求(         )
@@ -1324,21 +1237,9 @@
       - id: ddd
         text: 采用不同的参数列表
     correct: ddd
+  points:
+    - 类，对象，方法
 
-- kind: single_choice
-  content: 下列关于Java语言的特点描述错误的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Java是跨平台的编程语言
-      - id: bbb
-        text: Java支持分布式计算
-      - id: ccc
-        text: Java是面向过程的编程语言
-      - id: ddd
-        text: ava支持多线程
-    correct: ccc
 - kind: single_choice
   content: |
     关于以下程序段的说法类包含不考虑情况下正确的是
@@ -1364,21 +1265,8 @@
       - id: ddd
         text: 可通过编译
     correct: ddd
-
-- kind: single_choice
-  content: 下列描述中,错误的是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Java内含多线程机制
-      - id: bbb
-        text: Applet要求在支持Java的浏览器上运行
-      - id: ccc
-        text: Java要求编程者管理内存
-      - id: ddd
-        text: Java的安全性体现在多个层次上
-    correct: ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 下面关于类的说法错误的是
@@ -1394,6 +1282,8 @@
       - id: ddd
         text: 类是对所有具有一定共性的对象的抽象
     correct: bbb
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: |
@@ -1420,6 +1310,8 @@
       - id: ddd
         text: 运行时抛出异常
     correct: aaa
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -1447,6 +1339,8 @@
       - id: ddd
         text: 2 3 3
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下面是Java的Boolean对象的值为
@@ -1462,6 +1356,8 @@
       - id: ddd
         text: false
     correct: bbb
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: 下列哪种说法是正确的
@@ -1477,6 +1373,9 @@
       - id: ddd
         text: 覆盖方法可以声明自己抛出的异常多于那个被覆盖的方法
     correct: ccc
+  points:
+    - 类，对象，方法
+
 - kind: single_choice
   content: 以下声明合法的是
   content_format: text
@@ -1491,6 +1390,8 @@
       - id: ddd
         text: public final static native int w( )
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下面不属于Java关键字的是
@@ -1506,6 +1407,8 @@
       - id: ddd
         text: sealed
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -1530,21 +1433,9 @@
       - id: ddd
         text: morning
     correct: bbb
+  points:
+    - 语法基础
 
-- kind: single_choice
-  content: 流的传递方式是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 串行的
-      - id: bbb
-        text: 无正确选项
-      - id: ccc
-        text: 并行的和串行的
-      - id: ddd
-        text: 并行的
-    correct: aaa
 - kind: single_choice
   content: |
     以下说法哪项是正确的
@@ -1567,6 +1458,8 @@
       - id: ddd
         text: 不能通过编译因为没有实现MouseListener接口中的所有方法
     correct: ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: |
@@ -1612,6 +1505,8 @@
       - id: ddd
         text: 输出Two Two One One
     correct: aaa
+  points:
+    - 线程
 
 - kind: single_choice
   content: |
@@ -1638,6 +1533,8 @@
       - id: ddd
         text: public float aMethodfloat pfloat q{ }
     correct: ddd
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 以下关于abstract的说法正确的是
@@ -1653,6 +1550,8 @@
       - id: ddd
         text: abstract只能修饰方法
     correct: ccc
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: |
@@ -1684,36 +1583,8 @@
       - id: ddd
         text: 编译无错不打印任何值
     correct: ddd
-
-- kind: single_choice
-  content: 下列哪个是不属于容器的组件
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: JButton
-      - id: bbb
-        text: JPanel
-      - id: ccc
-        text: JFrame
-      - id: ddd
-        text: JApplet
-    correct: aaa
-
-- kind: single_choice
-  content: 在Java语言中,当定义一个变量为基本数据类型时,Java的JVM就为该变量分配内存,并给该变量赋初值,当定义一个复合数据类型变量时,该变量代表该类型对象的引用名,Java的JVM并不为对象创建内存空间,该变量引用的值为null,要创建对象实例,需要使用的关键字为
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: new
-      - id: bbb
-        text: public
-      - id: ccc
-        text: super
-      - id: ddd
-        text: this
-    correct: aaa
+  points:
+    - 线程
 
 - kind: single_choice
   content: 下列哪个类的声明是正确的
@@ -1729,6 +1600,8 @@
       - id: ddd
         text: abstract private move(){}
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -1751,6 +1624,8 @@
       - id: ddd
         text: 7
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 下列关于构造方法的叙述中错误的是
@@ -1766,21 +1641,8 @@
       - id: ddd
         text: Java语言规定构造方法名与类名必须相同
     correct: aaa
-
-- kind: single_choice
-  content: 结构化程序设计所规定的三种基本控制结构是
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 树形、网形、环形
-      - id: bbb
-        text: 顺序、选择、循环
-      - id: ccc
-        text: 输入、处理、输出
-      - id: ddd
-        text: 主程序、子程序、函数
-    correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: String或StringBuffer类的对象在调用以下哪个方法时其自身会发生更改
@@ -1798,6 +1660,9 @@
       - id: eee
         text: String类的replace()方法
     correct: ccc
+  points:
+    - 常用基础类库
+
 - kind: single_choice
   content: 在代码中使用catch(Exception e)的好处是(          )
   content_format: text
@@ -1812,3 +1677,6 @@
       - id: ddd
         text: 忽略一些异常
     correct: bbb
+  points:
+    - 语法基础
+
