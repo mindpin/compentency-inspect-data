@@ -1,0 +1,855 @@
+- kind: multi_choice
+  content: 在Hibernate中，下列说法正确的有
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Hibernate是一个开放源代码的对象关系映射框架
+      - id: bbb
+        text: Hibernate对JDBC进行了轻量级的对象封装
+      - id: ccc
+        text: Hibernate可以大大减少操作数据库的工作量
+      - id: ddd
+        text: Hibernate提供了数据查询机制，但没有提供恢复机制
+    corrects:
+      - aaa
+      - bbb
+      - ccc
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content:  在Hibernate中，下列关于SessionFactory说法正确的有（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 它不是线程安全的 
+      - id: bbb
+        text: 它是线程安全的
+      - id: ccc
+        text: 一个SessionFactory实例对应一个数据存储源
+      - id: ddd
+        text: 它是轻量级的
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 关于Hibernate，下列说法错误的是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Hibernate是一个对象-关系映射工具
+      - id: bbb
+        text: 在MVC模式中，Hibernate属于控制层
+      - id: ccc
+        text: Hibernate在JDBC的方式上进行封装，以简化JDBC方式繁琐的编码工作
+      - id: ddd
+        text: 在Hibernate中，可以通过xml格式的配置文件保存对象-关系的映射信息
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 在Hibernate中，下列关于Session说法正确的有（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 它是线程安全的
+      - id: bbb
+        text: 它不是线程安全的
+      - id: ccc
+        text: 它是轻量级的
+      - id: ddd
+        text: Session也被称为持久化管理器，它提供了和持久化相关的操作
+    corrects:
+      - bbb
+      - ccc
+      - ddd
+  points:
+    - hibernate
+
+
+- kind: multi_choice
+  content: 在Hibernate中，下列关于Transaction说法正确的有（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 在对数据库进行查询操作时一定要加上Transaction
+      - id: bbb
+        text: 事务Transaction为应用程序指定以原子操作单元为范围的对象
+      - id: ccc
+        text: 在对数据库进行增加、修改和删除操作时一定要加上Transaction
+      - id: ddd
+        text: 获得Transaction的方法：Transaction tr = session.beginTransaction();
+    corrects:
+      - bbb
+      - ccc
+      - ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，如果数据库是MySql或者SQLServer，则generator属性值不可以使用（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: hilo 
+      - id: bbb
+        text: native 
+      - id: ccc
+        text: sequence 
+      - id: ddd
+        text: indentity 
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content:  在Hibernate中，如果数据库是Oracle或者DB2，则generator属性值不可以使用（）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: hilo 
+      - id: bbb
+        text: native 
+      - id: ccc
+        text: sequence 
+      - id: ddd
+        text: indentity 
+    correct: ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，下列哪个选项不属于Session的方法（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: load
+      - id: bbb
+        text: save
+      - id: ccc
+        text: open
+      - id: ddd
+        text: delete
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content:  在Hibernate中， generator属性值如果是native，则表示（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 由Hibernate自动以自增的方式生成标识符，每次增量为1
+      - id: bbb
+        text: 由Hibernate自动以自增的方式生成标识符，每次增量为自定义
+      - id: ccc
+        text: 根据底层数据库对自动生成标识符的支持来选择。
+      - id: ddd
+        text: 由Java应用程序负责生成标识符
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 下Hibernate增加数据的时候，可以调用session的（    ）方法。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: save 
+      - id: bbb
+        text: update 
+      - id: ccc
+        text: add 
+      - id: ddd
+        text: saveOrUpdate 
+    corrects:
+      - aaa
+      - ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: Hibernate对JDBC访问数据库的代码进行了封装，从而大大简化了数据访问层的重复性代码，它是针对三层架构中（    ）的解决方案。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 表现层
+      - id: bbb
+        text: 业务逻辑层
+      - id: ccc
+        text: 持久化层
+      - id: ddd
+        text: 数据库系统
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: Hibernate是一个优秀的Java持久化层解决方案，那么数据的持久化指的是（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 数据在程序退出后就不复存在
+      - id: bbb
+        text: 数据在程序退出后以文件等形式保存在存储设备中
+      - id: ccc
+        text: 数据的内容是不变的，处于静态中
+      - id: ddd
+        text: 数据的内容是变化的
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 下列选项不属于持久化的是（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 将对象转换为字符串的形式通过网络传输，在另一端接收到该字符串后能将对象还原
+      - id: bbb
+        text: 将程序数据从数据库中读取出来
+      - id: ccc
+        text: 从XML配置文件中读取程序的配置信息
+      - id: ddd
+        text: 将程序数据保存为文件
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 使用Hibernate 技术实现数据库持久化时，下列（    ）不在Hibernate配置文件里
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 数据库连接信息
+      - id: bbb
+        text: 数据库表和实体的映射信息
+      - id: ccc
+        text: show_sql参数
+      - id: ddd
+        text: 数据库类型（dialect）
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，inverse属性值为（    ）时，会标识被控方。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: all 
+      - id: bbb
+        text: false
+      - id: ccc
+        text: true 
+      - id: ddd
+        text: none
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，如果需要标识主控方，则inverse属性值应为（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: all 
+      - id: bbb
+        text: false 
+      - id: ccc
+        text: true 
+      - id: ddd
+        text: none
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，从性能方面考虑，inverse属性值通常设置为（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: all 
+      - id: bbb
+        text: false 
+      - id: ccc
+        text: true 
+      - id: ddd
+        text: none 
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: ibernate通过映射文件中的<generator>子元素来设定标识符生成器，下列选项哪些是Hibernate提供的内置实现（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: hilo 
+      - id: bbb
+        text: native 
+      - id: ccc
+        text: assign 
+      - id: ddd
+        text: indentity 
+    corrects:
+      - aaa
+      - bbb
+      - ddd
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 下三层结构是一种典型的应用软件分层结构，这三层分别是（    
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 表述层
+      - id: bbb
+        text: 业务逻辑层
+      - id: ccc
+        text: 控制层
+      - id: ddd
+        text: 数据层
+    corrects:
+      - aaa
+      - bbb
+      - ddd
+  points:
+    - hibernate
+- kind: single_choice
+  content: 在ORM中，面向对象概念中的对象与面向关系概念中的（    ）相对应。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 表
+      - id: bbb
+        text: 表的行
+      - id: ccc
+        text: 表的列
+      - id: ddd
+        text: 表中行的数据
+    correct: bbb
+  points:
+    - hibernate
+
+
+- kind: single_choice
+  content: 在Hibernate的实体类映射文件中，class节点下必须有一个id节点，其中unsaved-value属性的默认值为（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: null
+      - id: bbb
+        text: none
+      - id: ccc
+        text: true
+      - id: ddd
+        text: false
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 下列选项关于Configuration的说法不正确的是（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Configuration类的构造方法用于将默认路径下的hibernate.cfg.xml（或hibernate.properties）配置文件中的配置信息读入到内存中
+      - id: bbb
+        text: Configuration对象用于配置并启动Hibernate 
+      - id: ccc
+        text: 获得Configuration的方法：Configuration config = new Configuration()；
+      - id: ddd
+        text: Hibernate应用通过Configuration实例指定对象－关系映射文件的位置或者动态配置
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，当cascade属性值为（    ）时，表示不进行级联操作。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: all 
+      - id: bbb
+        text: no 
+      - id: ccc
+        text: none 
+      - id: ddd
+        text: delete 
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 在Hibernate中，如果需要进行级联删除，则cascade属性值可为（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: all 
+      - id: bbb
+        text: save-update
+      - id: ccc
+        text: none
+      - id: ddd
+        text: delete
+    corrects:
+      - aaa
+      - ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，要想在删除某个客户数据的同时删除该客户对应的所有订单数据，下列方法可行的有（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 配置客户和订单关联的cascade属性为save-update
+      - id: bbb
+        text: 配置客户和订单关联的cascade属性为all
+      - id: ccc
+        text: 设置多对一关联的inverse属性为true
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，<set>元素有一个cascade属性，如果希望Hibernate级联保存集合中的对象，则cascade属性应该取什么值（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: none
+      - id: bbb
+        text: save
+      - id: ccc
+        text: save-update
+      - id: ddd
+        text: delete
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，Customer类中有一个Set类型的orders属性，用于存放Order订单对象，在Customer.hbm.xml文件中，可以用（    ）元素映射orders属性。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: <set>
+      - id: bbb
+        text: <one-to-many>
+      - id: ccc
+        text: <many-to-one>
+      - id: ddd
+        text: <property> 
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate的HQL查询中，下列说法正确的是（     ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 可以调用用户自定义函数
+      - id: bbb
+        text: 不可以调用用户自定义函数
+      - id: ccc
+        text: 支持子查询
+      - id: ddd
+        text: 支持分页查询
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate的HQL查询中，下列说法不正确的是（     ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 在Hibernate3中，可以使用update、delete子句
+      - id: bbb
+        text: 在Hibernate3中，不可以使用update、delete子句
+      - id: ccc
+        text: HQL是基于SQL的
+      - id: ddd
+        text: HQL提供了更多面向对象的封装
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate的HQL查询中，setMaxResults(3)方法中参数值3指的是（     ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 从第3条记录开始
+      - id: bbb
+        text: 从第4条记录开始
+      - id: ccc
+        text: 查询3条记录
+      - id: ddd
+        text: 查询4条记录
+    correct: ccc
+  points:
+    - hibernate
+
+
+- kind: single_choice
+  content: 在Hibernate的HQL查询中，setFirstResults(3)方法中参数值3指的是（     ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 从第3条记录开始
+      - id: bbb
+        text: 从第4条记录开始
+      - id: ccc
+        text: 查询3条记录
+      - id: ddd
+        text: 查询4条记录
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate的HQL查询中，下列说法不正确的是（     ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: HQL子句本身的大小写没有差异，但类名和属性名必须区分大小写
+      - id: bbb
+        text: HQL支持where子句
+      - id: ccc
+        text: HQL支持as子句
+      - id: ddd
+        text: where、as关键字区分大小写
+    correct: ddd
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 在Hibernate的HQL查询中，有数据库表（dept）对应的对象名称为Dept，下列HQL写法正确的有（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: String hql = "from com.hr.g3.persist.dept as model"
+      - id: bbb
+        text: String hql = "from com.hr.g3.persist.Dept "
+      - id: ccc
+        text: String hql = "from Dept as model"
+      - id: ddd
+        text: String hql = "from dept "
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 关于HQL查询，下列说法正确的有（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: HQL查询的select子句中必须区分大小写
+      - id: bbb
+        text: HQL支持不统计函数
+      - id: ccc
+        text: HQL支持仅查询对象的某几个属性，查询结果保存于Object数组中
+      - id: ddd
+        text: HQL查询为官方推荐的查询方式
+    corrects:
+      - ccc
+      - ddd
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 关于HQL与SQL，下列说法正确的有（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: HQL与SQL没有多少差别
+      - id: bbb
+        text: HQL面向对象，而SQL操纵关系数据库
+      - id: ccc
+        text: 在HQL与SQL中，都包含select,insert,update,delete语句
+      - id: ddd
+        text: HQL仅用于查询数据，不支持insert,update和delete语句
+    corrects:
+      - bbb
+      - ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在HQL语言中，Query对象特别提供了（    ）方法，用于获得一个唯一行唯一列的对象。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: list
+      - id: bbb
+        text: uniqueResult
+      - id: ccc
+        text: result
+      - id: ddd
+        text: queryResult
+    correct: bbb
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 关于HQL查询，下列说法错误的是（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: HQL查询可以执行T-SQL语句，执行速度更快
+      - id: bbb
+        text: HQL支持只查询对象的某几个属性，查询结果将保存在一个Object数组中
+      - id: ccc
+        text: HQL支持统计函数
+      - id: ddd
+        text: HQL语句可以实现类似PreparedStatement的效果
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在JAVA中，关于属性文件，下列选项说法正确的是（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 属性文件以名称和值的形式保存信息
+      - id: bbb
+        text: 属性文件不能写中文
+      - id: ccc
+        text: 属性文件中能保存各种数据类型的信息
+      - id: ddd
+        text: 属性文件的文件扩展名是.xml
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 
+    在Hibernate中，下列关于HQL参数绑定的写法正确的有（    ）
+    ```java
+    String hql ="from Dept as model where model.deptName =? and model.createDate =? ";
+    ```
+  content_format: md
+  answer:
+    choices:
+      - id: aaa
+        text: 第一个参数的位置为0
+      - id: bbb
+        text: 第一个参数的位置为1
+      - id: ccc
+        text: 设置参数的方法为：setEntity() 
+      - id: ddd
+        text: 设置参数的方法为：setParameter()
+    corrects:
+      - aaa
+      - ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: Criteria查询通过面向对象化的设计将数据查询条件封装为一个（    ）
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 对象
+      - id: bbb
+        text: 序列
+      - id: ccc
+        text: 类
+      - id: ddd
+        text: HQL语句
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 在Hibernate的Criteria查询中，Expression对象具体描述了查询条件，其对应SQL条件中的field>=value的方法是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: Expression.eq
+      - id: bbb
+        text: Expression.gt
+      - id: ccc
+        text: Expression.ge 
+      - id: ddd
+        text: Expression.lt
+    corrects: 
+      - aaa
+      - ccc
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 在Hibernate的Criteria查询中，Expression对象具体描述了查询条件，其中Expression.le对应的SQL条件是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: field>value
+      - id: bbb
+        text: field>=value
+      - id: ccc
+        text: field<value
+      - id: ddd
+        text: field<=value
+    corrects:
+      - aaa
+      - ddd
+      - ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate的Criteria查询中，从第5条记录开始查询的方法是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: criteria.setFirstResult(4);
+      - id: bbb
+        text: criteria.setFirstResult(5);
+      - id: ccc
+        text: criteria.setMaxResult(4);
+      - id: ddd
+        text: criteria.setMaxResult(5); 
+    correct: aaa
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate的Criteria查询中，查询5条记录的方法是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: criteria.setFirstResult(4);
+      - id: bbb
+        text: criteria.setFirstResult(5);
+      - id: ccc
+        text: criteria.setMaxResult(4); 
+      - id: ddd
+        text: criteria.setMaxResult(5);
+    correct: ddd
+  points:
+    - hibernate
+
+- kind: multi_choice
+  content: 在Hibernate的Criteria查询中，下列按创建日期进行排序的方法是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: criteria.addOrder(Order.asc("createDate"));
+      - id: bbb
+        text: criteria.addOrder(Order.desc("createDate")); 
+      - id: ccc
+        text: criteria.saveOrder(Order.asc("createDate"));
+      - id: ddd
+        text: criteria.saveOrder(Order.desc("createDate")); 
+    corrects:
+      - bbb
+      - ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，下列说法不正确的是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: HQL是基于SQL的
+      - id: bbb
+        text: HQL提供更加面向对象的封装
+      - id: ccc
+        text: HQL是Hibernate官方推荐的查询方式
+      - id: ddd
+        text: HQL提供的是面向关系型数据库的。
+    correct: ddd
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 对于HQL中的as关键字，下列说法正确的是（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 必须要有
+      - id: bbb
+        text: 必须没有
+      - id: ccc
+        text: 可以有，也可以没有
+      - id: ddd
+        text: 以上说法均不正确
+    correct: ccc
+  points:
+    - hibernate
+
+- kind: single_choice
+  content: 在Hibernate中，用于比较字符串的like操作符“like '部%'”表示（    ）。
+  content_format: text
+  answer:
+    choices:
+      - id: aaa
+        text: 所有以“部”开头的字符串
+      - id: bbb
+        text: 所有以“部”结尾的字符串
+      - id: ccc
+        text: 所有包括“部”的字符串
+      - id: ddd
+        text: 所有包括“部”且“部”不在开头和结尾的字符串
+    correct: aaa
+  points:
+    - hibernate
