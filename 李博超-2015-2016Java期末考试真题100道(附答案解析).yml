@@ -35,32 +35,6 @@
 
 - kind: single_choice
   content: |
-    关于以下程序段正确的说法是
-    ```java
-    1. String  s1=”abc”+”def”;
-    2. String  s2=new  Strings1;
-    3.  ifs1= =s2
-    4.   System.out.println(“= = succeeded”);
-    5.    if (s1.equals(s2))
-    6.      System.out.println(“.equals()  succeeded”);
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 行6执行行4不执行;
-      - id: bbb
-        text: 行4与行6都将执行 ;
-      - id: ccc
-        text: 行4执行行6不执行 ;
-      - id: ddd
-        text: 行4、行6都不执行 ;
-    correct: aaa
-  points:
-    - 语法基础
-
-- kind: single_choice
-  content: |
     下列程序代码段运行后,变量x的结果是(             )
     ```java
     int x=0;
@@ -158,10 +132,10 @@
   content: |
     编译运行以下程序后,关于输出结果的说明正确的是
     ```java
-    public  class   Conditional{
-      public  static  void  main(String  args[  ]){
+    public class Conditional{
+      public static void main(String  args[]){
         int  x=4;
-        System.out.println(“value  is  “ + ((x>4) ? 99.9 :9)); 3
+        System.out.println("value  is  " + ((x>4) ? 99.9 :9));
       }
     }
     ```
@@ -182,7 +156,7 @@
 
 - kind: single_choice
   content: |
-    编译运行下面的代码会发生什么(         )
+    编译运行下面的代码会发生什么
     ```java
     public class Test extends Thread {
         private String sThreadName;
@@ -650,13 +624,13 @@
     ```java
     1 class StaticStuff
     2 {
-    3   static  int  x=10
-    4   static  { x+=5}
-    5   public  static  void  main(String  args[])
+    3   static int x=10;
+    4   static { x+=5; }
+    5   public static void main(String  args[])
     6   {
-    7     System.out.println(“x=” + x);
+    7     System.out.println("x=" + x);
     8   }
-    9   static  { x/=3;}
+    9   static  { x/=3; }
     10 }
     ```
   content_format: md
@@ -733,7 +707,7 @@
     - 线程
 
 - kind: single_choice
-  content: 如果str表示一个String对象“73”那么以下哪些表达式将会把这个字符串转换为int值73请选出正确答案。
+  content: 如果str表示一个String对象"73",那么以下哪些表达式将会把这个字符串转换为int值73,请选出正确答案。
   content_format: text
   answer:
     choices:
@@ -1150,7 +1124,7 @@
     ```java
     StringBuffer buf=new StringBuffer("China2008");
     buf.insert(5,"@");
-    System.out.println(buf.toString );
+    System.out.println(buf.toString());
     ```
   content_format: md
   answer:
@@ -1174,10 +1148,10 @@
     import java.io.*;
     import java.util.*;
     public class foo{
-    public static void main (String[] args){
-    String s;
-    System.out.println("s=" + s);
-    }
+      public static void main (String[] args){
+        String s;
+        System.out.println("s=" + s);
+      }
     }
     ```
     输出结果是什么?
@@ -1197,7 +1171,7 @@
     - 常见数据类型
 
 - kind: single_choice
-  content: 为了区分重载多态中同名的不同方法要求(         )
+  content: 为了区分重载多态中同名的不同方法,要求()
   content_format: text
   answer:
     choices:
@@ -1239,8 +1213,8 @@
     class A2{
     }
     public class B{
-    public static void main(String args[]){
-    }
+      public static void main(String args[]){
+      }
     }
     ```
   content_format: md
@@ -1263,13 +1237,13 @@
     以下程序的运行结果是
     ```java
     public class Increment{
-    public static void main(String args[]){
-            int c;
-            c = 2;
-            System.out.print(c);
-            System.out.print(c++);
-            System.out.println(c);
-    }
+      public static void main(String args[]){
+        int c;
+        c = 2;
+        System.out.print(c);
+        System.out.print(c++);
+        System.out.println(c);
+      }
     }
     ```
   content_format: md

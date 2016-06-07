@@ -433,54 +433,6 @@
   points:
     - 语法基础
 
-#- kind: single_choice
-  #content: |
-    #选择正确生成text field的代码，此text field最多能够显示10个字符（假定其字体
-    #有固定大小）并最初显示“hello”串：
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: new TextField("hello", 10) ;
-      #- id: bbb
-        #text: new TextField(10,"hello");
-      #- id: ccc
-        #text: new TextField("hello",max,10);
-      #- id: ddd
-        #text: new TextField("hello",10,max);
-    #correct: aaa
-
-#- kind: single_choice
-  #content: |
-    #从下面的布局管理器中选择按行放置控件、从左到右、从上到下，当一行装满时开始新的一行的布局管理器：
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: CardLayout
-      #- id: bbb
-        #text: FlowLayout
-      #- id: ccc
-        #text: BorderLayout
-      #- id: ddd
-        #text: GridLayout
-    #correct: bbb
-
-#- kind: single_choice
-  #content: '选择可以替换一个Container对象布局的方法:'
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: setLayout(aLayoutManager);
-      #- id: bbb
-        #text: addLayout(aLayoutManager);
-      #- id: ccc
-        #text: layout(aLayoutManager);
-      #- id: ddd
-        #text: setLayoutManager(aLayoutManager);
-    #correct: aaa
-
 - kind: single_choice
   content: |
     下面的代码编译，运行后得出的结果：
@@ -676,77 +628,6 @@
 
 - kind: single_choice
   content: |
-    以下程序代码的输出是。（ ）
-    ```java
-    public class test (
-    private static int j = 0;
-      private static boolean methodB(int k) (
-    j += k;
-    return true;
-    )
-    public static void methodA(int i) {
-    boolean b:
-      b = i < 10 | methodB (4);
-      b = i < 10 || methodB (8);
-    )
-    public static void main (String args[] } (
-    methodA (0);
-    system.out.printIn(j);
-    )
-    )
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 0
-      - id: bbb
-        text: 4
-      - id: ccc
-        text: 8
-      - id: ddd
-        text: 12
-      - id: eee
-        text: 不能编译通过
-    correct: eee
-  points:
-    - 语法基础
-
-- kind: single_choice
-  content: |
-    以下程序代码的输出是。（ ）
-    ```java
-    public class test {
-    public static void add3 (Integer i) }
-    int val = i.intValue ( );
-    val += 3;
-    i = new Integer (val);
-    }
-
-    public static void main (String args [ ] ) {
-    Integer i = new Integer (0);
-     add3 (i);
-     system.out.printIn (i.intValue ( ) );
-     }
-     )
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 编译失败
-      - id: bbb
-        text: 编译成功但在第三行会出现异常
-      - id: ccc
-        text: 0
-      - id: ddd
-        text: 3
-    correct: aaa
-  points:
-    - 语法基础
-
-- kind: single_choice
-  content: |
     以下程序代码执行后，哪个说法正确？（ ）
     ```java
     int index = 1;  md
@@ -772,70 +653,6 @@
   points:
     - 常见数据类型
 
-#- kind: single_choice
-  #content: 以下哪个类是swt包中的。（）
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: MessageBox
-      #- id: bbb
-        #text: MessageDialog
-      #- id: ccc
-        #text: JDialog
-      #- id: ddd
-        #text: DisplayMode
-    #correct: ddd
-
-#- kind: single_choice
-  #content: Java是从（）语言改进重新设计。
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: Ada
-      #- id: bbb
-        #text: C++
-      #- id: ccc
-        #text: Pasacal
-      #- id: ddd
-        #text: BASIC
-    #correct: bbb
-
-- kind: single_choice
-  content: 下列哪一种叙述是正确的（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: abstract修饰符可修饰字段、方法和类
-      - id: bbb
-        text: 抽象方法的body部分必须用一对大括号{ }包住
-      - id: ccc
-        text: 声明抽象方法，大括号可有可无
-      - id: ddd
-        text: 声明抽象方法不可写出大括号
-    correct: ddd
-  points:
-    - 抽象类，接口，继承
-
-- kind: single_choice
-  content: 下列哪种说法是正确的（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 实例方法可直接调用超类的实例方法
-      - id: bbb
-        text: 实例方法可直接调用超类的类方法
-      - id: ccc
-        text: 实例方法可直接调用其他类的实例方法
-      - id: ddd
-        text: 实例方法可直接调用本类的类方法
-    correct: ddd
-  points:
-    - 类，对象，方法
-
 # 多选题
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -856,46 +673,6 @@
       - ddd
   points:
     - 常见数据类型
-
-- kind: multi_choice
-  content: 下列正确的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: call by value不会改变实际参数的数值
-      - id: bbb
-        text: call by reference能改变实际参数的参考地址
-      - id: ccc
-        text: call by reference不能改变实际参数的参考地址
-      - id: ddd
-        text: call by reference能改变实际参数的内容
-    corrects:
-      - aaa
-      - ccc
-      - ddd
-  points:
-    - 抽象类，接口，继承
-
-- kind: multi_choice
-  content: 下列说法错误的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 能被java.exe成功运行的java class文件必须有main()方法
-      - id: bbb
-        text: J2SDK就是Java API
-      - id: ccc
-        text: Appletviewer.exe可利用jar选项运行.jar文件
-      - id: ddd
-        text: 能被Appletviewer成功运行的java class文件必须有main()方法
-    corrects:
-      - bbb
-      - ccc
-      - ddd
-  points:
-    - 类，对象，方法
 
 - kind: multi_choice
   content: 在下面的选项中合法的标识符有。（）
@@ -943,7 +720,9 @@
 - kind: multi_choice
   content: |
     一个类Example的main()方法的参数是args,类被如下调用执行：
+    ```
     java Example cat
+    ```
     main方法中访问args[0]的输出是什么？
   content_format: text
   answer:
@@ -1066,42 +845,6 @@
 
 - kind: multi_choice
   content: |
-    下面的代码能打印出的结果是：
-    ```java
-      public class MyFor{
-    public static void main(String argv[]){
-    int i;
-    int j;
-    outer:
-    for (i=1;i <3;i++)
-    inner:
-    for(j=1; j<3; j++) {
-    if (j==2)
-    continue outer;
-    System.out.println("Value for i=" + i + " Value for j=" +j);
-    }
-    }
-    }
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: Value for i=1 value for j=1
-      - id: bbb
-        text: Value for i=2 value for j=1
-      - id: ccc
-        text: Value for i=2 value for j=2
-      - id: ddd
-        text: Value for i=3 value for j=1
-    corrects:
-      - aaa
-      - bbb
-  points:
-    - 语法基础
-
-- kind: multi_choice
-  content: |
     那个代码能够添加在//Method here地方，并能正确执行？
     ```java
       class Base{
@@ -1129,24 +872,6 @@
       - ccc
   points:
     - 语法基础
-
-#- kind: multi_choice
-  #content: listener(监听器)方法的正确的访问修饰符是什么？
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: public
-      #- id: bbb
-        #text: static
-      #- id: ccc
-        #text: private
-      #- id: ddd
-        #text: protected
-      #- id: eee
-        #text: Default(即默认为空)
-    #corrects:
-      #- aaa
 
 - kind: multi_choice
   content: public static void main方法的参数描述是：

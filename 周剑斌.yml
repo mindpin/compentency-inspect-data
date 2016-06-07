@@ -280,21 +280,6 @@
   points:
     - 抽象类，接口，继承
 
-#- kind: single_choice
-  #content: 如果容器组件p的布局是BorderLayout,则在p的一边中添加一个按钮b,应该使用的语句是( )
-  #content_format: text
-  #answer:
-    #choices:
-      #- id: aaa
-        #text: p.add(b);
-      #- id: bbb
-        #text: p.add(b,"North");
-      #- id: ccc
-        #text: p.add(b,"South");
-      #- id: ddd
-        #text: b.add(p,"North")
-    #correct: ccc
-
 - kind: single_choice
   content: |
     应用程序的main方法中有以下语句
