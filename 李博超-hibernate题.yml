@@ -1,5 +1,5 @@
 - kind: multi_choice
-  content: 在Hibernate中，下列说法正确的有（    ）
+  content: 在Hibernate中，下列说法正确的有
   content_format: text
   answer:
     choices:
