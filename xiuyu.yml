@@ -22,7 +22,7 @@
   points:
     - 语法基础
 
-- kind: essay
+- kind: file_upload
   content: 画图解释SQL Join 语句
   content_format: text
   points:

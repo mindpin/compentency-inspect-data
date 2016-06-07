@@ -259,7 +259,9 @@
       - id: ddd
         text: 不用特别指定
     correct: bbb
-
+  points:
+    - 语法基础
+    
 - kind: single_choice
   content: |
     ```java
