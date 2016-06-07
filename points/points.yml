@@ -30,7 +30,7 @@
 - mybatis
 - hibernate
 - SQL
-- 数据库读/写中的性能和数据安全
+- 数据库读写中的性能和数据安全
 # 第五部分：JAVA web 开发相关知识概念
 # 考察进行 java web 开发的概念掌握，包括以下内容：
 - servlet, jsp

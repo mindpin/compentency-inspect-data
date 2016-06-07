@@ -119,12 +119,6 @@
     - 类，对象，方法
 
 - kind: essay
-  content: "&和&&的区别"
-  content_format: text
-  points:
-    - 语法基础
-
-- kind: essay
   content: HashMap和Hashtable的区别
   content_format: text
   points:
@@ -147,18 +141,6 @@
   content_format: text
   points:
     - 常见数据类型
-
-- kind: essay
-  content: '"=="与equal有何区别?'
-  content_format: text
-  points:
-    - 语法基础
-
-- kind: essay
-  content: error和exception有什么区别?
-  content_format: text
-  points:
-    - 常用基础类库
 
 - kind: essay
   content: List, Set, Map是否继承自Collection接口?
