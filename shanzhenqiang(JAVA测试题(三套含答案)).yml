@@ -1,18 +1,10 @@
 # 判断题
 - kind: bool
-  content: Java程序中的起始类名称必须与存放该类的文件名相同。（）
-  content_format: text
-  answer: true
-
-- kind: bool
-  content: Unicode是用16位来表示一个字的。（）
-  content_format: text
-  answer: true
-
-- kind: bool
   content: 原生类中的数据类型均可任意转换。（）
   content_format: text
   answer: false
+  points:
+    - 常见数据类型
 
 # 单选题
 - kind: single_choice
@@ -29,6 +21,8 @@
       - id: ddd
         text: package, class, import
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -54,6 +48,8 @@
       - id: ddd
         text: 不能通过编译
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 内部数据类型byte的取值范围是
@@ -69,6 +65,8 @@
       - id: ddd
         text: (–256) – 255
     correct: bbb
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: 声明公用的abstract方法的正确格式是
@@ -84,6 +82,8 @@
       - id: ddd
         text: public virtual add();
     correct: aaa
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: |
@@ -114,6 +114,8 @@
       - id: ddd
         text: default
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -144,6 +146,8 @@
       - id: ddd
         text: no output displayed
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -169,6 +173,8 @@
       - id: ccc
         text: 运行时错误
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -204,6 +210,8 @@
       - id: ddd
         text: 编译成功，并打印出" vandelur"
     correct: ddd
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在什么情况下类获得默认的构造方法：
@@ -217,6 +225,8 @@
       - id: ccc
         text: 在类中至少定义了一个构造方法时
     correct: bbb
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 假定有一个包含引起异常（不是一个RuntimeException）的代码的方法，用什么方式告诉方法的调用者要捕获该异常：
@@ -232,6 +242,8 @@
       - id: ddd
         text: 不用特别指定
     correct: bbb
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 运行下面代码能够得出的结果？
@@ -266,6 +278,8 @@
       - id: ddd
         text: 7
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -292,6 +306,8 @@
       - id: ddd
         text: 没有任何输出
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 对public void add(int a) {…}方法的重写方法：
@@ -305,6 +321,8 @@
       - id: ccc
         text: 可以返回任何需要的类型
     correct: aaa
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 对public void add(int a) {…}方法的重载方法应返回：
@@ -318,6 +336,8 @@
       - id: ccc
         text: 任何类型
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -360,6 +380,8 @@
       - id: ddd
         text: '输出Vehicle: drive Car: drive Vehicle: drive'
     correct: ccc
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 在子类构造方法内的什么位置可以对超类的构造方法(super())进行调用：
@@ -375,6 +397,8 @@
       - id: ddd
         text: 不能对超类的构造方法进行调用
     correct: bbb
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: |
@@ -404,54 +428,56 @@
       - id: ddd
         text: Line 8
     correct: ccc
+  points:
+    - 语法基础
 
-- kind: single_choice
-  content: |
-    选择正确生成text field的代码，此text field最多能够显示10个字符（假定其字体
-    有固定大小）并最初显示“hello”串：
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: new TextField("hello", 10) ;
-      - id: bbb
-        text: new TextField(10,"hello");
-      - id: ccc
-        text: new TextField("hello",max,10);
-      - id: ddd
-        text: new TextField("hello",10,max);
-    correct: aaa
+#- kind: single_choice
+  #content: |
+    #选择正确生成text field的代码，此text field最多能够显示10个字符（假定其字体
+    #有固定大小）并最初显示“hello”串：
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: new TextField("hello", 10) ;
+      #- id: bbb
+        #text: new TextField(10,"hello");
+      #- id: ccc
+        #text: new TextField("hello",max,10);
+      #- id: ddd
+        #text: new TextField("hello",10,max);
+    #correct: aaa
 
-- kind: single_choice
-  content: |
-    从下面的布局管理器中选择按行放置控件、从左到右、从上到下，当一行装满时开始新的一行的布局管理器：
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: CardLayout
-      - id: bbb
-        text: FlowLayout
-      - id: ccc
-        text: BorderLayout
-      - id: ddd
-        text: GridLayout
-    correct: bbb
+#- kind: single_choice
+  #content: |
+    #从下面的布局管理器中选择按行放置控件、从左到右、从上到下，当一行装满时开始新的一行的布局管理器：
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: CardLayout
+      #- id: bbb
+        #text: FlowLayout
+      #- id: ccc
+        #text: BorderLayout
+      #- id: ddd
+        #text: GridLayout
+    #correct: bbb
 
-- kind: single_choice
-  content: '选择可以替换一个Container对象布局的方法:'
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: setLayout(aLayoutManager);
-      - id: bbb
-        text: addLayout(aLayoutManager);
-      - id: ccc
-        text: layout(aLayoutManager);
-      - id: ddd
-        text: setLayoutManager(aLayoutManager);
-    correct: aaa
+#- kind: single_choice
+  #content: '选择可以替换一个Container对象布局的方法:'
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: setLayout(aLayoutManager);
+      #- id: bbb
+        #text: addLayout(aLayoutManager);
+      #- id: ccc
+        #text: layout(aLayoutManager);
+      #- id: ddd
+        #text: setLayoutManager(aLayoutManager);
+    #correct: aaa
 
 - kind: single_choice
   content: |
@@ -482,6 +508,8 @@
       - id: ddd
         text: 编译错误
     correct: ddd
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -510,6 +538,8 @@
       - id: ddd
         text: 10.0
     correct: ccc
+  points:
+    - 常见数据类型
 
 - kind: single_choice
   content: |
@@ -542,6 +572,8 @@
       - id: ddd
         text: 一个运行时错误．
     correct: aaa
+  points:
+    - 类，对象，方法
 
 - kind: single_choice
   content: 现在你存储一个唯一的整型序列，那么你需要哪个容器接口？
@@ -557,6 +589,8 @@
       - id: ddd
         text: Vector
     correct: aaa
+  points:
+    - 基础数据结构和基础算法
 
 - kind: single_choice
   content: |
@@ -576,59 +610,8 @@
       - id: ddd
         text: -3.0
     correct: ddd
-
-- kind: single_choice
-  content: 下列说法哪一个是正确的。（ ）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Java程序经编译后会产生machine code
-      - id: bbb
-        text: Java程序经编译后会产生byte code
-      - id: ccc
-        text: Java程序经编译后会产生DLL
-      - id: ddd
-        text: 以上都不正确
-    correct: bbb
-
-- kind: single_choice
-  content: 提供Java存取数据库能力的包是。（ ）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: java.sql
-      - id: bbb
-        text: java.awt
-      - id: ccc
-        text: java.lang
-      - id: ddd
-        text: java.swing
-    correct: aaa
-
-- kind: single_choice
-  content: |
-    执行如下程序代码后，C的值是。（ ）
-    ```java
-    a=0;c=0;
-    do{
-      --c;
-      a=a-1;
-    }while(a>0);
-    ```
-  content_format: md
-  answer:
-    choices:
-      - id: aaa
-        text: 0
-      - id: bbb
-        text: 1
-      - id: ccc
-        text: -1
-      - id: ddd
-        text: 死循环
-    correct: ccc
+  points:
+    - 常用基础类库
 
 - kind: single_choice
   content: 下面的语句中正确的表达式为。（ ）
@@ -644,6 +627,8 @@
       - id: ddd
         text: float f = 0.9239;
     correct: ccc
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: 将一个十六进制值赋给一个long型变量的正确写法为。（ ）
@@ -659,6 +644,8 @@
       - id: ddd
         text: long number = 0x345L;
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -682,6 +669,8 @@
       - id: ddd
         text: 11
     correct: ddd
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -718,6 +707,8 @@
       - id: eee
         text: 不能编译通过
     correct: eee
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -749,6 +740,8 @@
       - id: ddd
         text: 3
     correct: aaa
+  points:
+    - 语法基础
 
 - kind: single_choice
   content: |
@@ -774,81 +767,38 @@
       - id: fff
         text: foo的值是false。
     correct: bbb
+  points:
+    - 常见数据类型
 
-- kind: single_choice
-  content: 以下哪个类是swt包中的。（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: MessageBox
-      - id: bbb
-        text: MessageDialog
-      - id: ccc
-        text: JDialog
-      - id: ddd
-        text: DisplayMode
-    correct: ddd
+#- kind: single_choice
+  #content: 以下哪个类是swt包中的。（）
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: MessageBox
+      #- id: bbb
+        #text: MessageDialog
+      #- id: ccc
+        #text: JDialog
+      #- id: ddd
+        #text: DisplayMode
+    #correct: ddd
 
-- kind: single_choice
-  content: Java是从（）语言改进重新设计。
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Ada
-      - id: bbb
-        text: C++
-      - id: ccc
-        text: Pasacal
-      - id: ddd
-        text: BASIC
-    correct: bbb
-
-- kind: single_choice
-  content: 下列语句哪一个正确（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: Java程序经编译后会产生machine code
-      - id: bbb
-        text: Java程序经编译后会产生byte code
-      - id: ccc
-        text: Java程序经编译后会产生DLL
-      - id: ddd
-        text: 以上都不正确
-    correct: bbb
-
-- kind: single_choice
-  content: 下列说法正确的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: class中的constructor不可省略
-      - id: bbb
-        text: constructor必须与class同名，但方法不能与class同名
-      - id: ccc
-        text: constructor在一个对象被new时执行
-      - id: ddd
-        text: 一个class只能定义一个constructor
-    correct: ccc
-
-- kind: single_choice
-  content: 提供Java存取数据库能力的包是（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: java.sql
-      - id: bbb
-        text: java.awt
-      - id: ccc
-        text: java.lang
-      - id: ddd
-        text: java.swing
-    correct: aaa
+#- kind: single_choice
+  #content: Java是从（）语言改进重新设计。
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: Ada
+      #- id: bbb
+        #text: C++
+      #- id: ccc
+        #text: Pasacal
+      #- id: ddd
+        #text: BASIC
+    #correct: bbb
 
 - kind: single_choice
   content: 下列哪一种叙述是正确的（）
@@ -864,21 +814,8 @@
       - id: ddd
         text: 声明抽象方法不可写出大括号
     correct: ddd
-
-- kind: single_choice
-  content: 下列语句正确的是（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 形式参数可被视为local variable
-      - id: bbb
-        text: 形式参数可被字段修饰符修饰
-      - id: ccc
-        text: 形式参数为方法被调用时，真正被传递的参数
-      - id: ddd
-        text: 形式参数不可以是对象
-    correct: aaa
+  points:
+    - 抽象类，接口，继承
 
 - kind: single_choice
   content: 下列哪种说法是正确的（）
@@ -894,46 +831,10 @@
       - id: ddd
         text: 实例方法可直接调用本类的类方法
     correct: ddd
-
-
+  points:
+    - 类，对象，方法
 
 # 多选题
-- kind: multi_choice
-  content: 下列说法正确的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 环境变量可在编译source code时指定
-      - id: bbb
-        text: 在编译程序时，所能指定的环境变量不包括class path
-      - id: ccc
-        text: javac一次可同时编译数个Java源文件
-      - id: ddd
-        text: javac.exe能指定编译结果要置于哪个目录（directory）
-    corrects:
-      - bbb
-      - ccc
-      - ddd
-
-- kind: multi_choice
-  content: 下列标识符不合法的有（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: new
-      - id: bbb
-        text:
-      - id: ccc
-        text: 1234
-      - id: ddd
-        text: car.taxi
-    corrects:
-      - aaa
-      - ccc
-      - ddd
-
 - kind: multi_choice
   content: 下列说法错误的有（）
   content_format: text
@@ -951,6 +852,8 @@
       - bbb
       - ccc
       - ddd
+  points:
+    - 常见数据类型
 
 - kind: multi_choice
   content: 不能用来修饰interface的有（）
@@ -969,6 +872,8 @@
       - aaa
       - ccc
       - ddd
+  points:
+    - 抽象类，接口，继承
 
 - kind: multi_choice
   content: 下列说法错误的有（）
@@ -987,6 +892,8 @@
       - aaa
       - ccc
       - ddd
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 在下面的选项中合法的标识符有。（）
@@ -1010,6 +917,8 @@
       - ddd
       - eee
       - fff
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面的选项中哪些不是java的关键字。（）
@@ -1032,23 +941,8 @@
       - aaa
       - bbb
       - ddd
-
-- kind: multi_choice
-  content: 下面的叙述中正确的有。（）
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: 环境变量可在编译source code时指定。
-      - id: bbb
-        text: 在编译程序时，所能指定的环境变量不包括class path。
-      - id: ccc
-        text: javac一次可同时编译数个Java源文件。
-      - id: ddd
-        text: javac.exe能指定编译结果要置于哪个目录（directory）。
-    corrects:
-      - aaa
-      - ccc
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面的叙述中正确的有。（）
@@ -1065,6 +959,8 @@
         text: 类File重写方法equals()在两个分立的对象的内容和类型一致时返回true。
     corrects:
       - ccc
+  points:
+    - 类，对象，方法
 
 - kind: multi_choice
   content: 下面有关变量及其作用域的陈述哪些是对的。（）
@@ -1082,27 +978,29 @@
     corrects:
       - aaa
       - ccc
+  points:
+    - 类，对象，方法
 
-- kind: multi_choice
-  content: |
-    一个类Example的main()方法的参数是args,类被如下调用执行：
-    java Example cat
-    main方法中访问args[0]的输出是什么？
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: cat
-      - id: bbb
-        text: java
-      - id: ccc
-        text: Example
-      - id: ddd
-        text: 抛出一个NullPointerException异常
-      - id: eee
-        text: 抛出一个ArrayIndexOutOfBoundsException异常
-    corrects:
-      - aaa
+#- kind: multi_choice
+  #content: |
+    #一个类Example的main()方法的参数是args,类被如下调用执行：
+    #java Example cat
+    #main方法中访问args[0]的输出是什么？
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: cat
+      #- id: bbb
+        #text: java
+      #- id: ccc
+        #text: Example
+      #- id: ddd
+        #text: 抛出一个NullPointerException异常
+      #- id: eee
+        #text: 抛出一个ArrayIndexOutOfBoundsException异常
+    #corrects:
+      #- aaa
 
 - kind: multi_choice
   content: |
@@ -1135,6 +1033,8 @@
     corrects:
       - ddd
       - eee
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 选择定义在Graphics类中的方法：
@@ -1156,6 +1056,8 @@
     corrects:
       - aaa
       - ccc
+  points:
+    - 常用基础类库
 
 - kind: multi_choice
   content: 选择可以建立线程的接口：
@@ -1174,6 +1076,8 @@
         text: Executable
     corrects:
       - aaa
+  points:
+    - 线程
 
 - kind: multi_choice
   content: |
@@ -1196,6 +1100,8 @@
         text: s3=s1 && s2
     corrects:
       - aaa
+  points:
+    - 常见数据类型
 
 - kind: multi_choice
   content: |
@@ -1230,10 +1136,12 @@
     corrects:
       - aaa
       - bbb
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: |
-    那个代码能够添加在//mothod here地方，并能正确执行？
+    那个代码能够添加在//Method here地方，并能正确执行？
     ```java
       class Base{
         public void amethod(int i) { }
@@ -1258,24 +1166,26 @@
     corrects:
       - bbb
       - ccc
+  points:
+    - 语法基础
 
-- kind: multi_choice
-  content: listener(监听器)方法的正确的访问修饰符是什么？
-  content_format: text
-  answer:
-    choices:
-      - id: aaa
-        text: public
-      - id: bbb
-        text: static
-      - id: ccc
-        text: private
-      - id: ddd
-        text: protected
-      - id: eee
-        text: Default(即默认为空)
-    corrects:
-      - aaa
+#- kind: multi_choice
+  #content: listener(监听器)方法的正确的访问修饰符是什么？
+  #content_format: text
+  #answer:
+    #choices:
+      #- id: aaa
+        #text: public
+      #- id: bbb
+        #text: static
+      #- id: ccc
+        #text: private
+      #- id: ddd
+        #text: protected
+      #- id: eee
+        #text: Default(即默认为空)
+    #corrects:
+      #- aaa
 
 - kind: multi_choice
   content: public static void main方法的参数描述是：
@@ -1293,6 +1203,8 @@
     corrects:
       - aaa
       - ddd
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面哪行代码会在编译的时候出现错误或警告：
@@ -1314,6 +1226,8 @@
       - bbb
       - ccc
       - ddd
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面那些关键字不是JAVA的关键字
@@ -1332,6 +1246,8 @@
         text: case
     corrects:
       - bbb
+  points:
+    - 语法基础
 
 - kind: multi_choice
   content: 下面那些不是合法的变量定义：
@@ -1353,75 +1269,101 @@
     corrects:
       - aaa
       - fff
+  points:
+    - 语法基础
 
 # 简答题
 - kind: essay
   content: 请写出一个输出“Hello World！” 的程序。（3分）
   content_format: text
+  points:
+    - 语法基础
 
 - kind: essay
   content: char型变量中能不能存贮一个中文汉字? 为什么? （3分）
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: 常见的两种xml解析技术是什么? 区别是什么?（4分）
   content_format: text
+  points:
+    - JSON，XML
 
 - kind: essay
   content: MVC是什么，如何实现? （5分）
   content_format: text
+  points:
+    - springmvc
 
-- kind: essay
-  content: J2EE是什么？（6分）
-  content_format: text
+#- kind: essay
+  #content: J2EE是什么？（6分）
+  #content_format: text
 
 - kind: essay
   content: jsp有哪些内置对象?作用分别是什么? （9分）
   content_format: text
+  points:
+    - servlet, jsp
 
 - kind: essay
   content: 作用域public,private,protected,以及不写时的区别 ？（10分）
   content_format: text
+  points:
+    - 类，对象，方法
 
 - kind: essay
   content: |
     什么是Singleton，它的作用是什么，它有几种形式？请用代码写出一个Singleton类。
   content_format: text
+  points:
+    - 设计模式
 
 - kind: essay
   content: |
     在Struts + Spring + Hibernate的组合框架模式中，三者各自的特点都是什么？
   content_format: text
-
-- kind: essay
-  content: 分别写出BOOL,int,float,指针类型的变量a 与“零”的比较语句
-  content_format: text
+  points:
+    - hibernate
 
 - kind: essay
   content: 请说出const与#define 相比，有何优点？
   content_format: text
+  points:
+    - 语法基础
 
 - kind: essay
   content: 简述数组与指针的区别？
   content_format: text
+  points:
+    - 常见数据类型
 
 - kind: essay
   content: 类成员函数的重载、、覆盖和隐藏区别？
   content_format: text
+  points:
+    - 类，对象，方法
 
 - kind: essay
   content: |
     There are two int variables: a and b, don’t use “if”, “? :”, “switch”or other judgement statements, find out the biggest one of the two numbers.
   content_format: text
+  points:
+    - 常用基础类库
 
 - kind: essay
   content: 如何打印出当前源文件的文件名以及源文件的当前行号？
   content_format: text
+  points:
+    - 语法基础
 
 - kind: essay
   content: main 主函数执行完毕后，是否可能会再执行一段代码，给出说明？
   content_format: text
+  points:
+    - 语法基础
 
-- kind: essay
-  content: 如何判断一段程序是由C 编译程序还是由C++编译程序编译的？
-  content_format: text
+#- kind: essay
+  #content: 如何判断一段程序是由C 编译程序还是由C++编译程序编译的？
+  #content_format: text
