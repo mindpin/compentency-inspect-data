@@ -1,6 +1,6 @@
 # 2015-2016Java期末考试真题100道(附答案解析)
 - kind: single_choice
-  content: 访问权限修饰符有public、private、protected和默认修饰符,他们既可以用来修饰类,也可以用来修饰类中的成员,使用private修饰符的成员可见情况有
+  content: 访问权限修饰符有 public、private、protected 和默认修饰符，他们既可以用来修饰类，也可以用来修饰类中的成员，使用 private 修饰符的成员可见情况有
   content_format: text
   answer:
     choices:
@@ -26,7 +26,7 @@
       - id: bbb
         text: 实例变量是类的成员变量
       - id: ccc
-        text: 实例变量用关键字static声明
+        text: 实例变量用关键字 static 声明
       - id: ddd
         text: 在方法中定义的局部变量在该方法被执行时创建
     correct: ccc
@@ -35,15 +35,15 @@
 
 - kind: single_choice
   content: |
-    下列程序代码段运行后,变量x的结果是(             )
+    下列程序代码段运行后，变量x的结果是()
     ```java
-    int x=0;
-    int y=3;
+    int x = 0;
+    int y = 3;
     switch(y){
     case 1:x++;
     case 2:x++;x++;
     case 3:x++;x++;x++;
-    case 4:x+=4;
+    case 4:x += 4;
     }
     ```
   content_format: md
@@ -62,7 +62,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 已知A类被打包在packageA , B类被打包在packageB,且B类被声明为public,且有一个成员变量x被声明为protected控制方式。C类也位于packageA包,且继承了B类。则以下说法正确的是
+  content: 已知A类被打包在 packageA, B类被打包在 packageB, 且B类被声明为 public, 且有一个成员变量x被声明为 protecte d控制方式。C类也位于 packageA 包且继承了B类。则以下说法正确的是
   content_format: text
   answer:
     choices:
@@ -79,7 +79,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 下列Java常见事件类中哪个是鼠标事件类
+  content: 下列 Java 常见事件类中哪个是鼠标事件类
   content_format: text
   answer:
     choices:
@@ -100,16 +100,16 @@
     关于以下程序代码的说明正确的是
     ```java
     1 class  HasStatic{
-    2    private  static  int  x=100
+    2    private  static  int  x = 100
     3    public  static  void  main(String  args[  ]){
-    4      HasStatic  hs1=new  HasStatic(  );
+    4      HasStatic  hs1 = new  HasStatic(  );
     5      hs1.x++;
-    6      HasStatic  hs2=new  HasStatic(  );
+    6      HasStatic  hs2 = new  HasStatic(  );
     7      hs2.x++;
-    8      hs1=new  HasStatic( );
+    8      hs1 = new  HasStatic( );
     9      hs1.x++;
     10     HasStatic.x- -;
-    11     System.out.println(“x=”+x);
+    11     System.out.println("x=" + x);
     12 }
     13}
     ```
@@ -117,25 +117,25 @@
   answer:
     choices:
       - id: aaa
-        text: 程序通过编译输出结果为 x=102
+        text: 程序通过编译输出结果为 x = 102
       - id: bbb
-        text: 10行不能通过编译,因为x是私有静态变量
+        text: 10行不能通过编译，因为x是私有静态变量
       - id: ccc
-        text: 5行不能通过编译,因为引用了私有静态变量
+        text: 5行不能通过编译，因为引用了私有静态变量
       - id: ddd
-        text: 程序通过编译输出结果为 x=103
+        text: 程序通过编译输出结果为 x = 103
     correct: aaa
   points:
     - 语法基础
 
 - kind: single_choice
   content: |
-    编译运行以下程序后,关于输出结果的说明正确的是
+    编译运行以下程序后，关于输出结果的说明正确的是
     ```java
     public class Conditional{
       public static void main(String  args[]){
-        int  x=4;
-        System.out.println("value  is  " + ((x>4) ? 99.9 :9));
+        int  x = 4;
+        System.out.println("value  is  " + ((x > 4) ? 99.9 :9));
       }
     }
     ```
@@ -211,7 +211,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: java程序运行时,用于判定一个对象实例的类型运算符是
+  content: java 程序运行时，用于判定一个对象实例的类型运算符是
   content_format: text
   answer:
     choices:
@@ -228,7 +228,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列哪一项不是Java保留字
+  content: 下列哪一项不是 Java 保留字
   content_format: text
   answer:
     choices:
@@ -245,7 +245,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 当处理的数据量很多或向文件输出很多次小数据一般使用的流是
+  content: 当处理的数据量很多或向文件输出很多次小数据，一般使用的流是
   content_format: text
   answer:
     choices:
@@ -279,7 +279,7 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: Java应用程序的入口方法是
+  content: Java 应用程序的入口方法是
   content_format: text
   answer:
     choices:
@@ -296,7 +296,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列不属于FileInputStream输入流的read()成员函数的是
+  content: 下列不属于 FileInputStream 输入流的 read() 成员函数的是
   content_format: text
   answer:
     choices:
@@ -307,13 +307,13 @@
       - id: ccc
         text: int read(byte b[])
       - id: ddd
-        text: int read(byte b[],intoffset,int len)
+        text: int read(byte b[] , intoffset , int len)
     correct: aaa
   points:
     - 常用基础类库
 
 - kind: single_choice
-  content: 下面关于Java语言中实例方法和类方法的说法哪项是对的
+  content: 下面关于 Java 语言中实例方法和类方法的说法哪项是对的
   content_format: text
   answer:
     choices:
@@ -335,19 +335,19 @@
   answer:
     choices:
       - id: aaa
-        text: 都由Listener完成
+        text: 都由 Listener 完成
       - id: bbb
-        text: 由Listener和构件分别完成
+        text: 由 Listener 和构件分别完成
       - id: ccc
-        text: 都由相应事件Listener处登记过的构件完成[正确选项]
+        text: 都由相应事件 Listener 处登记过的构件完成
       - id: ddd
-        text: 由Listener和窗口分别完成
+        text: 由 Listener 和窗口分别完成
     correct: ccc
   points:
     - 常用基础类库
 
 - kind: single_choice
-  content: 当要将一文本文件当作一个数据库访问,读完一个纪录后,跳到另一个纪录,它们在文件的不同地方时,一般使用    类访问。
+  content: 当要将一文本文件当作一个数据库访问，读完一个纪录后，跳到另一个纪录，它们在文件的不同地方时，一般使用()类访问。
   content_format: text
   answer:
     choices:
@@ -364,7 +364,7 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: java中用来抛出异常的关键字是  ()
+  content: java 中用来抛出异常的关键字是()
   content_format: text
   answer:
     choices:
@@ -381,18 +381,18 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列数组初始化形式正确的是(           )
+  content: 下列数组初始化形式正确的是()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: int t4[][]; t4={1,2,3,4,5,6};
+        text: int t4[][]; t4 = {1,2,3,4,5,6};
       - id: bbb
-        text: int t2[][]={1,2,3,4,5,6};
+        text: int t2[][] = {1,2,3,4,5,6};
       - id: ccc
-        text: int t1[][]={{1,2},{3,4},{5,6}};
+        text: int t1[][] = {{1,2},{3,4},{5,6}};
       - id: ddd
-        text: int t3[3][2]={1,2,3,4,5,6};
+        text: int t3[3][2] = {1,2,3,4,5,6};
     correct: ccc
   points:
     - 语法基础
@@ -432,7 +432,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列整型数据类型中需要内存空间最少的是
+  content: 下列整型数据类型中需要内存空间最少的是
   content_format: text
   answer:
     choices:
@@ -449,16 +449,16 @@
     - 常见数据类型
 
 - kind: single_choice
-  content: Character流与Byte流的区别是
+  content: Character 流与 Byte 流的区别是
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 前者是块读写后者是字节读写
+        text: 前者是块读写，后者是字节读写
       - id: bbb
-        text: 二者没有区别可以互换使用
+        text: 二者没有区别，可以互换使用
       - id: ccc
-        text: 前者带有缓冲后者没有
+        text: 前者带有缓冲，后者没有
       - id: ddd
         text: 每次读入的字节数不同
     correct: aaa
@@ -466,7 +466,7 @@
     - 常见数据类型
 
 - kind: single_choice
-  content: 当把一个程序、线程或代码段的输出连接到另一个程序、线程或代码段的输入时,应使用的流是
+  content: 当把一个程序、线程或代码段的输出连接到另一个程序、线程或代码段的输入时，应使用的流是
   content_format: text
   answer:
     choices:
@@ -483,14 +483,14 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: 下列有关子类继承父类构造函数的描述正确的是(          )
+  content: 下列有关子类继承父类构造函数的描述正确的是()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 子类必须通过super关键字调用父类的构造函数
+        text: 子类必须通过 super 关键字调用父类的构造函数
       - id: bbb
-        text: 创建子类的对象时先调用子类自己的构造函数然后调用父类的构造函数
+        text: 创建子类的对象时，先调用子类自己的构造函数，然后调用父类的构造函数
       - id: ccc
         text: 子类无法继承父类的构造函数
       - id: ddd
@@ -500,7 +500,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 在异常处理中如释放资源、关闭文件、关闭数据库等由(       )来完成
+  content: 在异常处理中，如释放资源、关闭文件、关闭数据库等由()来完成
   content_format: text
   answer:
     choices:
@@ -517,14 +517,14 @@
     - 语法基础
 
 - kind: single_choice
-  content: 执行完以下代码int [ ]  x = new int[10]后以下哪项说明是正确的
+  content: 执行完以下代码 int [ ]  x = new int[10]后，以下哪项说明是正确的
   content_format: text
   answer:
     choices:
       - id: aaa
         text: x[9]未定义
       - id: bbb
-        text: x[9]为0 [正确选项]
+        text: x[9]为0
       - id: ccc
         text: x[0]为空
       - id: ddd
@@ -534,7 +534,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: Java语言正确的常量修饰符应该是
+  content: Java 语言正确的常量修饰符应该是
   content_format: text
   answer:
     choices:
@@ -585,16 +585,16 @@
     - 语法基础
 
 - kind: single_choice
-  content: 关于异常,下列说法正确的是 (      )
+  content: 关于异常，下列说法正确的是 ()
   content_format: text
   answer:
     choices:
       - id: aaa
         text: 异常是一种对象
       - id: bbb
-        text: 一旦程序运行异常将被创建
+        text: 一旦程序运行，异常将被创建
       - id: ccc
-        text: 为了保证程序运行速度要尽量避免异常控制
+        text: 为了保证程序运行速度，要尽量避免异常控制
       - id: ddd
         text: 没有正确答案
     correct: aaa
@@ -620,37 +620,37 @@
 
 - kind: single_choice
   content: |
-    关于以下application的说明,正确的是
+    关于以下 application 的说明，正确的是
     ```java
     1 class StaticStuff
     2 {
-    3   static int x=10;
-    4   static { x+=5; }
+    3   static int x =10;
+    4   static { x +=5; }
     5   public static void main(String  args[])
     6   {
     7     System.out.println("x=" + x);
     8   }
-    9   static  { x/=3; }
+    9   static  { x /= 3; }
     10 }
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 编译通过,执行结果为 x=3
+        text: 编译通过,执行结果为 x = 3
       - id: bbb
-        text: 4行与9行不能通过编译,因为缺少方法名和返回类型
+        text: 4行与9行不能通过编译，因为缺少方法名和返回类型
       - id: ccc
-        text: 9行不能通过编译因为只能有一个静态初始化器
+        text: 9行不能通过编译，因为只能有一个静态初始化器
       - id: ddd
-        text: 编译通过,执行结果为 x=5
+        text: 编译通过，执行结果为 x= 5
     correct: ddd
   points:
     - 语法基础
 
 - kind: single_choice
   content: |
-    下述4行代码组成的小程序总共创建String对象的个数为
+    下述4行代码组成的小程序总共创建 String 对象的个数为
     ```java
     String s1 = "abc";
     String s2 = new String("abc");
@@ -673,16 +673,16 @@
     - 常见数据类型
 
 - kind: single_choice
-  content: 下列哪一项说法最好地描述了Java中的对象
+  content: 下列哪一项说法最好地描述了 Java 中的对象
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 对象是方法的集合这些方法在小程序窗口或应用程序窗口中产生图形元素或者计算和返回值
+        text: 对象是方法的集合，这些方法在小程序窗口或应用程序窗口中产生图形元素，或者计算和返回值
       - id: bbb
-        text: 对象是通过import命令引入到程序中的所有事情
+        text: 对象是通过 import 命令引入到程序中的所有事情
       - id: ccc
-        text: 对象是一种数据结构它具有操作数据的方法
+        text: 对象是一种数据结构，它具有操作数据的方法
       - id: ddd
         text: 对象是一组具有共同的结构和行为的类
     correct: ccc
@@ -707,7 +707,7 @@
     - 线程
 
 - kind: single_choice
-  content: 如果str表示一个String对象"73",那么以下哪些表达式将会把这个字符串转换为int值73,请选出正确答案。
+  content: 如果 str 表示一个 String 对象"73"，那么以下哪些表达式将会把这个字符串转换为 int 值73，请选出正确答案。
   content_format: text
   answer:
     choices:
@@ -725,29 +725,29 @@
 
 - kind: single_choice
   content: |
-    下列程序段运行后,变量x,y,z的值描述正确的是
+    下列程序段运行后，变量x, y, z 的值描述正确的是
     ```java
-    int x=1;
-    int y=(x++)*2;
-    int z=(--y)*3;
+    int x = 1;
+    int y = (x++) * 2;
+    int z = (--y) * 3;
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: x的值是1,y的值是1,z的值是6
+        text: x 的值是1，y 的值是1，z 的值是6
       - id: bbb
-        text: x的值是2,y的值是1,z的值是3
+        text: x 的值是2，y 的值是1，z 的值是3
       - id: ccc
-        text: x的值是1,y的值是2,z的值是3
+        text: x 的值是1，y 的值是2，z 的值是3
       - id: ddd
-        text: x的值是2,y的值是1,z的值是6
+        text: x 的值是2，y 的值是1，z 的值是6
     correct: bbb
   points:
     - 语法基础
 
 - kind: single_choice
-  content: 下列常见的系统定义的异常中哪个是输入、输出异常?
+  content: 下列常见的系统定义的异常中，哪个是输入、输出异常?
   content_format: text
   answer:
     choices:
@@ -781,31 +781,31 @@
     - 语法基础
 
 - kind: single_choice
-  content: 对于catch子句的排列,下列哪种是正确的(      )
+  content: 对于 catch 子句的排列，下列哪种是正确的()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 子类在先,父类在后
+        text: 子类在先，父类在后
       - id: bbb
-        text: 有继承关系的异常不能在同一个try程序段内
+        text: 有继承关系的异常不能在同一个 try 程序段内
       - id: ccc
-        text: 父类在先,子类在后
+        text: 父类在先，子类在后
       - id: ddd
-        text: 先有子类,其他如何排列都无关
+        text: 先有子类，其他如何排列都无关
     correct: aaa
   points:
     - 语法基础
 
 - kind: single_choice
-  content: 关于类继承的说法正确的是
+  content: 关于类继承的说法，正确的是
   content_format: text
   answer:
     choices:
       - id: aaa
         text: 接口和类都允许多继承
       - id: bbb
-        text: Java接口允许多继承
+        text: Java 接口允许多继承
       - id: ccc
         text: 接口和类都不允许多继承
       - id: ddd
@@ -819,12 +819,12 @@
     运行如下代码的结果是
     ```java
     public class MyObj{
-       int x=3;
+       int x = 3;
        public MyObj(int x){
-          this.x=x;
+          this.x = x;
         }
         public static void main(String[] args){
-           MyObj obj=new MyObj(50);
+           MyObj obj = new MyObj(50);
            System.out.println(obj.x);
         }
      }
@@ -839,13 +839,13 @@
       - id: ccc
         text: 50
       - id: ddd
-        text: 编译通过但运行错误
+        text: 编译通过，但运行错误
     correct: ccc
   points:
     - 语法基础
 
 - kind: single_choice
-  content: Java语言的类间的继承关系是(        )
+  content: Java语言的类间的继承关系是()
   content_format: text
   answer:
     choices:
@@ -862,7 +862,7 @@
     - 抽象类，接口，继承
 
 - kind: single_choice
-  content: 有整型数组int[] x={2,33,88,5,10};, 则调用方法 Arrays.sort(x) 后数组x中的元素值依次是
+  content: 有整型数组int[] x = {2,33,88,5,10}, 则调用方法 Arrays.sort(x) 后数组x中的元素值依次是
   content_format: text
   answer:
     choices:
@@ -880,20 +880,20 @@
 
 - kind: single_choice
   content: |
-    下面是Example.java文件的完整代码请找出会产生编译错误的行
+    下面是 Example.java 文件的完整代码请找出会产生编译错误的行
     ```java
     1.     class BaseClass {
     2.          public String str;
     3.          public BaseClass {
     4.          System.out.println(“ok”);}
     5.          public BaseClass(String s){
-    6.           str=s;}}
+    6.           str = s;}}
     7.         class SubClass extends BaseClass{
     8.         }
     9.       public class Example{
     10.         public void method {
-    11.           SubClass s=new SubClass(“hello”);
-    12.         BaseClass b=new BaseClass(“world”);
+    11.           SubClass s = new SubClass(“hello”);
+    12.         BaseClass b = new BaseClass(“world”);
     13.      }
     14.  }
     ```
@@ -914,7 +914,7 @@
 
 - kind: single_choice
   content: |
-    关于下面一段代码描述正确的是
+    关于下面一段代码，描述正确的是
     ```java
     public class Agg {
       public static void main(String argv[]) {
@@ -956,36 +956,36 @@
   answer:
     choices:
       - id: aaa
-        text: 运行时错误会抛异常
+        text: 运行时错误，会抛异常
       - id: bbb
         text: 编译错误
       - id: ccc
-        text: 能够编译输出“waiting"
+        text: 能够编译，输出"waiting"
       - id: ddd
-        text: 能够编译, 输出“waiting"紧接着输出"finish"
+        text: 能够编译，输出"waiting"紧接着输出"finish"
     correct: aaa
   points:
     - 线程
 
 - kind: single_choice
-  content: 关于以下的组件的接口正确的是
+  content: 关于以下的组件的接口，正确的是
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: List组件可实现的接口除了ItemListener还可以是ActionListener
+        text: List 组件可实现的接口，除了 ItemListener，还可以是 ActionListener
       - id: bbb
         text: 其他都不对
       - id: ccc
-        text: Choice组件可实现的接口是ActionListener
+        text: Choice 组件可实现的接口是 ActionListener
       - id: ddd
-        text: TextArea组件可实现的接口是ActionListener
+        text: TextArea 组件可实现的接口是 ActionListener
     correct: aaa
   points:
     - 常用基础类库
 
 - kind: single_choice
-  content: java语言中异常处理的出口是下列哪一子句 (     )
+  content: java语言中异常处理的出口是下列哪一子句 ()
   content_format: text
   answer:
     choices:
@@ -1002,18 +1002,18 @@
     - 语法基础
 
 - kind: single_choice
-  content: 一个可以独立运行的Java应用程序(           )
+  content: 一个可以独立运行的 Java 应用程序()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 可以有一个或多个main方法
+        text: 可以有一个或多个 main 方法
       - id: bbb
-        text: 只能有一个main方法
+        text: 只能有一个 main 方法
       - id: ccc
-        text: 可以有一个或零个main方法
+        text: 可以有一个或零个 main 方法
       - id: ddd
-        text: 最多只能有两个main方法
+        text: 最多只能有两个 main 方法
     correct: bbb
   points:
     - 语法基础
@@ -1024,9 +1024,9 @@
   answer:
     choices:
       - id: bbb
-        text: 构造方法仅供虚拟机调用,当系统完成对象的创建后,自动调用相应的构造方法
+        text: 构造方法仅供虚拟机调用，当系统完成对象的创建后，自动调用相应的构造方法
       - id: ccc
-        text: 在对象消除时,调用构造方法
+        text: 在对象消除时，调用构造方法
       - id: ddd
         text: 程序员可以在程序中调用对象的构造方法
     correct: bbb
@@ -1041,11 +1041,11 @@
       - id: aaa
         text: 全部都是
       - id: bbb
-        text: BufferInputStream和BufferOutputStream
+        text: BufferInputStream 和 BufferOutputStream
       - id: ccc
-        text: PipedInputStream和PipedOutputStream
+        text: PipedInputStream 和 PipedOutputStream
       - id: ddd
-        text: FileInputStream和FileOutputStream
+        text: FileInputStream 和 FileOutputStream
     correct: aaa
   points:
     - 常用基础类库
@@ -1056,19 +1056,19 @@
   answer:
     choices:
       - id: aaa
-        text: 用final修饰的变量,在程序中可对这个变量的值进行更改
+        text: 用 final 修饰的变量，在程序中可对这个变量的值进行更改
       - id: bbb
         text: final 可修饰类、属性、方法
       - id: ccc
         text: 定义抽象方法需有方法的返回类型、名称、参数列表和方法体
       - id: ddd
-        text: abstract可修饰类、属性、方法
+        text: abstract 可修饰类、属性、方法
     correct: bbb
   points:
     - 语法基础
 
 - kind: single_choice
-  content: 在switch expression 语句中 expression 的数据类型不能是
+  content: 在 switch expression 语句中 expression 的数据类型不能是
   content_format: text
   answer:
     choices:
@@ -1085,7 +1085,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 假设你正在为应用系统设计一个Java图形用户界面GUI,需要能输入多行文本信息,下列组件中最能满足这个要求的是
+  content: 假设你正在为应用系统设计一个 Java 图形用户界面 GUI ,需要能输入多行文本信息，下列组件中最能满足这个要求的是
   content_format: text
   answer:
     choices:
@@ -1122,7 +1122,7 @@
   content: |
     下面的程序段执行后输出的结果是
     ```java
-    StringBuffer buf=new StringBuffer("China2008");
+    StringBuffer buf = new StringBuffer("China2008");
     buf.insert(5,"@");
     System.out.println(buf.toString());
     ```
@@ -1159,19 +1159,19 @@
   answer:
     choices:
       - id: aaa
-        text: 代码得到编译,但捕获到 NullPointException异常
+        text: 代码得到编译，但捕获到 NullPointException 异常
       - id: bbb
-        text: 由于String s没有初始化,代码不能编译通过
+        text: 由于 String s 没有初始化，代码不能编译通过
       - id: ccc
-        text: 代码得到编译,并输出“s=null”
+        text: 代码得到编译，并输出"s=null"
       - id: ddd
-        text: 代码得到编译,并输出“s=”
+        text: 代码得到编译，并输出"s="
     correct: bbb
   points:
     - 常见数据类型
 
 - kind: single_choice
-  content: 为了区分重载多态中同名的不同方法,要求()
+  content: 为了区分重载多态中同名的不同方法，要求()
   content_format: text
   answer:
     choices:
@@ -1195,9 +1195,9 @@
       - id: aaa
         text: 类中包含数据变量和方法
       - id: bbb
-        text: Java语言的类支持单继承和多继承
+        text: Java 语言的类支持单继承和多继承
       - id: ccc
-        text: 类是Java语言中的一种复合数据类型
+        text: 类是 Java 语言中的一种复合数据类型
       - id: ddd
         text: 类是对所有具有一定共性的对象的抽象
     correct: bbb
@@ -1262,7 +1262,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下面是Java的Boolean对象的值为
+  content: 下面是 Java 的 Boolean 对象的值为
   content_format: text
   answer:
     choices:
@@ -1313,7 +1313,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下面不属于Java关键字的是
+  content: 下面不属于 Java 关键字的是
   content_format: text
   answer:
     choices:
@@ -1331,7 +1331,7 @@
 
 - kind: single_choice
   content: |
-    当在命令行输入java myprog good morning 运行以下代码输出结果是
+    当在命令行输入java myprog good morning 运行以下代码，输出结果是
     ```java
     public class myprog{
            public static void main(String argv[])
@@ -1404,10 +1404,10 @@
 
 - kind: single_choice
   content: |
-    类Test1、Test2定义如下
+    类 Test1 、Test2 定义如下
     ```java
     1 public class  Test1
-    2 { public  float  aMethod(float a, float b) throws
+    2 { public  float  aMethod(float a , float b) throws
     3  IOException {      }
     4 }
     5  public  class  Test2  extends  Test1{
@@ -1431,18 +1431,18 @@
     - 抽象类，接口，继承
 
 - kind: single_choice
-  content: 以下关于abstract的说法正确的是
+  content: 以下关于 abstract 的说法，正确的是
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: abstract类中必须有abstract方法
+        text: abstract 类中必须有 abstract 方法
       - id: bbb
-        text: abstract只能修饰类
+        text: abstract 只能修饰类
       - id: ccc
-        text: abstarct方法所在的类必须用abstract修饰
+        text: abstarct 方法所在的类必须用 abstract 修饰
       - id: ddd
-        text: abstract只能修饰方法
+        text: abstract 只能修饰方法
     correct: ccc
   points:
     - 抽象类，接口，继承
@@ -1469,13 +1469,13 @@
   answer:
     choices:
       - id: aaa
-        text: 运行时错误Thread类中的run方法没有定义
+        text: 运行时错误，Thread 类中的 run 方法没有定义
       - id: bbb
-        text: 编译错误Thread类中的run方法没有定义
+        text: 编译错误，Thread 类中的 run 方法没有定义
       - id: ccc
-        text: 编译无错打印0到9
+        text: 编译无错，打印0到9
       - id: ddd
-        text: 编译无错不打印任何值
+        text: 编译无错，不打印任何值
     correct: ddd
   points:
     - 线程
@@ -1503,8 +1503,8 @@
     ```java
     int temp = 2 ;
     temp++;
-    temp*=5;
-    temp/=2
+    temp* = 5;
+    temp /= 2
     ```
   content_format: md
   answer:
@@ -1522,50 +1522,50 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列关于构造方法的叙述中,错误的是
+  content: 下列关于构造方法的叙述中，错误的是
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: Java语言规定构造方法不可以重载
+        text: Java 语言规定构造方法不可以重载
       - id: bbb
-        text: Java语言规定构造方法没有返回值,但不用void声明
+        text: Java 语言规定构造方法没有返回值，但不用 void 声明
       - id: ccc
-        text: Java语言规定构造方法只能通过new自动调用
+        text: Java 语言规定构造方法只能通过 new 自动调用
       - id: ddd
-        text: Java语言规定构造方法名与类名必须相同
+        text: Java 语言规定构造方法名与类名必须相同
     correct: aaa
   points:
     - 语法基础
 
 - kind: single_choice
-  content: String或StringBuffer类的对象在调用以下哪个方法时其自身会发生更改
+  content: String 或 StringBuffer 类的对象在调用以下哪个方法时其自身会发生更改
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: String类的charAt()方法
+        text: String 类的 charAt() 方法
       - id: bbb
-        text: StringBuffer类的length ()方法
+        text: StringBuffer 类的 length() 方法
       - id: ccc
-        text: StringBuffer类的reverse ()方法
+        text: StringBuffer 类的 reverse() 方法
       - id: ddd
-        text: String类的toUpperCase()方法
+        text: String 类的 toUpperCase() 方法
       - id: eee
-        text: String类的replace()方法
+        text: String 类的 replace() 方法
     correct: ccc
   points:
     - 常用基础类库
 
 - kind: single_choice
-  content: 在代码中使用catch(Exception e)的好处是(          )
+  content: 在代码中使用 catch(Exception e) 的好处是(          )
   content_format: text
   answer:
     choices:
       - id: aaa
         text: 只会捕获个别类型的异常
       - id: bbb
-        text: 捕获try块中产生的所有类型的异常
+        text: 捕获 try 块中产生的所有类型的异常
       - id: ccc
         text: 执行一些程序
       - id: ddd
