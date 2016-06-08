@@ -35,10 +35,38 @@ Dir[File.join(path, "*.yml")].each do |yaml_file|
   end
 end
 
+all_count     = 0
+single_choice = 0
+multi_choice  = 0
+essay         = 0
+file_upload   = 0
 
 points.each do |point|
   p "--------------- 知识点：#{point}"
   kinds.each do |kind|
+    if kind == "single_choice"
+      single_choice += tongji_info[point][kind][:count]
+    end
+    if kind == "multi_choice"
+      multi_choice += tongji_info[point][kind][:count]
+    end
+    if kind == "essay"
+      essay += tongji_info[point][kind][:count]
+    end
+    if kind == "file_upload"
+      file_upload += tongji_info[point][kind][:count]
+    end
+
+    all_count += tongji_info[point][kind][:count]
     p "#{kind}: #{tongji_info[point][kind][:count]}"
   end
 end
+
+
+p "~~~~~~~~~~~~~~~~~"
+
+p "single_choice: #{single_choice}"
+p "multi_choice: #{multi_choice}"
+p "essay: #{essay}"
+p "file_upload: #{file_upload}"
+p "all_count: #{all_count}"

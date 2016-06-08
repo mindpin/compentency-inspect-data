@@ -38,11 +38,11 @@ end
 
 
 FileUtils.mkdir_p(File.expand_path("../zhengli", __FILE__))
+all_count = 0
+items = []
 points.each do |point|
-  items = []
   kinds.each do |kind|
     items += tongji_info[point][kind][:items]
   end
-
-  IO.write(File.expand_path("../zhengli/#{point}.yml", __FILE__), items.to_yaml)
 end
+IO.write(File.expand_path("../zhengli/zhengli.yml", __FILE__), items.to_yaml)
