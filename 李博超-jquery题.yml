@@ -1,10 +1,10 @@
 - kind: single_choice
   content: |
-    请看下列html代码：
+    请看下列 html 代码：
       ```html
-      <p class="s1">hello</p>
+      <p class = "s1">hello</p>
       ```
-    能使文本“hello”字体大小变成40px的jQuery代码是：
+    能使文本"hello"字体大小变成40px的 jQuery 代码是：
   content_format: md
   answer:
     choices:
@@ -22,7 +22,7 @@
 
 - kind: single_choice
   content: |
-    请看下列html代码：
+    请看下列 html 代码：
       ```html
       <ul>
       <li>item1</li>
@@ -50,15 +50,15 @@
   content: |
     请看下列html代码和jQuery代码：
       ```html
-      <body style="font-size: 30px;">
-        <div style="display: none;">1002</div>
+      <body style = "font-size: 30px;">
+        <div style = "display: none;">1002</div>
         <div>1003</div>
-        <input type="hidden" name="userId" value="1001" />
-        <input type="text" name="userId" value="1002" />
-        <input type="button" value="可见性过滤选择器" onclick="f3();" />
+        <input type = "hidden" name = "userId" value = "1001" />
+        <input type = "text" name = "userId" value = "1002" />
+        <input type = "button" value = "可见性过滤选择器" onclick =" f3();" />
       </body>
       ```
-    jQuery代码是 alert($("input :hidden").val());弹出对话框上显示的内容是：
+    jQuery 代码是 alert($("input :hidden").val());弹出对话框上显示的内容是：
   content_format: md
   answer:
     choices:
@@ -75,7 +75,7 @@
     - jQuery
 
 - kind: single_choice
-  content: "在jQuery中，如果想要从DOM中删除所有匹配的元素，下面选项中正确的是:"
+  content: "在 jQuery 中，如果想要从 DOM 中删除所有匹配的元素，下面选项中正确的是:"
   content_format: text
   answer:
     choices:
@@ -95,9 +95,9 @@
   content: |
     dom.html页面有如下代码：
     ```html
-    <div id="d1"><span>hello jQuery</span></div>
+    <div id = "d1"><span>hello jQuery</span></div>
     ```
-    使用下列jQuery代码：
+    使用下列 jQuery 代码：
     ```js
     alert($('#d1').html());
     alert($('#d1').text());
@@ -107,13 +107,13 @@
   answer:
     choices:
       - id: aaa
-        text: "[hello jQuery]:[<span>hello jQuery</span>]"
+        text: "[hello jQuery] : [<span>hello jQuery</span>]"
       - id: bbb
-        text: "[<span>hello jQuery</span>]:[<span>hello jQuery</span>]"
+        text: "[<span>hello jQuery</span>] : [<span>hello jQuery</span>]"
       - id: ccc
-        text: "[<span>hello jQuery</span>]:[hello jQuery]"
+        text: "[<span>hello jQuery</span>] : [hello jQuery]"
       - id: ddd
-        text: "[hello jQuery]:[hello jQuery]"
+        text: "[hello jQuery] : [hello jQuery]"
     correct: ccc
   points:
     - jQuery
@@ -125,8 +125,8 @@
       <html>
        <head>
         <title>event </title>
-        <script type="text/javascript" src="js/jquery-1.4.3.js"></script>
-        <script type="text/javascript">
+        <script type = "text/javascript" src = "js/jquery-1.4.3.js"></script>
+        <script type = "text/javascript">
           $(function(){
             $('a').click(function(){
               alert('helloworld');
@@ -135,10 +135,10 @@
         </script>
        </head>
        <body>
-        <a href="#">test1<a><br>
-        <a href="#">test2<a><br>
-        <a href="#">test3<a><br>
-        <a href="#">test4<a><br>
+        <a href = "#">test1<a><br>
+        <a href = "#">test2<a><br>
+        <a href = "#">test3<a><br>
+        <a href = "#">test4<a><br>
        </body>
       </html>
       ```
@@ -159,11 +159,11 @@
 
 - kind: multi_choice
   content: |
-    请看下列jQuery代码：
+    请看下列 jQuery 代码：
     ```html
     $(function(){
      $('#s1').change(function(){
-      $.get('carinfo.do',{'name':$('#s1').val()},
+      $.get('carinfo.do',{'name' : $('#s1').val()},
       function(data,desc){
         //待补充
         },1000);
@@ -176,13 +176,13 @@
   answer:
     choices:
       - id: aaa
-        text: 发送请求的类型是get
+        text: 发送请求的类型是 get
       - id: bbb
-        text: 预期服务器返回xml形式数据
+        text: 预期服务器返回 xml 形式数据
       - id: ccc
-        text: 发送到服务器的参数名字是json
+        text: 发送到服务器的参数名字是 json
       - id: ddd
-        text: 代码“ function(data,desc){”中的data表示服务器返回的数据
+        text: 代码" function(data , desc){" 中的 data 表示服务器返回的数据
     corrects:
       - aaa
       - ddd
@@ -208,7 +208,7 @@
 
 
 - kind: single_choice
-  content: 下面哪一个不是jquery对象访问的方法？
+  content: 下面哪一个不是 jQuery 对象访问的方法？
   content_format: text
   answer:
     choices:
@@ -253,13 +253,13 @@
       - id: ccc
         text: eq()
       - id: ddd
-        text: contents（）
+        text: contents()
     correct: ccc
   points:
     - jQuery
 
 - kind: multi_choice
-  content: 下面哪几个不是属于jquery的事件处理?
+  content: 下面哪几个不是属于 jQuery 的事件处理?
   content_format: text
   answer:
     choices:
@@ -278,7 +278,7 @@
     - jQuery
 
 - kind: single_choice
-  content: 下面不属于ajax事件的是？
+  content: 下面不属于 ajax 事件的是？
   content_format: text
   answer:
     choices:
@@ -300,10 +300,10 @@
     ```html 
     <form>
       <label>Name:</label>
-      <input name="name" />
+      <input name = "name" />
       <fieldset>
         <label>Newsletter:</label>
-        <input name="newsletter" />
+        <input name = "newsletter" />
       </fieldset>
     </form>
     ```
@@ -312,11 +312,11 @@
   answer:
     choices:
       - id: aaa
-        text: [<input name="name" />]
+        text: [<input name = "name" />]
       - id: bbb
-        text: [ <input name="name" />, <input name="newsletter" /> ]
+        text: [ <input name = "name" />, <input name = "newsletter" /> ]
       - id: ccc
-        text: [<input name="newsletter" />]
+        text: [<input name = "newsletter" />]
     correct: bbb
   points:
     - jQuery
@@ -326,8 +326,8 @@
     HTML 代码：
     ```html 
     <form>
-      <input name="email" disabled="disabled" />
-      <input name="id" />
+      <input name = "email" disabled = "disabled" />
+      <input name = "id" />
     </form>
     ```
     jQuery 代码：$("input:enabled")  结果：
@@ -335,11 +335,11 @@
   answer:
     choices:
       - id: aaa
-        text: [<input name="email" disabled="disabled" />]
+        text: [<input name = "email" disabled = "disabled" />]
       - id: bbb
-        text: [ <input name="id" /> ]
+        text: [ <input name = "id" /> ]
       - id: ccc
-        text: [<input name="email" disabled="disabled" /><input name="id" />]
+        text: [<input name = "email" disabled = "disabled" /><input name = "id" />]
     correct: bbb
   points:
     - jQuery
