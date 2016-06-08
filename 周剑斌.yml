@@ -8,19 +8,19 @@
   answer:
     choices:
       - id: aaa
-        text: class中的constructor不可省略
+        text: class 中的 constructor 不可省略
       - id: bbb
-        text: constructor必须与class同名，但方法不能与class同名
+        text: constructor 必须与 class 同名，但方法不能与 class 同名
       - id: ccc
-        text: constructor在一个对象被new时执行
+        text: constructor 在一个对象被 new 时执行
       - id: ddd
-        text: 一个class只能定义一个constructor
+        text: 一个 class 只能定义一个 constructor
     correct: ccc
   points:
     - 语法基础
 
 - kind: single_choice
-  content: 提供Java存取数据库能力的包是（）
+  content: 提供 Java 存取数据库能力的包是（）
   content_format: text
   answer:
     choices:
@@ -62,9 +62,9 @@
     do{
       --c;
       a = a - 1;
-    }while(a>0);
+    }while(a > 0);
     ```
-    后，C的值是（）
+    后，C 的值是（）
   content_format: md
   answer:
     choices:
@@ -88,7 +88,7 @@
       - id: aaa
         text: abstract修饰符可修饰字段、方法和类
       - id: bbb
-        text: 抽象方法的body部分必须用一对大括号{ }包住
+        text: 抽象方法的 body 部分必须用一对大括号 { } 包住
       - id: ccc
         text: 声明抽象方法，大括号可有可无
       - id: ddd
@@ -103,7 +103,7 @@
   answer:
     choices:
       - id: aaa
-        text: 形式参数可被视为local variable
+        text: 形式参数可被视为 local variable
       - id: bbb
         text: 形式 参数可被字段修饰符修饰
       - id: ccc
@@ -143,7 +143,7 @@
       - id: bbb
         text: 数组属于一种原生类
       - id: ccc
-        text: int number=[]={31,23,33,43,35,63}
+        text: int number = [ ] = {31, 23, 33, 43, 35, 63}
       - id: ddd
         text: 数组的大 小可以任意改变
     corrects:
@@ -179,7 +179,7 @@
   answer:
     choices:
       - id: aaa
-        text: 在类方法中可 用this来调用本类的类方法
+        text: 在类方法中可用 this 来调用本类的类方法
       - id: bbb
         text: 在类方法中调用本类的类方法时可直接调用
       - id: ccc
@@ -198,13 +198,13 @@
   answer:
     choices:
       - id: aaa
-        text:  Java面向对象语言容许单独的过程与函数存在
+        text:  Java 面向对象语言容许单独的过程与函数存在
       - id: bbb
-        text: Java面向对象语言容许单独的方法存在
+        text: Java 面向对象语言容许单独的方法存在
       - id: ccc
-        text: Java语言中的方法属于类中的成员（member）
+        text: Java 语言中的方法属于类中的成员（member）
       - id: ddd
-        text: Java语言中的方法必定隶属于某一类（对象），调用方法与过程或函数相同
+        text: Java 语言中的方法必定隶属于某一类（对象），调用方法与过程或函数相同
     corrects:
       - aaa
       - bbb
@@ -218,7 +218,7 @@
 
 - kind: single_choice
   content: |
-    2年前,2013年6月18日,中国天河2号成为全银河系列中速度最快的超级计算机。它以峰值计算速度每秒5.49亿亿次、持续计算速度每秒3.39亿亿次双精度浮点运算的优异性能位居榜首。若需要存储以上两个数值,最好使用( )类型的变量。
+    2年前,2013年6月18日,中国天河2号成为全银河系列中速度最快的超级计算机。它以峰值计算速度每秒5.49亿亿次、持续计算速度每秒3.39亿亿次双精度浮点运算的优异性能位居榜首。若需要存储以上两个数值,最好使用（）类型的变量。
   content_format: text
   answer:
     choices:
@@ -267,13 +267,13 @@
 
 - kind: single_choice
   content: |
-    应用程序的main方法中有以下语句
+    应用程序的 main 方法中有以下语句
     ```java
-    String  s1="abc";
-    String  s2="abc";
-    boolean b1=s1.equals(s2);
-    boolean b2=(s1==s2);
-    System.out.print(b1+"   "+b2);
+    String  s1 = "abc";
+    String  s2 = "abc";
+    boolean b1 = s1.equals(s2);
+    boolean b2 = (s1 == s2);
+    System.out.print(b1 + "   " + b2);
     ```
     则输出的结果是 ( )
   content_format: md
@@ -295,11 +295,11 @@
   content: |
     以下程序段
     ```java
-    String   s="12345#aaa#bbb#67890";
-    int   n=s.indexOf("#");
-    int   k=s.indexOf("#",n+1);
-    int   m=s.indexOf("#",k+1);
-    String  s2=s.substring(m+1);
+    String   s = "12345#aaa#bbb#67890";
+    int   n = s.indexOf("#");
+    int   k = s.indexOf("#", n + 1);
+    int   m = s.indexOf("#", k + 1);
+    String  s2 = s.substring(m + 1);
     System.out.println(s2);
     ```
     的输出结果是 ( )
@@ -322,14 +322,14 @@
   content: |
     应用程序的main方法中有以下语句
     ```java
-    int  b[][]={{1}, {2,2}, {2,2,2}};
-      int sum=0;
-      for(int i=0;i<b.length;i++) {
-        for(int j=0;j<b[i].length;j++) {
-          sum+=b[i][j];
+    int  b[ ][ ]={{1}, {2, 2}, {2, 2, 2}};
+      int sum = 0;
+      for(int i = 0; i < b.length; i++) {
+        for(int  j= 0; j < b[i].length; j++) {
+          sum += b[i][j];
         }
       }
-    System.out.println("sum="+sum);
+    System.out.println("sum = " + sum);
     ```
     则输出的结果是 ( )
   content_format: md
@@ -351,17 +351,17 @@
   content: |
     应用程序的main方法中有以下语句
     ```java
-    int[]  x={125,21,5,168,98};
-    int  min=x[0];
-    int  index=0;
-    for(int i=1;i<x.length;i++){
-      if(x[i]<min)
+    int[]  x = {125, 21, 5, 168, 98};
+    int  min = x[0];
+    int  index = 0;
+    for(int i = 1; i < x.length; i++){
+      if(x[i] < min)
       {
         min = x[i];
         index = i;
       }
     }
-    System.out.println(min+", "+index);
+    System.out.println(min + ", " + index);
     ```
     则执行后输出的结果是 ( )
   content_format: md
@@ -384,11 +384,11 @@
     如下代码
     ```java
     public class Test {
-      String s1="java";
+      String s1 = "java";
       public static void main(String args[]) {
-        int z=2;
-        Test t=new Test();
-        System.out.println(t.s1+z);
+        int z = 2;
+        Test t = new Test();
+        System.out.println(t.s1 + z);
       }
     }
     ```
@@ -412,10 +412,10 @@
   content: |
     应用程序的main方法中有以下语句
     ```java
-    String s1="0.5", s2="12";
-    double x=Double.parseDouble(s1);
-    int    y=Integer.parseInt(s2);
-    System.out.println(""+x+y);
+    String s1 = "0.5", s2 = "12";
+    double x = Double.parseDouble(s1);
+    int  y = Integer.parseInt(s2);
+    System.out.println("" + x + y);
     ```
     则输出的结果是 ( )
   content_format: md
@@ -436,7 +436,7 @@
 # 多选题
 
 - kind: multi_choice
-  content: 在语句“System.out.println(“hello,Java”);”静态成员是( )
+  content: 在语句 "System.out.println("hello, Java");", 静态成员是（）
   content_format: text
   answer:
     choices:
@@ -479,7 +479,7 @@
 # 单选题
 
 - kind: single_choice
-  content: 50、关于面向对象的说法正确的是（    ）
+  content: 关于面向对象的说法正确的是（）
   content_format: text
   answer:
     choices:
@@ -511,7 +511,7 @@
     #correct: bbb
 
 - kind: single_choice
-  content: 在JAVA中ArrayList类实现了可变大小的数组，便于遍历元素和随机访问元素，已知获得了ArrayList类的对象bookTypeList，则下列语句中能够实现判断列表中是否存在字符串“小说”的是（    ）
+  content: 在 JAVA 中 ArrayList 类实现了可变大小的数组，便于遍历元素和随机访问元素，已知获得了 ArrayList 类的对象 bookTypeList, 则下列语句中能够实现判断列表中是否存在字符串“小说”的是（）
   content_format: text
   answer:
     choices:
@@ -530,20 +530,20 @@
 # 多选题
 
 - kind: multi_choice
-  content: 以下关于抽象类和接口的说法错误的是（    ）
+  content: 以下关于抽象类和接口的说法错误的是（）
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 抽象类在Java语言中表示的是一种继承关系，一个类只能使用一次继承。但是一个类却可以实现多个接口
+        text: 抽象类在 Java 语言中表示的是一种继承关系，一个类只能使用一次继承。但是一个类却可以实现多个接口
       - id: bbb
         text: 在抽象类中可以没有抽象方法
       - id: ccc
-        text: C、实现抽象类和接口的类必须实现其中的所有方法，除非它也是抽象类。接口中的方法都不能被实现
+        text: 实现抽象类和接口的类必须实现其中的所有方法，除非它也是抽象类。接口中的方法都不能被实现
       - id: ddd
-        text: 接口中定义的变量默认是public static final 型，且必须给其初值，所以实现类中不能重新定义，也不能改变其值
+        text: 接口中定义的变量默认是 public static final 型，且必须给其初值，所以实现类中不能重新定义，也不能改变其值
       - id: eee
-        text: 接口中的方法都必须加上public关键字
+        text: 接口中的方法都必须加上 public 关键字
     corrects:
       - eee
   points:
