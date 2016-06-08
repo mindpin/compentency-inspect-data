@@ -21,11 +21,11 @@
   answer:
     choices:
       - id: aaa
-        text: ’$‘
+        text: '$''
       - id: bbb
         text: '#'
       - id: ccc
-        text: ’~‘
+        text: '~'
       - id: ddd
         text: '&'
     correct: aaa
@@ -57,11 +57,11 @@
       - id: aaa
         text: '$#'
       - id: bbb
-        text: ’$@‘
+        text: '$@'
       - id: ccc
-        text: ’$$‘
+        text: '$$'
       - id: ddd
-        text: ’$*‘
+        text: '$*'
     correct: bbb
   points:
     - shell脚本

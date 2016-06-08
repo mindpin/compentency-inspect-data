@@ -89,7 +89,7 @@
   answer:
     choices:
       - id: aaa
-        text: 硬链接就是让链接文件的 i 节点号指向被链接文件的i节点
+        text: 硬链接就是让链接文件的 i 节点号指向被链接文件的 i 节点
       - id: bbb
         text: 硬链接和符号连接都是产生一个新的 i 节点
       - id: ccc
