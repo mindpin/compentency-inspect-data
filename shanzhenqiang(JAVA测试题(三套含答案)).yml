@@ -1,17 +1,17 @@
 # 单选题
 - kind: single_choice
-  content: 在单一文件中 import 、class 和 package 的正确出现顺序是：
+  content: 在单一文件中 import、class 和 package 的正确出现顺序是：
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: package , import , class
+        text: package, import, class
       - id: bbb
-        text: class , import , package
+        text: class, import, package
       - id: ccc
-        text: import , package , class
+        text: import, package, class
       - id: ddd
-        text: package , class , import
+        text: package, class, import
     correct: aaa
   points:
     - 语法基础
@@ -100,9 +100,9 @@
       - id: aaa
         text: one
       - id: bbb
-        text: one , default
+        text: one, default
       - id: ccc
-        text: one , two , default
+        text: one, two, default
       - id: ddd
         text: default
     correct: ccc
@@ -132,7 +132,7 @@
       - id: aaa
         text: default
       - id: bbb
-        text: default , zero
+        text: default, zero
       - id: ccc
         text: error default clause not defined
       - id: ddd
@@ -277,9 +277,9 @@
 
 - kind: single_choice
   content: |
-    传递4，0来运行下列代码中的方法 divide( int a , int b )，结果是：
+    传递4，0来运行下列代码中的方法 divide( int a, int b )，结果是：
     ```java
-      public void divide( int a , int b ) {
+      public void divide( int a, int b ) {
         try {
           int c = a / b;
          } catch ( Exception e ) {
@@ -400,11 +400,11 @@
     ```java
     1. public class Test {
     2.   public static void main ( String args [] ) {
-    3.     Employee e = new Employee( "Bob" , 48 );
+    3.     Employee e = new Employee( "Bob", 48 );
     4.     e.calculatePay();
     5.     System.out.println( e.printDetails() );
     6.     e = Null;
-    7.     e = new Employee( "Denise" , 36 );
+    7.     e = new Employee( "Denise", 36 );
     8.     e.calculatePay();
     9.     System.out.println( e.printDetails() );
     10.  }
@@ -711,7 +711,7 @@
 
 - kind: multi_choice
   content: |
-    一个类 Example 的 main() 方法的参数是 args , 类被如下调用执行：
+    一个类 Example 的 main() 方法的参数是 args, 类被如下调用执行：
     ```
     java Example cat
     ```
@@ -774,11 +774,11 @@
   answer:
     choices:
       - id: aaa
-        text: drawLine( int , int , int , int );
+        text: drawLine( int, int, int, int );
       - id: bbb
-        text: drawImage( Image , int , int , ImageObserver );
+        text: drawImage( Image, int, int, ImageObserver );
       - id: ccc
-        text: drawString( String , int , int );
+        text: drawString( String, int, int );
       - id: ddd
         text: add( Component );
       - id: eee
