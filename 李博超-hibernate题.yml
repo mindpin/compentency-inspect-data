@@ -18,7 +18,7 @@
     - hibernate
 
 - kind: single_choice
-  content: 关于 Hibernate , 下列说法错误的是()
+  content: 关于 Hibernate, 下列说法错误的是()
   content_format: text
   answer:
     choices:
@@ -491,7 +491,7 @@
     - hibernate
 
 - kind: multi_choice
-  content: 关于 HQL 与 SQL , 下列说法正确的有()
+  content: 关于 HQL 与 SQL, 下列说法正确的有()
   content_format: text
   answer:
     choices:
@@ -500,9 +500,9 @@
       - id: bbb
         text: HQL 面向对象，而 SQL 操纵关系数据库
       - id: ccc
-        text: 在 HQL 与 SQL 中，都包含 select , insert , update , delete 语句
+        text: 在 HQL 与 SQL 中，都包含 select, insert, update, delete 语句
       - id: ddd
-        text: HQL 仅用于查询数据，不支持 insert , update 和 delete 语句
+        text: HQL 仅用于查询数据，不支持 insert, update 和 delete 语句
     corrects:
       - bbb
       - ccc
