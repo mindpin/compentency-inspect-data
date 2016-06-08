@@ -21,7 +21,7 @@
   answer:
     choices:
       - id: aaa
-        text: '$''
+        text: '$'
       - id: bbb
         text: '#'
       - id: ccc
