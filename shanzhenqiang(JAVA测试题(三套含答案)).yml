@@ -724,7 +724,7 @@
     java Example cat
     ```
     main方法中访问args[0]的输出是什么？
-  content_format: text
+  content_format: md
   answer:
     choices:
       - id: aaa
