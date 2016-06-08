@@ -1,6 +1,6 @@
 # 2015-2016Java期末考试真题100道(附答案解析)
 - kind: single_choice
-  content: 访问权限修饰符有 public 、private 、protected 和默认修饰符，他们既可以用来修饰类，也可以用来修饰类中的成员，使用 private 修饰符的成员可见情况有
+  content: 访问权限修饰符有 public、private、protected 和默认修饰符，他们既可以用来修饰类，也可以用来修饰类中的成员，使用 private 修饰符的成员可见情况有
   content_format: text
   answer:
     choices:
@@ -62,7 +62,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 已知A类被打包在 packageA , B类被打包在 packageB , 且B类被声明为 public , 且有一个成员变量x被声明为 protecte d控制方式。C类也位于 packageA 包且继承了B类。则以下说法正确的是
+  content: 已知A类被打包在 packageA, B类被打包在 packageB, 且B类被声明为 public, 且有一个成员变量x被声明为 protecte d控制方式。C类也位于 packageA 包且继承了B类。则以下说法正确的是
   content_format: text
   answer:
     choices:
@@ -725,7 +725,7 @@
 
 - kind: single_choice
   content: |
-    下列程序段运行后，变量x , y , z 的值描述正确的是
+    下列程序段运行后，变量x, y, z 的值描述正确的是
     ```java
     int x = 1;
     int y = (x++) * 2;
