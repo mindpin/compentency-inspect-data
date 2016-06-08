@@ -5,19 +5,19 @@
   answer:
     choices:
       - id: aaa
-        text: class中的constructor不可省略
+        text: class 中的 constructor 不可省略
       - id: bbb
-        text: constructor必须与class同名，但方法不能与class同名
+        text: constructor 必须与 class 同名，但方法不能与 class 同名
       - id: ccc
-        text: constructor在一个对象被new时执行
+        text: constructor 在一个对象被 new 时执行
       - id: ddd
-        text: 一个class只能定义一个constructor
+        text: 一个 class 只能定义一个 constructor
     correct: ccc
   points:
     - 类，对象，方法
 
 - kind: single_choice
-  content: 提供Java存取数据库能力的包是
+  content: 提供 Java 存取数据库能力的包是
   content_format: text
   answer:
     choices:
@@ -56,9 +56,9 @@
   answer:
     choices:
       - id: aaa
-        text: abstract修饰符可修饰字段、方法和类
+        text: abstract 修饰符可修饰字段、方法和类
       - id: bbb
-        text: 抽象方法的body部分必须用一对大括号"{ }"包住
+        text: 抽象方法的 body 部分必须用一对大括号"{ }"包住
       - id: ccc
         text: 声明抽象方法，大括号可有可无
       - id: ddd
@@ -73,7 +73,7 @@
   answer:
     choices:
       - id: aaa
-        text: 形式参数可被视为local variable
+        text: 形式参数可被视为 local variable
       - id: bbb
         text: 形式参数可被字段修饰符修饰
       - id: ccc

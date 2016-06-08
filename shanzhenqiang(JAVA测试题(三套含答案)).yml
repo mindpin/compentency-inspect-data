@@ -1,17 +1,17 @@
 # 单选题
 - kind: single_choice
-  content: 在单一文件中import、class和package的正确出现顺序是：
+  content: 在单一文件中 import 、class 和 package 的正确出现顺序是：
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: package, import, class
+        text: package , import , class
       - id: bbb
-        text: class, import, package
+        text: class , import , package
       - id: ccc
-        text: import, package, class
+        text: import , package , class
       - id: ddd
-        text: package, class, import
+        text: package , class , import
     correct: aaa
   points:
     - 语法基础
@@ -21,10 +21,10 @@
     编译，运行下列代码后的结果是：
     ```java
     public class Test {
-      public static void main (String args []) {
+      public static void main ( String args [] ) {
         int age;
         age = age + 1;
-        System.out.println("The age is " + age);
+        System.out.println( "The age is " + age );
       }
     }
     ```
@@ -44,7 +44,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 内部数据类型byte的取值范围是
+  content: 内部数据类型 byte 的取值范围是
   content_format: text
   answer:
     choices:
@@ -53,7 +53,7 @@
       - id: bbb
         text: (–128) – 127
       - id: ccc
-        text: (–32,768) – 32,767
+        text: (–32, 768) – 32,767
       - id: ddd
         text: (–256) – 255
     correct: bbb
@@ -61,7 +61,7 @@
     - 常见数据类型
 
 - kind: single_choice
-  content: 声明公用的abstract方法的正确格式是
+  content: 声明公用的 abstract 方法的正确格式是
   content_format: text
   answer:
     choices:
@@ -81,17 +81,17 @@
   content: |
     下面的代码能打印出的结果为：
     ```java
-      int i=1;
+      int i = 1;
       switch (i) {
         case 0:
-          System.out.println("zero");
+          System.out.println( "zero" );
           break;
         case 1:
-          System.out.println("one");
+          System.out.println( "one" );
         case 2:
-          System.out.println("two");
+          System.out.println( "two" );
         default:
-          System.out.println("default");
+          System.out.println( "default" );
       }
     ```
   content_format: md
@@ -100,9 +100,9 @@
       - id: aaa
         text: one
       - id: bbb
-        text: one, default
+        text: one , default
       - id: ccc
-        text: one, two, default
+        text: one , two , default
       - id: ddd
         text: default
     correct: ccc
@@ -113,17 +113,17 @@
   content: |
     下面的代码能打印出的结果为：
     ```java
-      int i=9;
+      int i = 9;
       switch (i) {
         default:
-          System.out.println("default");
+          System.out.println( "default" );
         case 0:
-          System.out.println("zero");
+          System.out.println( "zero" );
           break;
         case 1:
-          System.out.println("one");
+          System.out.println( "one" );
         case 2:
-          System.out.println("two");
+          System.out.println( "two" );
       }
     ```
   content_format: md
@@ -132,7 +132,7 @@
       - id: aaa
         text: default
       - id: bbb
-        text: default, zero
+        text: default , zero
       - id: ccc
         text: error default clause not defined
       - id: ddd
@@ -149,9 +149,9 @@
       class Sub extends Base {}
       class Sub2 extends Base {}
       public class CEx{
-        public static void main(String argv[]){
-          Base b=new Base();
-          Sub s=(Sub) b;
+        public static void main( String argv[] ){
+          Base b = new Base();
+          Sub s = ( Sub ) b;
         }
       }
     ```
@@ -174,17 +174,17 @@
     ```java
     public class Tux extends Thread{
       static String sName = "vandeleur";
-      public static void main(String argv[]){
+      public static void main( String argv[] ){
         Tux t = new Tux();
-        t.piggy(sName);
-        System.out.println(sName);
+        t.piggy( sName );
+        System.out.println( sName );
       }
-      public void piggy(String sName){
+      public void piggy( String sName ){
         sName = sName + " wiggy";
         start();
       }
       public void run(){
-          for(int i=0;i < 4; i++){
+          for(int i = 0; i < 4; i++){
           sName = sName + " " + i;
         }
       }
@@ -196,11 +196,11 @@
       - id: aaa
         text: 编译时错误
       - id: bbb
-        text: 编译成功，并打印出"vandeleur wiggy"
+        text: 编译成功，并打印出 "vandeleur wiggy"
       - id: ccc
-        text: 编译成功，并打印出" vandeleur wiggy 0 1 2 3"
+        text: 编译成功，并打印出 "vandeleur wiggy 0 1 2 3"
       - id: ddd
-        text: 编译成功，并打印出" vandelur"
+        text: 编译成功，并打印出 "vandelur"
     correct: ddd
   points:
     - 类，对象，方法
@@ -221,7 +221,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 假定有一个包含引起异常（不是一个RuntimeException）的代码的方法，用什么方式告诉方法的调用者要捕获该异常：
+  content: 假定有一个包含引起异常（不是一个 RuntimeException ）的代码的方法，用什么方式告诉方法的调用者要捕获该异常：
   content_format: text
   answer:
     choices:
@@ -257,7 +257,7 @@
 - kind: single_choice
   content: |
     ```java
-      System.out.println(4 | 3);
+      System.out.println( 4 | 3 );
     ```
     能打印出什么结果？
   content_format: md
@@ -277,15 +277,15 @@
 
 - kind: single_choice
   content: |
-    传递4，0来运行下列代码中的方法divide(int a, int b)，结果是：
+    传递4，0来运行下列代码中的方法 divide( int a , int b )，结果是：
     ```java
-      public void divide(int a, int b) {
+      public void divide( int a , int b ) {
         try {
           int c = a / b;
-         } catch (Exception e) {
-          System.out.print("Exception ");
+         } catch ( Exception e ) {
+          System.out.print( "Exception " );
         } finally {
-          System.out.println("Finally");
+          System.out.println( "Finally" );
       }
     ```
   content_format: md
@@ -304,14 +304,14 @@
     - 语法基础
 
 - kind: single_choice
-  content: 对public void add(int a) {…}方法的重写方法：
+  content: 对 public void add( int a ) {…}方法的重写方法：
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 必须返回void
+        text: 必须返回 void
       - id: bbb
-        text: 必须返回in
+        text: 必须返回 in
       - id: ccc
         text: 可以返回任何需要的类型
     correct: aaa
@@ -319,7 +319,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 对public void add(int a) {…}方法的重载方法应返回：
+  content: 对 public void add( int a ) {…}方法的重载方法应返回：
   content_format: text
   answer:
     choices:
@@ -339,17 +339,17 @@
     ```java
     class Vehicle {
       public void drive() {
-        System.out.println("Vehicle: drive");
+        System.out.println( "Vehicle: drive" );
       }
     }
     class Car extends Vehicle {
       public void drive() {
-        System.out.println("Car: drive");
+        System.out.println( "Car: drive" );
       }
     }
 
     public class Test {
-      public static void main (String args []) {
+      public static void main ( String args [] ) {
         Vehicle v;
         Car c;
         v = new Vehicle();
@@ -361,24 +361,24 @@
       }
     }
     ```
-    编译和执行类Test后，结果是：
+    编译和执行类 Test 后，结果是：
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 在语句v= c;处产生编译时错误
+        text: 在语句 v = c; 处产生编译时错误
       - id: bbb
-        text: 在语句v= c;处产生运行时错误
+        text: 在语句 v = c; 处产生运行时错误
       - id: ccc
-        text: '输出 Vehicle: drive Car: drive Car: drive'
+        text: '输出 Vehicle: drive, Car: drive, Car: drive'
       - id: ddd
-        text: '输出Vehicle: drive Car: drive Vehicle: drive'
+        text: '输出 Vehicle: drive, Car: drive, Vehicle: drive'
     correct: ccc
   points:
     - 类，对象，方法
 
 - kind: single_choice
-  content: 在子类构造方法内的什么位置可以对超类的构造方法(super())进行调用：
+  content: 在子类构造方法内的什么位置可以对超类的构造方法 ( super() ) 进行调用：
   content_format: text
   answer:
     choices:
@@ -399,16 +399,16 @@
     下列代码中有明显的语法错误的语句是：
     ```java
     1. public class Test {
-    2.     public static void main (String args []) {
-    3.         Employee e = new Employee("Bob", 48);
-    4.         e.calculatePay();
-    5.         System.out.println(e.printDetails());
-    6.         e = Null;
-    7.         e = new Employee("Denise", 36);
-    8.         e.calculatePay();
-    9.         System.out.println(e.printDetails());
-    10.     }
-    }
+    2.   public static void main ( String args [] ) {
+    3.     Employee e = new Employee( "Bob" , 48 );
+    4.     e.calculatePay();
+    5.     System.out.println( e.printDetails() );
+    6.     e = Null;
+    7.     e = new Employee( "Denise" , 36 );
+    8.     e.calculatePay();
+    9.     System.out.println( e.printDetails() );
+    10.  }
+      }
     ```
   content_format: md
   answer:
@@ -430,15 +430,15 @@
     下面的代码编译，运行后得出的结果：
     ```java
     ublic class Conv{
-      public static void main(String argv[]){
-        Conv c=new Conv();
-        String s=new String("ello");
-        c.amethod(s);
+      public static void main( String argv[] ){
+        Conv c = new Conv();
+        String s = new String( "ello" );
+        c.amethod( s );
       }
-      public void amethod(String s){
-        char c='H';
-        c+=s;
-         System.out.println(c);
+      public void amethod( String s ){
+        char c = 'H';
+        c += s;
+         System.out.println( c );
       }
     }
     ```
@@ -448,9 +448,9 @@
       - id: aaa
         text: 编译成功，打印出 "Hello"
       - id: bbb
-        text: 编译成功，打印出"ello"
+        text: 编译成功，打印出 "ello"
       - id: ccc
-        text: 编译成功，打印出elloH
+        text: 编译成功，打印出 elloH
       - id: ddd
         text: 编译错误
     correct: ddd
@@ -462,13 +462,13 @@
     执行后打印的结果为：
     ```java
     public class Oct{
-      public static void main(String argv[]){
+      public static void main( String argv[] ){
         Oct o = new Oct();
         o.amethod();
       }
       public void amethod(){
-        int oi= 012;
-        System.out.println(oi);
+        int oi = 012;
+        System.out.println( oi );
       }
     }
     ```
@@ -492,17 +492,17 @@
     编译，执行下面的代码会出现的结果：
     ```java
     public class Ref{
-      public static void main(String argv[]){
+      public static void main( String argv[] ){
         Ref r = new Ref();
-        r.amethod(r);
+        r.amethod( r );
       }
-      public void amethod(Ref r){
-        int i=99;
-        multi(r);
-        System.out.println(i);
+      public void amethod( Ref r ){
+        int i = 99;
+        multi( r );
+        System.out.println( i );
       }
-      public void multi(Ref r){
-        r.i = r.i*2;
+      public void multi( Ref r ){
+        r.i = r.i * 2;
       }
     }
     ```
@@ -516,7 +516,7 @@
       - id: ccc
         text: 198
       - id: ddd
-        text: 一个运行时错误．
+        text: 一个运行时错误
     correct: aaa
   points:
     - 类，对象，方法
@@ -541,7 +541,7 @@
 - kind: single_choice
   content: |
     ```java
-    System.out.println(Math.floor(-2.1));
+    System.out.println( Math.floor(-2.1) );
     ```
     打印的结果为：
   content_format: md
@@ -560,7 +560,7 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: 下面的语句中正确的表达式为。（ ）
+  content: 下面的语句中正确的表达式为。
   content_format: text
   answer:
     choices:
@@ -577,7 +577,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 将一个十六进制值赋给一个long型变量的正确写法为。（ ）
+  content: 将一个十六进制值赋给一个 long 型变量的正确写法为。（）
   content_format: text
   answer:
     choices:
@@ -595,11 +595,11 @@
 
 - kind: single_choice
   content: |
-    以下程序代码的输出是。（ ）
+    以下程序代码的输出是。（）
     ```java
     public class test (
-      public static void main (String args[]) (
-        System.out.printIn (6 ^ 3);
+      public static void main ( String args[] ) (
+        System.out.printIn( 6 ^ 3 );
       )
     )
     ```
@@ -620,11 +620,11 @@
 
 - kind: single_choice
   content: |
-    以下程序代码执行后，哪个说法正确？（ ）
+    以下程序代码执行后，哪个说法正确？（）
     ```java
-    int index = 1;  md
-    boolean[] test = new Boolean[3];
-    boolean foo= test [index];
+    int index = 1;
+    boolean[] test = new Boolean[ 3 ];
+    boolean foo = test [ index ];
     ```
   content_format: md
   answer:
@@ -634,13 +634,13 @@
       - id: bbb
         text: 无法编译。
       - id: ccc
-        text: foo的值是0。
+        text: foo 的值是 0。
       - id: ddd
-        text: foo的值是null。
+        text: foo 的值是 null。
       - id: eee
-        text: foo的值是true。
+        text: foo 的值是 true。
       - id: fff
-        text: foo的值是false。
+        text: foo 的值是 false。
     correct: bbb
   points:
     - 常见数据类型
@@ -656,7 +656,7 @@
       - id: bbb
         text: 数组属于一种原生类
       - id: ccc
-        text: int number=[]={31,23,33,43,35,63}
+        text: int number = [] = {31,23,33,43,35,63}
       - id: ddd
         text: 数组的大小可以任意改变
     corrects:
@@ -697,13 +697,13 @@
   answer:
     choices:
       - id: aaa
-        text: equals()方法判定引用值是否指向同一对象。
+        text: equals() 方法判定引用值是否指向同一对象。
       - id: bbb
-        text: = = 操作符判定两个分立的对象的内容和类型是否一致。
+        text: == 操作符判定两个分立的对象的内容和类型是否一致。
       - id: ccc
-        text: equals()方法只有在两个对象的内容一致时返回true。
+        text: equals() 方法只有在两个对象的内容一致时返回 true。
       - id: ddd
-        text: 类File重写方法equals()在两个分立的对象的内容和类型一致时返回true。
+        text: 类 File 重写方法 equals() 在两个分立的对象的内容和类型一致时返回 true。
     corrects:
       - ccc
   points:
@@ -711,11 +711,11 @@
 
 - kind: multi_choice
   content: |
-    一个类Example的main()方法的参数是args,类被如下调用执行：
+    一个类 Example 的 main() 方法的参数是 args , 类被如下调用执行：
     ```
     java Example cat
     ```
-    main方法中访问args[0]的输出是什么？
+    main 方法中访问 args[0] 的输出是什么？
   content_format: md
   answer:
     choices:
@@ -726,9 +726,9 @@
       - id: ccc
         text: Example
       - id: ddd
-        text: 抛出一个NullPointerException异常
+        text: 抛出一个 NullPointerException 异常
       - id: eee
-        text: 抛出一个ArrayIndexOutOfBoundsException异常
+        text: 抛出一个 ArrayIndexOutOfBoundsException 异常
     corrects:
       - aaa
   points:
@@ -736,16 +736,16 @@
 
 - kind: multi_choice
   content: |
-    给出下列代码，请选择2个正确输出？
+    给出下列代码，请选择 2 个正确输出？
     ```java
     public class Example{
-      public static void main(String args[]){
-        int i=0;
+      public static void main( String args[] ){
+        int i = 0;
         do{
-          System.out.println(“Doing it for i is”+i);
+          System.out.println( "Doing it for i is" + i );
         }
-        while (--i>0);
-          System.out.println(“Finished”);
+        while ( --i > 0 );
+          System.out.println( "Finished" );
       }
     }
     ```
@@ -769,22 +769,22 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 选择定义在Graphics类中的方法：
+  content: 选择定义在 Graphics 类中的方法：
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: drawLine(int, int, int, int) ;
+        text: drawLine( int , int , int , int );
       - id: bbb
-        text: drawImage(Image, int, int, ImageObserver) ;
+        text: drawImage( Image , int , int , ImageObserver );
       - id: ccc
-        text: drawString(String, int, int) ;
+        text: drawString( String , int , int );
       - id: ddd
-        text: add(Component);
+        text: add( Component );
       - id: eee
-        text: setVisible(boolean);
+        text: setVisible( boolean );
       - id: fff
-        text: setLayout(Object);
+        text: setLayout( Object );
     corrects:
       - aaa
       - ccc
@@ -815,21 +815,21 @@
   content: |
     下面定义的变量能执行那些操作？
     ```java
-    String s1=new String("Hello")
-    String s2=new String("there");
-    String s3=new String();
+    String s1 = new String( "Hello" );
+    String s2 = new String( "there" );
+    String s3 = new String();
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: s3=s1 + s2;
+        text: s3 = s1 + s2;
       - id: bbb
-        text: s3=s1-s2;
+        text: s3 = s1 - s2;
       - id: ccc
-        text: s3=s1 & s2;
+        text: s3 = s1 & s2;
       - id: ddd
-        text: s3=s1 && s2
+        text: s3 = s1 && s2;
     corrects:
       - aaa
   points:
@@ -837,13 +837,13 @@
 
 - kind: multi_choice
   content: |
-    那个代码能够添加在//Method here地方，并能正确执行？
+    那个代码能够添加在 //Method here 地方，并能正确执行？
     ```java
       class Base{
-        public void amethod(int i) { }
+        public void amethod( int i ) { }
       }
       public class Scope extends Base{
-        public static void main(String argv[]){
+        public static void main( String argv[] ){
         }
         //Method Here
       }
@@ -852,13 +852,13 @@
   answer:
     choices:
       - id: aaa
-        text: void amethod(int i) throws Exception {}
+        text: void amethod( int i ) throws Exception {}
       - id: bbb
-        text: void amethod(long i)throws Exception {}
+        text: void amethod( long i )throws Exception {}
       - id: ccc
-        text: void amethod(long i){}
+        text: void amethod( long i ){}
       - id: ddd
-        text: public void amethod(int i) throws Exception {}
+        text: public void amethod( int i ) throws Exception {}
     corrects:
       - bbb
       - ccc
@@ -866,7 +866,7 @@
     - 语法基础
 
 - kind: multi_choice
-  content: public static void main方法的参数描述是：
+  content: public static void main 方法的参数描述是：
   content_format: text
   answer:
     choices:
@@ -890,15 +890,15 @@
   answer:
     choices:
       - id: aaa
-        text: float f=1.3;
+        text: float f = 1.3;
       - id: bbb
-        text: char c="a";
+        text: char c = "a";
       - id: ccc
-        text: byte b=257;
+        text: byte b = 257;
       - id: ddd
-        text: boolean b=null;
+        text: boolean b = null;
       - id: eee
-        text: int i=10;
+        text: int i = 10;
     corrects:
       - aaa
       - bbb
@@ -908,7 +908,7 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 下面那些关键字不是JAVA的关键字
+  content: 下面那些关键字不是 JAVA 的关键字
   content_format: text
   answer:
     choices:
