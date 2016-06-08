@@ -1,7 +1,7 @@
 # 100家大公司java笔试题汇总.txt
 # ibm 部分开始
 - kind: multi_choice
-  content: 下面哪些main方法签名是正确的
+  content: 下面哪些 main 方法签名是正确的
   content_format: text
   answer:
     choices:
@@ -22,7 +22,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 要让不同用户共享一个JavaBean的对象则该对象的范围应该设置为
+  content: 要让不同用户共享一个 JavaBean 的对象则该对象的范围应该设置为
   content_format: text
   answer:
     choices:

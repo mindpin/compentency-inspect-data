@@ -1,11 +1,11 @@
 - kind: essay
-  content: Lock与Synchronized的区别
+  content: Lock 与 Synchronized 的区别
   content_format: text
   points:
     - 线程
 
 - kind: essay
-  content: Java HashSet工作原理及实现
+  content: Java HashSet 工作原理及实现
   content_format: text
   points:
     - 常见数据类型
@@ -26,13 +26,13 @@
     - 语法基础
 
 - kind: essay
-  content: 详述JAVA异常处理机制
+  content: 详述 JAVA 异常处理机制
   content_format: text
   points:
     - 语法基础
 
 - kind: file_upload
-  content: 画图解释SQL Join 语句
+  content: 画图解释 SQL Join 语句
   content_format: text
   points:
     - SQL
@@ -44,13 +44,13 @@
     - 抽象类，接口，继承
 
 - kind: essay
-  content: 举例说明JS中的this指向
+  content: 举例说明 JS 中的 this 指向
   content_format: text
   points:
     - js基础
 
 - kind: essay
-  content: 举例说明JS创建对象的模式
+  content: 举例说明 JS 创建对象的模式
   content_format: text
   points:
     - js基础

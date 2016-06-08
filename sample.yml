@@ -54,7 +54,7 @@
     - servlet, jsp
 
 - kind: single_choice
-  content: JDBC中,用于表示数据库连接的对象是
+  content: JDBC 中，用于表示数据库连接的对象是
   content_format: text
   answer:
     choices:
@@ -88,7 +88,7 @@
     - jdbc 相关概念
 
 - kind: single_choice
-  content: 按照MVC设计模式,JSP用于实现
+  content: 按照 MVC 设计模式，JSP 用于实现
   content_format: text
   answer:
     choices:
@@ -117,18 +117,18 @@
     16. print 'return 0';
     17. }
     ```
-    当Float对象在第11行被创建后, 什么时候能够被垃圾回收?
+    当 Float 对象在第 11 行被创建后，什么时候能够被垃圾回收？
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 13行以后
+        text: 13 行以后
       - id: bbb
-        text: 14行以后
+        text: 14 行以后
       - id: ccc
-        text: 15行以后
+        text: 15 行以后
       - id: ddd
-        text: 16行以后
+        text: 16 行以后
     correct: ccc
   points:
     - 语法基础
@@ -146,7 +146,7 @@
         new Base();
       }
     }
-    结果是什么?
+    结果是什么？
     ```
   content_format: md
   answer:
@@ -183,7 +183,7 @@
     - servlet, jsp
 
 - kind: single_choice
-  content: 在 Servlet 的生命周期中,容器只调用一次的方法是
+  content: 在 Servlet 的生命周期中，容器只调用一次的方法是
   content_format: text
   answer:
     choices:
@@ -200,16 +200,16 @@
     - servlet, jsp
 
 - kind: single_choice
-  content: 以下关于异常的说法正确的是?
+  content: 以下关于异常的说法正确的是？
   content_format: text
   answer:
     choices:
       - id: aaa
         text: 一旦出现异常,程序运行就终止了
       - id: bbb
-        text: 如果一个方法申明将抛出某个异常,它就必须真的抛出那个异常
+        text: 如果一个方法申明将抛出某个异常，它就必须真的抛出那个异常
       - id: ccc
-        text: 在catch子句中匹配异常是一种精确匹配
+        text: 在 catch 子句中匹配异常是一种精确匹配
       - id: ddd
         text: 可能抛出系统异常的方法是不需要申明异常的
     correct: ddd
@@ -230,7 +230,7 @@
       }
     }
     ```
-    输出结果是什么?
+    输出结果是什么？
   content_format: md
   answer:
     choices:
@@ -247,7 +247,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: jsp 指令中`isELIgnored="boolean"`的意思是?
+  content: jsp 指令中`isELIgnored="boolean"`的意思是？
   content_format: md
   answer:
     choices:
@@ -264,7 +264,7 @@
     - servlet, jsp
 
 - kind: single_choice
-  content: 对于 import java.util 包,以下那种说法是错误的
+  content: 对于 import java.util 包，以下那种说法是错误的
   content_format: text
   answer:
     choices:
@@ -281,7 +281,7 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: 在一个线程中 Sleep(1000) 方法,将使得该线程在多少时间后获得对 CPU 的控制(假设睡眠过程中不会有其他事件唤醒该线程)?
+  content: 在一个线程中 Sleep(1000) 方法，将使得该线程在多少时间后获得对 CPU 的控制（假设睡眠过程中不会有其他事件唤醒该线程）？
   content_format: text
   answer:
     choices:
@@ -298,24 +298,24 @@
     - 线程
 
 - kind: single_choice
-  content: 在WEB-INF目录下,必须存放的文件为
+  content: 在 WEB-INF 目录下，必须存放的文件为
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: class文件
+        text: class 文件
       - id: bbb
         text: web.xml
       - id: ccc
-        text: jar文件
+        text: jar 文件
       - id: ddd
-        text: html文件
+        text: html 文件
     correct: bbb
   points:
     - servlet, jsp
 
 - kind: single_choice
-  content: 下面哪个不是JAVA关键字?
+  content: 下面哪个不是 JAVA 关键字？
   content_format: text
   answer:
     choices:
@@ -332,7 +332,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列标识符(名字)命名原则中,正确的是()
+  content: 下列标识符（名字）命名原则中，正确的是（）
   content_format: text
   answer:
     choices:
@@ -357,7 +357,7 @@
     3.
     4. }
     ```
-    将以下哪种方法插入行3是不合法的?
+    将以下哪种方法插入行 3 是不合法的？
   content_format: md
   answer:
     choices:
@@ -374,7 +374,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 哪个语句创建了一个数组实例?
+  content: 哪个语句创建了一个数组实例？
   content_format: text
   answer:
     choices:
@@ -391,7 +391,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: "以public修饰的类如: public class Car{...} 则Car( )"
+  content: "以 public 修饰的类如: public class Car{...} 则 Car()"
   content_format: text
   answer:
     choices:
@@ -408,24 +408,24 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 下列关于构造方法的叙述中,错误的是
+  content: 下列关于构造方法的叙述中，错误的是
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: Java语言规定构造方法名与类名必须相同
+        text: Java 语言规定构造方法名与类名必须相同
       - id: bbb
-        text: Java语言规定构造方法没有返回值,但不用vold声明
+        text: Java 语言规定构造方法没有返回值，但不用 vold 声明
       - id: ccc
-        text: Java语言规定构造方法不可以重载
+        text: Java 语言规定构造方法不可以重载
       - id: ddd
-        text: Java语言规定构造方法只能通过new自动调用
+        text: Java 语言规定构造方法只能通过 new 自动调用
     correct: ccc
   points:
     - 类，对象，方法
 
 - kind: single_choice
-  content: 构造函数何时被调用?
+  content: 构造函数何时被调用？
   content_format: text
   answer:
     choices:
@@ -442,7 +442,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: break语句()
+  content: break 语句（）
   content_format: text
   answer:
     choices:
@@ -451,7 +451,7 @@
       - id: bbb
         text: 只中断最外层的循环
       - id: ccc
-        text: 借助于标号可以实现任何外层循环中断
+        text: 借助于标号，可以实现任何外层循环中断
       - id: ddd
         text: 只中断某一层的循环
     correct: ddd
@@ -459,7 +459,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: Java语言中下面哪个可以用作正确的变量名称()
+  content: Java 语言中下面哪个可以用作正确的变量名称
   content_format: text
   answer:
     choices:
@@ -476,7 +476,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下面哪项不是JSP操作指令()
+  content: 下面哪项不是 JSP 操作指令（）
   content_format: text
   answer:
     choices:
@@ -493,7 +493,7 @@
     - servlet, jsp
 
 - kind: single_choice
-  content: 下面哪一项不是Java类访问控制关键字?
+  content: 下面哪一项不是 Java 类访问控制关键字？
   content_format: text
   answer:
     choices:
@@ -510,7 +510,7 @@
     - 类，对象，方法
 
 - kind: single_choice
-  content: 在配置tomcat虚拟目录时,需要打开哪个文件?
+  content: 在配置 tomcat 虚拟目录时，需要打开哪个文件？
   content_format: text
   answer:
     choices:
@@ -527,14 +527,14 @@
     - tomcat, glassfish, weblogic 等中间件配置使用
 
 - kind: single_choice
-  content: 下面哪项不是response对象的方法
+  content: 下面哪项不是 response 对象的方法
   content_format: text
   answer:
     choices:
       - id: aaa
         text: setContentType(String contentTypestr)
       - id: bbb
-        text: setHeader(String headername,String headervalue)
+        text: setHeader(String headername, String headervalue)
       - id: ccc
         text: getParameter(String str)
       - id: ddd
@@ -544,7 +544,7 @@
     - servlet, jsp
 
 - kind: single_choice
-  content: 以下()是编写Servlet必须导入的包
+  content: 以下（）是编写 Servlet 必须导入的包
   content_format: text
   answer:
     choices:
@@ -563,7 +563,7 @@
 # 多选
 
 - kind: multi_choice
-  content: 下列属于jsp中注释的有
+  content: 下列属于 jsp 中注释的有
   content_format: text
   answer:
     choices:
@@ -582,7 +582,7 @@
     - servlet, jsp
 
 - kind: multi_choice
-  content: 按照学生平均成绩(avg_grade)将students表中的数据检索出来,下面SQL语句正确的是
+  content: 按照学生平均成绩 (avg_grade) 将 students 表中的数据检索出来，下面 SQL 语句正确的是
   content_format: text
   answer:
     choices:
@@ -602,7 +602,7 @@
     - SQL
 
 - kind: multi_choice
-  content: 下列是jsp作用域的通信对象的有
+  content: 下列是 jsp 作用域的通信对象的有
   content_format: text
   answer:
     choices:
@@ -622,7 +622,7 @@
     - servlet, jsp
 
 - kind: multi_choice
-  content: 在接口中以下哪条定义是正确的?
+  content: 在接口中以下哪条定义是正确的？
   content_format: text
   answer:
     choices:
@@ -665,7 +665,7 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 下面哪些不是java的简单数据类型?
+  content: 下面哪些不是 java 的简单数据类型？
   content_format: text
   answer:
     choices:
@@ -684,12 +684,12 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 下面哪些语句能够正确地生成5个空字符串?
+  content: 下面哪些语句能够正确地生成 5 个空字符串？
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: String a[] = new String[5];for(int i=0;i<5;a[i++]="");
+        text: String a[] = new String[5]; for(int i = 0; i < 5; a[i++] = "");
       - id: bbb
         text: String a[] = {"","","","",""};
       - id: ccc
@@ -697,7 +697,7 @@
       - id: ddd
         text: String[5]a;
       - id: eee
-        text: String []a = new String[5];for(int i=0;i<5;a[i++]=null);
+        text: String []a = new String[5]; for(int i = 0; i < 5; a[i++] = null);
     corrects:
       - aaa
       - bbb
@@ -705,7 +705,7 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 不能用来修饰interface的有
+  content: 不能用来修饰 interface 的有
   content_format: text
   answer:
     choices:
@@ -739,13 +739,13 @@
   answer:
     choices:
       - id: aaa
-        text: B类的构造器应该是 public
+        text: B 类的构造器应该是 public
       - id: bbb
-        text: B类的构造器应该是没有参数
+        text: B 类的构造器应该是没有参数
       - id: ccc
-        text: B类的构造器应该调用this()
+        text: B 类的构造器应该调用 this()
       - id: ddd
-        text: B类的构造器应该调用super()
+        text: B 类的构造器应该调用 super()
     corrects:
       - bbb
       - ddd
@@ -773,7 +773,7 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 以下哪四个能使用throw抛出?
+  content: 以下哪四个能使用 throw 抛出？
   content_format: text
   answer:
     choices:
@@ -798,7 +798,7 @@
     - 语法基础
 
 - kind: multi_choice
-  content: javax.Servlet的包中,属于类的是
+  content: javax.Servlet 的包中，属于类的是
   content_format: text
   answer:
     choices:
@@ -847,18 +847,18 @@
     - 类，对象，方法
 
 - kind: multi_choice
-  content: 对该段代码描述正确的有`<% int i = Integer.parseInt(request.getParemeter("value")) %>`
+  content: 对该段代码描述正确的有 `<% int i = Integer.parseInt(request.getParemeter("value")) %>`
   content_format: md
   answer:
     choices:
       - id: aaa
         text: 不会有错
       - id: bbb
-        text: 当value与int类型不匹配时会报错
+        text: 当 value 与 int 类型不匹配时会报错
       - id: ccc
-        text: 当value=""时会报错
+        text: 当 value = "" 时会报错
       - id: ddd
-        text: 为了安全起见应该将该段代码放在try{}和catch(){}之间
+        text: 为了安全起见应该将该段代码放在 try{} 和 catch(){} 之间
     corrects:
       - bbb
       - ccc
@@ -878,9 +878,9 @@
       - id: ccc
         text: 默认构造器调用其父类的无参构造器
       - id: ddd
-        text: 如果一个类没有无参构造器,编译器会它创建一个默认构造器
+        text: 如果一个类没有无参构造器，编译器会它创建一个默认构造器
       - id: eee
-        text: 只有当一个类没有任何构造器时,编译器会为它创建一个默认构造器
+        text: 只有当一个类没有任何构造器时，编译器会为它创建一个默认构造器
     corrects:
       - bbb
       - ccc
@@ -889,7 +889,7 @@
     - 类，对象，方法
 
 - kind: multi_choice
-  content: 哪二种声明防止方法覆盖?
+  content: 哪二种声明防止方法覆盖？
   content_format: text
   answer:
     choices:
