@@ -345,7 +345,7 @@
         text: 3
     correct: aaa
   points:
-    - 基础数据结构和基础算法
+    - 语法基础
 
 - kind: single_choice
   content: |
