@@ -1,11 +1,11 @@
 - kind: essay
-  content: Lock 与 Synchronized 的区别
+  content: 请描述 Lock 与 Synchronized 的区别
   content_format: text
   points:
     - 线程
 
 - kind: essay
-  content: Java HashSet 工作原理及实现
+  content: 请描述 Java HashSet 的工作原理及实现
   content_format: text
   points:
     - 常见数据类型

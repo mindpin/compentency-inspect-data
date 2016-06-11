@@ -35,15 +35,15 @@
 
 - kind: single_choice
   content: |
-    下列程序代码段运行后，变量x的结果是()
+    下列程序代码段运行后，变量 x 的结果是()
     ```java
     int x = 0;
     int y = 3;
-    switch(y){
-    case 1:x++;
-    case 2:x++;x++;
-    case 3:x++;x++;x++;
-    case 4:x += 4;
+    switch (y) {
+      case 1: x++;
+      case 2: x++; x++;
+      case 3: x++; x++; x++;
+      case 4: x += 4;
     }
     ```
   content_format: md
@@ -62,18 +62,19 @@
     - 语法基础
 
 - kind: single_choice
-  content: 已知A类被打包在 packageA, B类被打包在 packageB, 且B类被声明为 public, 且有一个成员变量x被声明为 protecte d控制方式。C类也位于 packageA 包且继承了B类。则以下说法正确的是
+  content: 
+    "已知 A 类被打包在 packageA, B 类被打包在 packageB, 且 B 类被声明为 public, 且有一个成员变量 x 被声明为 protecte d 控制方式。C 类也位于 packageA 包且继承了 B 类。则以下说法正确的是"
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: A类的实例不能访问到B类的实例
+        text: A 类的实例不能访问到 B 类的实例
       - id: bbb
-        text: A类的实例能够访问到B类一个实例的x成员
+        text: A 类的实例能够访问到 B 类一个实例的 x 成员
       - id: ccc
-        text: C类的实例不能访问到B类的实例
+        text: C 类的实例不能访问到 B 类的实例
       - id: ddd
-        text: C类的实例可以访问到B类一个实例的x成员
+        text: C 类的实例可以访问到 B 类一个实例的 x 成员
     correct: ddd
   points:
     - 类，对象，方法
@@ -99,19 +100,19 @@
   content: |
     关于以下程序代码的说明正确的是
     ```java
-    1 class  HasStatic{
-    2    private  static  int  x = 100
-    3    public  static  void  main(String  args[  ]){
-    4      HasStatic  hs1 = new  HasStatic(  );
-    5      hs1.x++;
-    6      HasStatic  hs2 = new  HasStatic(  );
-    7      hs2.x++;
-    8      hs1 = new  HasStatic( );
-    9      hs1.x++;
-    10     HasStatic.x- -;
-    11     System.out.println("x=" + x);
-    12 }
-    13}
+    1.  class  HasStatic {
+    2.    private static int x = 100;
+    3.    public static void main(String args[]) {
+    4.      HasStatic hs1 = new HasStatic();
+    5.      hs1.x++;
+    6.      HasStatic hs2 = new HasStatic();
+    7.      hs2.x++;
+    8.      hs1 = new HasStatic( );
+    9.      hs1.x++;
+    10.     HasStatic.x--;
+    11.     System.out.println("x=" + x);
+    12.   }
+    13. }
     ```
   content_format: md
   answer:
@@ -132,10 +133,10 @@
   content: |
     编译运行以下程序后，关于输出结果的说明正确的是
     ```java
-    public class Conditional{
-      public static void main(String  args[]){
-        int  x = 4;
-        System.out.println("value  is  " + ((x > 4) ? 99.9 :9));
+    public class Conditional {
+      public static void main(String args[]) {
+        int x = 4;
+        System.out.println("value is " + ((x > 4) ? 99.9 : 9));
       }
     }
     ```
@@ -551,7 +552,7 @@
     - 语法基础
 
 - kind: single_choice
-  content: 下列选项中哪一个是表达式1 + 2 + "aa" + 3的值
+  content: 下列选项中哪一个是表达式 1 + 2 + "aa" + 3 的值
   content_format: text
   answer:
     choices:
@@ -622,16 +623,16 @@
   content: |
     关于以下 application 的说明，正确的是
     ```java
-    1 class StaticStuff
-    2 {
-    3   static int x =10;
-    4   static { x +=5; }
-    5   public static void main(String  args[])
-    6   {
-    7     System.out.println("x=" + x);
-    8   }
-    9   static  { x /= 3; }
-    10 }
+    1.  class StaticStuff
+    2.  {
+    3.    static int x = 10;
+    4.    static { x += 5; }
+    5.    public static void main(String args[])
+    6.    {
+    7.      System.out.println("x=" + x);
+    8.    }
+    9.    static  { x /= 3; }
+    10. }
     ```
   content_format: md
   answer:
@@ -880,22 +881,22 @@
 
 - kind: single_choice
   content: |
-    下面是 Example.java 文件的完整代码请找出会产生编译错误的行
+    下面是 Example.java 文件的完整代码，请找出会产生编译错误的行
     ```java
-    1.     class BaseClass {
-    2.          public String str;
-    3.          public BaseClass {
-    4.          System.out.println(“ok”);}
-    5.          public BaseClass(String s){
-    6.           str = s;}}
-    7.         class SubClass extends BaseClass{
-    8.         }
-    9.       public class Example{
-    10.         public void method {
-    11.           SubClass s = new SubClass(“hello”);
-    12.         BaseClass b = new BaseClass(“world”);
-    13.      }
-    14.  }
+    1.  class BaseClass {
+    2.    public String str;
+    3.    public BaseClass {
+    4.      System.out.println("ok");}
+    5.    public BaseClass(String s){
+    6.    str = s;}}
+    7.  class SubClass extends BaseClass {
+    8.  }
+    9.  public class Example {
+    10.   public void method {
+    11.     SubClass s = new SubClass("hello");
+    12.     BaseClass b = new BaseClass("world");
+    13.   }
+    14. }
     ```
   content_format: md
   answer:
@@ -985,18 +986,18 @@
     - 常用基础类库
 
 - kind: single_choice
-  content: java语言中异常处理的出口是下列哪一子句 ()
+  content: java 语言中异常处理的出口是下列哪一子句 ()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: catch{}子句
+        text: catch {} 子句
       - id: bbb
-        text: try{}子句
+        text: try {} 子句
       - id: ccc
-        text: 没有正确选项
+        text: throw {} 子句
       - id: ddd
-        text: finally{}子句
+        text: finally {} 子句
     correct: ddd
   points:
     - 语法基础
@@ -1331,14 +1332,14 @@
 
 - kind: single_choice
   content: |
-    当在命令行输入java myprog good morning 运行以下代码，输出结果是
+    当在命令行输入 java myprog good morning 运行以下代码，输出结果是
     ```java
-    public class myprog{
-           public static void main(String argv[])
-          {
-               System.out.println(argv[2]);
-          }
+    public class myprog {
+      public static void main(String argv[])
+      {
+        System.out.println(argv[2]);
       }
+    }
     ```
   content_format: md
   answer:
@@ -1404,17 +1405,17 @@
 
 - kind: single_choice
   content: |
-    类 Test1 、Test2 定义如下
+    类 Test1, Test2 定义如下
     ```java
-    1 public class  Test1
-    2 { public  float  aMethod(float a , float b) throws
-    3  IOException {      }
-    4 }
-    5  public  class  Test2  extends  Test1{
-    6
-    7 }
+    1.  public class Test1
+    2.  { public float aMethod(float a , float b) throws
+    3.    IOException { }
+    4.  }
+    5.  public class Test2 extends Test1 {
+    6.
+    7.  }
     ```
-    将以下哪种方法插入行6是不合法的。
+    将以下哪种方法插入行 6 是不合法的？
   content_format: md
   answer:
     choices:
@@ -1449,7 +1450,7 @@
 
 - kind: single_choice
   content: |
-    编译运行下面的代码会发生什么情况为
+    编译运行下面的代码会发生什么情况？
     ```java
     public class Bground extends Thread{
         public static void main(String argv[])
@@ -1459,7 +1460,7 @@
         }
         public void start()
         {
-           for (int i = 0; i <10; i++){
+           for (int i = 0; i < 10; i++){
                System.out.println("Value of i = " + i);
            }
         }
@@ -1473,7 +1474,7 @@
       - id: bbb
         text: 编译错误，Thread 类中的 run 方法没有定义
       - id: ccc
-        text: 编译无错，打印0到9
+        text: 编译无错，打印 0 到 9
       - id: ddd
         text: 编译无错，不打印任何值
     correct: ddd
@@ -1501,10 +1502,10 @@
   content: |
     下列程序段运行后,变量temp的值是
     ```java
-    int temp = 2 ;
+    int temp = 2;
     temp++;
     temp* = 5;
-    temp /= 2
+    temp /= 2;
     ```
   content_format: md
   answer:

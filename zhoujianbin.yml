@@ -8,7 +8,7 @@
       - id: bbb
         text: sw
       - id: ccc
-        text: rw和ro
+        text: rw 和 ro
       - id: ddd
         text: noauto
     correct: ddd
@@ -16,7 +16,7 @@
     - linux命令
 
 - kind: single_choice
-  content: Linux 文件权限一共10位长度，分成四段，第三段表示的内容是 （）
+  content: Linux 文件权限一共 10 位长度，分成四段，第三段表示的内容是 （）
   content_format: text
   answer:
     choices:
@@ -67,7 +67,7 @@
     - linux命令
 
 - kind: single_choice
-  content: 局域网的网络地址192.168.1.0/24，局域网络连接其它网络的网关地址是192.168.1.1。主机192.168.1.20访问172.16.1.0/24网络时，其路由设置正确的是 （）
+  content: 局域网的网络地址 192.168.1.0/24，局域网络连接其它网络的网关地址是 192.168.1.1. 主机 192.168.1.20 访问 172.16.1.0/24 网络时，其路由设置正确的是 （）
   content_format: text
   answer:
     choices:

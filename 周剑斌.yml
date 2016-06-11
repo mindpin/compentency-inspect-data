@@ -59,12 +59,12 @@
     ```java
     a = 0;
     c = 0;
-    do{
+    do {
       --c;
       a = a - 1;
-    }while(a > 0);
+    } while(a > 0);
     ```
-    后，C 的值是（）
+    后，c 的值是（）
   content_format: md
   answer:
     choices:
@@ -238,29 +238,31 @@
   content: |
     对于下列代码
     ```java
-    1)  class Person {
-    2)  public void printValue(int i, int j) {//... }
-    3)  public void printValue(int i){//... }
-    4)  }
-    5)  public class Teacher extends Person {
-    6)  public void printValue() {//... }
-    7)  public void printValue(int i) {//...}
-    8)  public static void main(String args[]){
-    9)  Person t = new Teacher();
-    10)
+    1.  class Person {
+    2.    public void printValue(int i, int j) {/*...*/}
+    3.    public void printValue(int i) {/*...*/}
+    4.  }
+    5.  public class Teacher extends Person {
+    6.    public void printValue() {/*...*/}
+    7.    public void printValue(int i) {/*...*/}
+    8.    public static void main(String args[]) {
+    9.      Person t = new Teacher();
+    10.     t.printValue(5);
+    11.   }
+    12. }
     ```
-    第10行语句将调用哪行语句 ( )
+    第 10 行语句将调用哪行的方法？
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 第2行
+        text: 第 2 行
       - id: bbb
-        text: 第3行
+        text: 第 3 行
       - id: ccc
-        text: 第6行
+        text: 第 6 行
       - id: ddd
-        text: 第7行
+        text: 第 7 行
     correct: ddd
   points:
     - 抽象类，接口，继承
@@ -269,11 +271,11 @@
   content: |
     应用程序的 main 方法中有以下语句
     ```java
-    String  s1 = "abc";
-    String  s2 = "abc";
+    String s1 = "abc";
+    String s2 = "abc";
     boolean b1 = s1.equals(s2);
     boolean b2 = (s1 == s2);
-    System.out.print(b1 + "   " + b2);
+    System.out.print(b1 + " " + b2);
     ```
     则输出的结果是 ( )
   content_format: md
@@ -295,11 +297,11 @@
   content: |
     以下程序段
     ```java
-    String   s = "12345#aaa#bbb#67890";
-    int   n = s.indexOf("#");
-    int   k = s.indexOf("#", n + 1);
-    int   m = s.indexOf("#", k + 1);
-    String  s2 = s.substring(m + 1);
+    String s = "12345#aaa#bbb#67890";
+    int n = s.indexOf("#");
+    int k = s.indexOf("#", n + 1);
+    int m = s.indexOf("#", k + 1);
+    String s2 = s.substring(m + 1);
     System.out.println(s2);
     ```
     的输出结果是 ( )
@@ -322,14 +324,14 @@
   content: |
     应用程序的main方法中有以下语句
     ```java
-    int  b[ ][ ]={{1}, {2, 2}, {2, 2, 2}};
+      int b[][] = {{1}, {2, 2}, {2, 2, 2}};
       int sum = 0;
-      for(int i = 0; i < b.length; i++) {
-        for(int  j= 0; j < b[i].length; j++) {
+      for (int i = 0; i < b.length; i++) {
+        for(int j = 0; j < b[i].length; j++) {
           sum += b[i][j];
         }
       }
-    System.out.println("sum = " + sum);
+      System.out.println("sum = " + sum);
     ```
     则输出的结果是 ( )
   content_format: md
@@ -351,12 +353,11 @@
   content: |
     应用程序的main方法中有以下语句
     ```java
-    int[]  x = {125, 21, 5, 168, 98};
-    int  min = x[0];
-    int  index = 0;
-    for(int i = 1; i < x.length; i++){
-      if(x[i] < min)
-      {
+    int[] x = {125, 21, 5, 168, 98};
+    int min = x[0];
+    int index = 0;
+    for (int i = 1; i < x.length; i++){
+      if (x[i] < min) {
         min = x[i];
         index = i;
       }

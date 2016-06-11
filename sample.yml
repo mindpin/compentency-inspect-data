@@ -109,12 +109,12 @@
     如下代码
     ```
     10. public Object m() {
-    11. Object o = new Float(3.14F);
-    12. Object [] oa = new Object[1];
-    13. oa[0] = o;
-    14. o = null;
-    15. oa[0] = null;
-    16. print 'return 0';
+    11.   Object o = new Float(3.14F);
+    12.   Object [] oa = new Object[1];
+    13.   oa[0] = o;
+    14.   o = null;
+    15.   oa[0] = null;
+    16.   print 'return 0';
     17. }
     ```
     当 Float 对象在第 11 行被创建后，什么时候能够被垃圾回收？
@@ -135,7 +135,7 @@
 
 - kind: single_choice
   content: |
-    如下代码
+    如下代码运行结果是什么？
     ```
     class Base {
       Base() { System.out.print("Base"); }
@@ -146,8 +146,8 @@
         new Base();
       }
     }
-    结果是什么？
     ```
+
   content_format: md
   answer:
     choices:
@@ -286,11 +286,11 @@
   answer:
     choices:
       - id: aaa
-        text: 正好1000毫秒
+        text: 正好 1000 毫秒
       - id: bbb
-        text: 1000毫秒不到
+        text: 1000 毫秒不到
       - id: ccc
-        text: =>1000毫秒
+        text: => 1000 毫秒
       - id: ddd
         text: 不一定
     correct: ccc
@@ -350,10 +350,10 @@
 
 - kind: single_choice
   content: |
-    类Test1定义如下:
+    类 Test1 定义如下:
     ```
     1. public class Test1{
-    2. public float aMethod(float a, float b){ return 0;}
+    2.   public float aMethod(float a, float b){ return 0; }
     3.
     4. }
     ```

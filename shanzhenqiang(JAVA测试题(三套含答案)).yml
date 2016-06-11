@@ -277,15 +277,16 @@
 
 - kind: single_choice
   content: |
-    传递4，0来运行下列代码中的方法 divide( int a, int b )，结果是：
+    传递 4，0 来运行下列代码中的方法 divide( int a, int b )，结果是：
     ```java
       public void divide( int a, int b ) {
         try {
           int c = a / b;
-         } catch ( Exception e ) {
-          System.out.print( "Exception " );
+        } catch ( Exception e ) {
+          System.out.print( "Exception" );
         } finally {
           System.out.println( "Finally" );
+        }
       }
     ```
   content_format: md
@@ -623,8 +624,8 @@
     以下程序代码执行后，哪个说法正确？（）
     ```java
     int index = 1;
-    boolean[] test = new Boolean[ 3 ];
-    boolean foo = test [ index ];
+    boolean[] test = new Boolean[3];
+    boolean foo = test[index];
     ```
   content_format: md
   answer:
@@ -928,22 +929,28 @@
     - 语法基础
 
 - kind: multi_choice
-  content: 下面那些不是合法的变量定义：
+  content: 下面哪些不是合法的变量定义？
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 2variable
+        text:
+          "2variable"
       - id: bbb
-        text: variable2
+        text: 
+          "variable2"
       - id: ccc
-        text: _whatavariable
+        text: 
+          "_whatavariable"
       - id: ddd
-        text: _3_
+        text: 
+          "_3_"
       - id: eee
         text:
+          "aaaa"
       - id: fff
-        text: "#myvar"
+        text: 
+          "#myvar"
     corrects:
       - aaa
       - fff

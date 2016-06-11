@@ -18,7 +18,8 @@
     - hibernate
 
 - kind: single_choice
-  content: 关于 Hibernate, 下列说法错误的是()
+  content: 
+    "关于 Hibernate, 下列说法错误的是（）"
   content_format: text
   answer:
     choices:
@@ -72,12 +73,13 @@
     - hibernate
 
 - kind: single_choice
-  content:  在 Hibernate 中， generator 属性值如果是 native , 则表示()
+  content: 
+    "在 Hibernate 中， generator 属性值如果是 native , 则表示（）"
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 由 Hibernate 自动以自增的方式生成标识符，每次增量为1
+        text: 由 Hibernate 自动以自增的方式生成标识符，每次增量为 1
       - id: bbb
         text: 由 Hibernate 自动以自增的方式生成标识符，每次增量为自定义
       - id: ccc
@@ -164,13 +166,13 @@
   answer:
     choices:
       - id: aaa
-        text: all 
+        text: 'all'
       - id: bbb
-        text: false
+        text: 'false'
       - id: ccc
-        text: true 
+        text: 'true'
       - id: ddd
-        text: none
+        text: 'none'
     correct: ccc
   points:
     - hibernate
@@ -253,13 +255,17 @@
   answer:
     choices:
       - id: aaa
-        text: null
+        text: 
+          "null"
       - id: bbb
-        text: none
+        text: 
+          "none"
       - id: ccc
-        text: true
+        text: 
+          "true"
       - id: ddd
-        text: false
+        text: 
+          "false"
     correct: aaa
   points:
     - hibernate
@@ -401,36 +407,36 @@
     - hibernate
 
 - kind: single_choice
-  content: 在 Hibernate 的 HQL 查询中，setMaxResults(3) 方法中参数值3指的是()
+  content: 在 Hibernate 的 HQL 查询中，setMaxResults(3) 方法中参数值 3 指的是()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 从第3条记录开始
+        text: 从第 3 条记录开始
       - id: bbb
-        text: 从第4条记录开始
+        text: 从第 4 条记录开始
       - id: ccc
-        text: 查询3条记录
+        text: 查询 3 条记录
       - id: ddd
-        text: 查询4条记录
+        text: 查询 4 条记录
     correct: ccc
   points:
     - hibernate
 
 
 - kind: single_choice
-  content: 在 Hibernate 的 HQL 查询中，setFirstResults(3) 方法中参数值3指的是()
+  content: 在 Hibernate 的 HQL 查询中，setFirstResults(3) 方法中参数值 3 指的是()
   content_format: text
   answer:
     choices:
       - id: aaa
-        text: 从第3条记录开始
+        text: 从第 3 条记录开始
       - id: bbb
-        text: 从第4条记录开始
+        text: 从第 4 条记录开始
       - id: ccc
-        text: 查询3条记录
+        text: 查询 3 条记录
       - id: ddd
-        text: 查询4条记录
+        text: 查询 4 条记录
     correct: bbb
   points:
     - hibernate

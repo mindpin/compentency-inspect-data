@@ -1,0 +1,23 @@
+- kind: essay
+  content: 当 web 服务访问出现网页白屏时，应从哪几方面排查故障？
+  content_format: text
+  points:
+    - 语法基础
+
+- kind: file_upload
+  content: 现在需要实现一家谱服务，要求能通过该服务录入多个家族成员，家族成员具有性别，年龄等基本信息，每个成员有一父亲一母亲，每对父母可能有多个子女。请以画图的形式来表示该服务的数据库建模。
+  content_format: text
+  points:
+    - 语法基础
+
+- kind: essay
+  content: 什么是 SQL 注入？应该怎样防止 SQL 注入？
+  content_format: text
+  points:
+    - 语法基础
+
+- kind: file_upload
+  content: 当下非常流行手机订外卖的服务应用，尝试以一个用户订餐为例，画图表示这一业务过程。注意体现用户，订餐服务，店面，送餐员等要素。图的类型不严格限制，能用普通的流程图表示即可。
+  content_format: text
+  points:
+    - 语法基础

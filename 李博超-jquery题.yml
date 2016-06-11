@@ -1,9 +1,9 @@
 - kind: single_choice
   content: |
     请看下列 html 代码：
-      ```html
-      <p class = "s1">hello</p>
-      ```
+    ```html
+    <p class = "s1">hello</p>
+    ```
     能使文本"hello"字体大小变成40px的 jQuery 代码是：
   content_format: md
   answer:
@@ -23,13 +23,13 @@
 - kind: single_choice
   content: |
     请看下列 html 代码：
-      ```html
-      <ul>
-      <li>item1</li>
-      <li>item2</li>
-      <li>item3</li>
-     </ul>
-      ```
+    ```html
+    <ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    </ul>
+    ```
     给第二个<li>设置字体颜色正确的是：
   content_format: md
   answer:
@@ -376,14 +376,18 @@
     ```html 
     <div></div>
     ```
-    jQuery 代码：  $("div").html("<p>Hello Again</p>");   结果：
+    jQuery 代码：  
+    ```
+    $("div").html("<p>Hello Again</p>");   
+    ```
+    结果是？
   content_format: md
   answer:
     choices:
       - id: aaa
         text: [<div></div>]
       - id: bbb
-        text: [ <div><p>Hello Again</p></div> ]
+        text: [<div><p>Hello Again</p></div>]
       - id: ccc
         text: [<p>Hello Again</p>]
       - id: ddd

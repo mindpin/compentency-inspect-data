@@ -20,28 +20,28 @@
   content: |
     Java中，在如下所示的 Test 类中，共有（）个构造方法
     ```Java
-      public class Test{
+      public class Test {
         private int x;
-        public Test(){
-          x=35;
+        public Test() {
+          x = 35;
         }
-        public void Test(double f){
-          This.x=(int)f;
+        public void Test(double f) {
+          This.x = (int)f;
         }
-        public Test(String s){}
+        public Test(String s) { }
       }
     ```
   content_format: md
   answer:
     choices:
       - id: aaa
-        text: 0
+        text: 0 个
       - id: bbb
-        text: 1
+        text: 1 个
       - id: ccc
-        text: 2
+        text: 2 个
       - id: ddd
-        text: 3
+        text: 3 个
     correct: ccc
   points:
     - 类，对象，方法
@@ -139,7 +139,7 @@
       - id: aaa
         text: i++;
       - id: bbb
-        text: i>5;
+        text: i > 5;
       - id: ccc
         text: bEqual = str.equals("q");
       - id: ddd
@@ -199,8 +199,8 @@
     下列输出结果是
     ```java
     int a = 0;
-    while(a < 5) {
-      switch(a){
+    while (a < 5) {
+      switch (a) {
         case 0:
         case 3: a = a + 2;
         case 1:
@@ -230,9 +230,9 @@
     下列代码输出结果是
     ```java
     int i = 10;
-    while(i > 0){
+    while (i > 0) {
       i = i + 1;
-      if(i == 10){
+      if (i == 10) {
         break;
       }
     }
@@ -382,7 +382,7 @@
     score 是一个整数数组，有五个元素，已经正确初始化并赋值，仔细阅读下面代码，程序运行结果是
     ```java
     temp = score[0];
-    for (int index = 1;index < 5;index++) {
+    for (int index = 1; index < 5; index++) {
       if (score[index] < temp) {
         temp = score[index];
       }
@@ -491,8 +491,8 @@
     下面代码输出结果是
     ```java
     int i = 0, s = 0;
-    do{
-      if (i%2 == 0 ){
+    do {
+      if (i % 2 == 0 ) {
         i++;
         continue;
       }
@@ -629,18 +629,18 @@
     ```java
     public class Test {
       public static int aMethod(int i) throws Exception {
-        try{
+        try {
           return i/10;
-        }catch(Exception ex){
+        } catch (Exception ex) {
           throw new Exception ("exception in a aMothod");
-        }finally{
+        } finally {
           System.out.print("finally");
         }
       }
       public static void main(String [] args) {
-        try{
+        try {
           aMethod(0);
-        }catch(Exception ex){
+        } catch (Exception ex) {
           System.out.print("exception in main");
         }
         System.out.print("finished");
